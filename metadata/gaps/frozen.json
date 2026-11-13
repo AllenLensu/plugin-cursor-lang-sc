@@ -1,0 +1,37 @@
+[
+  {
+    "module": "vs/workbench/contrib/debug/browser/debugIcons",
+    "key": "debugAll",
+    "english": "Icon for the debug function action."
+  },
+  {
+    "module": "vs/workbench/electron-sandbox/actions/installActions",
+    "key": "successIn",
+    "english": "Shell command '{0}' successfully installed."
+  },
+  {
+    "module": "vs/workbench/electron-sandbox/actions/installActions",
+    "key": "install",
+    "english": "Install 'code' command"
+  },
+  {
+    "module": "vs/workbench/services/experiment/browser/dynamicConfigOverrideActions",
+    "key": "selectConfig",
+    "english": "{0} override(s) active. Select a dynamic config to manage:"
+  },
+  {
+    "module": "vs/workbench/services/experiment/browser/experimentOverrideActions",
+    "key": "selectExperiment",
+    "english": "{0} override(s) active. Select an experiment to manage:"
+  },
+  {
+    "module": "vs/workbench/services/experiment/browser/featureFlagOverrideActions",
+    "key": "selectFlag",
+    "english": "{0} override(s) active. Select a flag to manage:"
+  },
+  {
+    "module": "vs/workbench/services/experiment/browser/featureFlagOverrideActions",
+    "key": "overrideSet",
+    "english": "Feature flag \"{0}\" overridden to enabled"
+  }
+]

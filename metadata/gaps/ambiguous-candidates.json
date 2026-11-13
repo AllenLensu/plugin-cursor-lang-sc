@@ -1,0 +1,458 @@
+[
+  {
+    "module": "vs/editor/browser/services/hoverService/updatableHoverWidget",
+    "key": "iconLabel.loading",
+    "english": "Loading...",
+    "area": "services",
+    "candidates": [
+      {
+        "chinese": "正在加载...",
+        "count": 11,
+        "example": {
+          "module": "vs/editor/contrib/gotoSymbol/browser/peek/referencesController",
+          "key": "labelLoading"
+        }
+      },
+      {
+        "chinese": "正在加载…",
+        "count": 2,
+        "example": {
+          "module": "vs/editor/contrib/suggest/browser/suggestWidgetDetails",
+          "key": "loading"
+        }
+      }
+    ]
+  },
+  {
+    "module": "vs/glass/browser/components/agent-panel/allowed-machines/add-folder-row.react",
+    "key": "glass.allowedMachines.rowAriaLabel",
+    "english": "{0}, {1}",
+    "area": "glass",
+    "candidates": [
+      {
+        "chinese": "{0}, {1}",
+        "count": 4,
+        "example": {
+          "module": "vs/platform/quickinput/browser/commandsQuickAccess",
+          "key": "commandPickAriaLabelWithKeybinding"
+        }
+      },
+      {
+        "chinese": "{0}，{1}",
+        "count": 4,
+        "example": {
+          "module": "vs/editor/contrib/suggest/browser/suggestWidget",
+          "key": "label"
+        }
+      }
+    ]
+  },
+  {
+    "module": "vs/glass/browser/components/agent-panel/allowed-machines/placement-submenus.react",
+    "key": "glass.allowedMachines.rowAriaLabel",
+    "english": "{0}, {1}",
+    "area": "glass",
+    "candidates": [
+      {
+        "chinese": "{0}, {1}",
+        "count": 4,
+        "example": {
+          "module": "vs/platform/quickinput/browser/commandsQuickAccess",
+          "key": "commandPickAriaLabelWithKeybinding"
+        }
+      },
+      {
+        "chinese": "{0}，{1}",
+        "count": 4,
+        "example": {
+          "module": "vs/editor/contrib/suggest/browser/suggestWidget",
+          "key": "label"
+        }
+      }
+    ]
+  },
+  {
+    "module": "vs/glass/browser/components/editor-panel/file-tab/file-tab-start-page.react",
+    "key": "glass.fileTab.startPage.loadingRecents",
+    "english": "Loading...",
+    "area": "glass",
+    "candidates": [
+      {
+        "chinese": "正在加载...",
+        "count": 11,
+        "example": {
+          "module": "vs/editor/contrib/gotoSymbol/browser/peek/referencesController",
+          "key": "labelLoading"
+        }
+      },
+      {
+        "chinese": "正在加载…",
+        "count": 2,
+        "example": {
+          "module": "vs/editor/contrib/suggest/browser/suggestWidgetDetails",
+          "key": "loading"
+        }
+      }
+    ]
+  },
+  {
+    "module": "vs/glass/browser/components/editor-panel/project-document/project-notes-filter-menu.react",
+    "key": "glass.project.notes.filter",
+    "english": "Filter",
+    "area": "glass",
+    "candidates": [
+      {
+        "chinese": "筛选器",
+        "count": 1,
+        "example": {
+          "module": "vs/base/browser/ui/tree/abstractTree",
+          "key": "filter"
+        }
+      },
+      {
+        "chinese": "筛选器(例如 text、!excludeText、text1,text2)",
+        "count": 1,
+        "example": {
+          "module": "vs/workbench/contrib/output/browser/outputView",
+          "key": "outputView.filter.placeholder"
+        }
+      }
+    ]
+  },
+  {
+    "module": "vs/glass/browser/components/editor-panel/project-document/project-notes-find.react",
+    "key": "glass.project.notes.findPlaceholder",
+    "english": "Filter",
+    "area": "glass",
+    "candidates": [
+      {
+        "chinese": "筛选器",
+        "count": 1,
+        "example": {
+          "module": "vs/base/browser/ui/tree/abstractTree",
+          "key": "filter"
+        }
+      },
+      {
+        "chinese": "筛选器(例如 text、!excludeText、text1,text2)",
+        "count": 1,
+        "example": {
+          "module": "vs/workbench/contrib/output/browser/outputView",
+          "key": "outputView.filter.placeholder"
+        }
+      }
+    ]
+  },
+  {
+    "module": "vs/glass/browser/components/editor-panel/project-document/project-task-filter-fields",
+    "key": "glass.project.filter.project.none",
+    "english": "None",
+    "area": "glass",
+    "candidates": [
+      {
+        "chinese": "无",
+        "count": 6,
+        "example": {
+          "module": "vs/workbench/contrib/debug/browser/breakpointWidget",
+          "key": "noTriggerByBreakpoint"
+        }
+      },
+      {
+        "chinese": "没有",
+        "count": 1,
+        "example": {
+          "module": "vs/workbench/contrib/format/browser/formatActionsMultiple",
+          "key": "nullFormatterDescription"
+        }
+      }
+    ]
+  },
+  {
+    "module": "vs/glass/browser/components/editor-panel/project-document/project-task-filter-fields",
+    "key": "glass.project.filter.owner.none",
+    "english": "None",
+    "area": "glass",
+    "candidates": [
+      {
+        "chinese": "无",
+        "count": 6,
+        "example": {
+          "module": "vs/workbench/contrib/debug/browser/breakpointWidget",
+          "key": "noTriggerByBreakpoint"
+        }
+      },
+      {
+        "chinese": "没有",
+        "count": 1,
+        "example": {
+          "module": "vs/workbench/contrib/format/browser/formatActionsMultiple",
+          "key": "nullFormatterDescription"
+        }
+      }
+    ]
+  },
+  {
+    "module": "vs/glass/browser/components/editor-panel/project-document/project-task-filter-fields",
+    "key": "glass.project.filter.tag.none",
+    "english": "None",
+    "area": "glass",
+    "candidates": [
+      {
+        "chinese": "无",
+        "count": 6,
+        "example": {
+          "module": "vs/workbench/contrib/debug/browser/breakpointWidget",
+          "key": "noTriggerByBreakpoint"
+        }
+      },
+      {
+        "chinese": "没有",
+        "count": 1,
+        "example": {
+          "module": "vs/workbench/contrib/format/browser/formatActionsMultiple",
+          "key": "nullFormatterDescription"
+        }
+      }
+    ]
+  },
+  {
+    "module": "vs/glass/browser/components/editor-panel/project-document/project-task-owner-menu.react",
+    "key": "glass.project.taskOwner.unassigned",
+    "english": "None",
+    "area": "glass",
+    "candidates": [
+      {
+        "chinese": "无",
+        "count": 6,
+        "example": {
+          "module": "vs/workbench/contrib/debug/browser/breakpointWidget",
+          "key": "noTriggerByBreakpoint"
+        }
+      },
+      {
+        "chinese": "没有",
+        "count": 1,
+        "example": {
+          "module": "vs/workbench/contrib/format/browser/formatActionsMultiple",
+          "key": "nullFormatterDescription"
+        }
+      }
+    ]
+  },
+  {
+    "module": "vs/workbench/contrib/aiConfig/browser/aiconfig.contribution",
+    "key": "cursor.composer.planTextSizeScale.defaultSize",
+    "english": "Default",
+    "area": "workbench",
+    "candidates": [
+      {
+        "chinese": "默认",
+        "count": 5,
+        "example": {
+          "module": "vs/platform/userDataProfile/common/userDataProfile",
+          "key": "defaultProfile"
+        }
+      },
+      {
+        "chinese": "默认值",
+        "count": 4,
+        "example": {
+          "module": "vs/workbench/api/common/configurationExtensionPoint",
+          "key": "default"
+        }
+      }
+    ]
+  },
+  {
+    "module": "vs/workbench/contrib/authentication/browser/authentication.contribution",
+    "key": "loading",
+    "english": "Loading...",
+    "area": "workbench",
+    "candidates": [
+      {
+        "chinese": "正在加载...",
+        "count": 11,
+        "example": {
+          "module": "vs/editor/contrib/gotoSymbol/browser/peek/referencesController",
+          "key": "labelLoading"
+        }
+      },
+      {
+        "chinese": "正在加载…",
+        "count": 2,
+        "example": {
+          "module": "vs/editor/contrib/suggest/browser/suggestWidgetDetails",
+          "key": "loading"
+        }
+      }
+    ]
+  },
+  {
+    "module": "vs/workbench/contrib/comments/browser/comments",
+    "key": "comments.view.title",
+    "english": "Comments",
+    "area": "workbench",
+    "candidates": [
+      {
+        "chinese": "评论",
+        "count": 2,
+        "example": {
+          "module": "vs/workbench/contrib/comments/browser/comments.contribution",
+          "key": "commentsConfigurationTitle"
+        }
+      },
+      {
+        "chinese": "注释",
+        "count": 2,
+        "example": {
+          "module": "vs/workbench/contrib/comments/browser/commentsEditorContribution",
+          "key": "commentsCategory"
+        }
+      }
+    ]
+  },
+  {
+    "module": "vs/workbench/contrib/composer/browser/browserEditor.contribution",
+    "key": "closeBrowserTab.close",
+    "english": "&&Close",
+    "area": "workbench",
+    "candidates": [
+      {
+        "chinese": "关闭(&&C)",
+        "count": 2,
+        "example": {
+          "module": "vs/platform/windows/electron-main/windowImpl",
+          "key": "close"
+        }
+      },
+      {
+        "chinese": "关闭(&C)",
+        "count": 1,
+        "example": {
+          "module": "vs/code/electron-main/main",
+          "key": "close"
+        }
+      }
+    ]
+  },
+  {
+    "module": "vs/workbench/contrib/composer/electron-sandbox/webviewBrowserManager",
+    "key": "browserContextMenu.selectAll",
+    "english": "Select All",
+    "area": "workbench",
+    "candidates": [
+      {
+        "chinese": "选择全部",
+        "count": 4,
+        "example": {
+          "module": "vs/editor/browser/editorExtensions",
+          "key": "selectAll"
+        }
+      },
+      {
+        "chinese": "全选",
+        "count": 1,
+        "example": {
+          "module": "vs/workbench/contrib/notebook/browser/contrib/clipboard/notebookClipboard",
+          "key": "notebook.cell.output.selectAll"
+        }
+      }
+    ]
+  },
+  {
+    "module": "vs/workbench/contrib/cursorMarkdownPlanEditor/browser/markdownPlanEditorActions",
+    "key": "findPrevious",
+    "english": "Find Previous",
+    "area": "workbench",
+    "candidates": [
+      {
+        "chinese": "查找上一个",
+        "count": 2,
+        "example": {
+          "module": "vs/editor/contrib/find/browser/findController",
+          "key": "findPreviousMatchAction"
+        }
+      },
+      {
+        "chinese": "查找前一个",
+        "count": 1,
+        "example": {
+          "module": "vs/workbench/contrib/extensions/browser/extensionEditor",
+          "key": "find previous"
+        }
+      }
+    ]
+  },
+  {
+    "module": "vs/workbench/contrib/extensions/browser/extensionsViewlet",
+    "key": "dismiss",
+    "english": "Dismiss",
+    "area": "workbench",
+    "candidates": [
+      {
+        "chinese": "关闭",
+        "count": 2,
+        "example": {
+          "module": "vs/workbench/contrib/preferences/browser/settingsTree",
+          "key": "dismiss"
+        }
+      },
+      {
+        "chinese": "消除",
+        "count": 2,
+        "example": {
+          "module": "vs/workbench/contrib/search/browser/searchActionsRemoveReplace",
+          "key": "RemoveAction.label"
+        }
+      }
+    ]
+  },
+  {
+    "module": "vs/workbench/contrib/notebook/browser/controller/insertCellActions",
+    "key": "notebookActions.menu.insertCodeCell",
+    "english": "Add Code",
+    "area": "workbench",
+    "candidates": [
+      {
+        "chinese": "添加代码",
+        "count": 2,
+        "example": {
+          "module": "vs/workbench/contrib/notebook/browser/controller/insertCellActions",
+          "key": "notebookActions.menu.insertCode.minimalToolbar"
+        }
+      },
+      {
+        "chinese": "代码",
+        "count": 1,
+        "example": {
+          "module": "vs/workbench/contrib/notebook/browser/controller/insertCellActions",
+          "key": "notebookActions.menu.insertCode.ontoolbar"
+        }
+      }
+    ]
+  },
+  {
+    "module": "vs/workbench/contrib/notebook/browser/controller/insertCellActions",
+    "key": "notebookActions.menu.insertCodeCellTop",
+    "english": "Add Code",
+    "area": "workbench",
+    "candidates": [
+      {
+        "chinese": "添加代码",
+        "count": 2,
+        "example": {
+          "module": "vs/workbench/contrib/notebook/browser/controller/insertCellActions",
+          "key": "notebookActions.menu.insertCode.minimalToolbar"
+        }
+      },
+      {
+        "chinese": "代码",
+        "count": 1,
+        "example": {
+          "module": "vs/workbench/contrib/notebook/browser/controller/insertCellActions",
+          "key": "notebookActions.menu.insertCode.ontoolbar"
+        }
+      }
+    ]
+  }
+]

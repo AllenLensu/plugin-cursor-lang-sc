@@ -1,0 +1,403 @@
+{
+	"vs/workbench/contrib/search/common/searchConfiguration": {
+		"search.quickAccess.preserveInput": "在打开快速搜索视图时，控制是否自动恢复上一次输入的值。",
+		"search.quickAccess.excludeSymbolProviders": "扩展列表，这些扩展的符号提供程序在搜索符号时不会被使用。请使用扩展 ID。",
+		"search.experimental.closedNotebookResults": "显示已关闭笔记本的笔记本编辑器中丰富的内容结果。请在更改此设置后刷新搜索结果。"
+	},
+	"vs/workbench/contrib/tasks/browser/abstractTaskService": {
+		"TaskSystem.activeSame.noBackground": "任务“{0}”已处于活动状态。",
+		"restartTask": "重启任务"
+	},
+	"vs/workbench/contrib/tasks/electron-sandbox/taskService": {
+		"TaskSystem.runningTask": "存在运行中的任务。要终止它吗?",
+		"TaskSystem.terminateTask": "终止任务(&&T)",
+		"TaskSystem.noProcess": "启动的任务不再存在。如果任务已生成出后台进程，则退出 VS Code 可能会导致出现孤立的进程。若要避免此情况，请使用等待标记启动最后一个后台进程。",
+		"TaskSystem.exitAnyways": "仍要退出(&&E)"
+	},
+	"vs/workbench/contrib/terminal/browser/airlockHostTerminals": {
+		"terminal.airlockHostTerminalRefused": "此窗口位于 Airlock 容器中，因此无法在这台计算机上打开终端。请使用容器中的终端",
+		"terminalHostProcessesRefusedContext": "此窗口是否拒绝在这台计算机上运行的终端。"
+	},
+	"vs/workbench/contrib/terminal/browser/terminalActions": {
+		"workbench.action.terminal.addTooltip": "添加工具提示"
+	},
+	"vs/workbench/contrib/terminal/browser/terminalInstance": {
+		"keybindingHandling": "某些键绑定默认不会传递到终端，而是由 {0} 处理。",
+		"workspaceNotTrustedCreateTerminalCwd": "无法在不受信任的工作区中启动终端进程，当前工作目录为 {0}，用户主目录为 {1}"
+	},
+	"vs/workbench/contrib/terminal/browser/terminalTooltip": {
+		"shellIntegration.rich": "丰富",
+		"shellIntegration.basic": "基本",
+		"shellIntegration.injectionFailed": "注入未能激活",
+		"shellIntegration": "Shell 集成"
+	},
+	"vs/workbench/contrib/terminal/browser/terminalView": {
+		"terminal.externalAgentActions": "终端贡献操作"
+	},
+	"vs/workbench/contrib/terminal/browser/xterm/decorationAddon": {
+		"terminal.addToCurrentChat": "添加到当前聊天"
+	},
+	"vs/workbench/contrib/terminal/common/terminalConfiguration": {
+		"terminal.integrated.environmentChangesIndicator": "是否在每个终端上显示环境更改指示器，以说明扩展是否已更改或希望更改终端的环境。",
+		"terminal.integrated.environmentChangesIndicator.off": "禁用指示器。",
+		"terminal.integrated.environmentChangesIndicator.on": "启用指示器。",
+		"terminal.integrated.environmentChangesIndicator.warnonly": "仅当终端环境处于“过时”状态时显示警告指示器，而不显示用于说明扩展已修改终端环境的信息指示器。",
+		"terminal.integrated.windowsEnableConpty": "是否使用 ConPTY 进行 Windows 终端进程通信(需要 Windows 10 内部版本号 18309 或更高)。如果此项为 false，则使用 Winpty。"
+	},
+	"vs/workbench/contrib/terminal/common/terminalContextKey": {
+		"terminalHasContributionActions": "活动终端是否具有由贡献项拥有的操作。"
+	},
+	"vs/workbench/contrib/terminal/common/terminalStrings": {
+		"workbench.action.terminal.sendSequence": "向终端发送自定义序列"
+	},
+	"vs/workbench/contrib/terminal/electron-sandbox/terminalRemote": {
+		"workbench.action.terminal.newLocal": "新建集成终端(本地)"
+	},
+	"vs/workbench/contrib/terminalContrib/cursorCliPrompt/browser/terminal.cursorCliPrompt.contribution": {
+		"cursor.cliAlreadyInstalled": "Cursor CLI 已安装。",
+		"cursor.installCli": "安装 Cursor CLI"
+	},
+	"vs/workbench/contrib/terminalContrib/cursorDeveloper/browser/terminal.cursorDeveloper.contribution": {
+		"workbench.action.terminal.debugCheckExecutionServiceVersion": "调试: 检查终端执行服务版本"
+	},
+	"vs/workbench/contrib/terminalContrib/cursorExternalAgentStatus/browser/terminal.externalAgentStatus.contribution": {
+		"workbench.action.terminal.externalAgentActions": "外部智能体操作",
+		"workbench.action.terminal.externalAgentSecondOpinion": "第二意见",
+		"workbench.action.terminal.externalAgentAsk": "侧边聊天",
+		"workbench.action.terminal.externalAgentAsk.menu": "侧边聊天",
+		"workbench.action.terminal.externalAgentSecondOpinion.menu": "第二意见",
+		"workbench.action.terminal.externalAgentActions.title": "外部智能体操作"
+	},
+	"vs/workbench/contrib/terminalContrib/links/browser/terminalLinkManager": {
+		"terminalLinkHandler.forceExternal": "，按住 Shift 以使用浏览器"
+	},
+	"vs/workbench/contrib/terminalContrib/suggest/browser/terminal.suggest.contribution": {
+		"workbench.action.terminal.requestCompletions": "请求补全"
+	},
+	"vs/workbench/contrib/terminalContrib/suggest/common/terminalSuggestConfiguration": {
+		"runOnEnter.ignore": "忽略建议，并在不补全的情况下将 Enter 直接发送到 shell。此项用作默认值，以便建议小组件尽可能不打扰。"
+	},
+	"vs/workbench/contrib/testing/browser/testingProgressUiService": {
+		"testProgress.runningInitial": "正在运行测试...",
+		"testProgress.running": "正在运行测试，通过 {0}/{1} ({2}%)",
+		"testProgressWithSkip.running": "正在运行测试，通过 {0}/{1} ({2}%, {3} 个已跳过)",
+		"testProgress.completed": "{0}/{1} 个测试已通过({2}%)",
+		"testProgressWithSkip.completed": "{0}/{1} 个测试已通过({2}%，{3} 个已跳过)"
+	},
+	"vs/workbench/contrib/timeline/browser/timeline.view.contribution": {
+		"timelineViewIcon": "查看时间线视图的图标。"
+	},
+	"vs/workbench/contrib/tracing/browser/internalBugReportAction": {
+		"sessionRecording.flagAndAddContext": "报告错误"
+	},
+	"vs/workbench/contrib/tracing/browser/internalBugReportService": {
+		"internalBugReportFailed": "无法提交错误报告。请重试。",
+		"internalBugReportSubmitted": "错误报告已提交。感谢你帮助我们改进 Cursor!"
+	},
+	"vs/workbench/contrib/tracing/browser/internalReportLagAction": {
+		"sessionRecording.reportLag.thanks": "已报告卡顿 — 谢谢!",
+		"sessionRecording.reportLag": "报告卡顿"
+	},
+	"vs/workbench/contrib/tracing/browser/internalReportMenuAction": {
+		"sessionRecording.reportMenu.bug": "$(bug) 报告错误",
+		"sessionRecording.reportMenu.bugDetail": "标记此会话并添加上下文。",
+		"sessionRecording.reportMenu.lag": "$(watch) 报告卡顿",
+		"sessionRecording.reportMenu.lagDetail": "发送一键卡顿报告。",
+		"sessionRecording.reportMenu.title": "[内部] 报告",
+		"sessionRecording.reportMenu.placeholder": "要报告什么?",
+		"sessionRecording.reportMenu": "报告错误或卡顿"
+	},
+	"vs/workbench/contrib/tracing/browser/sessionRecordingStatusBar": {
+		"sessionRecording.statusBar.name": "[内部] 报告",
+		"sessionRecording.statusBar.ariaLabel": "[内部] 报告 - 单击以报告错误或卡顿",
+		"sessionRecording.statusBar.tooltip": "报告错误或卡顿，并自动附带会话上下文"
+	},
+	"vs/workbench/contrib/tracing/electron-sandbox/tracing.contribution": {
+		"captureDebuggingDataAgentHostHeapSnapshots": "智能体宿主堆快照",
+		"captureDebuggingDataAgentHostHeapSnapshotsDetail": "附加智能体宿主在最近一天内接近内存上限时保存的堆快照。这些快照可能包含代码、提示和附加文件。",
+		"captureDebuggingDataHeapSnapshot": "渲染器堆快照",
+		"captureDebuggingDataHeapSnapshotDetail": "捕获堆转储。这可能会使编辑器冻结，并且在内存已经很高时可能失败。还会附加最近一天内保存的扩展宿主堆快照。",
+		"captureDebuggingDataUserDirectory": "用户数据库",
+		"captureDebuggingDataUserDirectoryDetail": "如果用户数据目录小于 2 GB，则将其包含在内。若勾选，即使在隐私模式下也会上传聊天和提示数据(其中可能包含附加的代码片段)。",
+		"captureDebuggingDataLogsDetail": "包含最近的 Cursor 日志会话。",
+		"captureDebuggingDataFeatureFlagsAndExtensions": "功能标志和扩展摘要",
+		"captureDebuggingDataFeatureFlagsAndExtensionsDetail": "包含功能门控、实验、动态配置和已安装的扩展。",
+		"captureDebuggingDataProcessDiagnostics": "进程诊断",
+		"captureDebuggingDataProcessDiagnosticsDetail": "包含最近的进程内存和 CPU 历史记录。",
+		"captureDebuggingDataAgentTranscripts": "智能体会话记录(最近 7 天)",
+		"captureDebuggingDataAgentTranscriptsDetail": "包含此工作区最近的 Cursor 智能体会话记录。若勾选，即使在隐私模式下也会上传聊天和提示数据(其中可能包含附加的代码片段)。",
+		"captureDebuggingDataPickerTitle": "捕获并发送调试数据",
+		"captureDebuggingDataPickerPlaceholder": "选择要收集的调试数据。按 Enter 继续。",
+		"captureDebuggingDataNotePlaceholder": "出了什么问题?(可选)",
+		"capturingAndSendingDebuggingData": "正在捕获并发送调试数据...",
+		"capturingDebuggingData": "正在捕获调试数据...",
+		"debuggingDataSavedLocally": "调试数据已保存在本地。",
+		"revealInOS": "在文件资源管理器中显示",
+		"debuggingDataUploadSuccess": "调试数据已成功发送。",
+		"debuggingDataCaptureFailed": "捕获或发送调试数据失败。{0}",
+		"watchForCrashesConfirm": "切换崩溃监视",
+		"watchForCrashesWarning": "监视崩溃可能会使编辑器变慢，并在发生崩溃时自动发送调试数据。确定要继续吗?",
+		"watchingForCrashes": "正在监视崩溃。",
+		"notWatchingForCrashes": "已停止监视崩溃。",
+		"forceOOMConfirm": "强制渲染器内存溢出崩溃",
+		"forceOOMWarning": "这将持续分配内存，直到渲染器内存耗尽并崩溃。窗口会变得无响应，然后重新加载。请用此操作测试崩溃监视。是否继续?",
+		"forceOOMButton": "立即崩溃",
+		"captureAndSendDebuggingData": "捕获并发送调试数据",
+		"toggleWatchForCrashes": "切换崩溃监视",
+		"forceRendererOOM": "强制渲染器内存溢出崩溃"
+	},
+	"vs/workbench/contrib/ui/browser/aiInput/plugins/mentions/MentionNode": {
+		"mentionChip.removeMention": "移除提及"
+	},
+	"vs/workbench/contrib/ui/browser/buttons/AgentsWindowButton": {
+		"agentsWindow.hoverGraphicTitle": "认识新的 Cursor",
+		"agentsWindow.hoverSectionParallelTitle": "并行运行多个智能体",
+		"agentsWindow.hoverSectionParallelBody": "跨仓库的全部智能体——本地、远程 SSH 和云端",
+		"agentsWindow.hoverSectionDeeperTitle": "随时深入查看",
+		"agentsWindow.hoverSectionDeeperBody": "需要时即可使用编辑器中最实用的部分，例如文件和浏览器",
+		"agentsWindowButtonLabel": "智能体窗口"
+	},
+	"vs/workbench/contrib/update/browser/update": {
+		"updateDidNotInstallRetrying": "{0} 未能完成更新到版本 {1}。正在重新下载更新。",
+		"updateDidNotInstall": "{0} 未能完成版本 {1} 的更新安装。",
+		"update service disabled": "由于你正在以管理员身份运行 {0} 的用户范围安装，更新已禁用。",
+		"update service": "更新服务",
+		"thereIsUpdateAvailable": "有可用的更新。",
+		"download update": "下载更新",
+		"later": "稍后",
+		"packageUpdateAvailable": "可通过 {2} 获取较新的 {0} 包({1})。"
+	},
+	"vs/workbench/contrib/update/browser/updateClientOrOpenUrl": {
+		"updateClientFailed": "无法自动更新 {0}。"
+	},
+	"vs/workbench/contrib/url/browser/trustedDomainsValidator": {
+		"alwaysTrustDomain": "始终打开此域(&&A)"
+	},
+	"vs/workbench/contrib/utilityHostTrace/browser/utilityHostTrace.contribution": {
+		"utilityHostRpcTrace": "实用工具宿主 RPC 跟踪"
+	},
+	"vs/workbench/contrib/webview/electron-sandbox/webviewCommands": {
+		"openToolsDescription": "打开活动 Web 视图的开发人员工具",
+		"iframeWebviewAlert": "使用标准开发工具调试基于 iFrame 的 Web 视图",
+		"doNotIgnoreMenuShortcuts": "不要忽略菜单快捷方式",
+		"openToolsLabel": "打开 Webview 开发人员工具",
+		"refreshCssLabel": "重新加载 CSS"
+	},
+	"vs/workbench/contrib/welcomeGettingStarted/common/gettingStartedContent": {
+		"gettingStarted.topLevelShowWalkthroughs.title": "打开演练...",
+		"gettingStarted.topLevelShowWalkthroughs.description": "查看编辑器或扩展的演练"
+	},
+	"vs/workbench/contrib/workspace/browser/workspace.view.contribution": {
+		"openLooseFileWorkspaceDetails": "你尝试在受信任的工作区中打开不受信任的文件。",
+		"openLooseFileWindowDetails": "你尝试在受信任的窗口中打开不受信任的文件。",
+		"openLooseFileLearnMore": "如果不想打开不受信任的文件，则建议在新窗口中通过受限模式打开它们，因为这些文件可能是恶意文件。请参阅[我们的文档](https://aka.ms/vscode-workspace-trust)，了解详细信息。",
+		"openLooseFileWorkspaceMesssage": "是否要允许此工作区中不受信任的文件?",
+		"openLooseFileWindowMesssage": "是否要在此窗口中允许不受信任的文件?",
+		"newWindow": "在受限模式中打开(&&R)",
+		"openLooseFileWorkspaceCheckbox": "记住我对所有工作区的决定",
+		"workspaceTrust": "是否信任此工作区中的文件的作者?",
+		"folderTrust": "是否信任此文件夹中文件的作者?",
+		"immediateTrustRequestMessage": "如果不信任当前打开的文件或文件夹的源，则尝试使用的功能可能会带来安全风险。",
+		"grantWorkspaceTrustButton": "信任工作区并继续(&&T)",
+		"grantFolderTrustButton": "信任文件夹并继续(&&T)",
+		"manageWorkspaceTrustButton": "管理(&&M)",
+		"immediateTrustRequestLearnMore": "如果不信任这些文件的作者，则建议不要继续，因为这些文件可能是恶意文件。请参阅[我们的文档](https://aka.ms/vscode-workspace-trust)，了解详细信息。",
+		"addWorkspaceFolderMessage": "是否信任此文件夹中文件的作者?",
+		"addWorkspaceFolderDetail": "你正在将当前不受信任的文件添加到受信任的工作区。是否信任这些新文件的作者?",
+		"checkboxString": "信任上级文件夹“{0}”中所有文件的作者",
+		"trustOption": "是，我信任此作者(&&Y)",
+		"trustFolderOptionDescription": "信任文件夹并启用所有功能",
+		"trustWorkspaceOptionDescription": "信任工作区并启用所有功能",
+		"dontTrustOption": "否，我不信任此作者(&&N)",
+		"dontTrustFolderOptionDescription": "在受限模式下打开文件夹",
+		"dontTrustWorkspaceOptionDescription": "在受限模式下打开工作区",
+		"workspaceStartupTrustDetails": "{0} 提供可以自动在此工作区中执行文件的功能。",
+		"folderStartupTrustDetails": "{0} 提供可以自动在此文件夹中执行文件的功能。",
+		"startupTrustRequestLearnMore": "如果不信任这些文件的作者，则建议继续使用受限模式，因为这些文件可能是恶意文件。请参阅[我们的文档](https://aka.ms/vscode-workspace-trust)，了解详细信息。",
+		"restrictedModeBannerAriaLabelWindow": "受限模式旨在实现安全地浏览代码。信任此窗口以启用所有功能。使用导航键访问横幅操作。",
+		"restrictedModeBannerAriaLabelFolder": "受限模式旨在实现安全地浏览代码。信任此文件夹以启用所有功能。使用导航键访问横幅操作。",
+		"restrictedModeBannerAriaLabelWorkspace": "受限模式旨在实现安全地浏览代码。信任此工作区以启用所有功能。使用导航键访问横幅操作。",
+		"restrictedModeBannerMessageWindow": "受限模式旨在实现安全地浏览代码。信任此窗口以启用所有功能。",
+		"restrictedModeBannerMessageFolder": "受限模式旨在实现安全地浏览代码。信任此文件夹以启用所有功能。",
+		"restrictedModeBannerMessageWorkspace": "受限模式旨在实现安全地浏览代码。信任此工作区以启用所有功能。",
+		"status.ariaUntrustedWindow": "受限模式: 某些功能已禁用，因为此窗口不受信任。",
+		"status.tooltipUntrustedWindow2": "在受限模式下运行\n\n某些[功能被禁用]({0})，因为此[窗口不受信任]({1})。",
+		"status.ariaUntrustedFolder": "受限模式: 某些功能已禁用，因为此文件夹不受信任。",
+		"status.tooltipUntrustedFolder2": "在受限模式下运行\n\n某些[功能被禁用]({0})，因为此[文件夹不受信任]({1})。",
+		"status.ariaUntrustedWorkspace": "受限模式: 某些功能已禁用，因为此工作区不受信任。",
+		"status.tooltipUntrustedWorkspace2": "在受限模式下运行\n\n某些[功能被禁用]({0})，因为此[工作区不受信任]({1})。",
+		"untrusted": "受限模式",
+		"status.workspaceName": "工作区名称",
+		"status.workspaceNameAria": "工作区: {0}",
+		"status.workspaceNameTooltip": "当前工作区: {0}",
+		"workspaceTrustEditor": "工作区信任编辑器"
+	},
+	"vs/workbench/contrib/workspace/browser/workspaceTrustEditor": {
+		"trustMessage": "信任当前文件夹或其父文件夹“{0}”中所有文件的作者。",
+		"trustParentButton": "信任父级"
+	},
+	"vs/workbench/contrib/workspaces/browser/workspaces.contribution": {
+		"foundWorkspaceLinked": "此文件夹包含工作区文件“{0}”。是否要打开它? {1}有关工作区文件的信息。",
+		"foundWorkspacesLinked": "此文件夹包含多个工作区文件。是否要打开其中一个? {0}有关工作区文件的信息。"
+	},
+	"vs/workbench/electron-sandbox/actions/developerActions.cursor": {
+		"logDataDirectories": "记录数据目录",
+		"reloadWindowWithHMR": "使用 HMR 重新加载",
+		"hangRendererThread": "挂起渲染器线程(30 秒)",
+		"devForceNextSmartModeClassifierBlock": "开发: 强制下一次自动审查拦截",
+		"devDelayNextSmartModeClassifier": "开发: 延迟下一次自动审查({0} 秒)",
+		"restartInTemporaryProfile": "在临时配置文件中重启",
+		"startInfiniteComposerSession": "启动无限 Composer 会话",
+		"stopInfiniteComposerSession": "停止无限 Composer 会话",
+		"devAutoLoginFree": "开发: 自动登录(免费)",
+		"devAutoLoginProTrial": "开发: 自动登录(Pro 试用)",
+		"devAutoLoginPro": "开发: 自动登录(Pro)",
+		"devAutoLoginProPlusTrial": "开发: 自动登录(Pro Plus 试用)",
+		"devAutoLoginProPlus": "开发: 自动登录(Pro Plus)",
+		"devAutoLoginUltra": "开发: 自动登录(Ultra)",
+		"devAutoLoginEnterprise": "开发: 自动登录(Enterprise)",
+		"devAutoLoginFakeForTesting": "开发: 自动登录(用于测试的伪令牌)",
+		"devSetApplicationStorageForTesting": "开发: 设置应用程序存储(用于测试)",
+		"devGetApplicationStorageForTesting": "开发: 获取应用程序存储(用于测试)",
+		"devIsAgentHostEnabledForTesting": "开发: 智能体宿主是否已启用(用于测试)",
+		"devBatchSetApplicationStorageForTesting": "开发: 批量设置应用程序存储(用于测试)",
+		"devSetComposerModeAutoRun": "开发: 设置 Composer 模式 AutoRun(用于测试)",
+		"devGetComposerDataForTesting": "开发: 获取 Composer 数据(用于测试)",
+		"setAnyrunCluster": "设置 Anyrun 集群",
+		"devGetAutorunSettingForTesting": "开发: 获取 Autorun 设置(用于测试)",
+		"devGetLoadedPluginsSummaryForTesting": "开发: 获取已加载插件摘要(用于测试)",
+		"devWaitForSlashMenuSourcesForTesting": "开发: 等待斜杠菜单来源(用于测试)",
+		"devGetModelConfigForSurfaceForTesting": "开发: 获取界面的模型配置(用于测试)",
+		"simulateNewUser": "模拟新用户"
+	},
+	"vs/workbench/electron-sandbox/actions/developerActions": {
+		"toggleDevTools": "切换开发人员工具",
+		"configureRuntimeArguments": "配置运行时参数",
+		"reloadWindowWithExtensionsDisabled": "在禁用扩展的情况下重新加载",
+		"revealUserDataFolder": "显示用户数据文件夹",
+		"showGPUInfo": "显示 GPU 信息"
+	},
+	"vs/workbench/electron-sandbox/actions/devRefreshTeamAdminSettingsAction.cursor": {
+		"devRefreshTeamAdminSettings": "开发: 刷新团队管理员设置(用于测试)"
+	},
+	"vs/workbench/electron-sandbox/actions/installActions": {
+		"successFrom": "已成功从 PATH 卸载 Shell 命令“{0}”。",
+		"shellCommand": "Shell 命令",
+		"uninstall": "从 PATH 中卸载“{0}”命令"
+	},
+	"vs/workbench/electron-sandbox/actions/windowActions": {
+		"quitConfirmationTitle": "退出 Cursor?",
+		"closeWindowConfirmationTitle": "关闭此窗口?",
+		"closeWindowConfirmationMessage": "确定要关闭此窗口吗?",
+		"quitButtonLabel": "退出",
+		"miCloseWindow": "关闭窗口(&&E)",
+		"miZoomIn": "放大(&&Z)",
+		"miSetZoomLevel": "设置缩放级别(&&S)",
+		"miZoomOut": "缩小(&&Z)",
+		"miZoomReset": "重置缩放(&&R)",
+		"close": "关闭窗口",
+		"windowGroup": "窗口组",
+		"windowDirtyAriaLabel": "{0}，有未保存更改的窗口",
+		"current": "当前窗口",
+		"switchWindowPlaceHolder": "选择切换的窗口",
+		"closeWindow": "关闭窗口",
+		"zoomIn": "放大",
+		"setZoomLevel": "设置缩放级别",
+		"zoomOut": "缩小",
+		"zoomReset": "重置缩放",
+		"switchWindow": "切换窗口...",
+		"quickSwitchWindow": "快速切换窗口..."
+	},
+	"vs/workbench/electron-sandbox/desktop.contribution": {
+		"miExit": "退出(&&X)",
+		"application.shellEnvironmentResolutionTimeout": "控制在应用程序尚未从终端启动时放弃解析 shell 环境之前的超时(以秒为单位)。有关详细信息，请参阅我们的 [文档](https://go.microsoft.com/fwlink/?linkid=2149667)。",
+		"confirmSaveUntitledWorkspace": "控制切换到另一个工作区时是否显示确认对话框，以询问是保存还是放弃窗口中打开的无标题工作区。禁用确认对话框将始终放弃无标题工作区。",
+		"window.openWithoutArgumentsInNewWindow.on": "打开一个新的空窗口。",
+		"window.openWithoutArgumentsInNewWindow.off": "聚焦到上一活动的运行实例。",
+		"openWithoutArgumentsInNewWindow": "在另一实例无参启动时，控制是打开新的空窗口或是聚焦到最后运行的实例。\n注意，此设置可能会被忽略 (例如，在使用 `--new-window` 或 `--reuse-window` 命令行选项时)。",
+		"window.reopenFolders.preserve": "始终重新打开所有窗口。如果打开文件夹或工作区(例如从命令行打开)，它将作为新窗口打开，除非它之前已打开。如果文件已打开，则它们将与以前打开的编辑器一起在还原的一个窗口中打开。",
+		"window.reopenFolders.all": "重新打开所有窗口，除非文件夹、工作区或文件已打开(例如从命令行打开)。如果打开某个文件，它将替换以前在窗口中打开的任何编辑器。",
+		"window.reopenFolders.folders": "重新打开已打开文件夹或工作区的所有窗口，除非文件夹、工作区或文件已打开(例如从命令行打开)。如果打开某个文件，它将替换以前在窗口中打开的任何编辑器。",
+		"window.reopenFolders.one": "重新打开最后一个活动窗口，除非文件夹、工作区或文件已打开(例如从命令行打开)。如果打开某个文件，它将替换以前在窗口中打开的任何编辑器。",
+		"window.reopenFolders.none": "从不重新打开窗口。如果文件夹或工作区未打开(例如从命令行打开)，将出现一个空窗口。",
+		"restoreWindows": "控制其中的窗口和编辑器在打开时的还原方式。",
+		"restoreFullscreen": "控制在全屏模式下退出时窗口是否应还原为全屏模式。",
+		"zoomLevel": "调整所有窗口的默认缩放级别。大于 `0` 的每个增量（例如 `1`）或小于 0 的每个增量（例如 `-1`）表示放大或缩小 `20%`。还可以输入小数以使用更细的粒度调整缩放级别。请参阅 {0}，了解将“放大”和“缩小”命令配置为将缩放级别应用于所有窗口还是仅应用于活动窗口。",
+		"zoomPerWindow": "控制“放大”和“缩小”命令是将缩放级别应用于所有窗口还是仅应用于活动窗口。请参阅 {0} 以配置所有窗口的默认缩放级别。",
+		"window.newWindowDimensions.default": "在屏幕中心打开新窗口。",
+		"window.newWindowDimensions.inherit": "以与上一个活动窗口相同的尺寸打开新窗口。",
+		"window.newWindowDimensions.offset": "打开与上次活动窗口具有相同尺寸的新窗口，并带有偏移位置。",
+		"window.newWindowDimensions.maximized": "打开最大化的新窗口。",
+		"window.newWindowDimensions.fullscreen": "在全屏模式下打开新窗口。",
+		"newWindowDimensions": "控制在至少已打开一个窗口时打开新窗口的维度。请注意，此设置对打开的第一个窗口没有影响。第一个窗口将始终还原为你在关闭之前退出窗口时的大小和位置。",
+		"closeWhenEmpty": "控制关闭最后一个编辑器时是否还应关闭该窗口。此设置仅适用于不显示文件夹的窗口。",
+		"window.doubleClickIconToClose": "如果启用，当双击标题栏中的应用程序图标时，此设置将关闭窗口。该窗口将无法使用图标拖动。仅当 {0} 设置为 `custom` 时，此设置才有效。",
+		"titleBarStyle": "将窗口标题栏的外观调整为操作系统本机或自定义。在 Linux 和 Windows 上，此设置还会影响应用程序菜单和上下文菜单的外观。更改需要完全重启才能应用。",
+		"controlsStyle": "将窗口控件的外观调整为操作系统原生样式、自定义绘制或隐藏状态。更改需要完全重启才能应用。",
+		"dialogStyle": "调整对话框窗口的外观。",
+		"window.nativeTabs": "启用 macOS Sierra 窗口选项卡。请注意，更改需要在完全重启后才能应用，并且本机选项卡将禁用自定义标题栏样式(如果已配置)。",
+		"window.nativeFullScreen": "控制在 macOS 上是否应使用本机全屏。禁用此选项可防止 macOS 在全屏时创建新空间。",
+		"window.clickThroughInactive": "启用后，点击非活动窗口后将在激活窗口的同时触发鼠标之下的元素 (若可点击)。禁用后，点击非活动窗口仅能激活窗口，再次点击才能触发元素。",
+		"telemetry.enableCrashReporting": "启用要收集的崩溃报告。这有助于我们提高稳定性。\n此选项需重启才可生效。",
+		"enableCrashReporterDeprecated": "如果此设置为 false，则无论新设置的值如何，都不会发送遥测数据。由于合并到 {0} 设置，目前已弃用。",
+		"touchbar.enabled": "启用键盘上的 macOS 触控栏按钮 (若可用)。",
+		"touchbar.ignored": "触控栏中不应显示的条目的一组标识符(例如 `workbench.action.navigateBack`)。",
+		"security.promptForLocalFileProtocolHandling": "启用此参数后，每次即将通过协议处理程序打开本地文件或工作区时，都会弹出一个请求确认的对话框。",
+		"security.promptForRemoteFileProtocolHandling": "启用此参数后，每次即将通过协议处理程序打开远程文件或工作区时，都会弹出一个请求确认的对话框。",
+		"argv.locale": "要使用的显示语言。选取其他语言需要安装关联的语言包。",
+		"argv.disableLcdText": "禁用 LCD 字体抗锯齿。",
+		"argv.proxyBypassList": "对于给定的分号分隔的主机列表，绕过任何指定代理。示例值 \"<local>;*.microsoft.com;*foo.com;1.2.3.4:5678\" 将对除以下主机外的所有主机使用代理服务器: 本地地址(localhost、127.0.0.1 等)、microsoft.com 子域、包含后缀 foo.com 的主机以及位于 1.2.3.4:5678 的主机",
+		"argv.disableHardwareAcceleration": "禁用硬件加速。仅在遇到图形问题时更改此选项。",
+		"argv.forceColorProfile": "允许替代要使用的颜色配置文件。如果发现颜色显示不佳，可尝试将此项设置为 `srgb` 并重启。",
+		"argv.enableCrashReporter": "允许禁用崩溃报告；如果更改了值，则应重启应用。",
+		"argv.crashReporterId": "用于关联从此应用实例发送的崩溃报表的唯一 ID。",
+		"argv.enebleProposedApi": "为扩展 ID (如 `vscode.git`)的列表启用建议的 API。建议的 API 不稳定，可能随时中断且不发出警告。仅应针对扩展开发和测试目的设置该项。",
+		"argv.logLevel": "要使用的日志级别。默认值为 “info”。允许的值为 “error”、“warn”、“info”、“debug”、“trace” 和 “off”。",
+		"argv.disableChromiumSandbox": "禁用 Chromium 沙盒。当在 Linux 上以提升的权限运行 VS Code 并在 Windows 上的 Applocker 下运行时，这很有用。",
+		"argv.useInMemorySecretStorage": "确保内存中存储将用于机密存储，而不是使用 OS 的凭据存储。此选项通常在运行 VS Code 扩展测试或遇到凭据存储问题时使用。",
+		"argv.enableReactDevTools": "加载 React Developer Tools 扩展，以便 Chrome DevTools 显示 Components 和 Profiler 选项卡。内部打包版本(lab)会捆绑此扩展并默认开启；设为 false 可关闭。开发版本默认关闭；“设置”>“开发人员”中的 React DevTools 开关可将其打开。其他版本默认关闭，并且还需要本地安装的扩展缓存。需要重启。",
+		"argv.force-renderer-accessibility": "强制渲染器可访问。仅当在 Linux 上使用屏幕阅读器时才更改此设置。在其他平台上，渲染器将自动可访问。如果 editor.accessibilitySupport 为 on，则会自动设置此标志。",
+		"argv.passwordStore": "配置用于在 Linux 上存储机密的后端。此参数在 Windows 和 macOS 上会被忽略。",
+		"newTab": "新建窗口标签页",
+		"showPreviousTab": "显示上一个窗口选项卡",
+		"showNextWindowTab": "显示下一个窗口选项卡",
+		"moveWindowTabToNewWindow": "将窗口选项卡移动到新窗口",
+		"toggleWindowTabsBar": "切换窗口选项卡栏"
+	},
+	"vs/workbench/electron-sandbox/desktop.main": {
+		"join.closeStorage": "正在保存界面状态"
+	},
+	"vs/workbench/electron-sandbox/parts/dialogs/dialogHandler": {
+		"aboutCopyright": "版权所有 © 2026 Anysphere。保留所有权利。"
+	},
+	"vs/workbench/electron-sandbox/window": {
+		"sharedProcessCrash": "共享后台进程意外终止。请重新启动应用程序以进行恢复。",
+		"keychainWriteError": "将登录信息写入密钥链失败，出现错误“{0}”。",
+		"troubleshooting": "故障排除指南",
+		"runningTranslated": "你正在运行 {0} 的仿真版本。为了获得更好的性能，请下载适用于计算机的本机 arm64 版本的 {0} 内部版本。",
+		"showArgvParseWarning": "运行时参数文件 \"argv.json\" 包含错误。请更正它们并重启。",
+		"proxyAuthRequired": "需要代理身份验证",
+		"loginButton": "登录(&&L)",
+		"username": "用户名",
+		"password": "密码",
+		"proxyDetail": "代理 {0} 需要用户名和密码。",
+		"rememberCredentials": "记住我的凭据",
+		"willShutdownDetail": "以下操作仍在运行: \n{0}",
+		"shutdownErrorClose": "意外错误导致无法关闭窗口",
+		"shutdownErrorQuit": "意外错误导致无法退出应用程序",
+		"shutdownErrorReload": "意外错误导致无法重新加载窗口",
+		"shutdownErrorLoad": "意外错误导致无法更改工作区",
+		"shutdownTitleClose": "关闭窗口需要的时间较长...",
+		"shutdownTitleQuit": "退出应用程序需要的时间较长...",
+		"shutdownTitleReload": "重新加载窗口需要的时间较长...",
+		"shutdownTitleLoad": "更改工作区需要的时间较长...",
+		"runningAsRoot": "不建议以 root 用户身份运行 {0}。",
+		"appRootWarning.banner": "在更新时，存储在安装文件夹(“{0}”)中的文件可能会被覆盖或删除(不可撤销)，而不会发出警告。",
+		"macoseolmessage": "{1} 上的 {0} 将很快停止接收更新。请考虑升级 macOS 版本。",
+		"resolveShellEnvironment": "正在解析 shell 环境...",
+		"zoomOut": "缩小",
+		"zoomIn": "放大",
+		"status.windowZoom": "窗口缩放",
+		"zoomNumber": "缩放级别: {0} ({1}%)"
+	}
+}

@@ -1,0 +1,401 @@
+{
+	"vs/workbench/contrib/composer/browser/promptInputTrays/PromptInputAnchoredTrayHovercard.react": {
+		"composer.anchoredTray.previewAriaLabel": "{0} 的预览"
+	},
+	"vs/workbench/contrib/composer/browser/realtimeVoice/realtimeVoiceTranscriptEditor": {
+		"composer.realtimeVoice.transcriptEditor": "语音通话"
+	},
+	"vs/workbench/contrib/composer/browser/realtimeVoice/voiceCallTranscriptLabel": {
+		"glass.realtimeVoice.callTabLabelUnknown": "语音通话",
+		"glass.realtimeVoice.callTabLabel": "语音通话 · {0}"
+	},
+	"vs/workbench/contrib/composer/browser/sendFeedbackAction": {
+		"cursor.localMode.sendFeedback": "发送反馈"
+	},
+	"vs/workbench/contrib/composer/browser/transcript/composerAgentNavigation": {
+		"agentNavigation.subagentNotFound": "找不到子智能体"
+	},
+	"vs/workbench/contrib/composer/browser/transcript/composerProjectSetupRows": {
+		"composer.projectSetupLoading": "正在设置项目"
+	},
+	"vs/workbench/contrib/composer/browser/transcript/ComposerReactTranscriptRoot.react": {
+		"composer.transcript.regionLabel": "聊天记录"
+	},
+	"vs/workbench/contrib/composer/browser/transcript/composerTranscriptToolRuntime": {
+		"composerTranscript.openFileFailed": "无法打开 {0}"
+	},
+	"vs/workbench/contrib/composer/browser/transcript/transcriptLinkAddToChat": {
+		"glass.addToChat.ignoredFile": "Cursor 会忽略 {0}，因此无法将其添加到聊天。"
+	},
+	"vs/workbench/contrib/composer/browser/utils/agentTurnOutcome": {
+		"agentTurnOutcome.unknownError": "智能体遇到了错误。"
+	},
+	"vs/workbench/contrib/composer/browser/utils/firstSteerNotice": {
+		"firstSteerNoticeTitle": "你的消息引导了智能体，且没有停止它",
+		"firstSteerNoticeDescription": "“新消息”已设置为引导"
+	},
+	"vs/workbench/contrib/composer/browser/utils/placementConsent": {
+		"composer.placementConsent.allowArrivedLate": "你的“允许”到达时，在计算机上运行的请求已经关闭。你可以在聊天输入框下方的“运行位置”菜单中允许它。",
+		"composer.placementConsent.allowArrivedLateForMachine": "你对 {0} 的“允许”在请求关闭后才到达。你可以在聊天输入框下方的“运行位置”菜单中允许它。",
+		"composer.placementConsent.allowArrivedLateAskAgain": "你的“允许”到达时，在计算机上运行的请求已经关闭。请让智能体再次请求访问权限。",
+		"composer.placementConsent.allowArrivedLateForMachineAskAgain": "你对 {0} 的“允许”在请求关闭后才到达。请让智能体再次请求访问权限。"
+	},
+	"vs/workbench/contrib/composer/electron-sandbox/browserAutomation.contribution": {
+		"crashBrowserWebviewRenderer": "开发人员: 使浏览器 Webview 渲染器崩溃",
+		"orphanBrowserViewEntry": "开发人员: 孤立浏览器视图条目"
+	},
+	"vs/workbench/contrib/composer/electron-sandbox/webviewBrowserManager": {
+		"passkeyRequestStalled": "此页面正在等待通行密钥或安全密钥。如果使用硬件安全密钥，请插入并轻触它以继续。",
+		"passkeyHybridUnsupported": "此登录需要通过二维码使用你的手机或平板电脑上的通行密钥，而 Cursor 浏览器无法显示该二维码。请在普通浏览器中打开此页面以继续。",
+		"browserContextMenu.openLinkExternalBrowser": "在浏览器中打开链接",
+		"browserContextMenu.openLinkNewTab": "在新标签页中打开链接",
+		"browserContextMenu.openLinkBackgroundTab": "在后台标签页中打开链接",
+		"browserContextMenu.copyLinkAddress": "复制链接地址",
+		"browserContextMenu.openMediaExternalBrowser": "在浏览器中打开媒体",
+		"browserContextMenu.openMediaNewTab": "在新标签页中打开媒体",
+		"browserContextMenu.copyMediaAddress": "复制媒体地址",
+		"browserContextMenu.copyImage": "复制图像",
+		"browserContextMenu.forward": "前进",
+		"browserContextMenu.inspectElement": "检查元素"
+	},
+	"vs/workbench/contrib/continuousProfiling/electron-sandbox/continuousProfiling.contribution": {
+		"captureProfileConfirm": "捕获性能配置文件",
+		"captureProfileWarning": "此操作将为当前窗口创建 CPU 和分配配置文件。该配置文件将安全上传以供分析。是否继续?",
+		"capturingProfile": "正在捕获性能配置文件...",
+		"profileCaptured": "已启动性能配置文件。\n\n配置文件 ID: {0}",
+		"profileCaptureFailed": "启动性能配置文件失败。",
+		"profileCaptureError": "启动性能配置文件时出错: {0}",
+		"profilingStatus": "性能分析状态: 隐私模式: {0}，活动配置文件: {1}，已计划的配置文件: {2}",
+		"captureProfile": "捕获性能配置文件",
+		"showProfilingStatus": "显示性能分析状态"
+	},
+	"vs/workbench/contrib/cpuMonitor/electron-sandbox/cpuMonitor.contribution": {
+		"cpuMonitorEnabled": "控制 Cursor 是否监视持续的高 CPU 使用率，并提议捕获诊断进程快照。仅对 Anysphere 内部用户生效。",
+		"developer.captureAndUploadProcessSnapshot.label": "捕获并上传进程快照"
+	},
+	"vs/workbench/contrib/cursorAiCpp/electron-sandbox/cppAccessibility": {
+		"cursorTab.line": "第 {0} 行",
+		"cursorTab.lines": "第 {0} 行到第 {1} 行",
+		"cursorTab.announceInsertion": "Cursor Tab: {0}",
+		"cursorTab.announceEdit": "{0} 的 Cursor Tab 建议",
+		"cursorTab.viewIntro": "{0} 的 Cursor Tab 建议。",
+		"cursorTab.viewCurrent": "当前:",
+		"cursorTab.viewSuggested": "建议:",
+		"cursorTab.viewAccept": "接受它 ({0})，或按 Escape 返回编辑器。在编辑器中，Tab 接受此建议，Escape 关闭此建议。",
+		"cursorTab.viewAcceptNoKeybinding": "按 Escape 返回编辑器。在编辑器中，Tab 接受此建议，Escape 关闭此建议。",
+		"cursorTab.announceWithHint": "{0}，在辅助视图中检查此项 ({1})",
+		"cursorTab.acceptFromAccessibleView": "接受 Cursor Tab 建议"
+	},
+	"vs/workbench/contrib/cursorAiFeedback/browser/aiFeedbackActions": {
+		"miReportIssue": "报告问题(&&I)",
+		"miGiveFeedback": "提供反馈(&&F)..."
+	},
+	"vs/workbench/contrib/cursorAiMarkdown/browser/chatFileReferenceContextMenu": {
+		"chatRevealInWindows": "在文件资源管理器中显示",
+		"chatRevealInMac": "在 Finder 中显示",
+		"chatOpenContainer": "打开所在文件夹",
+		"chatFileAddToChat": "添加到聊天"
+	},
+	"vs/workbench/contrib/cursorBlame/browser/cursorBlame.contribution": {
+		"cursorBlame.openFileBlameTitle": "打开文件 Blame",
+		"cursorBlame.category": "Cursor Blame",
+		"cursorBlame.openCommitTitle": "查看提交",
+		"cursorBlame.pasteCommitHash": "粘贴提交哈希",
+		"cursorBlame.viewCommitTitle": "查看提交",
+		"cursorBlame.noGit": "找不到 Git 存储库",
+		"cursorBlame.uncommittedLine": "此行尚未提交",
+		"cursorBlame.explorerContextMenu": "Cursor Blame",
+		"cursorBlameSubmenu": "Cursor Blame",
+		"toggleFileBlame": "切换文件 Blame",
+		"cursorBlameConfigurationTitle": "Cursor Blame",
+		"cursor.blame.hoverDelay": "控制 Cursor Blame 窗格中悬停出现前的延迟(毫秒)。如果未设置，则使用 `#editor.hover.delay#`，最小值为 500 毫秒。"
+	},
+	"vs/workbench/contrib/cursorExampleUtilityHost/electron-sandbox/exampleUtilityHostCommands": {
+		"exampleUtilityHost.echo": "示例实用工具宿主回显",
+		"exampleUtilityHost.echo.ok": "示例实用工具宿主回显: “{0}” ({1} 毫秒往返)",
+		"exampleUtilityHost.echo.err": "示例实用工具宿主回显失败: {0}",
+		"exampleUtilityHost.ping": "示例实用工具宿主 Ping",
+		"exampleUtilityHost.ping.ok": "示例实用工具宿主 Ping: 宿主时间 {0}，{1} 毫秒往返",
+		"exampleUtilityHost.ping.err": "示例实用工具宿主 Ping 失败: {0}",
+		"exampleUtilityHost.tick": "示例实用工具宿主节拍",
+		"exampleUtilityHost.tick.start": "示例实用工具宿主节拍: 正在等待节拍…",
+		"exampleUtilityHost.tick.progress": "示例实用工具宿主节拍: {0}/{1} (宿主时间 {2})",
+		"exampleUtilityHost.tick.ok": "示例实用工具宿主节拍: 在 {1} 毫秒内收到 {0} 个节拍 (最后一次宿主时间 {2})",
+		"exampleUtilityHost.tick.partial": "示例实用工具宿主节拍: 在 {0}/{1} 个节拍后已取消",
+		"exampleUtilityHost.tick.err": "示例实用工具宿主节拍: 未收到节拍 (流提前结束)",
+		"exampleUtilityHost.stressTest.start": "示例实用工具宿主压力测试 ({0}): 正在接收有效负载…",
+		"exampleUtilityHost.stressTest.ok": "示例实用工具宿主压力测试 ({0}): 在 {2} 毫秒内收到 {1} MiB ({3} MiB/s)",
+		"exampleUtilityHost.stressTest.err": "示例实用工具宿主压力测试 ({0}) 失败: {1}",
+		"exampleUtilityHost.stressTest": "示例实用工具宿主压力测试 (16 MiB)",
+		"exampleUtilityHost.stressTestLarge": "示例实用工具宿主大型压力测试 (63 MiB，低于 64 MiB 隧道上限)"
+	},
+	"vs/workbench/contrib/cursorLocalTrace/browser/cursorLocalTrace.contribution": {
+		"cursorLocalTraceModeConfigurationTitle": "本地跟踪模式",
+		"cursorLocalTraceMode.settingTitle": "本地跟踪模式",
+		"cursorLocalTraceMode": "启用后，会在本地记录性能标记和测量值(例如在 Chrome DevTools 的“性能”中)，并将 VS Code RPC 镜像到 DevTools 的“网络”标签页。"
+	},
+	"vs/workbench/contrib/cursorMarkdownPlanEditor/browser/markdownPlanEditorActions": {
+		"toggleMarkdownPlanEditorMode": "切换编辑器模式",
+		"markdownPlanEditor": "Markdown 计划编辑器",
+		"acceptPlan": "构建计划",
+		"closeFindWidget": "关闭查找小组件"
+	},
+	"vs/workbench/contrib/cursorMarkdownPlanEditor/browser/PlanRichTextEditor.react": {
+		"markdownPlanEditor.ariaLabel": "计划"
+	},
+	"vs/workbench/contrib/cursorMarkdownPlanEditor/browser/usePlanEditorState": {
+		"markdownPlanEditor.fileChangedWhileDirty": "文件内容较新。要用你的更改覆盖该文件，还是还原你的更改?"
+	},
+	"vs/workbench/contrib/cursorOrigin/browser/cursorOrigin.contribution": {
+		"cursorOrigin.category": "Cursor Origin",
+		"cursorOrigin.noFile": "当前没有打开的文件。",
+		"cursorOrigin.noLink": "无法生成 Cursor Web 链接。请在带有符合条件的远程的 Git 存储库中打开文件。",
+		"cursorOrigin.copyCodeLink": "复制 cursor.com 链接 (含所选内容)",
+		"cursorOrigin.copyCodeLinkWithoutRange": "复制 cursor.com 链接 (仅文件)",
+		"cursorOrigin.copyCodeLink.menu": "复制 cursor.com 链接",
+		"cursorOrigin.copyCodeLinkExplorer.menu": "复制 cursor.com 链接",
+		"cursorOrigin.copyCodeLinkEditorTitle.menu": "复制 cursor.com 链接",
+		"cursorOrigin.copyCodeLinkLineNumber.menu": "复制 cursor.com 链接"
+	},
+	"vs/workbench/contrib/customizeEditor/browser/customizeEditor.contribution": {
+		"openCustomizeEditor": "打开自定义",
+		"clearPrimitiveAuthorshipCache.done": "已清除基元作者身份缓存。",
+		"clearPrimitiveSourceCache.done": "已清除基元源缓存。",
+		"focusCustomizeSearch": "聚焦自定义搜索",
+		"openSkillPublishLogs": "打开技能发布日志",
+		"clearPrimitiveAuthorshipCache": "清除基元作者身份缓存",
+		"clearPrimitiveSourceCache": "清除基元源缓存",
+		"forceSkillMigrationBanner": "强制显示技能迁移横幅",
+		"clearForcedSkillMigrationBanner": "清除强制的技能迁移横幅"
+	},
+	"vs/workbench/contrib/customizeEditor/browser/skillMigrationDevCommands": {
+		"forceSkillMigrationBanner.noStore": "已强制打开技能迁移横幅，但尚未挂载智能体存储，因此它会保持隐藏。请登录并重试。",
+		"forceSkillMigrationBanner.done": "已强制打开技能迁移横幅。重新加载窗口即可看到它。",
+		"clearForcedSkillMigrationBanner.done": "已清除技能迁移横幅覆盖。"
+	},
+	"vs/workbench/contrib/customizeEditor/browser/skillPublishEditorTitle": {
+		"skillPublishMenu": "技能发布"
+	},
+	"vs/workbench/contrib/debug/browser/debugCommands": {
+		"recordStepByStep": "逐步录制",
+		"stopRecording": "停止录制"
+	},
+	"vs/workbench/contrib/debug/browser/replAccessibilityHelp": {
+		"repl.help": "调试控制台是一个读取-求值-打印循环，允许你计算表达式和运行命令，并可通过{0}聚焦。",
+		"repl.output": "可以使用“聚焦上一个小组件”命令{0}从输入字段导航到调试控制台输出。",
+		"repl.input": "可以使用“聚焦下一个小组件”命令{0}从输出导航到调试控制台输入。",
+		"repl.history": "可以使用向上和向下箭头键导航调试控制台输出历史记录。",
+		"repl.accessibleView": "“打开辅助视图”命令{0}将允许逐字符导航控制台输出。",
+		"repl.showRunAndDebug": "“显示运行和调试视图”命令{0}将打开“运行和调试”视图，并提供有关调试的更多信息。",
+		"repl.clear": "“调试: 清除控制台”命令{0}将清除控制台输出。",
+		"repl.lazyVariables": "设置 `debug.expandLazyVariables` 控制是否自动计算变量。使用屏幕阅读器时默认启用此设置。"
+	},
+	"vs/workbench/contrib/debug/browser/welcomeView": {
+		"customizeRunAndDebug": "要自定义运行和调试，请[创建 launch.json 文件](command:{0})。",
+		"customizeRunAndDebugOpenFolder": "要自定义运行和调试，请[打开文件夹](command:{0})并创建 launch.json 文件。"
+	},
+	"vs/workbench/contrib/debug/common/debug": {
+		"openLaunchJson": "打开“{0}”",
+		"debugRecordingState": "焦点调试会话所处的录制状态。"
+	},
+	"vs/workbench/contrib/debug/common/debugConfiguration": {
+		"showVariableTypes": "调试会话期间在变量窗格中显示变量类型",
+		"allowBreakpointsEverywhere": "允许在任何文件中设置断点。",
+		"gutterMiddleClickAction": "控制使用鼠标中键单击编辑器装订线时要执行的操作。",
+		"debug.gutterMiddleClickAction.logpoint": "添加日志点。",
+		"debug.gutterMiddleClickAction.conditionalBreakpoint": "添加条件断点。",
+		"debug.gutterMiddleClickAction.triggeredBreakpoint": "添加触发断点。",
+		"debug.gutterMiddleClickAction.none": "不执行任何操作。",
+		"openExplorerOnEnd": "调试会话结束时自动打开资源管理器视图。",
+		"closeReadonlyTabsOnEnd": "调试会话结束时，将关闭与该会话关联的所有只读选项卡",
+		"inlineValues": "调试时在编辑器中内联显示变量值。",
+		"inlineValues.on": "调试时始终在编辑器中内联显示变量值。",
+		"inlineValues.off": "调试时从不在编辑器中内联显示变量值。",
+		"inlineValues.focusNoScroll": "当语言支持内联值位置时，调试期间在编辑器中内联显示变量值。",
+		"toolBarLocation": "控制调试工具栏的位置。可以是所有视图中的 `floating`、调试视图中的 `docked`、`commandCenter` (需要 {0})或 `hidden`。",
+		"debugToolBar.floating": "在所有视图中显示调试工具栏。",
+		"debugToolBar.docked": "仅在调试视图中显示调试工具栏。",
+		"debugToolBar.commandCenter": "`(Experimental)` 在命令中心显示调试工具栏。",
+		"debugToolBar.hidden": "不显示调试工具栏。",
+		"never": "从不在状态栏中显示调试",
+		"always": "始终在状态栏中显示调试",
+		"onFirstSessionStart": "仅在首次启动调试后在状态栏中显示调试",
+		"showInStatusBar": "控制调试状态栏何时可见。",
+		"debug.console.closeOnEnd": "控制调试会话结束时是否自动关闭调试控制台。",
+		"debug.terminal.clearBeforeReusing": "在集成终端或外部终端中启动新的调试会话之前，清除终端。",
+		"openDebug": "控制调试视图何时打开。",
+		"showSubSessionsInToolBar": "控制是否在调试工具栏中显示调试子会话。当此设置为 false 时，子会话上的停止命令也会停止父会话。",
+		"debug.console.fontSize": "控制调试控制台中的字体大小(像素)。",
+		"debug.console.fontFamily": "控制调试控制台中的字体系列。",
+		"debug.console.lineHeight": "控制调试控制台中的行高(像素)。使用 0 可根据字体大小计算行高。",
+		"debug.console.wordWrap": "控制调试控制台中的行是否换行。",
+		"debug.console.historySuggestions": "控制调试控制台是否建议以前键入的输入。",
+		"debug.console.collapseIdenticalLines": "控制调试控制台是否折叠相同的行，并用徽章显示出现次数。",
+		"debug.console.acceptSuggestionOnEnter": "控制是否在调试控制台中按 Enter 接受建议。Enter 也用于计算在调试控制台中键入的内容。",
+		"launch": "全局调试启动配置。应作为在各工作区之间共享的“launch.json”的替代。",
+		"debug.focusWindowOnBreak": "控制调试器中断时是否聚焦工作台窗口。",
+		"debug.focusEditorOnBreak": "控制调试器中断时是否聚焦编辑器。",
+		"debugAnyway": "忽略任务错误并开始调试。",
+		"showErrors": "显示“问题”视图，并且不开始调试。",
+		"prompt": "提示用户。",
+		"cancel": "取消调试。",
+		"debug.onTaskErrors": "控制运行 preLaunchTask 后遇到错误时的处理方式。",
+		"showBreakpointsInOverviewRuler": "控制是否在概览标尺中显示断点。",
+		"showInlineBreakpointCandidates": "控制调试时是否在编辑器中显示内联断点候选项装饰。",
+		"debug.saveBeforeStart": "控制启动调试会话之前要保存哪些编辑器。",
+		"debug.saveBeforeStart.allEditorsInActiveGroup": "启动调试会话之前，保存活动组中的所有编辑器。",
+		"debug.saveBeforeStart.nonUntitledEditorsInActiveGroup": "启动调试会话之前，保存活动组中除未命名编辑器以外的所有编辑器。",
+		"debug.saveBeforeStart.none": "启动调试会话之前不保存任何编辑器。",
+		"debug.confirmOnExit": "控制存在活动调试会话时，关闭窗口是否需要确认。",
+		"debug.confirmOnExit.always": "如果存在调试会话，则始终确认。",
+		"debug.disassemblyView.showSourceCode": "在反汇编视图中显示源代码。",
+		"debug.autoExpandLazyVariables.auto": "在屏幕阅读器优化模式下，自动展开惰性变量。",
+		"debug.autoExpandLazyVariables.on": "始终自动展开惰性变量。",
+		"debug.autoExpandLazyVariables.off": "从不自动展开惰性变量。",
+		"debug.autoExpandLazyVariables": "控制调试器是否自动解析并展开延迟解析的变量(例如 getter)。",
+		"debug.enableStatusBarColor": "调试器处于活动状态时的状态栏颜色。",
+		"debug.hideLauncherWhileDebugging": "调试处于活动状态时，隐藏“运行和调试”视图标题栏中的“启动调试”控件。仅当 {0} 不是 `docked` 时才相关。",
+		"debug.hideSlowPreLaunchWarning": "隐藏 `preLaunchTask` 运行一段时间后显示的警告。"
+	},
+	"vs/workbench/contrib/extensions/browser/abstractRuntimeExtensionsEditor": {
+		"errorsAtLeast": "至少 {0} 个未捕获的错误"
+	},
+	"vs/workbench/contrib/extensions/browser/extensionFeaturesTab": {
+		"uncaught errors at least": "未捕获的错误 (至少 {0} 个，显示最近 {1} 个)",
+		"messages at least": "消息 (至少 {0} 条，显示最近 {1} 条)",
+		"messages": "消息 ({0})"
+	},
+	"vs/workbench/contrib/extensions/browser/extensionsActions": {
+		"check logs linked": "请查看{0}以获取更多详细信息。",
+		"check logs label": "日志",
+		"incompatible platform": "“{0}”扩展在 {1} 中不可用于 {2}。",
+		"not web tooltip": "“{0}”扩展在 {1} 中不可用。"
+	},
+	"vs/workbench/contrib/extensions/browser/extensionsBoot.contribution": {
+		"all": "所有扩展",
+		"enabled": "仅已启用的扩展",
+		"extensions.autoUpdate.true": "自动为所有扩展下载并安装更新。",
+		"extensions.autoUpdate.enabled": "仅自动为已启用的扩展下载并安装更新。",
+		"extensions.autoUpdate.false": "扩展不会自动更新。",
+		"extensions.autoUpdate": "控制扩展的自动更新行为。更新从 Microsoft 在线服务获取。",
+		"extensionsCheckUpdates": "启用后，会自动检查扩展更新。如果扩展有更新，则会在扩展视图中将其标记为过时。更新从 Microsoft 在线服务获取。",
+		"extensionsInstallCooldownHours": "扩展版本必须已发布这么多小时，之后才能从应用市场安装或更新。设置为 0 可禁用冷却时间。这可作为缓冲，以应对已被入侵或意外发布的版本；等到该版本在应用市场中至少存在这么长时间再安装，从而降低你接触全新版本的风险。",
+		"extensionsRequestTimeout": "控制从应用市场获取扩展时 HTTP 请求的超时时间(毫秒)。",
+		"extensionsIgnoreRecommendations": "启用后，将不显示扩展推荐通知。",
+		"extensionsShowRecommendationsOnlyOnDemand_Deprecated": "此设置已弃用。请使用 extensions.ignoreRecommendations 设置来控制推荐通知。使用扩展视图的可见性操作，默认隐藏“推荐”视图。",
+		"extensionsCloseExtensionDetailsOnViewChange": "启用后，导航离开扩展视图时，将自动关闭包含扩展详细信息的编辑器。",
+		"handleUriConfirmedExtensions": "扩展列在此处时，该扩展处理 URI 不会显示确认提示。",
+		"extensionsWebWorker.true": "始终会启动 Web 工作线程扩展宿主。",
+		"extensionsWebWorker.false": "永远不会启动 Web 工作线程扩展宿主。",
+		"extensionsWebWorker.auto": "当 Web 扩展需要时，会启动 Web 工作线程扩展宿主。",
+		"extensionsWebWorker": "启用 Web 工作线程扩展宿主。",
+		"extensions.supportVirtualWorkspaces": "覆盖扩展的虚拟工作区支持。",
+		"extensions.affinity": "配置扩展，使其在另一个扩展宿主进程中执行。",
+		"extensions.supportUntrustedWorkspaces": "覆盖扩展对不受信任工作区的支持。使用 `true` 的扩展将始终启用。使用 `limited` 的扩展将始终启用，并且扩展会隐藏需要信任的功能。使用 `false` 的扩展仅在工作区受信任时才会启用。",
+		"extensions.supportUntrustedWorkspaces.true": "扩展将始终启用。",
+		"extensions.supportUntrustedWorkspaces.false": "扩展仅在工作区受信任时才会启用。",
+		"extensions.supportUntrustedWorkspaces.limited": "扩展将始终启用，并且扩展会隐藏需要信任的功能。",
+		"extensions.supportUntrustedWorkspaces.supported": "定义扩展的不受信任工作区支持设置。",
+		"extensions.supportUntrustedWorkspaces.version": "定义应应用覆盖的扩展版本。如果未指定，则无论扩展版本如何都会应用覆盖。",
+		"extensionsDeferredStartupFinishedActivation": "启用后，声明 `onStartupFinished` 激活事件的扩展将在超时后激活。",
+		"extensions.gallery.serviceUrl": "配置要连接的应用市场服务 URL",
+		"autoRestart": "如果启用，则当窗口未处于焦点时，扩展会在更新后自动重启。如果打开了笔记本或自定义编辑器，可能会丢失数据。",
+		"extensions.gallery.useUnpkgResourceApi": "启用后，将从 Unpkg 服务获取要更新的扩展。",
+		"extensions.allowed": "指定允许使用的扩展列表。通过限制未经授权的扩展，这有助于保持安全且一致的开发环境。有关如何配置此设置的详细信息，请访问[配置允许的扩展](https://code.visualstudio.com/docs/setup/enterprise#_configure-allowed-extensions)部分。",
+		"extensions.allowed.none": "不允许任何扩展。",
+		"extensions.allowed.all": "允许所有扩展。",
+		"extensions.allowed.policy": "指定允许使用的扩展列表。通过限制未经授权的扩展，这有助于保持安全且一致的开发环境。更多信息: https://code.visualstudio.com/docs/setup/enterprise#_configure-allowed-extensions",
+		"extensions.allow.description": "允许或禁止该扩展。",
+		"extensions.allowed.enable.desc": "允许该扩展。",
+		"extensions.allowed.disable.desc": "不允许该扩展。",
+		"extensions.allowed.disable.stable.desc": "仅允许该扩展的稳定版本。",
+		"extensions.allow.version.description": "允许或禁止该扩展的特定版本。要指定特定于平台的版本，请使用 `platform@1.2.3` 格式，例如 `win32-x64@1.2.3`。支持的平台为 `win32-x64`、`win32-arm64`、`linux-x64`、`linux-arm64`、`linux-armhf`、`alpine-x64`、`alpine-arm64`、`darwin-x64`、`darwin-arm64`",
+		"extension.publisher.allow.description": "允许或禁止来自该发布者的所有扩展。",
+		"extensions.publisher.allowed.enable.desc": "允许来自该发布者的所有扩展。",
+		"extensions.publisher.allowed.disable.desc": "不允许来自该发布者的所有扩展。",
+		"extensions.publisher.allowed.disable.stable.desc": "仅允许来自该发布者的扩展的稳定版本。",
+		"extensions.allow.all.description": "允许或禁止所有扩展。",
+		"extensions.allow.all.enable": "允许所有扩展。",
+		"extensions.allow.all.disable": "禁止所有扩展。",
+		"workbench.extensions.installExtension.description": "安装给定的扩展",
+		"workbench.extensions.installExtension.arg.decription": "扩展 ID 或 VSIX 资源 URI",
+		"workbench.extensions.installExtension.option.installOnlyNewlyAddedFromExtensionPackVSIX": "启用后，VS Code 仅安装扩展包 VSIX 中新添加的扩展。仅在安装 VSIX 时考虑此选项。",
+		"workbench.extensions.installExtension.option.installPreReleaseVersion": "启用后，如果可用，VS Code 会安装扩展的预发布版本。",
+		"workbench.extensions.installExtension.option.donotSync": "启用后，当设置同步打开时，VS Code 不会同步此扩展。",
+		"workbench.extensions.installExtension.option.justification": "安装扩展的理由。这是一个字符串或对象，可用于向安装处理程序传递任何信息。例如 `{reason: 'This extension wants to open a URI', action: 'Open URI'}` 会在安装时显示包含理由和操作的消息框。",
+		"workbench.extensions.installExtension.option.enable": "启用后，如果扩展已安装但被禁用，则会启用该扩展。如果扩展已启用，则此选项不起作用。",
+		"workbench.extensions.installExtension.option.context": "安装上下文。这是一个 JSON 对象，可用于向安装处理程序传递任何信息。例如 `{skipWalkthrough: true}` 会在安装时跳过打开演练。",
+		"workbench.extensions.uninstallExtension.description": "卸载给定的扩展",
+		"workbench.extensions.uninstallExtension.arg.name": "要卸载的扩展的 ID",
+		"id required": "需要扩展 ID。",
+		"notInstalled": "未安装扩展“{0}”。请确保使用完整的扩展 ID，包括发布者，例如: anysphere.csharp。",
+		"builtin": "扩展“{0}”是内置扩展，无法安装",
+		"workbench.extensions.search.description": "搜索特定扩展",
+		"workbench.extensions.search.arg.name": "搜索时使用的查询"
+	},
+	"vs/workbench/contrib/extensions/browser/extensionsViewlet": {
+		"finalNote": "单击以导入所有本地 {0} 扩展",
+		"importingNote": "正在导入... 这可能需要一分钟",
+		"importDone": "已完成导入 VS Code 设置!"
+	},
+	"vs/workbench/contrib/extensions/browser/extensionsViews": {
+		"showingExtensionsForFeature": "过去 30 天内使用 {0} 的扩展",
+		"extension.arialabel.verifiedPublisher": "已验证的发布者 {0}",
+		"extension.arialabel.publisher": "发布者 {0}",
+		"extension.arialabel.rating": "由 {1} 位用户评为 5 星中的 {0} 星"
+	},
+	"vs/workbench/contrib/extensions/browser/extensionsWidgets": {
+		"uncaught errors at least": "至少 {0} 个未捕获的错误",
+		"messages at least": "至少 {0} 条消息"
+	},
+	"vs/workbench/contrib/extensions/browser/maliciousExtensionChecker": {
+		"malicious warning": "发现以下扩展存在问题，并已卸载: {0}"
+	},
+	"vs/workbench/contrib/extensions/browser/showRuntimeExtensionsAction": {
+		"showRuntimeExtensions": "显示正在运行的扩展"
+	},
+	"vs/workbench/contrib/extensions/electron-sandbox/debugExtensionHostAction": {
+		"selectExtensionHost": "选择扩展宿主",
+		"debugExtensionHost": "在新窗口中开始调试扩展宿主",
+		"restart1": "调试扩展",
+		"restart2": "要调试扩展，需要重启。是否立即重启“{0}”?",
+		"debugCursorAlwaysLocalExtensionHost": "在新窗口中开始调试 Cursor 始终本地扩展宿主",
+		"restartCursorAlwaysLocal1": "调试 Cursor 始终本地扩展宿主",
+		"restartCursorAlwaysLocal2": "要调试 cursor-always-local 扩展宿主，需要重启。是否立即重启“{0}”?",
+		"debugExtensionHost.progress": "正在将调试器附加到扩展宿主",
+		"debugExtensionHost.launch.name": "附加扩展宿主",
+		"openDevToolsForExtensionHost": "打开扩展宿主的开发人员工具",
+		"openDevToolsForCursorAlwaysLocal": "打开 Cursor 始终本地扩展宿主的开发人员工具"
+	},
+	"vs/workbench/contrib/extensions/electron-sandbox/extensionMonitor.contribution": {
+		"miOpenExtensionMonitorer": "打开扩展监视器(&&E)",
+		"extensionMonitorEnabled": "启用扩展监视。需要重启才能生效。",
+		"extensionHostHeapSnapshotEnabled": "当每个本地扩展宿主的内存使用量达到其上限的四分之三时，为其写入一份堆快照。快照会保存到调试数据文件夹，并在你捕获包含堆快照的调试数据时附加。写入快照会暂停扩展数秒或更长时间。适用于更改后启动的扩展宿主。",
+		"openExtensionMonitor": "打开扩展监视器"
+	},
+	"vs/workbench/contrib/extensions/electron-sandbox/extensionProfileService": {
+		"status.profiler": "探查器",
+		"profilingTarget": "正在探查 {0}",
+		"selectAndStartDebug": "单击以停止探查。",
+		"profilingTargetTime": "正在探查 {0} ({1} 秒)",
+		"restartAllHosts1": "探查扩展宿主",
+		"restartAllHosts2": "要探查扩展宿主，需要重启。是否立即重启“{0}”?",
+		"selectExtensionHostToProfile": "选择要探查的扩展宿主",
+		"restartRemote1": "探查远程扩展",
+		"restartRemote2": "要探查远程扩展宿主，需要重启。是否立即重启“{0}”?",
+		"remoteExtensionHostCPUProfilerRunning": "远程扩展宿主 CPU 探查器正在运行",
+		"remoteAgentProfileNoRemote": "打开远程工作区以探查远程服务器。",
+		"remoteServerProfileStatusTarget": "远程服务器",
+		"remoteAgentProfileUnavailable": "此连接无法进行远程服务器 CPU 探查。",
+		"remoteAgentProfileMaxDurationReached": "远程服务器 CPU 探查器已达到最长持续时间并已停止。",
+		"remoteAgentCPUProfilerRunning": "远程服务器 CPU 探查器正在运行",
+		"extensionHostPidUnavailable": "不适用",
+		"extensionHostDescriptionWithMore": "扩展: {0} (另有 {1} 个)",
+		"extensionHostDescription": "扩展: {0}",
+		"extensionHostBuiltinDescriptionWithMore": "内置扩展: {0} (另有 {1} 个)",
+		"extensionHostBuiltinDescription": "内置扩展: {0}",
+		"extensionHostEmptyDescription": "未检测到已注册的扩展",
+		"currentWorkspaceRemoteExtensionHost": "当前工作区远程扩展宿主",
+		"currentWorkspaceExtensionHost": "当前工作区扩展宿主"
+	}
+}

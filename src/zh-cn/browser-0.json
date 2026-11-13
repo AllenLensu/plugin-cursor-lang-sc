@@ -1,0 +1,77 @@
+{
+	"vs/editor/browser/widget/codeEditor/codeEditorWidget": {
+		"cursors.maximumLinked": "已将光标数限制为 {0}。请考虑使用{1}进行较大的更改或增加编辑器多光标限制设置。",
+		"cursors.findAndReplaceLink": "查找和替换"
+	},
+	"vs/editor/browser/widget/diffEditor/features/hideUnchangedRegionsFeature": {
+		"show20LinesAbove": "在上方再显示 20 行",
+		"show20LinesBelow": "在下方再显示 20 行",
+		"diff.hiddenLines.summary": "隐藏的行摘要",
+		"diff.expandAllLinkTitle": "展开整个隐藏区域",
+		"diff.expandAllLinkLabel": "全部展开"
+	},
+	"vs/editor/contrib/codeAction/browser/codeAction": {
+		"codeAction.slowProvider": "正在等待来自“{0}”的代码操作([配置]({1}))。"
+	},
+	"vs/editor/contrib/find/browser/findWidget": {
+		"ctrlEnter.keybindingChanged": "Ctrl+Enter 现在会插入换行符，而不是全部替换。你可以修改 editor.action.replaceAll 的键绑定以覆盖此行为。"
+	},
+	"vs/editor/contrib/gotoError/browser/gotoError": {
+		"markerAction.this.label": "转到光标处的问题（错误、警告、信息）"
+	},
+	"vs/editor/contrib/gotoSymbol/browser/peek/referencesWidget": {
+		"label.composer": "在聊天中打开"
+	},
+	"vs/editor/contrib/hover/browser/markdownHoverParticipant": {
+		"increaseVerbosityWithKb": "提高悬停详细程度({0})",
+		"decreaseVerbosityWithKb": "降低悬停详细程度({0})"
+	},
+	"vs/editor/contrib/inlineCompletions/browser/controller/commands": {
+		"noInlineEditAvailable": "无内联编辑可用。",
+		"action.inlineSuggest.trigger.explicitInlineEdit": "触发下一个编辑建议",
+		"action.inlineSuggest.acceptNextInlineEditPart": "接受内联编辑的下一部分"
+	},
+	"vs/editor/contrib/inlineCompletions/browser/inlineCompletionsAccessibleView": {
+		"inlineEditAvailable": "有内联编辑可用:"
+	},
+	"vs/editor/contrib/inlineCompletions/browser/view/inlineEdits/inlineEditsModel": {
+		"inlineEdit": "内联编辑"
+	},
+	"vs/editor/contrib/inlineDiffs/browser/controllers/inlineDiffController": {
+		"inlineDiffs.activeEditorWithDiffs": "活动编辑器是否有内联差异",
+		"inlineDiffs.hasInlineDiffsInAnyEditor": "任意编辑器中是否有内联差异",
+		"inlineDiffs.changeKept": "已保留更改",
+		"inlineDiffs.changeUndone": "已撤消更改",
+		"inlineDiffs.navigatedToChangeLine": "智能体更改第 {0} 项，共 {1} 项，第 {2} 行",
+		"inlineDiffs.navigatedToChangeLines": "智能体更改第 {0} 项，共 {1} 项，第 {2} 行到第 {3} 行"
+	},
+	"vs/editor/contrib/inlineDiffs/browser/inlineDiffAccessibilityHelp": {
+		"inlineDiffsHelp.intro": "此文件包含来自智能体的更改。",
+		"inlineDiffsHelp.navigate": "转到下一个更改<keybinding:{0}>或上一个更改<keybinding:{1}>。",
+		"inlineDiffsHelp.partial": "保留光标处的更改<keybinding:{0}>，或将其撤消<keybinding:{1}>。",
+		"inlineDiffsHelp.all": "保留此文件中的所有更改<keybinding:{0}>，或将它们全部撤消<keybinding:{1}>。"
+	},
+	"vs/editor/contrib/inlineDiffs/browser/widgets/renderInlineDiffPartialWidget": {
+		"inlineDiffs.previousChange": "上一个更改",
+		"inlineDiffs.nextChange": "下一个更改",
+		"inlineDiffs.undoCell": "撤消单元格更改",
+		"inlineDiffs.undoChange": "撤消更改",
+		"inlineDiffs.keepCell": "保留单元格更改",
+		"inlineDiffs.keepChange": "保留更改",
+		"inlineDiffs.toolbarPosition": "智能体更改第 {0} 项，共 {1} 项",
+		"inlineDiffs.toolbar": "智能体更改"
+	},
+	"vs/editor/contrib/quickAccess/browser/gotoLineQuickAccess": {
+		"cannotRunGotoLine": "要转到某一行，首先打开文本编辑器。",
+		"gotoLineColumnLabel": "转到第 {0} 行，第 {1} 个字符。",
+		"gotoLineLabel": "转到第 {0} 行。",
+		"gotoLineLabelEmptyWithLimit": "当前行: {0}，字符: {1}。键入 1 到 {2} 之间的行号以导航到该行。",
+		"gotoLineLabelEmpty": "当前行: {0}，字符: {1}。键入要导航到的行号。"
+	},
+	"vs/platform/actions/browser/toolbar": {
+		"configureIconVisibility": "配置图标可见性"
+	},
+	"vs/platform/quickinput/browser/quickInputTree": {
+		"quickInput": "快速输入"
+	}
+}

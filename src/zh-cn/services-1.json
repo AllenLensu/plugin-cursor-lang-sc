@@ -1,0 +1,214 @@
+{
+	"vs/workbench/services/experiment/browser/featureFlagOverrideActions": {
+		"statsigRefreshed": "已成功刷新 Statsig 配置",
+		"statsigRefreshFailed": "刷新 Statsig 配置失败: {0}",
+		"viewInStatsig": "在 Statsig 中查看",
+		"openStatsigConsole": "在 Statsig 控制台中打开此标志",
+		"removeOverride": "移除覆盖",
+		"resetToCurrent": "重置为 Statsig/默认值",
+		"overrideEnable": "覆盖 → 启用",
+		"setToEnabled": "强制将此标志设为启用",
+		"overrideDisable": "覆盖 → 禁用",
+		"setToDisabled": "强制将此标志设为禁用",
+		"selectOverrideAction": "“{0}”当前为 {1}。要执行什么操作?",
+		"manageFlagTitle": "管理: {0}",
+		"overrideRemoved": "已移除“{0}”的覆盖",
+		"confirmSetFlagsToBundled": "是，将全部覆盖为内置值",
+		"confirmSetFlagsToBundledDescription": "这将创建 {0} 个覆盖",
+		"keepCurrentFlagValues": "保留当前值",
+		"confirmSetAllFlagsToBundled": "将所有功能标志设置为内置默认值?",
+		"confirmApplyFlagBundledValues": "确认应用内置值",
+		"bundledApplied": "已将内置值应用于 {0} 个功能标志。",
+		"confirmClearFlagOverrides": "是，清除全部覆盖",
+		"confirmClearFlagDescription": "这将移除 {0} 个覆盖",
+		"keepFlagOverrides": "保留现有覆盖",
+		"confirmClearAllFlagOverrides": "清除全部 {0} 个功能标志覆盖?",
+		"confirmClearAllFlagsAction": "确认全部清除",
+		"allOverridesCleared": "已清除全部 {0} 个功能标志覆盖。",
+		"simulateProdProductionWarning": "模拟生产模式在生产构建中不可用。",
+		"nowSimulatingProd": "正在模拟生产模式。开发状态为关闭。正在使用类似生产环境的评估。",
+		"backToNormalMode": "已返回正常开发模式。开发状态为开启。正在使用正常评估。",
+		"statsigDummyConsoleLoopProductionWarning": "此命令仅供 Cursor 开发人员使用。",
+		"statsigDummyConsoleLoopStarted": "正在按间隔将 statsig_dummy_gauge_config.dummy 记录到控制台。再次运行即可停止。（statsig.dummy_gauge_config 始终在后台发出。）",
+		"statsigDummyConsoleLoopStopped": "控制台循环已停止。",
+		"manageFeatureFlagOverrides": "管理功能标志覆盖",
+		"manageFeatureFlagOverridesDescription": "管理用于开发和测试的功能标志覆盖",
+		"toggleSimulateProd": "切换模拟生产模式",
+		"toggleSimulateProdDescription": "切换模拟生产模式（在 Statsig 评估中忽略开发/内部定向）",
+		"toggleStatsigDummyConsoleLoop": "切换 Statsig 虚拟配置控制台循环",
+		"toggleStatsigDummyConsoleLoopDescription": "开始或停止按间隔将 statsig_dummy_gauge_config.dummy 记录到开发人员控制台（指标始终开启）"
+	},
+	"vs/workbench/services/extensionManagement/browser/extensionEnablementService": {
+		"cannot disable auth extension in workspace": "无法在工作区中更改 {0} 扩展的启用，因为它提供身份验证提供程序"
+	},
+	"vs/workbench/services/extensionManagement/electron-sandbox/extensionGalleryManifestService": {
+		"extensionGalleryManifestService.accountChange": "{0} 现已配置为不同的应用市场。请重启以应用更改。"
+	},
+	"vs/workbench/services/extensionManagement/electron-sandbox/remoteExtensionManagementService": {
+		"incompatibleAPI": "无法安装“{0}”扩展。{1}",
+		"notFoundCompatibleDependency": "无法安装“{0}”扩展，因为它与 {1} 的当前版本（版本 {2}）不兼容。"
+	},
+	"vs/workbench/services/extensions/common/abstractExtensionService": {
+		"exthostDiagnosticsSaved.msg": "已捕获 {0}（PID {1}）无响应期间的诊断信息。",
+		"revealInOS": "在文件资源管理器中显示"
+	},
+	"vs/workbench/services/extensions/common/extensionHostManager": {
+		"communicationProfilerUnavailable": "网络与 IPC 分析器仅在开发构建中可用，或仅供 Cursor 内部开发人员使用。",
+		"toggleExtHostProfiler": "启动网络与 IPC 分析器"
+	},
+	"vs/workbench/services/extensions/common/extensionsRegistry": {
+		"vscode.extension.activationEvents.onTerminalCompletionsRequested": "在请求终端补全时发出的激活事件。"
+	},
+	"vs/workbench/services/extensions/electron-sandbox/cachedExtensionScanner": {
+		"extensionCache.invalid": "磁盘上的扩展已被修改。请重新加载窗口。"
+	},
+	"vs/workbench/services/extensions/electron-sandbox/localProcessExtensionHost": {
+		"extensionHost.startupFailDebug": "扩展宿主未在 10 秒内启动，它可能在第一行暂停，需要调试器才能继续。",
+		"extensionHost.startupFail": "扩展宿主未在 10 秒内启动",
+		"join.extensionDevelopment": "正在终止扩展调试会话"
+	},
+	"vs/workbench/services/extensions/electron-sandbox/nativeExtensionService": {
+		"extensionSignatureVerification.blocked": "以下扩展因签名验证被阻止: {0}。请从受信任的来源重新安装它们。",
+		"extensionSignatureVerification.hashMismatch": "扩展文件已被修改",
+		"extensionSignatureVerification.hashError": "未能验证扩展完整性",
+		"extensionSignatureVerification.notVerified": "安装时未验证扩展 - 请重新安装",
+		"extensionService.versionMismatchCrash": "扩展宿主无法启动: 版本不匹配。",
+		"relaunch": "重新启动 {0}",
+		"extensionService.autoRestart": "扩展宿主意外终止。正在重启...",
+		"devTools": "打开开发人员工具",
+		"restart": "重启扩展宿主",
+		"extensionService.crash": "扩展宿主在过去 5 分钟内意外终止了 3 次。",
+		"remoteConnectionConfirm": "是否允许连接到远程服务器“{0}:{1}”?",
+		"remoteConnectionConfirmDetail": "Code 即将连接到“{0}:{1}”以托管远程扩展宿主。请仅在你信任此服务器时继续，因为它将能够代表你运行代码并访问文件。",
+		"remoteConnectionConfirmButton": "连接",
+		"remoteConnectionRejected": "不允许连接到“{0}:{1}”。",
+		"getEnvironmentFailure": "无法获取远程环境",
+		"enableResolver": "打开远程窗口需要“{0}”扩展。\n是否启用?",
+		"installResolver": "打开远程窗口需要“{0}”扩展。\n是否要安装该扩展?",
+		"resolverExtensionNotFound": "在应用市场中找不到 `{0}`",
+		"restartExtensionHost.reason": "显式请求",
+		"restartExtensionHost": "重启扩展宿主"
+	},
+	"vs/workbench/services/files/electron-sandbox/diskFileSystemProvider": {
+		"fileWatcher": "文件监视器"
+	},
+	"vs/workbench/services/files/electron-sandbox/elevatedFileService": {
+		"fileNotTrustedMessageWindows": "你即将以管理员身份保存“{0}”。",
+		"fileNotTrustedMessagePosix": "你即将以超级用户身份保存“{0}”。",
+		"fileNotTrusted": "工作区不受信任。"
+	},
+	"vs/workbench/services/fileWatchRecording/electron-sandbox/fileWatchRecording.contribution": {
+		"featureFlagDisabled": "文件监视录制需要启用“{0}”功能标志。",
+		"recordingStopped": "文件监视录制已停止。已收集 {0} 个唯一路径和 {1} 项监视器统计信息。",
+		"stopRecording": "停止录制",
+		"recordingComplete": "文件监视录制已完成。已收集 {0} 个唯一路径、共计 {1} 个事件以及 {2} 项监视器统计信息。",
+		"openFolder": "打开录制文件夹",
+		"recordingStarted": "文件监视录制正在运行。更改文件即可录制这些更改。",
+		"startFileWatchRecording": "开始文件监视录制"
+	},
+	"vs/workbench/services/integrity/electron-sandbox/integrityService": {
+		"integrity.prompt": "你的 {0} 安装似乎已损坏。请重新安装。",
+		"integrity.moreInformation": "更多信息"
+	},
+	"vs/workbench/services/localization/electron-sandbox/localeService": {
+		"argvInvalid": "无法写入显示语言。请打开运行时设置，更正其中的错误/警告，然后重试。",
+		"openArgv": "打开运行时设置",
+		"installing": "正在安装 {0} 语言支持...",
+		"restartDisplayLanguageMessage1": "是否重启 {0} 以切换到 {1}?",
+		"restartDisplayLanguageDetail1": "要将显示语言更改为 {0}，{1} 需要重启。"
+	},
+	"vs/workbench/services/preferences/browser/preferencesService": {
+		"settingsEditor2InputNameVSCode": "VS Code 设置"
+	},
+	"vs/workbench/services/remote/electron-sandbox/remoteAgentService": {
+		"directUrl": "在浏览器中打开",
+		"connectionError": "无法连接到远程扩展宿主服务器（错误: {0}）"
+	},
+	"vs/workbench/services/secrets/electron-sandbox/secretStorageService": {
+		"troubleshootingButton": "打开疑难解答指南",
+		"encryptionNotAvailableJustTroubleshootingGuide": "在当前桌面环境中，无法识别用于存储加密相关数据的 OS 密钥环。",
+		"usePlainTextExtraSentence": "请打开疑难解答指南以解决此问题，也可以使用不依赖 OS 密钥环的较弱加密。",
+		"usePlainText": "使用较弱的加密",
+		"isGnome": "你正在 GNOME 环境中运行，但 OS 密钥环不可用于加密。请确保已安装并正在运行 gnome-keyring 或其他与 libsecret 兼容的实现。",
+		"isKwallet": "你正在 KDE 环境中运行，但 OS 密钥环不可用于加密。请确保 kwallet 正在运行。"
+	},
+	"vs/workbench/services/textfile/electron-sandbox/nativeTextFileService": {
+		"join.textFiles": "正在保存文本文件"
+	},
+	"vs/workbench/services/themes/electron-sandbox/themes.contribution": {
+		"window.systemColorTheme.default": "本机小组件颜色与系统颜色匹配。",
+		"window.systemColorTheme.auto": "浅色主题使用浅色本机小组件颜色，深色主题使用深色本机小组件颜色。",
+		"window.systemColorTheme.light": "使用浅色本机小组件颜色。",
+		"window.systemColorTheme.dark": "使用深色本机小组件颜色。",
+		"window.systemColorTheme": "设置本机 UI 元素（例如本机对话框、菜单和标题栏）的颜色模式。即使操作系统配置为浅色模式，也可以为窗口选择深色系统颜色主题。还可以配置为根据 {0} 设置自动调整。\n\n注意: 启用 {1} 时将忽略此设置。"
+	},
+	"vs/workbench/services/userDataProfile/browser/extensionsResource": {
+		"skipped profile extensions": "无法安装导入的配置文件中的部分扩展: {0}",
+		"invalid profile extensions content": "导入的配置文件中的扩展数据不是有效的 JSON。",
+		"invalid profile extensions array": "导入的配置文件中的扩展数据必须是 JSON 数组。",
+		"invalid profile extension id": "导入的配置文件中的扩展条目 {0} 为空。",
+		"invalid profile extension entry": "导入的配置文件中的扩展条目 {0} 格式不正确。",
+		"invalid profile extension identifier": "导入的配置文件中的扩展条目 {0} 缺少有效标识符。",
+		"invalid profile extension entry skipped": "导入的配置文件中的扩展条目 {0} 无效，已跳过。",
+		"invalid profile extension entries skipped": "导入的配置文件中的扩展条目 {0} 均无效，已跳过。"
+	},
+	"vs/workbench/services/userDataProfile/browser/userDataProfileImportExportService": {
+		"create profile from profile failed": "从“{0}”创建配置文件失败。",
+		"create profile from template extensions warning": "已创建配置文件“{0}”，但跳过了导入的配置文件中的部分扩展条目。",
+		"create profile from template extensions not applied warning": "已创建配置文件“{0}”，但未应用导入的配置文件中的任何扩展。",
+		"create profile from template failed": "从导入的文件创建配置文件失败。"
+	},
+	"vs/workbench/services/views/test/browser/viewContainerModel.test": {
+		"test": "测试",
+		"Test View 1": "测试视图 1",
+		"Test View 2": "测试视图 2",
+		"Test View 3": "测试视图 3",
+		"Test View 5": "测试视图 5",
+		"Test View 4": "测试视图 4"
+	},
+	"vs/workbench/services/views/test/browser/viewDescriptorService.test": {
+		"test": "测试",
+		"Test View 1": "测试视图 1",
+		"Test View 2": "测试视图 2",
+		"Test View 3": "测试视图 3",
+		"Test View 4": "测试视图 4"
+	},
+	"vs/workbench/services/workingCopy/electron-sandbox/workingCopyBackupService": {
+		"join.workingCopyBackups": "正在备份工作副本"
+	},
+	"vs/workbench/services/workingCopy/electron-sandbox/workingCopyBackupTracker": {
+		"backupTrackerBackupFailed": "无法将以下有未保存更改的编辑器保存到备份位置。",
+		"backupTrackerConfirmFailed": "无法保存或还原以下有未保存更改的编辑器。",
+		"backupErrorDetails": "请先尝试保存或还原有未保存更改的编辑器，然后再试一次。",
+		"shutdownForceClose": "仍然关闭",
+		"shutdownForceQuit": "仍然退出",
+		"shutdownForceReload": "仍然重新加载",
+		"backupBeforeShutdownMessage": "正在备份有未保存更改的编辑器，需要更长时间...",
+		"backupBeforeShutdownDetail": "单击“取消”以停止等待，并保存或还原有未保存更改的编辑器。",
+		"saveBeforeShutdown": "正在保存有未保存更改的编辑器，需要更长时间...",
+		"revertBeforeShutdown": "正在还原有未保存更改的编辑器，需要更长时间...",
+		"discardBackupsBeforeShutdown": "正在放弃备份，需要更长时间..."
+	},
+	"vs/workbench/services/workspaceCollection/browser/workspaceCollectionService": {
+		"workspaceCollectionShutdown": "正在关闭工作区"
+	},
+	"vs/workbench/services/workspaceConnection/browser/workspaceConnectionService": {
+		"workspaceConnection.tryAgain": "重试",
+		"workspaceConnection.reconnectNow": "重新连接",
+		"workspaceConnection.reconnectFailed": "重新连接失败。工作区仍处于断开连接状态。",
+		"workspaceConnection.reconnectGaveUp": "无法重新连接到远程工作区。",
+		"workspaceConnection.reconnectFailedNamed": "重新连接失败。“{0}”仍处于断开连接状态。",
+		"workspaceConnection.reconnectGaveUpNamed": "无法重新连接到“{0}”。"
+	},
+	"vs/workbench/services/workspaces/electron-sandbox/workspaceEditingService": {
+		"saveWorkspaceMessage": "是否要将工作区配置保存为文件?",
+		"saveWorkspaceDetail": "如果打算再次打开，请保存工作区。",
+		"doNotAskAgain": "始终在不询问的情况下放弃无标题工作区",
+		"restartExtensionHost.reason": "正在打开多根工作区"
+	},
+	"vs/workbench/services/worktree/browser/worktree.contribution": {
+		"runCursorWorktreeCleanupDev": "运行 Cursor 工作树清理（开发）",
+		"runCursorWorktreeCleanupDev.leaseBusy": "已跳过工作树清理: 另一个窗口已持有清理租约。",
+		"runCursorWorktreeCleanupDev.done": "工作树清理已完成（开发）。已移除 {0} 个工作树，释放 {1} 字节。详情请查看日志。"
+	}
+}

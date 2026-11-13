@@ -1,0 +1,53 @@
+{
+	"vs/editor/browser/services/hoverService/updatableHoverWidget": {
+		"iconLabel.loading": "正在加载..."
+	},
+	"vs/glass/browser/components/editor-panel/file-tab/file-tab-start-page.react": {
+		"glass.fileTab.startPage.loadingRecents": "正在加载..."
+	},
+	"vs/workbench/contrib/authentication/browser/authentication.contribution": {
+		"loading": "正在加载..."
+	},
+	"vs/glass/browser/components/agent-panel/allowed-machines/add-folder-row.react": {
+		"glass.allowedMachines.rowAriaLabel": "{0}，{1}"
+	},
+	"vs/glass/browser/components/agent-panel/allowed-machines/placement-submenus.react": {
+		"glass.allowedMachines.rowAriaLabel": "{0}，{1}"
+	},
+	"vs/glass/browser/components/editor-panel/project-document/project-notes-filter-menu.react": {
+		"glass.project.notes.filter": "筛选器"
+	},
+	"vs/glass/browser/components/editor-panel/project-document/project-notes-find.react": {
+		"glass.project.notes.findPlaceholder": "筛选器(例如 text、!excludeText、text1,text2)"
+	},
+	"vs/glass/browser/components/editor-panel/project-document/project-task-filter-fields": {
+		"glass.project.filter.project.none": "None",
+		"glass.project.filter.owner.none": "None",
+		"glass.project.filter.tag.none": "None"
+	},
+	"vs/glass/browser/components/editor-panel/project-document/project-task-owner-menu.react": {
+		"glass.project.taskOwner.unassigned": "None"
+	},
+	"vs/workbench/contrib/aiConfig/browser/aiconfig.contribution": {
+		"cursor.composer.planTextSizeScale.defaultSize": "默认"
+	},
+	"vs/workbench/contrib/comments/browser/comments": {
+		"comments.view.title": "注释"
+	},
+	"vs/workbench/contrib/composer/browser/browserEditor.contribution": {
+		"closeBrowserTab.close": "关闭(&&C)"
+	},
+	"vs/workbench/contrib/composer/electron-sandbox/webviewBrowserManager": {
+		"browserContextMenu.selectAll": "全选"
+	},
+	"vs/workbench/contrib/cursorMarkdownPlanEditor/browser/markdownPlanEditorActions": {
+		"findPrevious": "查找上一个"
+	},
+	"vs/workbench/contrib/extensions/browser/extensionsViewlet": {
+		"dismiss": "关闭"
+	},
+	"vs/workbench/contrib/notebook/browser/controller/insertCellActions": {
+		"notebookActions.menu.insertCodeCell": "添加代码",
+		"notebookActions.menu.insertCodeCellTop": "添加代码"
+	}
+}

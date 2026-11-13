@@ -1,0 +1,55 @@
+{
+	"vs/editor/contrib/gotoError/browser/gotoErrorWidget": {
+		"marker aria": "{0}，位于 {1}。"
+	},
+	"vs/editor/contrib/hover/browser/markdownHoverParticipant": {
+		"stopped rendering": "由于性能原因，长行已暂停呈现。可通过 `editor.stopRenderingLineAfter` 配置此设置。",
+		"too many characters": "由于性能原因，长行已跳过标记化。可通过 `editor.maxTokenizationLineLength` 配置此设置。"
+	},
+	"vs/platform/extensionManagement/common/abstractExtensionManagementService": {
+		"notFoundCompatibleDependency": "无法安装“{0}”扩展，因为它与当前版本的 {1} 不兼容（版本 {2}，VS Code 版本 {3}）。"
+	},
+	"vs/platform/telemetry/common/telemetryService": {
+		"telemetry.docsStatement": "详细了解 [Cursor 的隐私政策]({0})和 [Cursor 的安全政策]({1})。"
+	},
+	"vs/workbench/api/browser/statusBarExtensionPoint": {
+		"text": "要为该条目显示的文本。可以使用 `$(<name>)` 语法在文本中嵌入图标，例如 “Hello $(globe)!”。"
+	},
+	"vs/workbench/browser/workbench.contribution": {
+		"workbench.editor.editorActionsLocation.titleBar": "在窗口标题栏中显示编辑器操作。",
+		"navigationControlEnabled": "控制是否显示标题栏中的导航控件。",
+		"layoutControlEnabled": "控制是否显示标题栏中的布局控件。",
+		"window.commandCenter": "将命令启动器与窗口标题一起显示。",
+		"window.menuBarVisibility.compact": "菜单在边栏中显示为紧凑按钮。当 {0} 为 {1} 时忽略此值。"
+	},
+	"vs/workbench/contrib/comments/browser/commentsAccessibility": {
+		"escape": "- 关闭注释 (Escape)"
+	},
+	"vs/workbench/contrib/files/browser/files.contribution": {
+		"explorer.autoRevealExclude.when": "对匹配文件的同级项做额外检查。用 $(basename) 作为匹配文件名的变量。"
+	},
+	"vs/workbench/contrib/mcp/common/mcpRegistry": {
+		"mcp.trust.details": "{0} 从 {1}（`{2}`）发现了 Model Context Protocol 服务器。{0} 可在聊天中使用这些服务器的能力。\n\n是否允许运行来自 {3} 的 MCP 服务器？"
+	},
+	"vs/workbench/contrib/notebook/browser/contrib/cellDiagnostics/diagnosticCellStatusBarContrib": {
+		"notebook.cell.status.diagnostic": "快捷操作 {0}"
+	},
+	"vs/workbench/contrib/scm/browser/scmHistoryViewPane": {
+		"scmGraphViewOutdated": "请使用刷新操作（$(refresh)）刷新图形。"
+	},
+	"vs/workbench/contrib/share/browser/share.contribution": {
+		"experimental.share.enabled": "控制是否启用实验性共享命令。"
+	},
+	"vs/workbench/contrib/tasks/browser/taskQuickPick": {
+		"TaskQuickPick.changeSettingsOptions": "$(gear) 已关闭 {0} 任务检测。启用 {1} 任务检测..."
+	},
+	"vs/workbench/contrib/terminalContrib/suggest/common/terminalSuggestConfiguration": {
+		"suggest.enabled": "当 {1} 设置为 {2} 时，为支持的 shell（{0}）启用终端 IntelliSense 建议（预览）。"
+	},
+	"vs/workbench/services/auxiliaryWindow/browser/auxiliaryWindowService": {
+		"unableToOpenWindowDetail": "为避免以后出现此问题，请允许此网站弹出窗口。"
+	},
+	"vs/workbench/services/textfile/browser/textFileService": {
+		"fileBinaryError": "{0}"
+	}
+}

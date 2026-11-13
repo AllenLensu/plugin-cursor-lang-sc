@@ -1,0 +1,239 @@
+{
+	"vs/code/electron-main/main": {
+		"localModeDataImportError": "Cursor 数据导入失败",
+		"orbitDeploymentInvalid": "{0} 无法启动",
+		"orbitDeploymentUnsetDetail": "{0} 需要托管部署，但此设备上没有。请联系你的 IT 管理员。",
+		"orbitDeploymentInvalidSettingDetail": "此设备的托管部署设置无效。请联系你的 IT 管理员。"
+	},
+	"vs/code/electron-sandbox/processExplorer/processExplorerMain": {
+		"name": "进程名称",
+		"cpu": "CPU (%)",
+		"pid": "PID",
+		"memory": "内存(MB)",
+		"network": "网络(KB/s)",
+		"killProcess": "终止进程",
+		"forceKillProcess": "强制终止进程",
+		"openDevTools": "打开开发人员工具（本地渲染器）"
+	},
+	"vs/code/electron-utility/mcpProcess/mcpProcessMain": {
+		"mcpProcessLog": "MCP 进程"
+	},
+	"vs/editor/common/config/editorOptions": {
+		"experimentalEditContextEnabled": "设置是否使用新的实验性编辑上下文来代替文本区域。",
+		"commentOnLineNumbers": "在行号上拖动时启用注释视图区域。"
+	},
+	"vs/editor/common/editorContextKeys": {
+		"editorHasPromptBar": "编辑器是否有活动的提示栏",
+		"editorPromptBarFocused": "编辑器提示栏输入是否具有焦点"
+	},
+	"vs/platform/action/common/actionCommonCategories": {
+		"cursor": "Cursor"
+	},
+	"vs/platform/agentHarness/common/agentHostUpdate.config.contribution": {
+		"agentHostConfigurationTitle": "智能体宿主",
+		"agentHostUpdateMode": "控制负责运行本地智能体轮次的智能体能否在 Cursor 版本之间更新。更新从 Cursor 服务下载，并在下一次智能体轮次时应用。",
+		"agentHostUpdateMode.default": "遵循 'update.mode': 除非关闭了 Cursor 更新，否则会更新。",
+		"agentHostUpdateMode.on": "即使关闭了 Cursor 更新，也会更新。",
+		"agentHostUpdateMode.none": "永不更新；保留随此 Cursor 版本打包的智能体。"
+	},
+	"vs/platform/airlock/common/airlock": {
+		"airlock.disabled.orbit": "你所在组织的策略未设置 Airlock 容器。",
+		"airlock.disabled": "Airlock 仅在 SpaceX 模式下可用。",
+		"airlock.unconfigured": "IT 尚未在此计算机上设置 Airlock。",
+		"airlock.invalid": "此计算机上 IT 的 Airlock 设置无法使用: {0}",
+		"airlock.signedOut": "请使用你的 SpaceX 帐户登录以使用 Airlock。"
+	},
+	"vs/platform/airlock/common/airlockConfig": {
+		"airlock.policy.required": "{0} 未设置。",
+		"airlock.policy.containerName": "{0} 必须是容器名称: 字母、数字、'_'、'.' 和 '-'，并以字母或数字开头。",
+		"airlock.policy.defaultWorkspace": "{0} 必须是容器内的绝对路径。",
+		"airlock.policy.containerUser": "{0} 必须是用户名或 ID，后面可以选择加上 ':' 和一个组。",
+		"airlock.policy.hookPath": "{0} 必须是绝对路径。",
+		"airlock.policy.engine": "{0} 必须是 docker、podman 或绝对路径。",
+		"airlock.policy.string": "{0} 必须是字符串。",
+		"airlock.policy.timeout": "{0} 必须是以秒为单位的正数。"
+	},
+	"vs/platform/airlock/common/airlockRepo": {
+		"airlock.sandboxConfig.invalidYaml": "{0} 不是有效的 YAML: {1}",
+		"airlock.sandboxConfig.notMapping": "{0} 必须是 YAML 映射。",
+		"airlock.sandboxConfig.startCommand": "{0} 中的 start_command 必须是一条命令，并以字符串书写。"
+	},
+	"vs/platform/airlock/electron-main/airlockMainService": {
+		"airlock.prepareThrew": "Cursor 无法准备好 Airlock: {0}",
+		"airlock.containerChanged": "Cursor 正在准备 Airlock 时，你所在组织的策略指定了另一个 Airlock 容器。",
+		"airlock.engineUnavailable": "{0} 不可用: {1}",
+		"airlock.repo.startThrew": "Cursor 无法启动该仓库的 Airlock 容器: {0}",
+		"airlock.repo.noSandboxConfig": "{0} 没有 {1}，因此 Cursor 无法启动其 Airlock 容器。",
+		"airlock.repo.starting": "正在启动 {0} 的 Airlock 容器…",
+		"airlock.repo.startFailed": "{0} 中的启动命令失败: {1}",
+		"airlock.repo.startTimeout": "{0} 中的启动命令已完成，但 {2} 秒后仍没有 {1} 的 Airlock 容器在运行。",
+		"airlock.repo.settingsChanged": "Cursor 正在准备容器时，你所在组织的 Airlock 设置已更改。",
+		"airlock.engineNotFound": "{0} 不在 PATH 中。",
+		"airlock.wrapperNotExe": "开发容器无法运行 IT 的引擎包装脚本 {0}。在 Windows 上，Airlock 的引擎必须是 docker、podman 或 .exe 文件。",
+		"airlock.dockerPathConflict": "你在 {1} 中的 {0} 设置将开发容器指向了与 Airlock 不同的容器引擎。请移除该设置，然后重新连接。",
+		"airlock.devContainersSetup": "Cursor 无法让开发容器做好打开 Airlock 的准备: {0}",
+		"airlock.repo.none": "{0} 没有正在运行的 Airlock 容器。Cursor 会查找名为 {1}… 的容器。",
+		"airlock.repo.noneStartable": "{0} 没有正在运行的 Airlock 容器。请启动它，然后重新连接。",
+		"airlock.repo.ambiguous": "有多个 Airlock 容器与 {0} 匹配: {1}。请移除你不使用的容器，然后重新连接。",
+		"airlock.repo.unmapped": "Cursor 无法确定 {0} 在容器 {1} 中的位置: 该容器未挂载此文件夹，也未设置工作文件夹。",
+		"airlock.repo.stopped": "容器 {0} 未在运行。请启动它，然后重新连接。",
+		"airlock.noAnswer": "{0} 秒内没有应答",
+		"airlock.exitCode": "退出代码 {0}"
+	},
+	"vs/platform/airlock/node/airlockDevContainers": {
+		"airlock.nameConfigInvalid": "Cursor 无法让开发容器做好打开 Airlock 的准备，因为开发容器针对该容器的设置不是 JSON 对象。请修复或删除 {0}，然后重试。",
+		"airlock.nameConfigRemoteEnvInvalid": "Cursor 无法让开发容器做好打开 Airlock 的准备，因为开发容器针对该容器的设置中的 remoteEnv 不是 JSON 对象。请修复或删除 {0}，然后重试。",
+		"airlock.settingsInvalid": "Cursor 无法将开发容器指向 Airlock 的容器引擎，因为 {0} 不是有效的 JSON。请修复它，然后重试。"
+	},
+	"vs/platform/airlock/node/airlockHooks": {
+		"airlock.hook.failedToStart": "Cursor 无法运行 {1} 处的 {0} 钩子: {2}",
+		"airlock.hook.timedOut": "{0} 钩子未在 {1} 秒内完成。",
+		"airlock.hook.failed": "{0} 钩子失败: {1}",
+		"airlock.hook.signal": "{0} 钩子已被 {1} 停止。",
+		"airlock.hook.exitCode": "{0} 钩子失败，退出代码为 {1}。",
+		"airlock.hook.detailTruncated": "{0}（请参阅日志）"
+	},
+	"vs/platform/airlock/node/airlockLifecycle": {
+		"airlock.progress.restart": "正在重启容器…",
+		"airlock.progress.inspect": "正在查找容器 {0}…",
+		"airlock.progress.waitForEngine": "正在等待 {0}…",
+		"airlock.progress.preAttach": "正在准备容器…",
+		"airlock.progress.create": "正在创建容器…",
+		"airlock.containerNotCreated": "IT 的 create_container 钩子未创建容器 {0}。",
+		"airlock.containerDead": "{0} 无法完成移除容器 {1}，该容器仍占用其名称。请移除它，然后重试。",
+		"airlock.containerNotFound": "容器 {0} 不存在。",
+		"airlock.containerMissing": "容器 {0} 不存在，且 IT 未设置用于创建它的钩子。",
+		"airlock.progress.resume": "正在恢复容器…",
+		"airlock.progress.start": "正在启动容器…",
+		"airlock.progress.wait": "正在等待容器启动…",
+		"airlock.startTimeout": "容器 {0} 未在 {1} 秒内启动（{2}）。",
+		"airlock.containerGone": "容器 {0} 已不存在。",
+		"airlock.engineUnavailable": "{0} 不可用: {1}",
+		"airlock.engineFailed": "“{0} {1}”失败: {2}",
+		"airlock.progress.serverCheck": "正在检查 Cursor 服务器…",
+		"airlock.serverCheckFailed": "Cursor 无法检查容器 {0} 中的服务器: {1}",
+		"airlock.serverMissing": "容器 {0} 没有此版本 Cursor 所需的 Cursor 服务器（提交 {1}，{2}）。请让 IT 为容器用户将其放置到 ~/{3}/bin/{1}/ 中。",
+		"airlock.engineNotFound": "{0} 不在 PATH 中。",
+		"airlock.noAnswer": "{0} 秒内没有应答",
+		"airlock.stoppedBySignal": "被 {0} 停止",
+		"airlock.exitCode": "退出代码 {0}"
+	},
+	"vs/platform/browserView/electron-sandbox/externalSchemeConfirmation": {
+		"browserView.openExternalLinkTitle": "打开外部链接",
+		"browserView.openExternalLink": "是否要打开此链接?",
+		"browserView.openExternalLinkDetail": "{0}\n\n这将在外部应用程序中打开。"
+	},
+	"vs/platform/contextkey/common/contextkeys": {
+		"isDevUser": "用户是否为 Cursor 开发人员/员工"
+	},
+	"vs/platform/conversationSearch/electron-main/conversationSearchProcess": {
+		"conversationSearchProcessLog": "对话搜索"
+	},
+	"vs/platform/cursorStartupHttp/common/startupConnectTransportSetting": {
+		"cursor.experimental.startupConnectTransport": "实验性。启动时通过主进程打开后端身份验证门控，并处理来自窗口的 Connect 请求，而不是等待 Cursor Always Local 扩展。除非也为你的帐户启用了该实验，否则不起作用；设置为 false 可选择退出。重新加载窗口后生效。"
+	},
+	"vs/platform/dialogs/common/aboutDetail": {
+		"aboutDetailWithoutReleaseTrack": "版本: {0}\nVS Code 扩展 API: {1}\n提交: {2}\n日期: {3}\n布局: {4}\n构建类型: {5}\nElectron: {6}\nChromium: {7}\nNode.js: {8}\nV8: {9}\nxterm.js: {10}\nOS: {11}",
+		"aboutDetail": "版本: {0}\nVS Code 扩展 API: {1}\n提交: {2}\n日期: {3}\n布局: {4}\n构建类型: {5}\n发布轨道: {6}\nElectron: {7}\nChromium: {8}\nNode.js: {9}\nV8: {10}\nxterm.js: {11}\nOS: {12}",
+		"aboutLocalMode": "本地模式: 已启用"
+	},
+	"vs/platform/environment/node/argv": {
+		"suppressPopupsOnStartup": "启动时不显示通知弹出窗口。",
+		"webWorkerExthost": "在 Web Worker 扩展宿主中运行所有支持 Web 的扩展。",
+		"glass": "打开智能体窗口，而不是经典编辑器窗口。",
+		"classic": "打开经典编辑器窗口，而不是智能体窗口。",
+		"chat": "打开不含完整 IDE 的独立聊天窗口。",
+		"stdinWindows": "要从另一个程序读取输出，请追加 '-'（例如 'echo Hello World | {0} -'）",
+		"stdinUnix": "要从 stdin 读取，请追加 '-'（例如 'ps aux | grep code | {0} -'）"
+	},
+	"vs/platform/extensionManagement/common/abstractExtensionManagementService": {
+		"incompatibleAPI": "无法安装“{0}”扩展。{1}"
+	},
+	"vs/platform/extensions/common/extensionValidator": {
+		"apiProposalMismatch1": "此扩展使用的 API 提案“{0}”与当前版本的 VS Code 不兼容。",
+		"apiProposalMismatch2": "此扩展使用的 API 提案 {0} 和“{1}”与当前版本的 VS Code 不兼容。"
+	},
+	"vs/platform/extensions/electron-main/extensionMonitorMainService": {
+		"extensionMonitor": "扩展监视器"
+	},
+	"vs/platform/externalTerminal/node/externalTerminalService": {
+		"mac.terminal.script.failed": "脚本“{0}”失败，退出代码为 {1}",
+		"linux.term.failed": "“{0}”失败，退出代码为 {1}"
+	},
+	"vs/platform/files/common/fileService": {
+		"invalidStat": "来自提供程序的文件统计信息无效"
+	},
+	"vs/platform/mcpProcess/electron-main/mcpProcess": {
+		"mcpProcessLog": "MCP 进程"
+	},
+	"vs/platform/native/electron-main/nativeHostMainService": {
+		"cantRemoveVSCodeFromPath": "无法在路径上将 `code` 替换为 `Cursor`。"
+	},
+	"vs/platform/process/electron-main/processMainService": {
+		"workspaceProcessExplorer": "工作区进程资源管理器",
+		"processExplorer": "进程资源管理器",
+		"trace.message": "已成功创建跟踪文件",
+		"trace.detail": "请创建问题并手动附加以下文件:\n{0}"
+	},
+	"vs/platform/spacexMode/electron-main/signInLogMainService": {
+		"signInLog": "登录"
+	},
+	"vs/platform/storage/electron-main/storageMainService": {
+		"storageError.title": "存储错误",
+		"storageError.message": "Cursor 无法打开本地存储。请重新加载或联系支持人员。",
+		"storageError.detail": "Cursor 可能仍在关闭。请稍候，然后重新启动。\n\n如果存储文件已损坏、被移动或存在权限问题，也可能发生这种情况。\n\n存储路径: {0}",
+		"storageError.quit": "退出"
+	},
+	"vs/platform/update/common/update.config.contribution": {
+		"silentlyApplyOnQuit": "启用自动更新检查，并在不提示的情况下自动安装更新。有可用更新时将自动应用。",
+		"releaseTrack": "配置更新的发布轨道。可以是 'prerelease'、'stable'、'dev'、'dogfood' 或 'candidate'。",
+		"releaseTrackOverride": "用于更新的内部托管发布轨道覆盖。"
+	},
+	"vs/platform/update/common/update": {
+		"agentsWindowSwitchToMolten.tooltip": "更新以获得更快的体验"
+	},
+	"vs/platform/update/common/updateActionTitles": {
+		"checkForUpdates": "检查更新...",
+		"downloadUpdate": "下载更新",
+		"installUpdate": "安装更新"
+	},
+	"vs/platform/update/common/updateClientOrOpenUrl": {
+		"updateClient.ready": "重新启动以更新",
+		"updateClient.checking": "正在检查更新…",
+		"updateClient.downloading": "正在下载…",
+		"updateClient.installing": "正在安装…"
+	},
+	"vs/platform/update/electron-main/updateService.darwin": {
+		"openLoginItemsSettings": "打开系统设置(&&O)",
+		"backgroundActivityRequired": "允许 {0} 在后台运行",
+		"backgroundActivityRequiredDetail": "启用后台活动，以便为 {0} 运行更新程序进程。由于不允许 {0} 在后台运行，当 {0} 退出时 MacOS 会停止更新安装程序。"
+	},
+	"vs/platform/update/electron-main/updateService.linux": {
+		"packageUpdateDialogMessage": "使用包管理器更新 {0}",
+		"packageUpdateDialogDetail": "在终端中运行此命令，然后重新启动 {0}:\n\n{1}"
+	},
+	"vs/platform/utilityHost/common/utilityHostCpuProfileCommands": {
+		"revealInWindows": "在文件资源管理器中显示",
+		"revealInMac": "在 Finder 中显示",
+		"openContainer": "打开所在文件夹",
+		"utilityHost.diagnostics": "{0} 诊断",
+		"utilityHost.diagnostics.startCpuProfile": "启动 CPU 分析器",
+		"utilityHost.diagnostics.takeHeapSnapshot": "获取堆快照",
+		"utilityHost.diagnostics.placeholder": "选择诊断操作",
+		"utilityHost.cpuProfile.notRunning": "{0} 未在运行；请先打开一个会用到它的命令。",
+		"utilityHost.cpuProfile.alreadyRunning": "{0} CPU 分析器已在运行。",
+		"utilityHost.cpuProfile.startFailed": "启动 {0} CPU 分析器失败: {1}",
+		"utilityHost.cpuProfile.running": "{0} CPU 分析器正在运行",
+		"utilityHost.cpuProfile.stopFailed": "停止 {0} CPU 分析器失败: {1}",
+		"utilityHost.cpuProfile.maxDuration": "{0} CPU 分析器已达到最长持续时间并已停止。",
+		"utilityHost.heapSnapshot.notRunning": "{0} 未在运行；请先打开一个会用到它的命令。",
+		"utilityHost.heapSnapshot.saveFailed": "保存 {0} 堆快照失败: {1}",
+		"utilityHost.heapSnapshot.running": "正在获取 {0} 堆快照…",
+		"utilityHost.heapSnapshot.empty": "{0} 返回了空的堆快照。",
+		"utilityHost.heapSnapshot.saved": "已将 {0} 堆快照保存到 {1}",
+		"utilityHost.heapSnapshot.failed": "获取 {0} 堆快照失败: {1}",
+		"utilityHost.cpuProfile.invalid": "{0} CPU 分析器返回了无效的配置文件: {1}",
+		"utilityHost.cpuProfile.saved": "已将 {0} CPU 配置文件保存到 {1}",
+		"utilityHost.cpuProfile.saveFailed": "保存 {0} CPU 配置文件失败: {1}"
+	}
+}

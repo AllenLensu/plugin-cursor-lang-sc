@@ -1,0 +1,449 @@
+{
+	"vs/workbench/api/browser/mainThreadAuthentication": {
+		"signedOut": "已成功注销。",
+		"dontAskAgain": "不再询问",
+		"confirmModelAccess": "扩展“{0}”想要访问 {1} 提供的语言模型。"
+	},
+	"vs/workbench/api/browser/mainThreadCursor": {
+		"extensionHostTimeoutTitle": "工作区已断开连接",
+		"extensionHostTimeoutDetail": "Cursor 在开始执行工具时与工作区失去了连接。请重新加载窗口并重试。",
+		"sessionInitFailedTitle": "智能体会话初始化失败",
+		"sessionInitFailedDetail": "无法初始化智能体执行会话。请重新加载窗口以继续。",
+		"sessionNotFoundTitle": "找不到智能体会话",
+		"sessionNotFoundDetail": "智能体执行会话已丢失。请重新加载窗口以继续。",
+		"streamStartFailedTitle": "智能体流启动失败",
+		"streamStartFailedDetail": "无法启动智能体执行流。请重新加载窗口以继续。"
+	},
+	"vs/workbench/api/browser/viewsExtensionPoint": {
+		"views.container.secondarySidebar.unsupported": "在 Cursor 中，不能将视图容器贡献到辅助侧边栏。该区域保留给 Cursor 的智能体界面。请改为贡献到 'activitybar' 或 'panel'。"
+	},
+	"vs/workbench/api/test/browser/mainThreadTreeViews.test": {
+		"test": "测试",
+		"Test View 1": "测试视图 1"
+	},
+	"vs/workbench/browser/actions/agentLayoutQuickMenu/agentLayoutQuickMenuTypes": {
+		"agentLayoutMenu.layout.agent": "布局 • 左侧",
+		"agentLayoutMenu.layout.editor": "布局 • 右侧",
+		"agentLayoutMenu.layout.zen": "布局 • 禅模式",
+		"agentLayoutMenu.layout.browser": "浏览器"
+	},
+	"vs/workbench/browser/actions/developerActions": {
+		"clearStatsigCache.done": "已清除 Statsig 缓存。下次刷新时会重新加载。",
+		"saveReactiveStorage.done": "已成功保存响应式存储。",
+		"injectCursorSocketFailure.done": "已向 {0} 个客户端套接字和 {1} 个服务器连接注入 cursor-socket 故障。",
+		"crashExtensionHost.none": "找不到可使其崩溃的本地进程扩展宿主（不支持 Web 工作器和远程宿主）。",
+		"crashExtensionHost.done": "已使本地扩展宿主崩溃 (pid {0})。它应会自动重启。",
+		"crashRemoteExtensionHost.none": "找不到可使其崩溃的远程扩展宿主。",
+		"crashRemoteExtensionHost.done": "已使远程扩展宿主崩溃 (pid {0})。它应会自动重启。",
+		"simulatePermanentRemoteDisconnect.noConnection": "当前窗口没有可断开的远程连接。",
+		"simulatePermanentRemoteDisconnect.done": "已丢弃套接字，并已设置下一次管理重连像解析器错误一样失败（永久性失败会沿真实的重连路径发生）。",
+		"simulateRemoteConnectionDrop.noConnection": "当前窗口没有远程连接。",
+		"simulateRemoteConnectionDrop.done": "已模拟连接断开（套接字已关闭）。如果远程端仍然可用，则会正常重新连接。",
+		"featureGatesDumped": "已将功能开关转储到 {0}",
+		"revealInOS": "在文件资源管理器中显示",
+		"clearStatsigCache": "清除 Statsig 缓存",
+		"saveReactiveStorage": "保存响应式存储",
+		"injectCursorSocketFailure": "注入 cursor-socket 故障",
+		"crashExtensionHost": "使扩展宿主崩溃（缓慢恢复）",
+		"crashRemoteExtensionHost": "使远程扩展宿主崩溃（缓慢恢复）",
+		"simulatePermanentRemoteDisconnect": "连接: 模拟永久断开",
+		"simulateRemoteConnectionDrop": "连接: 模拟连接断开（暂时）",
+		"dumpFeatureGates": "转储功能开关"
+	},
+	"vs/workbench/browser/actions/exportCustomModesAction": {
+		"hasCustomModes": "用户是否拥有旧版自定义 Composer 模式",
+		"noCustomModesFound": "存储中找不到自定义模式。",
+		"customModesExported": "已将 {0} 个自定义模式导出到 {1}",
+		"exportCustomModes": "导出自定义模式"
+	},
+	"vs/workbench/browser/actions/exportNotepadsAction": {
+		"hasNotepads": "用户的存储中是否有记事本",
+		"noNotepadsFound": "存储中找不到记事本。",
+		"parseError": "无法解析记事本数据: {0}",
+		"notepadsExported": "已将 {0} 个记事本导出到 {1}",
+		"exportNotepadsError": "无法导出记事本: {0}",
+		"exportNotepads": "将记事本导出到文件"
+	},
+	"vs/workbench/browser/actions/helpActions": {
+		"setupBugBot": "设置 Bugbot"
+	},
+	"vs/workbench/browser/actions/layoutActions": {
+		"minimizeChatSize": "最小化聊天",
+		"maximizeChatSizeDescription": "最大化聊天大小 - 隐藏编辑器、面板和主侧边栏，以便专注于 AI 智能体",
+		"toggleInlineDiffsDescription": "切换编辑器中内联差异的可见性",
+		"toggleUnifiedSideBar": "切换智能体侧边栏",
+		"openLayoutSettingsMenu": "打开布局设置菜单",
+		"maximizeChatSize": "最大化聊天大小",
+		"toggleInlineDiffs": "切换内联差异",
+		"openAgentLayoutQuickMenu": "打开 Cursor 设置",
+		"openLayoutSwitcher": "切换布局",
+		"toggleZenMode": "切换禅模式"
+	},
+	"vs/workbench/browser/actions/layoutIcons": {
+		"panelLeft": "表示位于左侧的侧边栏",
+		"panelLeftOff": "表示位于左侧且已关闭的侧边栏",
+		"panelRight": "表示位于右侧的侧边栏",
+		"panelRightOff": "表示位于右侧且已关闭的侧边栏"
+	},
+	"vs/workbench/browser/actions/layoutSwitcherOverlay": {
+		"layoutSwitcher.agent": "智能体"
+	},
+	"vs/workbench/browser/parts/activitybar/activitybarPart": {
+		"reloadForActivityBar": "请退出并重新打开，以便垂直显示活动栏。"
+	},
+	"vs/workbench/browser/parts/auxiliarybar/auxiliaryBarActions": {
+		"secondary sidebar mnemonic": "辅助侧边栏(&&D)"
+	},
+	"vs/workbench/browser/parts/auxiliarybar/auxiliaryBarPart": {
+		"auxiliaryBarShowAgentsSidebar": "显示智能体侧边栏",
+		"auxiliaryBarNewAgent": "新建智能体",
+		"auxiliaryBarChatHistory": "聊天历史记录",
+		"auxiliaryBarMoreActions": "更多操作"
+	},
+	"vs/workbench/browser/parts/dialogs/aboutDialog.react": {
+		"aboutDialog.copySucceeded": "已复制",
+		"aboutDialog.versionLabel": "版本 {0}",
+		"aboutDialog.copyVersion": "复制版本",
+		"aboutDialog.copyBuildDate": "复制构建日期",
+		"aboutDialog.copyVersionInfo": "复制版本信息"
+	},
+	"vs/workbench/browser/parts/dialogs/dialogHandler": {
+		"aboutDetail": "版本: {0}\n提交: {1}\n日期: {2}\n布局: {3}\n浏览器: {4}",
+		"aboutLocalMode": "本地模式: 已启用"
+	},
+	"vs/workbench/browser/parts/editor/cloneRepoFromEmptyScreen": {
+		"emptyScreen.cloneRepo.gitUnavailable": "克隆存储库需要 Git。请安装 Git，或启用内置 Git 扩展，然后重启 Cursor。",
+		"emptyScreen.cloneRepo.downloadGit": "下载 Git"
+	},
+	"vs/workbench/browser/parts/editor/editor.contribution": {
+		"closePaneAction": "关闭窗格",
+		"closePaneContext": "关闭窗格",
+		"openBrowser": "打开浏览器"
+	},
+	"vs/workbench/browser/parts/editor/editorActions.cursor": {
+		"evenEditorGroupsExcludingAgent": "重置编辑器组大小（不包括智能体）"
+	},
+	"vs/workbench/browser/parts/editor/editorActions": {
+		"closeAllTabsDescription": "关闭所有编辑器选项卡。也会匹配以前的名称: 关闭所有编辑器。",
+		"closeAllTabs": "关闭所有选项卡"
+	},
+	"vs/workbench/browser/parts/editor/editorGroupWatermark": {
+		"editorLineHighlight": "编辑器水印中标签的前景色。",
+		"watermark.openBrowser": "打开浏览器",
+		"watermark.showTerminal": "显示终端",
+		"watermark.hideTerminal": "隐藏终端",
+		"watermark.showFiles": "显示文件",
+		"watermark.addRepository": "添加存储库",
+		"watermark.maximizeChat": "最大化聊天"
+	},
+	"vs/workbench/browser/parts/editor/renderEditorEmptyScreen": {
+		"enableResolver": "打开远程窗口需要“Remote - SSH”扩展。\n是否启用?",
+		"removeRecentProject": "从最近使用中移除"
+	},
+	"vs/workbench/browser/parts/globalCompositeBar": {
+		"noAccounts": "你尚未登录任何帐户"
+	},
+	"vs/workbench/browser/parts/panel/panelActions": {
+		"restoreIcon": "用于还原面板的图标。",
+		"toggle panel mnemonic": "面板(&&P)"
+	},
+	"vs/workbench/browser/parts/titlebar/titlebarActions": {
+		"toggle.agentsWindow": "智能体窗口按钮",
+		"toggle.agentsWindowDescription": "切换标题栏中智能体窗口按钮的可见性",
+		"toggle.titleBarStyle": "还原本机标题栏"
+	},
+	"vs/workbench/browser/parts/titlebar/titlebarPart": {
+		"ariaLabelLeftTitleActions": "左侧标题操作",
+		"ariaLabelNavigationActions": "导航操作",
+		"movePrimarySideBarRight": "向右移动侧边栏",
+		"movePrimarySideBarLeft": "向左移动侧边栏",
+		"newAgentShort": "新建智能体",
+		"chatHistoryTitlebarMaximized": "聊天历史记录",
+		"openAgentsWindowTitlebar": "打开智能体窗口",
+		"moreActionsTitlebarMaximized": "更多操作",
+		"toggleAgents": "切换智能体",
+		"titlebarOpenCursorSettings": "打开 Cursor 设置",
+		"cursorSettings": "Cursor 设置"
+	},
+	"vs/workbench/browser/windowQuitConfirmation": {
+		"shutdownChatStreamingTitle": "智能体仍在工作",
+		"shutdownChatStreamingDetail": "现在停止会取消当前任务。",
+		"shutdownChatStreamingTitlePlural": "{0} 个智能体仍在工作",
+		"shutdownChatStreamingDetailPlural": "现在停止会取消它们当前的任务。",
+		"shutdownChatStreamingAutoContinueDetail": "你重新打开时，Cursor 会恢复此智能体。",
+		"shutdownChatStreamingAutoContinueDetailPlural": "你重新打开时，Cursor 会恢复这些智能体。",
+		"shutdownChatStreamingAutoContinueToggle": "自动恢复智能体",
+		"shutdownChatStreamingAutoContinueTogglePlural": "自动恢复这些智能体",
+		"shutdownQuit": "退出",
+		"shutdownLoad": "更改",
+		"shutdownForceClose": "仍然关闭",
+		"shutdownForceQuit": "仍然退出",
+		"shutdownForceReload": "仍然重新加载",
+		"shutdownForceLoad": "仍然更改",
+		"archiveRunningAgentTitle": "是否归档正在运行的智能体?",
+		"archiveRunningAgentDetail": "此智能体仍在工作。归档会停止它并取消当前任务。",
+		"archiveRunningAgentConfirm": "归档",
+		"shutdownBackgroundTerminalTitle": "后台终端仍在运行",
+		"shutdownBackgroundTerminalDetail": "现在停止会终止后台终端。",
+		"shutdownBackgroundTerminalTitlePlural": "{0} 个后台终端仍在运行",
+		"shutdownBackgroundTerminalDetailPlural": "现在停止会终止这些后台终端。"
+	},
+	"vs/workbench/browser/workbench.contribution": {
+		"workbench.quickOpen.width": "控制快速打开和其他快速选取器的宽度（以像素为单位）。",
+		"activityBarDirection": "控制工作台中活动栏的方向。退出并重新打开后，更改才会生效。",
+		"agentsWindowButtonEnabled": "控制是否显示标题栏中的智能体窗口按钮。",
+		"zenMode.fullScreen": "控制打开禅模式时是否同时让工作台进入全屏模式。",
+		"zenMode.centerLayout": "控制打开禅模式时是否同时将布局居中。",
+		"zenMode.showTabs": "控制打开禅模式时是显示多个编辑器选项卡、单个编辑器选项卡，还是完全隐藏编辑器标题区域。",
+		"zenMode.hideStatusBar": "控制打开禅模式时是否同时隐藏工作台底部的状态栏。",
+		"zenMode.hideActivityBar": "控制打开禅模式时是否同时隐藏工作台左侧或右侧的活动栏。",
+		"zenMode.hideLineNumbers": "控制打开禅模式时是否同时隐藏编辑器行号。",
+		"zenMode.restore": "控制窗口若是在禅模式下退出的，是否应恢复到禅模式。",
+		"zenMode.silentNotifications": "控制处于禅模式时是否应启用通知勿扰模式。如果为 true，则只会弹出错误通知。"
+	},
+	"vs/workbench/common/contextkeys": {
+		"isGlass": "工作台是否处于 Glass 模式",
+		"activeEditorIsReviewChanges": "活动编辑器是否为“审阅更改”编辑器",
+		"isAuxiliaryEditorPart": "编辑器部件位于辅助窗口中",
+		"agentChatMaximized": "智能体聊天体验是否已最大化，并通过统一最大化模式隐藏编辑器区域",
+		"documentBodyFocused": "文档主体是否具有键盘焦点"
+	},
+	"vs/workbench/common/theme": {
+		"tabWorktreeBorder": "包含工作树中文件的选项卡的边框颜色。选项卡是编辑器区域中编辑器的容器。"
+	},
+	"vs/workbench/contrib/accessibility/browser/accessibilityConfiguration": {
+		"verbosity.agentChat": "提供有关在聊天获得焦点时如何访问智能体聊天的辅助功能帮助菜单，以及在播报响应时如何在辅助视图中打开智能体响应的信息。"
+	},
+	"vs/workbench/contrib/agents/browser/agentsActions": {
+		"all-agents": "所有智能体",
+		"quickOpenPreviousRecentlyUsedAgent": "快速打开上一个最近使用过的智能体",
+		"quickOpenLeastRecentlyUsedAgent": "快速打开最近使用频率最低的智能体"
+	},
+	"vs/workbench/contrib/agents/browser/agentsQuickAccess": {
+		"agents.chatHistory.section.chats": "聊天",
+		"agents.chatHistory.section.cloudAgents": "云端智能体",
+		"agents.chatHistory.noResults": "没有可用的聊天",
+		"agents.chatHistory.noResults.filter": "请尝试其他搜索词",
+		"agents.chatHistory.noResults.empty": "新建智能体即可在此看到",
+		"agents.chatHistory.noResults.aria": "没有可用的聊天",
+		"agents.chatHistory.composerAria": "聊天 {0}",
+		"agents.chatHistory.backgroundAria": "云端智能体 {0}",
+		"agents.chatHistory.untitledChat": "无标题聊天",
+		"agents.chatHistory.placeholder": "搜索聊天和云端智能体",
+		"agents.chatHistory.help": "搜索聊天历史记录",
+		"agents.mru.noResults": "没有最近使用的智能体",
+		"agents.mru.composerAria": "智能体 {0}",
+		"agents.mru.backgroundAria": "云端智能体 {0}",
+		"agents.ctrlTab.draft": "草稿",
+		"agents.mru.placeholder": "在最近使用的智能体之间切换",
+		"agents.mru.help": "在最近使用的智能体之间切换"
+	},
+	"vs/workbench/contrib/agents/browser/components/AgentSidebarFooter": {
+		"agentSidebarFooter.privateInference": "私有推理"
+	},
+	"vs/workbench/contrib/agents/browser/components/AgentSidebarUpdateButton": {
+		"agentSidebarUpdateButton.tooltip": "更新将在退出时应用 — 单击以立即重启",
+		"agentSidebarUpdateButton.restartOnlyTooltip": "更新已就绪 — 单击以重启",
+		"agentSidebarUpdateButton.restartOnlyTooltipWithVersion": "更新到 {0} 已就绪 — 单击以重启",
+		"agentSidebarUpdateButton.tooltipWithVersion": "更新到 {0} 将在退出时应用 — 单击以立即重启",
+		"agentSidebarUpdateButton.installingTooltip": "正在安装更新 — Cursor 将自动关闭并重新打开。",
+		"agentSidebarUpdateButton.label": "更新: 重启 Cursor 以安装",
+		"agentSidebarUpdateButton.installingLabel": "正在安装更新"
+	},
+	"vs/workbench/contrib/agents/common/agentsContextKeys": {
+		"agentsPaneFocused": "智能体侧边栏当前是否具有键盘焦点。",
+		"agentNavigationMode": "当前是否处于智能体导航模式（按住并松开以切换）。"
+	},
+	"vs/workbench/contrib/aiConfig/browser/aiconfig.contribution": {
+		"cursorGeneralConfigurationTitle": "常规",
+		"agent.remoteWorkspaceAuthorities.title": "智能体远程工作区的远程机构",
+		"agent.remoteWorkspaceAuthorities.description": "在由设备管理进行配置时，智能体在本地窗口中禁用，仅在远程工作区中启用。空值允许所有远程机构；否则请提供以逗号分隔的模式，匹配时不区分大小写，可选用 * 通配符（例如 ssh-remote+127.0.0.1*）。",
+		"agent.remoteWorkspaceAuthorities.policyDescription": "要求智能体在远程工作区中运行，并可选择限制为以逗号分隔的远程机构模式。空值允许所有远程机构。",
+		"http2.disable.title": "禁用 HTTP/2.0",
+		"http2.disable.description": "对所有请求禁用 HTTP/2，改用 HTTP/1.1。这会增加资源占用和延迟，但在阻止 HTTP/2 的企业代理后面很有用。",
+		"debug.timeoutPrevention.title": "防止调试超时",
+		"instantGrep.indexRepositories.title": "为即时 Grep 索引存储库",
+		"instantGrep.indexRepositories.policyDescription": "控制 Cursor 是否在本地为即时 Grep 索引存储库。禁用此策略可防止在受管理设备上索引存储库。",
+		"cursor.composer.planTextSizeScale.matchAgentChat": "匹配智能体聊天",
+		"cursor.composer.planTextSizeScale.small": "小",
+		"cursor.composer.planTextSizeScale.large": "大",
+		"cursor.composer.planTextSizeScale.extraLarge": "特大",
+		"cursor.composer.conversationDensity.toolSummary": "紧凑",
+		"cursor.composer.conversationDensity.compactRows": "平衡",
+		"cursor.composer.conversationDensity.detailed": "详细",
+		"cursor.composer.editorConversationDensity.toolSummary": "紧凑",
+		"cursor.composer.editorConversationDensity.compactRows": "平衡",
+		"cursor.composer.editorConversationDensity.detailed": "详细"
+	},
+	"vs/workbench/contrib/airlock/electron-sandbox/airlockAttach": {
+		"airlockCanStartRepo": "此窗口是否可以启动其存储库的 Airlock 容器",
+		"airlockCanConnect": "此窗口是否可以打开 Airlock",
+		"airlock.devContainersMissing": "Cursor 通过开发容器扩展打开 Airlock，但该扩展未安装或已关闭。",
+		"airlock.repo.untrusted": "在 Cursor 运行 Airlock 启动命令之前，请先信任此文件夹。",
+		"airlock.repo.startingTitle": "正在启动 Airlock 容器",
+		"airlock.repo.started": "Airlock 容器 {0} 正在运行。",
+		"airlock.connectAction": "连接到 Airlock",
+		"airlock.repo.openFolder": "请在此计算机上打开存储库文件夹，然后连接到其 Airlock。",
+		"airlock.connecting": "正在连接到 Airlock",
+		"airlock.openLog": "打开日志"
+	},
+	"vs/workbench/contrib/airlock/electron-sandbox/airlockConnect.contribution": {
+		"airlock.connect": "连接到 Airlock",
+		"airlock.startRepo": "启动 Airlock 容器"
+	},
+	"vs/workbench/contrib/aiSettings/browser/react/indexing-config.react": {
+		"indexingGrepRequiresReloadMessage": "更改即时 Grep 需要重新加载窗口。",
+		"indexingGrepRequiresReloadDetail": "按“重新加载窗口”以立即{0}即时 Grep。按“取消”以保留当前设置。",
+		"reloadWindowMnemonic": "重新加载窗口(&&R)"
+	},
+	"vs/workbench/contrib/analytics/browser/aiCodeTrackingActions.contribution": {
+		"scoreCommitFromSCM": "[调试] 为提交的 AI 内容评分",
+		"scoreCommitWithDetails": "[调试] 为提交评分并显示详细信息"
+	},
+	"vs/workbench/contrib/analytics/browser/aiCodeTrackingStatusBar": {
+		"aiCodeTracking.resetDailyStats": "重置 AI 代码跟踪统计信息",
+		"aiCodeTracking.category": "AI 代码跟踪"
+	},
+	"vs/workbench/contrib/appLayout/browser/appLayoutActions": {
+		"hideUnifiedSideBar": "切换智能体侧边栏",
+		"toggleUnifiedSideBarDescription": "切换智能体侧边栏的可见性",
+		"toggleAgentsToggled": "切换智能体",
+		"toggleAgentsDescription": "切换智能体的可见性",
+		"toggleUnifiedSideBar": "切换智能体侧边栏",
+		"toggleAgents": "切换智能体"
+	},
+	"vs/workbench/contrib/appLayout/browser/dumpLayoutAction": {
+		"applyLayoutStorageDataTitle": "应用布局存储数据",
+		"applyLayoutStorageDataPrompt": "粘贴“转储布局存储数据”生成的 JSON",
+		"applyLayoutStorageDataInvalidJson": "JSON 无效: {0}",
+		"applyLayoutStorageDataSuccess": "已应用布局存储数据（已更新 {0} 项，已移除 {1} 项）。某些更改可能需要重新加载窗口才能完全体现。",
+		"applyLayoutStorageDataFailed": "无法应用布局存储数据: {0}",
+		"dumpLayoutStorageData": "转储布局存储数据",
+		"applyLayoutStorageData": "应用布局存储数据"
+	},
+	"vs/workbench/contrib/appLayout/common/agentsWindowOrFocusMenuRegistrations": {
+		"cursor.agentsWindowNew": "新建智能体窗口",
+		"cursor.agentsWindowSwitchTo": "切换到 {0}"
+	},
+	"vs/workbench/contrib/authentication/browser/authentication.contribution": {
+		"authentication.Placeholder": "尚未请求任何帐户..."
+	},
+	"vs/workbench/contrib/automationsEditor/browser/automationsEditor.contribution": {
+		"openAutomationsEditor": "打开自动化",
+		"saveAutomation": "保存自动化"
+	},
+	"vs/workbench/contrib/bulkEdit/browser/bulkEditService": {
+		"changeWorkspace": "更改工作区(&&W)",
+		"reloadTheWindow": "重新加载窗口(&&R)"
+	},
+	"vs/workbench/contrib/canvas/browser/canvas-start-page.react": {
+		"glass.canvasStartPage.searchAriaLabel": "搜索画布",
+		"glass.canvasStartPage.searchPlaceholder": "画布...",
+		"glass.canvasStartPage.newCanvas": "新建画布",
+		"glass.canvasStartPage.results": "结果",
+		"glass.canvasStartPage.recents": "最近使用"
+	},
+	"vs/workbench/contrib/canvas/browser/canvas.contribution": {
+		"openCanvas": "打开画布"
+	},
+	"vs/workbench/contrib/canvas/browser/canvasNavigationCommands": {
+		"openVisibleInlineCanvasPreview": "打开可见的内联画布预览"
+	},
+	"vs/workbench/contrib/canvas/browser/shareCanvasAction": {
+		"sharingCanvas": "正在共享画布…",
+		"shareCanvasLinkCopied": "已将画布链接复制到剪贴板。",
+		"shareCanvasLinkReady": "画布已共享。如有需要，请从共享菜单复制链接。",
+		"shareCanvasSynced": "画布已同步。"
+	},
+	"vs/workbench/contrib/canvas/common/canvasOpenResult": {
+		"canvas.mention.unavailable": "画布已不再可用",
+		"canvas.mention.openFailed": "无法打开画布"
+	},
+	"vs/workbench/contrib/codeEditor/browser/toggleRenderWhitespace": {
+		"miToggleRenderWhitespace": "呈现空格(&&R)"
+	},
+	"vs/workbench/contrib/codeEditor/electron-sandbox/selectionClipboard": {
+		"actions.pasteSelectionClipboard": "粘贴选择剪贴板"
+	},
+	"vs/workbench/contrib/codeEditor/electron-sandbox/startDebugTextMate": {
+		"startDebugTextMate": "开始 TextMate 语法日志记录"
+	},
+	"vs/workbench/contrib/comments/browser/comments.view.contribution": {
+		"commentsViewIcon": "注释视图的视图图标。",
+		"totalUnresolvedComments": "{0} 条未解决的注释"
+	},
+	"vs/workbench/contrib/composer/browser/browserEditor.contribution": {
+		"closeBrowserTab.message": "关闭浏览器选项卡",
+		"closeBrowserTab.detail": "此浏览器由智能体创建。关闭它可能会影响正在进行的聊天。",
+		"closeBrowserTab.hide": "隐藏(&&H)",
+		"openBrowser": "打开浏览器",
+		"newBrowserTab": "新建浏览器选项卡",
+		"reloadBrowserTab": "重新加载浏览器选项卡",
+		"focusBrowserLocationBar": "聚焦浏览器地址栏",
+		"openCursorWebsite": "在浏览器中打开 cursor.com"
+	},
+	"vs/workbench/contrib/composer/browser/capabilities/chimes": {
+		"chimes.unsafePath.unc": "出于安全原因，自定义提示音路径不能是网络 (UNC) 路径。请使用本地文件路径。",
+		"chimes.unsafePath.url": "自定义提示音路径不能是 URL。请使用本地文件路径。",
+		"chimes.untrustedWorkspace": "已在工作区设置中配置自定义提示音，但工作区不受信任。将忽略自定义声音。",
+		"chimes.source": "Cursor Chimes"
+	},
+	"vs/workbench/contrib/composer/browser/cmdKRedirectToChatAction": {
+		"cmdKRedirectToChat.toast": "{0}+K 现在会将所选内容添加到智能体，与 {0}+L 相同。内联编辑和终端中的 {0}+K 已停用。",
+		"cmdKRedirectToChat.title": "将所选内容添加到智能体"
+	},
+	"vs/workbench/contrib/composer/browser/components/ComposerFullInputBox": {
+		"composer.promptInput.ariaLabel": "提示"
+	},
+	"vs/workbench/contrib/composer/browser/components/PromptEditInput.react": {
+		"composer.promptEditInput.ariaLabel": "编辑消息"
+	},
+	"vs/workbench/contrib/composer/browser/composer.contribution": {
+		"cursor ai": "Cursor AI",
+		"composerEditor": "Cursor AI"
+	},
+	"vs/workbench/contrib/composer/browser/composerAccessibilityAnnouncer.contribution": {
+		"composerAccessibility.error": "智能体错误: {0}",
+		"composerAccessibility.stopped": "智能体已停止。",
+		"composerAccessibility.finished": "智能体已完成。",
+		"composerAccessibility.approveCommand": "智能体需要你的批准才能运行: {0}",
+		"composerAccessibility.approveTerminal": "智能体需要你的批准才能运行终端命令。",
+		"composerAccessibility.approveEdit": "智能体需要你的批准才能编辑文件。",
+		"composerAccessibility.approveDelete": "智能体需要你的批准才能删除文件。",
+		"composerAccessibility.approveMcp": "智能体需要你的批准才能使用 MCP 工具。",
+		"composerAccessibility.question": "智能体有一个问题要问你。",
+		"composerAccessibility.approve": "智能体需要你的批准。"
+	},
+	"vs/workbench/contrib/composer/browser/composerAccessibilityHelp": {
+		"composerHelp.intro": "你正在智能体聊天中。在提示中输入请求，智能体就会为你回答问题、编辑文件并运行命令。",
+		"composerHelp.submitCmdEnter": "按 {0}+Enter 发送请求。Enter 会另起一行。",
+		"composerHelp.submitEnter": "按 Enter 发送请求。Shift+Enter 会另起一行。",
+		"composerHelp.mentions": "输入 @ 可添加文件、文件夹、文档和其他上下文，输入 / 可运行命令或技能。使用向上箭头键和向下箭头键在建议间移动，按 Enter 选择一项，按 Escape 关闭列表。",
+		"composerHelp.addContext": "打开添加上下文菜单<keybinding:{0}>。",
+		"composerHelp.mode": "选择模式，例如智能体、计划或提问<keybinding:{0}>。",
+		"composerHelp.model": "选择模型<keybinding:{0}>。",
+		"composerHelp.voice": "开始或停止语音听写<keybinding:{0}>。",
+		"composerHelp.cancel": "在智能体工作时停止它{0}。",
+		"composerHelp.accept": "接受智能体正在等待的事项，例如命令批准或其文件编辑{0}。",
+		"composerHelp.transcript": "在提示的第一行按向上箭头，即可进入对话。在对话中，向上箭头和向下箭头可在你的消息之间移动，Page Up 和 Page Down 用于滚动，Enter 用于编辑所选消息，Escape 用于返回提示。",
+		"composerHelp.find": "搜索对话<keybinding:{0}>。",
+		"composerHelp.newChat": "开始新聊天<keybinding:{0}>，或打开你的聊天历史记录<keybinding:{1}>。",
+		"composerHelp.editor": "将焦点移到编辑器<keybinding:workbench.action.focusFirstEditorGroup>。智能体的编辑会在那里显示为内联更改；在编辑器中打开辅助功能帮助，可查看用于审阅这些更改的按键。"
+	},
+	"vs/workbench/contrib/composer/browser/composerLogService": {
+		"cursorComposerLoggerName": "Cursor Composer"
+	},
+	"vs/workbench/contrib/composer/browser/composerMessageStorageService": {
+		"checkpointHydrationErrorTitle": "无法加载对话",
+		"checkpointHydrationErrorDetail": "对话检查点数据可能已损坏。你可以开始新的对话，或尝试重新加载窗口。"
+	},
+	"vs/workbench/contrib/composer/browser/inlineDiffSuppressionNotification": {
+		"inlineDiff.tooManyChanges": "由于最近的更改过多而无法显示，内联差异已被抑制。",
+		"inlineDiff.disableProtection": "禁用保护"
+	},
+	"vs/workbench/contrib/composer/browser/promptInput/pathless-video-toast": {
+		"pathlessVideoRejected": "无法附加此视频。请将其保存为文件后重新附加。",
+		"pathlessDocumentRejected": "无法附加此文档。请将其保存为文件后重新附加。",
+		"cloudUnsupportedAttachmentRejected": "无法将此文件附加到云端智能体。"
+	}
+}

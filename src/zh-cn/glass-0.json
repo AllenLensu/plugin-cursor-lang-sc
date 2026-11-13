@@ -1,0 +1,320 @@
+{
+	"vs/glass/browser/actions/glass-dev-smoke-actions": {
+		"devGetGlassActiveComposerDataForTesting": "开发获取 Glass 活动 Composer 数据（用于测试）"
+	},
+	"vs/glass/browser/components/agent-metadata-tooltip/agent-metadata-tooltip-environment": {
+		"glass.agentMetadataTooltip.worktree": "工作树",
+		"glass.agentMetadataTooltip.protocolSsh": "SSH",
+		"glass.agentMetadataTooltip.protocolWsl": "WSL",
+		"glass.agentMetadataTooltip.protocolDevContainer": "开发容器",
+		"glass.agentMetadataTooltip.protocolContainer": "容器",
+		"glass.agentMetadataTooltip.draft": "草稿",
+		"glass.agentMetadataTooltip.cloud": "云端"
+	},
+	"vs/glass/browser/components/agent-metadata-tooltip/agent-metadata-tooltip-model": {
+		"glass.agentMetadataTooltip.claudeCodeTranscript": "对话记录",
+		"glass.agentMetadataTooltip.sourceClaudeCode": "从 Claude Code 导入",
+		"glass.agentMetadataTooltip.sourceAutomations": "自动化运行",
+		"glass.agentMetadataTooltip.sourceBugbotAutofix": "Bugbot 自动修复运行",
+		"glass.agentMetadataTooltip.sourceEnvironmentSetup": "环境设置智能体",
+		"glass.agentMetadataTooltip.source": "来自 {0}"
+	},
+	"vs/glass/browser/components/agent-metadata-tooltip/glass-agent-metadata-tooltip-body.react": {
+		"glass.agentMetadataTooltip.clickToCopy": "单击以复制"
+	},
+	"vs/glass/browser/components/agent-metadata-tooltip/glass-agent-metadata-tooltip.react": {
+		"glass.agentMetadataTooltip.ongoingVoiceCall": "正在进行的语音通话",
+		"glass.agentMetadataTooltip.manageEnvironment": "管理环境",
+		"glass.agentMetadataTooltip.manageEnvironmentAria": "管理环境"
+	},
+	"vs/glass/browser/components/agent-panel/allowed-machines/add-folder-row.react": {
+		"glass.allowedMachines.addFolder.allowing": "正在允许",
+		"glass.allowedMachines.addFolderOnMachine": "在 {0} 上添加文件夹"
+	},
+	"vs/glass/browser/components/agent-panel/allowed-machines/allowed-machines-segment.react": {
+		"glass.allowedMachines.runOnMenuLabel": "运行于",
+		"glass.allowedMachines.environmentsMenu": "环境",
+		"glass.allowedMachines.searchEnvironmentsPlaceholder": "搜索环境和仓库",
+		"glass.allowedMachines.machinesMenu": "机器",
+		"glass.allowedMachines.searchPlaceholder": "搜索机器和工作池"
+	},
+	"vs/glass/browser/components/agent-panel/allowed-machines/placement-grants-snapshot": {
+		"glass.allowedMachines.unknownMachine": "未知机器",
+		"glass.allowedMachines.oneEnvironment": "1 个环境",
+		"glass.allowedMachines.environmentCount": "{0} 个环境",
+		"glass.allowedMachines.oneRepo": "1 个仓库",
+		"glass.allowedMachines.repoCount": "{0} 个仓库",
+		"glass.allowedMachines.oneMachine": "1 台机器",
+		"glass.allowedMachines.machineCount": "{0} 台机器",
+		"glass.allowedMachines.cloud": "云端",
+		"glass.allowedMachines.runOnCloud": "在云端运行",
+		"glass.allowedMachines.runOnCloudAnd": "在云端和 {0} 上运行",
+		"glass.allowedMachines.cloudAndMachines": "{0} + {1}",
+		"glass.allowedMachines.runOnCloudEnvironmentsAndMachines": "在云端、{0} 和 {1} 上运行"
+	},
+	"vs/glass/browser/components/agent-panel/allowed-machines/placement-submenus.react": {
+		"glass.allowedMachines.offline": "脱机",
+		"glass.allowedMachines.loadingEnvironments": "正在加载环境…",
+		"glass.allowedMachines.environmentsFailed": "无法加载环境",
+		"glass.allowedMachines.noEnvironments": "没有环境",
+		"glass.allowedMachines.noMatchingEnvironments": "没有匹配的环境",
+		"glass.allowedMachines.myMachinesSection": "我的机器",
+		"glass.allowedMachines.poolsSection": "工作池",
+		"glass.allowedMachines.noMatchingTargets": "没有匹配的机器或工作池",
+		"glass.allowedMachines.reposSection": "仓库",
+		"glass.allowedMachines.environmentsSection": "环境"
+	},
+	"vs/glass/browser/components/agent-panel/allowed-machines/run-on-labels.react": {
+		"glass.allowedMachines.repoRevokeHint": "取消选中会停止在此仓库上新建云端虚拟机。已在运行的智能体将继续运行。",
+		"glass.allowedMachines.repoAllowHint": "选中后，智能体可以在此仓库上启动新的云端虚拟机。",
+		"glass.allowedMachines.remoteControlOffHint": "团队管理员必须打开远程控制，才能将机器添加到此项目。",
+		"glass.allowedMachines.privateWorkersOffHint": "团队管理员必须打开专用工作节点，才能将工作池添加到此项目。"
+	},
+	"vs/glass/browser/components/agent-panel/allowed-machines/use-allowed-machines.react": {
+		"glass.allowedMachines.updateFailed": "无法更新允许的机器。请重试。"
+	},
+	"vs/glass/browser/components/agent-panel/components/agent-prompt-input-name.react": {
+		"glass.agentPanel.promptInput.ariaLabel": "提示",
+		"glass.agentPanel.promptInput.sideChatAriaLabel": "侧边聊天提示",
+		"glass.agentPanel.promptInput.subagentAriaLabel": "子智能体提示",
+		"glass.agentPanel.promptInput.fullscreenAriaLabel": "全屏提示",
+		"glass.agentPanel.promptInput.designModeAriaLabel": "设计模式提示",
+		"glass.agentPanel.panel.ariaLabel": "面板 {0}",
+		"glass.agentPanel.panel.actionsAriaLabel": "面板操作",
+		"glass.agentPanel.panel.closeActionLabel": "关闭面板",
+		"glass.editorPanel.pane.ariaLabel": "窗格 {0}",
+		"glass.editorPanel.pane.singleAriaLabel": "窗格",
+		"glass.editorPanel.pane.closeActionLabel": "关闭窗格",
+		"glass.agentPanel.promptInput.panelPaneAriaLabel": "{0}，面板 {1}，窗格 {2}",
+		"glass.agentPanel.promptInput.panelAriaLabel": "{0}，面板 {1}",
+		"glass.agentPanel.promptInput.paneAriaLabel": "{0}，窗格 {1}"
+	},
+	"vs/glass/browser/components/agent-panel/components/agent-prs-tray-row.react": {
+		"glass.project.prsTray.addPrToChat": "将 {0} 添加到聊天"
+	},
+	"vs/glass/browser/components/agent-panel/components/app-secrets/app-secrets-request-collapsed-pill.react": {
+		"glass.agentPanel.appSecretsPill.secretMissing": "缺少机密",
+		"glass.agentPanel.appSecretsPill.secretsMissing": "缺少机密",
+		"glass.agentPanel.appSecretsPill.add": "添加应用机密（{0}）",
+		"glass.agentPanel.appSecretsPill.secretToRemove": "要移除的机密",
+		"glass.agentPanel.appSecretsPill.secretsToRemove": "要移除的机密",
+		"glass.agentPanel.appSecretsPill.review": "审阅应用机密（{0}）"
+	},
+	"vs/glass/browser/components/agent-panel/components/app-secrets/use-app-secrets-request-followup-surface.react": {
+		"glass.agentPanel.appSecretsPill.neededForApp": "{0} 需要应用机密",
+		"glass.agentPanel.appSecretsPill.needed": "需要应用机密"
+	},
+	"vs/glass/browser/components/agent-panel/components/branch-mismatch-tray.react": {
+		"glass.agentPanel.branchMismatch.stashing": "正在储藏...",
+		"glass.agentPanel.branchMismatch.committing": "正在提交...",
+		"glass.agentPanel.branchMismatch.discarding": "正在放弃...",
+		"glass.agentPanel.branchMismatch.switching": "正在签出...",
+		"glass.agentPanel.branchMismatch.checkout": "签出分支",
+		"glass.agentPanel.branchMismatch.checkoutAria": "签出 {0}",
+		"glass.agentPanel.branchMismatch.continueInCloud": "在云端继续"
+	},
+	"vs/glass/browser/components/agent-panel/components/branch-selector/branch-selector.react": {
+		"glass.branchSelector.selectBranchAriaLabel": "选择分支",
+		"glass.branchSelector.triggerAriaLabel": "分支 {0}，打开分支菜单"
+	},
+	"vs/glass/browser/components/agent-panel/components/browser-preview-tray.react": {
+		"glass.agentPanel.browserPreview.anchor": "浏览器",
+		"glass.agentPanel.browserPreview.open": "打开浏览器"
+	},
+	"vs/glass/browser/components/agent-panel/components/canvas-preview-pill.react": {
+		"glass.agentPanel.canvasPreview.actions": "画布操作",
+		"glass.agentPanel.canvasPreview.anchor": "画布"
+	},
+	"vs/glass/browser/components/agent-panel/components/canvas-preview-tray.react": {
+		"glass.agentPanel.canvasPreview.label": "画布",
+		"glass.agentPanel.canvasPreview.open": "打开画布"
+	},
+	"vs/glass/browser/components/agent-panel/components/chat-title-tab-strip.react": {
+		"glass.agentPanel.chatTitleTabsAriaLabel": "聊天"
+	},
+	"vs/glass/browser/components/agent-panel/components/conversation-pane-bar.react": {
+		"glass.agentPanel.chatTabsAriaLabel": "聊天",
+		"glass.agentPanel.newAgent": "新建智能体",
+		"glass.agentPanel.openAgent": "打开智能体",
+		"glass.agentPanel.openSubagent": "打开子智能体",
+		"glass.agentPanel.searchAgents": "搜索智能体"
+	},
+	"vs/glass/browser/components/agent-panel/components/conversation-panes-profile": {
+		"glass.agentPanel.projectNewAgentFallback": "新建智能体",
+		"glass.agentPanel.projectHeaderFallbackTitle": "新建项目",
+		"glass.agentPanel.agentPanesSubagentFallback": "子智能体"
+	},
+	"vs/glass/browser/components/agent-panel/components/debug-repro-pill.react": {
+		"glass.agentPanel.debugReproPill.pendingTitle": "复现步骤正在等待你",
+		"glass.agentPanel.debugReproPill.title": "复现步骤"
+	},
+	"vs/glass/browser/components/agent-panel/components/environment-setup-secrets-missing-pill.react": {
+		"glass.agentPanel.envSetupSecretsPill.addTestLogin": "添加测试登录",
+		"glass.agentPanel.envSetupSecretsPill.secretMissing": "缺少机密",
+		"glass.agentPanel.envSetupSecretsPill.secretsMissing": "缺少机密"
+	},
+	"vs/glass/browser/components/agent-panel/components/followup-pill-row/use-followup-agent-pills.react": {
+		"glass.agentPanel.continueWorking": "恢复",
+		"glass.agentPanel.fixConflictsPillMenu": "修复拉取请求上的冲突"
+	},
+	"vs/glass/browser/components/agent-panel/components/followup-pill-row/use-pr-automation-pills.react": {
+		"glass.agentPanel.autopilotPill": "自动驾驶拉取请求",
+		"glass.agentPanel.babysitPrInCloudPill": "值守拉取请求",
+		"glass.agentPanel.babysitPrInCloudPillTooltipContentSubagent": "在云端子智能体中修复持续集成、冲突和评论",
+		"glass.agentPanel.babysitPrInCloudPillTooltipContent": "在云端修复持续集成、冲突和评论。",
+		"glass.agentPanel.autopilotPillTooltipAria": "自动驾驶详细信息",
+		"glass.agentPanel.autopilotPillTooltipTitle": "自动驾驶",
+		"glass.agentPanel.autopilotPillTooltipBody": "自动驾驶通过循环分流审查意见、解决明确冲突并修复持续集成，使拉取请求保持可合并状态",
+		"glass.agentPanel.fixCiPill": "调试持续集成",
+		"glass.agentPanel.fixCiPillLoading": "正在调试持续集成",
+		"glass.agentPanel.fixCiPillMenu": "调试拉取请求上的持续集成"
+	},
+	"vs/glass/browser/components/agent-panel/components/glass-chat-status-bar-environment-segment.react": {
+		"glass.chatStatusBar.cannotChangeEnvironmentWhileMoving": "正在移动时无法更改环境",
+		"glass.statusBar.environmentMigrating": "正在更改环境",
+		"glass.statusBar.noEnvironmentDestinations": "没有可用的目标"
+	},
+	"vs/glass/browser/components/agent-panel/components/glass-terminal-tab-pill.react": {
+		"glass.agentPanel.terminalTabPill.open": "打开终端（{0}）",
+		"glass.agentPanel.terminalTabPill.nounPlural": "终端"
+	},
+	"vs/glass/browser/components/agent-panel/components/goal-tray.react": {
+		"glass.goalTray.pill": "目标",
+		"glass.goalTray.headerPaused": "目标已暂停",
+		"glass.goalTray.header": "目标进行中",
+		"glass.goalTray.resume": "恢复目标",
+		"glass.goalTray.pause": "暂停目标",
+		"glass.goalTray.edit": "编辑目标",
+		"glass.goalTray.clear": "清除目标"
+	},
+	"vs/glass/browser/components/agent-panel/components/local-loop-pill.react": {
+		"glass.agentPanel.localLoopBackendRoutedPillTooltip": "此聊天的最近一轮在后端循环（{0}）上运行，而不是在本地智能体循环上运行。",
+		"glass.agentPanel.localLoopBackendRoutedPill": "后端",
+		"glass.agentPanel.localLoopReloadPillTooltip": "本地智能体循环是在此窗口启动后启用的。在重新加载窗口之前，轮次会在后端循环上运行。",
+		"glass.agentPanel.localLoopReloadPill": "重新加载以使用本地",
+		"glass.agentPanel.localLoopPillTooltip": "轮次在本地智能体循环上运行"
+	},
+	"vs/glass/browser/components/agent-panel/components/pinned-skill-pill.react": {
+		"glass.pinnedSkill.previewAria": "{0} 技能详细信息",
+		"glass.pinnedSkill.contextMenuAria": "已固定技能的操作"
+	},
+	"vs/glass/browser/components/agent-panel/components/plan-pill.react": {
+		"glass.agentPanel.planPill.actions": "计划操作",
+		"glass.agentPanel.planPill.label": "计划"
+	},
+	"vs/glass/browser/components/agent-panel/components/plan-tray.react": {
+		"glass.agentPanel.planPill.label": "计划"
+	},
+	"vs/glass/browser/components/agent-panel/components/project-agent-header.react": {
+		"glass.agentPanel.projectHeaderFallbackTitle": "新建项目",
+		"glass.agentPanel.projectHeaderEditIcon": "编辑项目图标",
+		"glass.agentPanel.projectHeaderNamedByOwner": "由项目所有者命名",
+		"glass.agentPanel.projectHeaderName": "项目名称",
+		"glass.agentPanel.projectHeaderRename": "重命名项目",
+		"glass.agentPanel.projectTranscriptIntroDescription": "跟踪推进 {0} 所需的决策、智能体工作和后续跟进。"
+	},
+	"vs/glass/browser/components/agent-panel/components/project-invite-button.react": {
+		"glass.projectMembers.shareLabel": "共享项目，{0} 个人"
+	},
+	"vs/glass/browser/components/agent-panel/components/project-members-stack.react": {
+		"glass.projectMembers.unknownName": "队友",
+		"glass.projectMembers.you": "{0}（你）",
+		"glass.projectMembers.invited": "{0}（已邀请）",
+		"glass.projectMembers.label": "此项目中的人员: {0}",
+		"glass.projectMembers.menuLabel": "此项目中的人员"
+	},
+	"vs/glass/browser/components/agent-panel/components/project-person-mentions.react": {
+		"glass.projectMembers.unknownName": "队友"
+	},
+	"vs/glass/browser/components/agent-panel/components/project-prs-header-button.react": {
+		"glass.project.prIndex.headerButton": "拉取请求",
+		"glass.project.prIndex.headerButton.blocked": "{0}: 有一个拉取请求被阻止",
+		"glass.project.prIndex.headerButton.ready": "{0}: 有一个拉取请求已准备好合并"
+	},
+	"vs/glass/browser/components/agent-panel/components/project-subagent-add-tab-menu.react": {
+		"glass.agentPanel.noAgentsFound": "找不到智能体",
+		"glass.agentPanel.agentsSection": "智能体"
+	},
+	"vs/glass/browser/components/agent-panel/components/questionnaire-collapsed-pill.react": {
+		"glass.agentPanel.questionnairePill.noun": "问题",
+		"glass.agentPanel.questionnairePill.pluralNoun": "问题",
+		"glass.agentPanel.questionnairePill.open": "回答问题（{0}）"
+	},
+	"vs/glass/browser/components/agent-panel/components/questionnaire-tray.react": {
+		"glass.agentPanel.questionnaire.otherAnswer.ariaLabel": "其他答案"
+	},
+	"vs/glass/browser/components/agent-panel/components/queue-tray.react": {
+		"glass.queueTray.sendKeyHint": "按 {0} 发送"
+	},
+	"vs/glass/browser/components/agent-panel/components/top-bar-right-actions.react": {
+		"glass.agentPanel.chatActions": "聊天操作"
+	},
+	"vs/glass/browser/components/agent-panel/components/unread-jump-pill.react": {
+		"glass.unreadJumpPill.one": "1 条新消息",
+		"glass.unreadJumpPill.many": "{0} 条新消息"
+	},
+	"vs/glass/browser/components/agent-panel/subagent-tray/canonical-agent-row-presentation": {
+		"glass.project.agents.newSubagent": "新建子智能体"
+	},
+	"vs/glass/browser/components/agent-panel/subagent-tray/subagent-tray-rows.react": {
+		"glass.project.agentsTray.addAgentToChat": "将 {0} 添加到聊天",
+		"glass.subagentTray.unparentUnavailable": "无法移除此智能体",
+		"glass.subagentTray.unparentAgent": "从项目中移除"
+	},
+	"vs/glass/browser/components/agent-panel/subagent-tray/subagent-tray.controller.react": {
+		"glass.subagentTray.subagentNotFound": "找不到子智能体"
+	},
+	"vs/glass/browser/components/agent-panel/subagent-tray/subagent-tray.state.react": {
+		"glass.subagentTray.unparentFailedWithReason": "从项目中移除 {0} 失败: {1}",
+		"glass.subagentTray.unparentFailed": "从项目中移除 {0} 失败"
+	},
+	"vs/glass/browser/components/computer-use-preview/computer-use-preview.react": {
+		"glass.computerUsePreview.label": "将 {0} 置于最前",
+		"glass.computerUsePreview.hint": "置于最前",
+		"glass.computerUsePreview.close": "关闭预览"
+	},
+	"vs/glass/browser/components/editor-panel/canvas-activation-empty-state.react": {
+		"glass.canvasActivationEmptyState.title": "创建新画布",
+		"glass.canvasActivationEmptyState.description": "构建仪表板、文档或其他产物",
+		"glass.canvasActivationEmptyState.cta": "新建画布"
+	},
+	"vs/glass/browser/components/editor-panel/context-tab-content.react": {
+		"glass.project.library.emptyTitle": "还没有文件",
+		"glass.project.context.emptyBody": "你的智能体生成的笔记和产物将显示在此处",
+		"glass.project.context.emptyTitle": "还没有上下文"
+	},
+	"vs/glass/browser/components/editor-panel/editor-panel-split-panes.react": {
+		"glass.editorPanel.tabsAriaLabel": "应用"
+	},
+	"vs/glass/browser/components/editor-panel/file-tab/file-tab-content.react": {
+		"glass.fileTab.largeFileGate.markdownMessage": "Markdown 预览已暂停（{0}）",
+		"glass.fileTab.largeFileGate.codeMessage": "文件较大（{0}）",
+		"glass.fileTab.largeFileGate.loadFile": "加载文件"
+	},
+	"vs/glass/browser/components/editor-panel/file-tab/file-tab-not-found-state.react": {
+		"glass.fileTab.notFound.titleWithAgent": "此文件不在 {0} 的机器上",
+		"glass.fileTab.notFound.title": "此文件不在此智能体的机器上",
+		"glass.fileTab.notFound.description": "它可能在另一个分支上，或者已被移动或删除。",
+		"glass.fileTab.notFound.closeTab": "关闭选项卡"
+	},
+	"vs/glass/browser/components/editor-panel/file-tab/file-tab-start-page.react": {
+		"glass.fileTab.startPage.searchAriaLabel": "搜索文件和文件夹",
+		"glass.fileTab.startPage.searchPlaceholder": "文件、文件夹...",
+		"glass.fileTab.startPage.browseFiles": "浏览文件",
+		"glass.fileTab.startPage.newFile": "新建文件",
+		"glass.fileTab.startPage.results": "结果",
+		"glass.fileTab.startPage.recents": "最近使用"
+	},
+	"vs/glass/browser/components/editor-panel/file-tab/file-tree-create-modal.react": {
+		"glassFileTreeCreateFolder": "新建文件夹",
+		"glassFileTreeCreateFile": "新建文件",
+		"glassFileTreeCreateExists": "此位置已存在文件或文件夹“{0}”。",
+		"glassFileTreeCreateReadonly": "父文件夹是只读的。",
+		"glassFileTreeCreateFolderNameLabel": "文件夹名",
+		"glassFileTreeCreateFileNameLabel": "文件名",
+		"glassFileTreeCreateFolderNamePlaceholder": "文件夹名",
+		"glassFileTreeCreateFileNamePlaceholder": "文件名",
+		"glassFileTreeCreateLocationLabel": "位置",
+		"glassFileTreeSearchFolders": "搜索文件夹…"
+	}
+}

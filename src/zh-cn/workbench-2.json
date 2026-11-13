@@ -1,0 +1,407 @@
+{
+	"vs/workbench/contrib/extensions/electron-sandbox/extensionProfileService": {
+		"restartCurrentWorkspaceHost1": "分析当前工作区扩展宿主",
+		"restartCurrentWorkspaceHost2": "要对 {0} 进行性能分析，需要重启。是否立即重启“{1}”?",
+		"remoteExtensionHostHeapProfilerRunning": "远程扩展宿主堆分配分析器正在运行",
+		"localExtensionHostHeapProfilerRunning": "扩展宿主堆分配分析器正在运行",
+		"localExtensionHostCPUProfilerRunning": "扩展宿主 CPU 分析器正在运行"
+	},
+	"vs/workbench/contrib/extensions/electron-sandbox/extensionsActions": {
+		"openExtensionsFolder": "打开扩展文件夹",
+		"cleanUpExtensionsFolder": "清理扩展文件夹"
+	},
+	"vs/workbench/contrib/extensions/electron-sandbox/extensionsSlowActions": {
+		"cmd.reportOrShow": "性能问题",
+		"attach.title": "是否已附加 CPU 配置文件?",
+		"attach.msg": "这是一条提醒，请确认你没有忘记将“{0}”附加到刚刚创建的问题。",
+		"cmd.show": "显示问题",
+		"attach.msg2": "这是一条提醒，请确认你没有忘记将“{0}”附加到现有的性能问题。"
+	},
+	"vs/workbench/contrib/extensions/electron-sandbox/runtimeExtensionsEditor": {
+		"extensionHostProfileStart": "启动扩展宿主 CPU 分析器",
+		"extensionHostHeapProfileStart": "启动扩展宿主堆分配分析器",
+		"currentWorkspaceExtensionHostProfileStart": "启动当前工作区扩展宿主 CPU 分析器",
+		"currentWorkspaceExtensionHostHeapProfileStart": "启动当前工作区扩展宿主堆分配分析器",
+		"remoteAgentProfileStart": "启动远程服务器 CPU 分析器",
+		"stopExtensionHostProfileStart": "停止扩展宿主分析器",
+		"openExtensionHostProfile": "打开扩展宿主配置文件",
+		"saveExtensionHostProfile": "保存扩展宿主配置文件",
+		"saveprofile.dialogTitle": "保存扩展宿主配置文件"
+	},
+	"vs/workbench/contrib/externalTerminal/electron-sandbox/externalTerminal.contribution": {
+		"terminal.kind.integrated": "显示集成终端操作。",
+		"terminal.kind.external": "显示外部终端操作。",
+		"terminal.kind.both": "同时显示集成终端和外部终端操作。",
+		"terminalConfigurationTitle": "外部终端",
+		"explorer.openInTerminalKind": "从资源管理器在终端中打开文件时，确定要启动的终端类型",
+		"sourceControlRepositories.openInTerminalKind": "从源代码管理存储库视图在终端中打开存储库时，确定要启动的终端类型",
+		"terminal.external.windowsExec": "自定义要在 Windows 上运行的终端。",
+		"terminal.external.osxExec": "自定义要在 macOS 上运行的终端应用程序。",
+		"terminal.external.linuxExec": "自定义要在 Linux 上运行的终端。",
+		"globalConsoleAction": "打开新的外部终端"
+	},
+	"vs/workbench/contrib/files/browser/fileActions": {
+		"readonlyFolder": "父文件夹为只读。"
+	},
+	"vs/workbench/contrib/files/browser/files.view.contribution": {
+		"explorerViewIcon": "资源管理器视图的视图图标。",
+		"openEditorsIcon": "打开的编辑器视图的视图图标。",
+		"miViewExplorer": "资源管理器(&&E)",
+		"addAFolder": "添加文件夹",
+		"openRecent": "打开最近的文件",
+		"noWorkspaceHelp": "你尚未向工作区添加文件夹。\n{0}",
+		"noFolderHelpWeb": "你尚未打开文件夹。\n{0}\n{1}",
+		"remoteNoFolderHelp": "已连接到远程。\n{0}",
+		"noFolderButEditorsHelp": "你尚未打开文件夹。\n{0}\n打开文件夹将关闭当前所有打开的编辑器。要让它们保持打开，请改为{1}。",
+		"noFolderHelp": "你尚未打开文件夹。\n{0}",
+		"folders": "文件夹"
+	},
+	"vs/workbench/contrib/files/electron-sandbox/fileActions.contribution": {
+		"revealInWindows": "在文件资源管理器中显示",
+		"revealInMac": "在 Finder 中显示",
+		"openContainer": "打开所在文件夹"
+	},
+	"vs/workbench/contrib/issue/electron-sandbox/process.contribution": {
+		"miOpenProcessExplorerer": "打开进程资源管理器(&&P)",
+		"stopProfiler.title": "正在创建配置文件...",
+		"stopProfiler.detail": "这最多可能需要一分钟。",
+		"stopTracing.message": "跟踪需要使用 '--trace' 参数启动",
+		"stopTracing.button": "重启并启用跟踪(&&R)",
+		"stopTracing.title": "正在创建跟踪文件...",
+		"stopTracing.detail": "这最多可能需要一分钟。",
+		"openProcessExplorer": "打开进程资源管理器",
+		"openGlassProcessExplorer": "打开工作区进程资源管理器",
+		"toggleCPUProfiler": "启动 Electron 跟踪",
+		"toggleMemoryProfiler": "启动内存分析器",
+		"toggleGCProfiler": "启动 GC 分析器",
+		"stopTracing": "停止跟踪"
+	},
+	"vs/workbench/contrib/localHistory/electron-sandbox/localHistoryCommands": {
+		"revealInWindows": "在文件资源管理器中显示",
+		"revealInMac": "在 Finder 中显示",
+		"openContainer": "打开所在文件夹"
+	},
+	"vs/workbench/contrib/localization/electron-sandbox/localization.contribution": {
+		"updateLocale": "是否要将 {0} 的显示语言更改为 {1} 并重启?",
+		"changeAndRestart": "更改语言并重启"
+	},
+	"vs/workbench/contrib/localization/electron-sandbox/minimalTranslations": {
+		"showLanguagePackExtensions": "在应用市场中搜索语言包，以将显示语言更改为 {0}。",
+		"searchMarketplace": "搜索应用市场",
+		"installAndRestartMessage": "安装语言包以将显示语言更改为 {0}。",
+		"installAndRestart": "安装并重启"
+	},
+	"vs/workbench/contrib/logs/electron-sandbox/logsActions": {
+		"openLogsFolder": "打开日志文件夹",
+		"openExtensionLogsFolder": "打开扩展日志文件夹"
+	},
+	"vs/workbench/contrib/markdownEditor/browser/markdownEditorActions": {
+		"editMarkdown": "编辑 Markdown",
+		"editSource": "编辑源",
+		"toggleMarkdownEditorMode": "切换编辑器模式",
+		"markdownEditor": "Markdown 编辑器"
+	},
+	"vs/workbench/contrib/markers/browser/markers.view.contribution": {
+		"markersViewIcon": "标记视图的视图图标。",
+		"miMarker": "问题(&&P)",
+		"viewAsTable": "以表格形式查看",
+		"show excluded files": "显示排除的文件",
+		"focusProblemsList": "聚焦问题视图",
+		"focusProblemsFilter": "聚焦问题筛选器",
+		"viewAsTreeDescription": "以树的形式显示问题视图。",
+		"viewAsTableDescription": "以表格的形式显示问题视图。",
+		"toggleErrorsDescription": "在问题视图中显示或隐藏错误。",
+		"toggleWarningsDescription": "在问题视图中显示或隐藏警告。",
+		"toggleInfosDescription": "在问题视图中显示或隐藏信息。",
+		"toggleActiveFileDescription": "在问题视图中仅显示或隐藏活动文件中的问题（错误、警告、信息）。",
+		"toggleExcludedFilesDescription": "在问题视图中显示或隐藏排除的文件。",
+		"copyMessage": "复制消息",
+		"addToChat": "添加到聊天",
+		"fixInChat": "使用智能体修复"
+	},
+	"vs/workbench/contrib/mcp/common/mcpConfigPathsService": {
+		"mcp.configuration.userLocalValue": "{0} 中的全局"
+	},
+	"vs/workbench/contrib/mcp/common/mcpService": {
+		"mcp.tool.warning": "{0} 此工具来自“{1}”（MCP 服务器）。请注意，MCP 服务器或恶意对话内容可能会试图通过工具滥用“{2}”。请仔细检查请求的操作。",
+		"msg.title": "运行 `{0}`",
+		"msg.msg": "{0}\n\n {1}",
+		"msg.run": "正在运行 `{0}`",
+		"msg.ran": "已运行 `{0}` "
+	},
+	"vs/workbench/contrib/mdceditor/browser/mdceditor.contribution": {
+		"newCursorRule": "新建 Cursor 规则",
+		"newCommandName": "输入命令名",
+		"commandNamePlaceholder": "例如 my-custom-command",
+		"commandNamePrompt": "请输入新命令的名称",
+		"emptyCommandName": "命令名不能为空",
+		"invalidCommandName": "命令名只能包含小写字母、数字和连字符",
+		"commandExists": "已存在同名命令",
+		"newProjectCursorCommand": "新建项目 Cursor 命令",
+		"newUserCursorCommand": "新建用户 Cursor 命令"
+	},
+	"vs/workbench/contrib/memoryMonitor/electron-sandbox/memoryMonitor.contribution": {
+		"developer.captureAndUploadRendererHeapSnapshot.label": "捕获并上传渲染器堆快照"
+	},
+	"vs/workbench/contrib/mergeEditor/electron-sandbox/devCommands": {
+		"mergeEditor.enterJSON": "输入 JSON",
+		"merge.dev.openState": "从 JSON 打开合并编辑器状态",
+		"merge.dev.openSelectionInTemporaryMergeEditor": "在临时合并编辑器中打开所选内容"
+	},
+	"vs/workbench/contrib/notebook/browser/contrib/notebookVariables/notebookVariablesView": {
+		"notebook.ReplVariables": "REPL 变量"
+	},
+	"vs/workbench/contrib/notebook/browser/viewParts/notebookCellOverlays": {
+		"workbench.notebook.developer.addCellOverlays": "切换笔记本单元格覆盖层"
+	},
+	"vs/workbench/contrib/onboarding/electron-sandbox/onboarding.contribution": {
+		"onboarding.importFromVSCodeToast.message": "将你的 VS Code 配置带到 Cursor。导入设置和扩展，即可顺利开始。",
+		"onboarding.importFromVSCodeToast.import": "导入"
+	},
+	"vs/workbench/contrib/outline/browser/outline.view.contribution": {
+		"outlineViewIcon": "大纲视图的视图图标。"
+	},
+	"vs/workbench/contrib/output/browser/output.view.contribution": {
+		"outputViewIcon": "输出视图的视图图标。",
+		"miToggleOutput": "输出(&&O)"
+	},
+	"vs/workbench/contrib/performance/electron-sandbox/performance.contribution": {
+		"experimental.rendererProfiling": "启用后，会自动对缓慢的渲染器进行性能分析。"
+	},
+	"vs/workbench/contrib/performance/electron-sandbox/startupProfiler": {
+		"prof.message": "已成功创建配置文件。",
+		"prof.detail": "请创建一个问题，并手动附加以下文件:\n{0}",
+		"prof.restartAndFileIssue": "创建问题并重启(&&C)",
+		"prof.thanks": "感谢你的帮助。",
+		"prof.detail.restart": "需要最后一次重启才能继续使用“{0}”。再次感谢你的贡献。"
+	},
+	"vs/workbench/contrib/performanceEvents/electron-sandbox/smoothness.contribution": {
+		"openInteractionProfiles": "在 Datadog 中查看会话交互配置文件"
+	},
+	"vs/workbench/contrib/preferences/browser/keybindingsEditor": {
+		"editKeybindingLabelWithKey": "更改键绑定 {0}",
+		"addKeybindingLabelWithKey": "添加键绑定 {0}"
+	},
+	"vs/workbench/contrib/preferences/browser/preferences.contribution": {
+		"miOpenVSCodeSettings": "VS Code 设置(&&V)",
+		"vsCodeSettings": "VS Code 设置"
+	},
+	"vs/workbench/contrib/preferences/browser/preferences.view.contribution": {
+		"keybindingsEditor": "键绑定编辑器",
+		"clearHistory": "清除键盘快捷方式搜索历史记录",
+		"showDefaultKeybindings": "显示系统键绑定",
+		"showExtensionKeybindings": "显示扩展键绑定",
+		"showUserKeybindings": "显示用户键绑定"
+	},
+	"vs/workbench/contrib/preferences/browser/settingsEditorPane.contribution": {
+		"settingsEditor2": "设置编辑器 2",
+		"settings.focusFile": "聚焦设置文件",
+		"settings.focusSettingsList": "聚焦设置列表",
+		"settings.focusSettingControl": "聚焦设置控件",
+		"settings.focusSearch": "聚焦设置搜索",
+		"settings.clearResults": "清除设置搜索结果",
+		"settings.focusSettingsTOC": "聚焦设置目录",
+		"settings.showContextMenu": "显示设置上下文菜单",
+		"settings.focusLevelUp": "将焦点上移一级",
+		"openSettingsJson": "打开设置 (JSON)"
+	},
+	"vs/workbench/contrib/quickaccess/browser/quickAccess.view.contribution": {
+		"viewQuickAccessPlaceholder": "键入要打开的视图、输出通道或终端的名称。",
+		"miOpenView": "打开视图(&&O)..."
+	},
+	"vs/workbench/contrib/remote/browser/remote": {
+		"reconnectionGaveUp": "无法重新连接到远程工作区。"
+	},
+	"vs/workbench/contrib/remote/browser/remoteExplorer": {
+		"remote.tunnelsView.notificationLinkLabel": "查看所有已转发的端口"
+	},
+	"vs/workbench/contrib/remote/common/remote.contribution": {
+		"remote.autoForwardPorts.policyDescription": "自动转发远程窗口中新进程正在侦听的端口，包括开发容器。为 false 时，不会自动转发新的侦听端口，但扩展和已打开的 URL 仍可转发端口。"
+	},
+	"vs/workbench/contrib/remote/common/spaceXModeRemoteDefaults": {
+		"spaceXMode": "SpaceX 模式"
+	},
+	"vs/workbench/contrib/remote/electron-sandbox/remote.contribution": {
+		"wslFeatureInstalled": "平台是否已安装 WSL 功能",
+		"remote.downloadExtensionsLocally": "启用后，扩展会在本地下载并安装到远程。"
+	},
+	"vs/workbench/contrib/remote/electron-sandbox/remote.cursor.contribution": {
+		"wslMntWorkspaceWarning.message": "不建议打开 /mnt 下的 WSL 工作区",
+		"wslMntWorkspaceWarning.detail": "你打开的文件夹会解析为“{0}”，这是挂载的 Windows 文件系统。它可能比 Linux 文件系统慢很多，部分功能也可能无法正常工作。\n\n为获得最佳效果，请把项目移到 WSL 主目录（例如 ~/projects），或直接在 Cursor 中打开 Windows 目录。",
+		"wslMntWorkspaceWarning.checkbox": "不再显示此警告",
+		"windowsWslPathWarning.message": "不建议在没有 WSL 扩展的情况下打开 WSL 文件夹",
+		"windowsWslPathWarning.detail": "你打开的文件夹（“{0}”）位于适用于 Linux 的 Windows 子系统的文件系统中。直接从 Windows 打开 WSL 文件夹可能会慢很多，部分功能也可能无法正常工作。\n\n为获得最佳效果，请安装 WSL 扩展，并用它打开 WSL 文件夹。这样可以完整访问 Linux 文件系统，性能也更好。",
+		"windowsWslPathWarning.checkbox": "不再显示此警告",
+		"windowsWslPathWarning.install": "安装 WSL 扩展(&&I)",
+		"windowsWslPathWarning.extensionInstalled.message": "不建议在不使用 WSL 扩展的情况下打开 WSL 文件夹",
+		"windowsWslPathWarning.extensionInstalled.detail": "你打开的文件夹（“{0}”）位于适用于 Linux 的 Windows 子系统的文件系统中。直接从 Windows 打开 WSL 文件夹可能会慢很多，部分功能也可能无法正常工作。\n\n你已安装 WSL 扩展。为获得最佳效果，请使用命令“WSL: Connect to WSL”，或在 WSL 终端中用“cursor .”从 WSL 内打开此文件夹。"
+	},
+	"vs/workbench/contrib/remoteTunnel/electron-sandbox/remoteTunnel.contribution": {
+		"remoteTunnel.actions.turnOn": "打开远程隧道访问...",
+		"remoteTunnel.actions.turnOff": "关闭远程隧道访问...",
+		"remoteTunnel.actions.showLog": "显示远程隧道服务日志",
+		"remoteTunnel.actions.configure": "配置隧道名称...",
+		"remoteTunnel.actions.copyToClipboard": "将浏览器 URI 复制到剪贴板",
+		"remoteTunnel.actions.learnMore": "隧道入门",
+		"recommend.remoteExtension": "隧道“{0}”可用于远程访问。可使用 {1} 扩展连接到它。",
+		"initialize.progress.titleLabel": "正在查找远程隧道",
+		"startTunnel.progress.titleLabel": "正在启动远程隧道",
+		"remoteTunnel.serviceInstallFailedLinked": "安装为服务失败，已改为在此会话中运行隧道。有关详细信息，请参阅{0}。",
+		"remoteTunnel.errorLogLink": "错误日志",
+		"accountPreference.placeholder": "登录帐户以启用远程访问",
+		"signed in": "已登录",
+		"others": "其他",
+		"sign in using account": "使用 {0} 登录",
+		"tunnel.preview": "远程隧道目前处于预览状态。请使用“帮助: 报告问题”命令报告任何问题。",
+		"tunnel.enable.placeholder": "选择要如何启用访问",
+		"tunnel.enable.session": "为此会话打开",
+		"tunnel.enable.session.description": "在 {0} 打开时运行",
+		"tunnel.enable.service": "安装为服务",
+		"tunnel.enable.service.description": "在你登录时运行",
+		"progress.turnOn.finalLinked": "你现在可以通过安全隧道 {0} 在任意位置访问此计算机。要通过另一台计算机连接，请使用生成的 {1} 链接，或在桌面版或网页版中使用 {2} 扩展。你可以在 VS Code 帐户菜单中{3}或{4}此访问。",
+		"progress.turnOn.turnOffLink": "关闭",
+		"action.copyToClipboard": "将浏览器链接复制到剪贴板",
+		"progress.turnOn.failed": "无法打开远程隧道访问。详细信息请查看远程隧道服务日志。",
+		"remoteTunnel.actions.manage.on.v2": "远程隧道访问已打开",
+		"remoteTunnel.actions.manage.connecting": "远程隧道访问正在连接",
+		"remoteTunnel.turnOffAttached.confirm": "是否要关闭远程隧道访问? 这也会停止从外部启动的服务。",
+		"remoteTunnel.turnOff.confirm": "是否要关闭远程隧道访问?",
+		"manage.placeholder": "选择要调用的命令",
+		"manage.title.attached": "已为 {0} 启用远程隧道访问（从外部启动）",
+		"manage.title.orunning": "已为 {0} 启用远程隧道访问",
+		"manage.title.off": "未启用远程隧道访问",
+		"manage.showLog": "显示日志",
+		"manage.tunnelName": "更改隧道名称",
+		"remoteTunnelAccess.machineName": "远程隧道访问注册时使用的名称。如果未设置，则使用主机名。",
+		"remoteTunnelAccess.machineNameRegex": "名称只能包含字母、数字、下划线和连字符。不能以连字符开头。",
+		"remoteTunnelAccess.preventSleep": "打开远程隧道访问时，防止此计算机进入睡眠状态。",
+		"remoteTunnel.category": "远程隧道"
+	},
+	"vs/workbench/contrib/reviewChanges/browser/components/ReviewChangesFileList/ReviewChangesFileItem": {
+		"reviewChanges.addedFileAriaLabel": "{0}（已添加）",
+		"reviewChanges.deletedFileAriaLabel": "{0}（已删除）",
+		"reviewChanges.originalAriaLabel": "{0}（原始）",
+		"reviewChanges.modifiedAriaLabel": "{0}（已修改）"
+	},
+	"vs/workbench/contrib/scm/browser/scm.contribution": {
+		"maxRenderedResources": "控制源代码管理视图中每个组呈现的资源数上限。超出此上限的超大更改列表会在视图中截断，以保持编辑器响应；这只影响呈现，不会改变哪些文件会被提交、暂存或丢弃。设置为 0 可呈现全部资源。",
+		"openBugbotSettings": "智能体审查设置",
+		"triggerAgentReview": "开始智能体审查"
+	},
+	"vs/workbench/contrib/scm/browser/scm.view.contribution": {
+		"sourceControlViewIcon": "源代码管理视图的视图图标。",
+		"no open repo": "未注册任何源代码管理提供程序。",
+		"no open repo in an untrusted workspace": "已注册的源代码管理提供程序均无法在受限模式下工作。",
+		"no history items": "所选源代码管理提供程序没有任何源代码管理历史记录项。",
+		"miViewSCM": "源代码管理(&&C)",
+		"source control graph": "源代码管理图",
+		"scmChanges": "更改",
+		"scmGraph": "图",
+		"editorBugbot": "智能体审查"
+	},
+	"vs/workbench/contrib/scm/browser/scmHistoryViewPane": {
+		"historyItemChangesEditorTitle": "所有更改（{0} ↔ {1}）",
+		"openInCursorBlame": "在 Cursor Blame 中打开",
+		"emailLinkTitle": "电子邮件",
+		"fileChanged": "已更改 {0} 个文件",
+		"filesChanged": "已更改 {0} 个文件",
+		"insertion": "{0} 次插入{1}",
+		"insertions": "{0} 次插入{1}",
+		"deletion": "{0} 次删除{1}",
+		"deletions": "{0} 次删除{1}"
+	},
+	"vs/workbench/contrib/scm/browser/scmViewPane": {
+		"openReviewChangesPane": "审查分支",
+		"scmReviewChangesDefaultLabel": "与默认分支比较",
+		"scmReviewChangesBranchLabel": "与 {0} 比较",
+		"scmInput.accessibilityHelp": "{0}，使用 {1} 打开源代码管理辅助功能帮助。",
+		"scmInput.accessibilityHelpNoKb": "{0}，运行“打开辅助功能帮助”命令以了解更多信息。"
+	},
+	"vs/workbench/contrib/search/browser/anythingQuickAccess": {
+		"lowScoringResultsSeparator": "其他结果",
+		"createFile": "创建文件“{0}”",
+		"createFileDescription": "在此路径创建新文件",
+		"createFileError": "创建文件失败: {0}"
+	},
+	"vs/workbench/contrib/search/browser/search.contribution": {
+		"anythingQuickAccessPlaceholder": "搜索文件、内容和符号（追加 {0} 可转到行，追加 {1} 可转到符号）",
+		"anythingQuickAccess": "转到文件",
+		"symbolsQuickAccessPlaceholder": "键入要打开的符号名称。",
+		"symbolsQuickAccess": "转到工作区中的符号"
+	},
+	"vs/workbench/contrib/search/browser/searchView": {
+		"noResultsIncludesExcludesIndex": "在“{0}”中未找到已排除“{1}”的索引结果 - ",
+		"noResultsIncludesIndex": "在“{0}”中未找到索引结果 - ",
+		"noResultsExcludesIndex": "未找到已排除“{0}”的索引结果 - ",
+		"noResultsFoundIndex": "未找到索引结果 - ",
+		"searchAll.tooltip": "不使用索引，搜索工作区中的所有文件",
+		"searchAll.message": "搜索全部",
+		"openInComposer.tooltip": "在聊天中打开搜索结果",
+		"search.file.result.indexed": "{1} 个索引文件中有 {0} 个结果",
+		"search.files.result.indexed": "{1} 个索引文件中有 {0} 个结果",
+		"search.file.results.indexed": "{1} 个索引文件中有 {0} 个结果",
+		"search.files.results.indexed": "{1} 个索引文件中有 {0} 个结果"
+	},
+	"vs/workbench/contrib/search/common/searchConfiguration": {
+		"exclude": "配置 [glob 模式](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options)，用于在全文搜索和快速打开的文件搜索中排除文件和文件夹。要从快速打开的最近打开列表中排除文件，模式必须是绝对路径（例如 `**/node_modules/**`）。继承 `#files.exclude#` 设置中的所有 glob 模式。",
+		"search.mode": "控制新的 `Search: Find in Files` 和 `Find in Folder` 操作发生的位置: 搜索视图或搜索编辑器。",
+		"search.mode.view": "在搜索视图中搜索，位置可以是面板或侧边栏。",
+		"search.mode.reuseEditor": "如果已有搜索编辑器，则在其中搜索，否则在新的搜索编辑器中搜索。",
+		"search.mode.newEditor": "在新的搜索编辑器中搜索。",
+		"useRipgrep": "此设置已弃用，现在会回退到“search.usePCRE2”。",
+		"useRipgrepDeprecated": "已弃用。如需支持高级正则表达式功能，请考虑使用“search.usePCRE2”。",
+		"maintainFileSearchCacheDeprecated": "搜索缓存保存在从不关闭的扩展宿主中，因此不再需要此设置。",
+		"search.maintainFileSearchCache": "启用后，searchService 进程会保持运行，不会在闲置一小时后关闭。这样可将文件搜索缓存保留在内存中。",
+		"useIgnoreFiles": "控制搜索文件时是否使用 `.gitignore` 和 `.ignore` 文件。",
+		"useGlobalIgnoreFiles": "控制搜索文件时是否使用全局 gitignore 文件（例如 `$HOME/.config/git/ignore`）。需要启用 {0}。",
+		"useParentIgnoreFiles": "控制搜索文件时是否使用父目录中的 `.gitignore` 和 `.ignore` 文件。需要启用 {0}。",
+		"search.quickOpen.includeSymbols": "是否在快速打开的文件结果中包含全局符号搜索的结果。",
+		"search.ripgrep.maxThreads": "搜索使用的线程数。设置为 0 时，由引擎自动确定此值。",
+		"search.quickOpen.includeHistory": "是否在快速打开的文件结果中包含最近打开的文件的结果。",
+		"filterSortOrder.default": "历史记录项会按所用筛选值的相关性排序。相关性更高的项排在前面。",
+		"filterSortOrder.recency": "历史记录项按最近打开的时间排序。最近打开的项排在前面。",
+		"filterSortOrder": "控制在快速打开中筛选时编辑器历史记录的排序。",
+		"search.quickOpen.useVscodeSearch": "启用后，使用默认的 VS Code 快速打开搜索算法，不用 Cursor 修改过的版本。",
+		"search.followSymlinks": "控制搜索时是否跟踪符号链接。",
+		"search.smartCase": "如果模式全部为小写，则不区分大小写地搜索；否则区分大小写搜索。",
+		"search.globalFindClipboard": "控制搜索视图是否在 macOS 上读取或修改共享的查找剪贴板。",
+		"search.location": "控制搜索显示为侧边栏中的视图，还是显示为面板区域中的面板，以便获得更多水平空间。",
+		"search.location.deprecationMessage": "此设置已弃用。你可以将搜索图标拖到新位置。",
+		"search.maxResults": "控制搜索结果的最大数量，可设置为 `null`（空）以返回不限数量的结果。",
+		"search.collapseResults.auto": "结果少于 10 个的文件会展开，其余文件会折叠。",
+		"search.collapseAllResults": "控制搜索结果是折叠还是展开。",
+		"search.useReplacePreview": "控制选中或替换匹配项时是否打开替换预览。",
+		"search.showLineNumbers": "控制是否为搜索结果显示行号。",
+		"search.usePCRE2": "是否在文本搜索中使用 PCRE2 正则表达式引擎。启用后可以使用先行断言和反向引用等高级正则表达式功能。不过并非支持全部 PCRE2 功能，只支持 JavaScript 也支持的功能。",
+		"usePCRE2Deprecated": "已弃用。使用仅 PCRE2 支持的正则表达式功能时，会自动使用 PCRE2。",
+		"search.actionsPositionAuto": "搜索视图较窄时，将操作栏放在右侧；较宽时，将操作栏紧挨内容之后。",
+		"search.actionsPositionRight": "始终将操作栏放在右侧。",
+		"search.actionsPosition": "控制搜索视图中每行操作栏的位置。",
+		"search.searchOnType": "键入时搜索所有文件。",
+		"search.seedWithNearestWord": "在活动编辑器没有选区时，启用根据最靠近光标的字词来预填搜索。",
+		"search.seedOnFocus": "聚焦搜索视图时，将搜索查询更新为编辑器的选定文本。单击时或触发 `workbench.views.search.focus` 命令时都会更新。",
+		"search.searchOnTypeDebouncePeriod": "启用 {0} 时，控制键入字符后到开始搜索之间的超时（毫秒）。禁用 {0} 时不起作用。",
+		"search.searchEditor.doubleClickBehaviour.selectWord": "双击会选中光标下的字词。",
+		"search.searchEditor.doubleClickBehaviour.goToLocation": "双击会在活动编辑器组中打开结果。",
+		"search.searchEditor.doubleClickBehaviour.openLocationToSide": "双击会在侧边的编辑器组中打开结果；若尚不存在，则创建一个。",
+		"search.searchEditor.doubleClickBehaviour": "配置在搜索编辑器中双击结果的效果。",
+		"search.searchEditor.singleClickBehaviour.default": "单击不执行任何操作。",
+		"search.searchEditor.singleClickBehaviour.peekDefinition": "单击会打开速览定义窗口。",
+		"search.searchEditor.singleClickBehaviour": "配置在搜索编辑器中单击结果的效果。",
+		"search.searchEditor.reusePriorSearchConfiguration": "启用后，新的搜索编辑器会沿用之前打开的搜索编辑器的包含项、排除项和标志。",
+		"search.searchEditor.defaultNumberOfContextLines": "新建搜索编辑器时，周围上下文行的默认行数。如果使用 `#search.searchEditor.reusePriorSearchConfiguration#`，可设为 `null`（空），以沿用之前的搜索编辑器配置。",
+		"search.searchEditor.focusResultsOnSearch": "触发搜索后，聚焦搜索编辑器的结果，而不是搜索编辑器的输入框。",
+		"searchSortOrder.default": "结果按文件夹名和文件名的字母顺序排序。",
+		"searchSortOrder.filesOnly": "结果按文件名的字母顺序排序，忽略文件夹顺序。",
+		"searchSortOrder.type": "结果按文件扩展名的字母顺序排序。",
+		"searchSortOrder.modified": "结果按文件上次修改日期降序排序。",
+		"searchSortOrder.countDescending": "结果按每个文件的结果数量降序排序。",
+		"searchSortOrder.countAscending": "结果按每个文件的结果数量升序排序。",
+		"search.sortOrder": "控制搜索结果的排序顺序。",
+		"search.decorations.colors": "控制搜索文件修饰是否使用颜色。",
+		"search.decorations.badges": "控制搜索文件修饰是否使用徽章。",
+		"scm.defaultViewMode.tree": "以树形式显示搜索结果。",
+		"scm.defaultViewMode.list": "以列表形式显示搜索结果。",
+		"search.defaultViewMode": "控制默认的搜索结果视图模式。"
+	}
+}

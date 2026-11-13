@@ -1,0 +1,344 @@
+{
+	"vs/glass/browser/components/editor-panel/file-tab/file-tree-create-modal.react": {
+		"glassFileTreeCreateInLabel": "创建于"
+	},
+	"vs/glass/browser/components/editor-panel/file-tab/file-tree-loading-placeholder.react": {
+		"glass.fileTree.loadingFiles": "正在加载文件"
+	},
+	"vs/glass/browser/components/editor-panel/file-tab/file-tree-panel.react": {
+		"glassFileTreeCreateFileLabel": "新建文件",
+		"glassFileTreeCreateFolderLabel": "新建文件夹"
+	},
+	"vs/glass/browser/components/editor-panel/file-tab/glass-csv-table-preview.react": {
+		"glass.fileTab.csvTable.empty": "文件为空",
+		"glass.fileTab.csvTable.truncatedColumns": "正在显示前 {0} 列。切换到原始内容以查看完整文件。"
+	},
+	"vs/glass/browser/components/editor-panel/file-tab/use-file-tree-row-create-actions.react": {
+		"glassFileTreeCreateFileInFolderLabel": "在 {0} 中新建文件",
+		"glassFileTreeCreateFolderInFolderLabel": "在 {0} 中新建文件夹"
+	},
+	"vs/glass/browser/components/editor-panel/library/library-tab-context.react": {
+		"glass.project.library.tabEmptyBody": "与你的项目相关的文件将显示在此处",
+		"glass.project.library.emptyBody": "你的智能体编写的简报、计划和其他文件将显示在此处"
+	},
+	"vs/glass/browser/components/editor-panel/library/library-toolbar.react": {
+		"glass.project.library.find": "搜索文件",
+		"glass.project.library.showAsGrid": "显示为网格",
+		"glass.project.library.showAsList": "显示为列表"
+	},
+	"vs/glass/browser/components/editor-panel/library/library-view.react": {
+		"glass.project.library.emptyTitle": "还没有文件",
+		"glass.project.library.searching": "正在搜索文件"
+	},
+	"vs/glass/browser/components/editor-panel/main-bot-tasks-tab/main-bot-tasks-tab-content.react": {
+		"glass.mainBot.tasks.find": "查找任务",
+		"glass.mainBot.tasks.views": "任务视图",
+		"glass.mainBot.tasks.noProjectsBody": "创建一个项目后，它所跟踪的任务将显示在此处",
+		"glass.mainBot.tasks.noProjectsTitle": "还没有项目",
+		"glass.mainBot.tasks.loading": "正在加载任务",
+		"glass.mainBot.tasks.emptyBody": "你的项目所跟踪的任务将显示在此处",
+		"glass.mainBot.tasks.emptyTitle": "还没有可跟踪的内容",
+		"glass.mainBot.tasks.failedOne": "无法加载 {0} 的任务。正在后台重试。",
+		"glass.mainBot.tasks.failedMany": "无法加载 {0} 个项目的任务: {1}。正在后台重试。"
+	},
+	"vs/glass/browser/components/editor-panel/project-document/project-notes-filter-chips.react": {
+		"glass.project.filter.operator.isAnyOf": "是其中任一",
+		"glass.project.filter.operator.is": "是",
+		"glass.project.filter.operator.isNoneOf": "不是其中任一",
+		"glass.project.filter.operator.isNot": "不是",
+		"glass.project.notes.filter.operator": "{0} 运算符",
+		"glass.project.notes.filter.add": "添加筛选器",
+		"glass.project.notes.filters": "筛选器",
+		"glass.project.notes.filter.remove": "移除筛选器"
+	},
+	"vs/glass/browser/components/editor-panel/project-document/project-notes-filter-empty-state.react": {
+		"glass.project.notes.filter.emptyBody": "尝试移除筛选器以查看更多任务"
+	},
+	"vs/glass/browser/components/editor-panel/project-document/project-notes-filter-menu.react": {
+		"glass.project.notes.filter.search": "搜索 {0}",
+		"glass.project.notes.filter.searchPlaceholder": "搜索…",
+		"glass.project.notes.filter.noMatches": "没有匹配项",
+		"glass.project.notes.filters": "筛选器"
+	},
+	"vs/glass/browser/components/editor-panel/project-document/project-notes-find.react": {
+		"glass.project.notes.find": "在笔记中查找"
+	},
+	"vs/glass/browser/components/editor-panel/project-document/project-notes-header.react": {
+		"glass.project.notes.find": "在笔记中查找",
+		"glass.project.header.sections": "项目视图"
+	},
+	"vs/glass/browser/components/editor-panel/project-document/project-task-add-to-chat.react": {
+		"glass.project.addToChat": "添加到聊天",
+		"glass.project.addTaskToChat": "将“{0}”添加到聊天"
+	},
+	"vs/glass/browser/components/editor-panel/project-document/project-task-chips.react": {
+		"glass.project.agentChip.loadingName": "正在加载…"
+	},
+	"vs/glass/browser/components/editor-panel/project-document/project-task-context-menu.react": {
+		"glass.project.task.menu": "任务操作",
+		"glass.project.addToChat": "添加到聊天"
+	},
+	"vs/glass/browser/components/editor-panel/project-document/project-task-filter-fields": {
+		"glass.project.filter.pr.draft": "草稿",
+		"glass.project.filter.pr.merged": "已合并",
+		"glass.project.filter.pr.closed": "已关闭",
+		"glass.project.filter.project": "项目",
+		"glass.project.filter.owner": "负责人",
+		"glass.project.filter.status": "状态",
+		"glass.project.filter.pr": "拉取请求",
+		"glass.project.filter.tags": "标签"
+	},
+	"vs/glass/browser/components/editor-panel/project-document/project-task-media.react": {
+		"glass.project.taskMedia.unavailable": "无法在此处加载此文件",
+		"glass.project.taskMedia.missing": "已移动或删除: {0}",
+		"glass.project.taskMedia.open": "打开 {0}",
+		"glass.project.taskMedia.more": "+{0}"
+	},
+	"vs/glass/browser/components/editor-panel/project-document/project-task-owner-avatar.react": {
+		"glass.project.taskOwner.none": "还没有负责人",
+		"glass.project.taskOwner.label": "负责人: {0}"
+	},
+	"vs/glass/browser/components/editor-panel/project-document/project-task-owner-menu.react": {
+		"glass.project.taskOwner.change": "更改负责人",
+		"glass.project.taskOwner.none": "还没有负责人"
+	},
+	"vs/glass/browser/components/editor-panel/project-document/project-task-owners-provider.react": {
+		"glass.project.taskOwner.unnamed": "队友"
+	},
+	"vs/glass/browser/components/editor-panel/project-document/project-task-owners": {
+		"glass.project.taskOwner.absentName": "{0}（不在此项目中）",
+		"glass.project.taskOwner.ambiguousName": "{0}（与多人重名）",
+		"glass.project.taskOwner.startedByTeammate": "由队友启动",
+		"glass.project.taskOwner.startedBy": "由 {0} 启动"
+	},
+	"vs/glass/browser/components/editor-panel/project-document/project-task-pull-request-stack.react": {
+		"glass.project.task.pullRequests": "拉取请求"
+	},
+	"vs/glass/browser/components/editor-panel/project-document/project-task-row-text": {
+		"glass.project.task.pullRequestStack": "{0} 个拉取请求"
+	},
+	"vs/glass/browser/components/editor-panel/project-document/project-task-subtasks-menu.react": {
+		"glass.project.task.subtasksOf": "“{0}”的子任务: {1}",
+		"glass.project.task.subtasks": "子任务"
+	},
+	"vs/glass/browser/components/editor-panel/project-document/project-task-tag-chip.react": {
+		"glass.project.task.filterByTag": "按 #{0} 筛选"
+	},
+	"vs/glass/browser/components/editor-panel/project-document/project-task-views.react": {
+		"glass.project.document.status.forReview": "待审查",
+		"glass.project.document.status.done": "完成",
+		"glass.project.document.status.canceled": "已取消"
+	},
+	"vs/glass/browser/components/editor-panel/project-document/project-tracked-task-views": {
+		"glass.project.taskOwner.unnamed": "队友"
+	},
+	"vs/glass/browser/components/editor-panel/project-document/project-tracked-tasks-board.react": {
+		"glass.project.trackedTasks.loading": "正在加载任务",
+		"glass.project.trackedTasks.unavailable": "无法加载此项目的任务。正在后台重试。"
+	},
+	"vs/glass/browser/components/editor-panel/project-document/use-project-notes-view-mode.react": {
+		"glass.project.document.view.board": "看板",
+		"glass.project.document.view.context": "资料库",
+		"glass.project.document.view.notes": "笔记"
+	},
+	"vs/glass/browser/components/editor-panel/project-document/use-project-task-reveal.react": {
+		"glass.project.taskLink.missing": "{0} 已不在笔记中"
+	},
+	"vs/glass/browser/components/editor-panel/project-document/use-tracked-task-agent-names.react": {
+		"glass.project.trackedTask.agent": "智能体"
+	},
+	"vs/glass/browser/components/editor-panel/project-item-add-to-chat.react": {
+		"glass.project.addToChat": "添加到聊天"
+	},
+	"vs/glass/browser/components/editor-panel/project-library-tab.react": {
+		"glass.project.library.view.grid": "网格",
+		"glass.project.library.views": "资料库视图",
+		"glass.project.library.find": "搜索文件"
+	},
+	"vs/glass/browser/components/editor-panel/project-notes-absent-state.react": {
+		"glass.project.notes.emptyBody": "为你的项目布置一项任务，并在此处跟踪进度",
+		"glass.project.notes.emptyTitle": "还没有可跟踪的内容",
+		"glass.project.notes.loading": "正在加载笔记"
+	},
+	"vs/glass/browser/components/editor-panel/project-prs-page/project-pr-index-row.react": {
+		"glass.project.prsTray.addPrToChat": "将 {0} 添加到聊天"
+	},
+	"vs/glass/browser/components/editor-panel/project-prs-page/project-prs-index-view.react": {
+		"glass.project.prIndex.search": "搜索拉取请求",
+		"glass.project.prIndex.searchPlaceholder": "按标题、编号、分支或讨论搜索",
+		"glass.project.prIndex.emptyProject": "此项目中还没有拉取请求。",
+		"glass.project.prIndex.emptyFiltered": "没有匹配的拉取请求。"
+	},
+	"vs/glass/browser/components/editor-panel/project-prs-page/project-prs-index": {
+		"glass.project.prIndex.stackPosition": "堆叠中第 {0} 个，共 {1} 个",
+		"glass.project.prIndex.status.ready": "就绪",
+		"glass.project.prIndex.status.draft": "草稿",
+		"glass.project.prIndex.status.closed": "已关闭",
+		"glass.project.prIndex.status.merged": "已合并",
+		"glass.project.prIndex.state.conflicts": "冲突",
+		"glass.project.prIndex.state.mergeConflicts": "合并冲突",
+		"glass.project.prIndex.state.checksFailing": "检查未通过",
+		"glass.project.prIndex.state.checksNeedAction": "检查需要处理",
+		"glass.project.prIndex.state.changesRequested": "请求更改",
+		"glass.project.prIndex.state.waitingOn": "正在等待 {0}",
+		"glass.project.prIndex.state.waitingOnMany": "正在等待 {0} +{1}",
+		"glass.project.prIndex.state.waitingOnAll": "正在等待 {0}",
+		"glass.project.prIndex.state.reviewRequired": "需要审查",
+		"glass.project.prIndex.state.checksRunning": "正在运行检查"
+	},
+	"vs/glass/browser/components/editor-panel/project-prs-page/project-prs-tray-chrome.react": {
+		"glass.project.prIndex.showMoreAria": "再显示 {0} 个拉取请求（在 {1} 中）",
+		"glass.project.prIndex.showMore": "显示更多"
+	},
+	"vs/glass/browser/components/editor-panel/project-tab-header.react": {
+		"glass.project.header.fallbackName": "新建项目"
+	},
+	"vs/glass/browser/components/editor-panel/project-tab-shell.react": {
+		"glass.project.library.find": "搜索文件"
+	},
+	"vs/glass/browser/components/editor-panel/project-tasks-composition.react": {
+		"glass.project.notes.tldrFocus": "重点"
+	},
+	"vs/glass/browser/components/editor-panel/terminal-tab/terminal-list.react": {
+		"glass.terminal.list.done": "完成",
+		"glass.terminal.list.rename.message": "输入此终端的新名称。",
+		"glass.terminal.list.openOtherAgent": "打开智能体",
+		"glass.terminal.list.closeTerminal": "关闭终端",
+		"glass.terminal.list.workspaceSectionZero": "终端",
+		"glass.terminal.list.workspaceSectionOne": "1 个终端",
+		"glass.terminal.list.workspaceSectionMany": "{0} 个终端"
+	},
+	"vs/glass/browser/components/editor-panel/terminal-tab/terminal-tab-content.react": {
+		"glass.terminal.agentReadonlyBanner": "智能体正在使用此终端。它是只读的。"
+	},
+	"vs/glass/browser/components/ftux-wizard/ftux-wizard-first-action-step.react": {
+		"glass.ftuxWizard.firstAction.title": "以下是几种入门方式"
+	},
+	"vs/glass/browser/components/ftux-wizard/ftux-wizard-loading-step.react": {
+		"glass.ftuxWizard.loading.text": "正在准备"
+	},
+	"vs/glass/browser/components/ftux-wizard/ftux-wizard-overlay.react": {
+		"glass.ftuxWizard.purpose.userRule.purpose.coding": "他们更喜欢编程工作流: 直接在代码中创建、调试和迭代。",
+		"glass.ftuxWizard.purpose.userRule.purpose.tasks": "他们更喜欢任务工作流: 在各个应用或计算机上研究、规划并完成任务。",
+		"glass.ftuxWizard.purpose.userRule.full.named": "用户的姓名是 {0}。其角色是 {1}。{2}",
+		"glass.ftuxWizard.purpose.userRule.full": "用户的角色是 {0}。{1}",
+		"glass.ftuxWizard.ariaLabel": "首次设置"
+	},
+	"vs/glass/browser/components/ftux-wizard/ftux-wizard-purpose-step.react": {
+		"glass.ftuxWizard.purpose.option.coding": "编程",
+		"glass.ftuxWizard.purpose.option.coding.description": "直接在代码中创建、调试和迭代。",
+		"glass.ftuxWizard.purpose.option.tasks.description": "在各个应用或你的计算机上研究、规划并完成任务。",
+		"glass.ftuxWizard.purpose.title": "你今天来 Cursor 是为了什么?"
+	},
+	"vs/glass/browser/components/ftux-wizard/ftux-wizard-welcome-step.react": {
+		"glass.ftuxWizard.welcome.role.softwareEngineer": "软件工程师",
+		"glass.ftuxWizard.welcome.role.designer": "设计师",
+		"glass.ftuxWizard.welcome.role.productManager": "产品经理",
+		"glass.ftuxWizard.welcome.role.researcher": "研究员",
+		"glass.ftuxWizard.welcome.role.dataScientist": "数据科学家",
+		"glass.ftuxWizard.welcome.role.student": "学生",
+		"glass.ftuxWizard.welcome.role.marketer": "营销人员",
+		"glass.ftuxWizard.welcome.role.operations": "运营",
+		"glass.ftuxWizard.welcome.role.somethingElse": "其他",
+		"glass.ftuxWizard.welcome.title.named": "欢迎使用 Cursor，{0}",
+		"glass.ftuxWizard.welcome.title": "欢迎使用 Cursor",
+		"glass.ftuxWizard.welcome.subtitle": "介绍一下你的角色"
+	},
+	"vs/glass/browser/components/glass-sidebar/components/agent-row-appearance.react": {
+		"glass.projectBot.editAppearance": "编辑外观"
+	},
+	"vs/glass/browser/components/glass-sidebar/components/environment-setup-trailing-icon.react": {
+		"glass.sidebar.environmentSetupSaved": "环境已保存",
+		"glass.sidebar.environmentSetupReadyToSave": "环境可以保存",
+		"glass.sidebar.environmentSetupInProgress": "正在设置环境",
+		"glass.sidebar.environmentSetupUnsaved": "环境未保存"
+	},
+	"vs/glass/browser/components/glass-sidebar/components/project-section-title-editor.react": {
+		"glass.sidebar.projectSectionName": "分组名称"
+	},
+	"vs/glass/browser/components/glass-sidebar/components/project-subagent-tree.react": {
+		"glass.sidebar.projectNewAgentFallback": "新建智能体",
+		"glass.sidebar.projectAgentsTree": "{0} 的智能体"
+	},
+	"vs/glass/browser/components/glass-sidebar/components/shared-project-trailing-icon.react": {
+		"glass.sidebar.sharedProject": "共享项目"
+	},
+	"vs/glass/browser/components/glass-sidebar/components/sidebar-agent-row.react": {
+		"glass.agentMenuItem.renameAgent": "重命名智能体"
+	},
+	"vs/glass/browser/components/glass-sidebar/hooks/use-project-agents-section.react": {
+		"glass.sidebar.expandProject": "展开项目",
+		"glass.sidebar.collapseProject": "折叠项目"
+	},
+	"vs/glass/browser/components/main-bot/main-bot-header-actions.react": {
+		"glass.mainBot.chatActions": "聊天操作"
+	},
+	"vs/glass/browser/components/project-bot/project-appearance-panel.react": {
+		"glass.projectBot.editAppearance": "编辑外观",
+		"glass.projectBot.untitledProject": "新建项目",
+		"glass.projectBot.resetLook": "重置为默认值",
+		"glass.projectBot.done": "完成"
+	},
+	"vs/glass/browser/components/project-bot/project-appearance-popover.react": {
+		"glass.projectBot.editAppearance": "编辑外观"
+	},
+	"vs/glass/browser/components/project-bot/project-bot-picker.react": {
+		"glass.projectBot.shape.blob": "团块",
+		"glass.projectBot.shape.cloud": "云端",
+		"glass.projectBot.shape.square": "正方形",
+		"glass.projectBot.shape.sparkle": "闪光",
+		"glass.projectBot.shape.clover": "三叶草",
+		"glass.projectBot.shape.heart": "心形",
+		"glass.projectBot.shape.flower": "花朵",
+		"glass.projectBot.shape.teardrop": "水滴",
+		"glass.projectBot.shape.tablet": "平板",
+		"glass.projectBot.shape.wedge": "楔形",
+		"glass.projectBot.shape.house": "房子",
+		"glass.projectBot.shape.star": "星形",
+		"glass.projectBot.shape.hex": "六边形",
+		"glass.projectBot.color.black": "黑色",
+		"glass.projectBot.color.brown": "棕色",
+		"glass.projectBot.color.red": "红色",
+		"glass.projectBot.color.orange": "橙色",
+		"glass.projectBot.color.yellow": "黄色",
+		"glass.projectBot.color.green": "绿色",
+		"glass.projectBot.color.cyan": "青色",
+		"glass.projectBot.color.blue": "蓝色",
+		"glass.projectBot.color.violet": "紫罗兰",
+		"glass.projectBot.color.magenta": "品红",
+		"glass.projectBot.color.gray": "灰色",
+		"glass.projectBot.shapes": "角色形状",
+		"glass.projectBot.shapeOption": "{0} 角色形状",
+		"glass.projectBot.colors": "角色颜色",
+		"glass.projectBot.colorOption": "{0} 角色颜色"
+	},
+	"vs/glass/browser/components/task-views/task-board.react": {
+		"glass.taskViews.board.goToParent": "转到“{0}”",
+		"glass.taskViews.board.empty": "没有任务",
+		"glass.taskViews.board.emptyColumns": "空白列"
+	},
+	"vs/glass/browser/components/task-views/task-status-icon-picker.react": {
+		"glass.taskViews.editStatusIcon": "编辑状态图标"
+	},
+	"vs/glass/browser/components/task-views/task-status-menu.react": {
+		"glass.taskViews.changeStatus": "更改状态",
+		"glass.taskViews.changeTaskStatus": "更改“{0}”的状态: {1}"
+	},
+	"vs/glass/browser/hooks/command-handlers/edit.react": {
+		"glassOsEditSelectAll": "全选(&&A)"
+	},
+	"vs/glass/browser/hooks/use-agent-followup.react": {
+		"glass.goalTray.editFailed": "更新目标失败。",
+		"glassQueuedMessageImagesStillConverting": "图片仍在转换。请稍候并重试。",
+		"glassFollowupSubmitWithoutClearingPromptFailed": "发送后续跟进失败。"
+	},
+	"vs/glass/browser/hooks/use-continue-chat-in-project.react": {
+		"glass.projects.continueInProject.bringingIn": "正在将 {0} 移入…"
+	},
+	"vs/glass/browser/hooks/use-git-action-pill.react": {
+		"glass.agentPanel.fixConflictsPill": "修复冲突"
+	},
+	"vs/glass/browser/hooks/use-goal-tray.react": {
+		"glass.goalTray.pauseFailed": "暂停目标失败。"
+	}
+}

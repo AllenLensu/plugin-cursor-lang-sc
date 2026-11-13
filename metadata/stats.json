@@ -1,0 +1,16 @@
+{
+	"baseline": 10942,
+	"sameKey": 84,
+	"englishText": 230,
+	"authored": 2394,
+	"unmatched": 0,
+	"omitted": 10,
+	"glossary": 1,
+	"tokenMismatches": 1,
+	"extensionUnmatched": 4,
+	"cursorExtensions": [
+		"anysphere.cursor-always-local",
+		"anysphere.cursor-retrieval",
+		"anysphere.cursor-shadow-workspace"
+	]
+}
