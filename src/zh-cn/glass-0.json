@@ -23,7 +23,7 @@
 		"glass.agentMetadataTooltip.clickToCopy": "单击以复制"
 	},
 	"vs/glass/browser/components/agent-metadata-tooltip/glass-agent-metadata-tooltip.react": {
-		"glass.agentMetadataTooltip.ongoingVoiceCall": "正在进行的语音通话",
+		"glass.agentMetadataTooltip.ongoingVoiceCall": "正在进行的语音聊天",
 		"glass.agentMetadataTooltip.manageEnvironment": "管理环境",
 		"glass.agentMetadataTooltip.manageEnvironmentAria": "管理环境"
 	},

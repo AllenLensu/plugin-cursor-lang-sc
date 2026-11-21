@@ -3,11 +3,11 @@
 		"composer.anchoredTray.previewAriaLabel": "{0} 的预览"
 	},
 	"vs/workbench/contrib/composer/browser/realtimeVoice/realtimeVoiceTranscriptEditor": {
-		"composer.realtimeVoice.transcriptEditor": "语音通话"
+		"composer.realtimeVoice.transcriptEditor": "语音聊天"
 	},
 	"vs/workbench/contrib/composer/browser/realtimeVoice/voiceCallTranscriptLabel": {
-		"glass.realtimeVoice.callTabLabelUnknown": "语音通话",
-		"glass.realtimeVoice.callTabLabel": "语音通话 · {0}"
+		"glass.realtimeVoice.callTabLabelUnknown": "语音聊天",
+		"glass.realtimeVoice.callTabLabel": "语音聊天 · {0}"
 	},
 	"vs/workbench/contrib/composer/browser/sendFeedbackAction": {
 		"cursor.localMode.sendFeedback": "发送反馈"
@@ -269,7 +269,9 @@
 		"check logs linked": "请查看{0}以获取更多详细信息。",
 		"check logs label": "日志",
 		"incompatible platform": "“{0}”扩展在 {1} 中不可用于 {2}。",
-		"not web tooltip": "“{0}”扩展在 {1} 中不可用。"
+		"not web tooltip": "“{0}”扩展在 {1} 中不可用。",
+		"deprecated with alternate settings message": "此扩展已弃用，因为此功能现在内置于 {0}。",
+		"deprecated with alternate settings tooltip": "此扩展已弃用，因为此功能现在内置于 {1}。配置这些 {0} 以使用此功能。"
 	},
 	"vs/workbench/contrib/extensions/browser/extensionsBoot.contribution": {
 		"all": "所有扩展",

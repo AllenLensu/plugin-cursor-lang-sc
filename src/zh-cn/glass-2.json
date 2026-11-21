@@ -219,7 +219,7 @@
 		"glass.project.prs.group.draft": "草稿",
 		"glass.project.prs.group.conflict": "冲突",
 		"glass.project.prs.group.ready": "就绪",
-		"glass.project.prs.group.ciFailing": "CI 失败",
+		"glass.project.prs.group.ciFailing": "检查失败",
 		"glass.project.prs.group.actionRequired": "需要操作",
 		"glass.project.prs.group.needsReview": "等待审阅者",
 		"glass.project.prs.group.merged": "已合并",

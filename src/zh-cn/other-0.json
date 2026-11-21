@@ -41,7 +41,12 @@
 		"airlock.disabled": "Airlock 仅在 SpaceX 模式下可用。",
 		"airlock.unconfigured": "IT 尚未在此计算机上设置 Airlock。",
 		"airlock.invalid": "此计算机上 IT 的 Airlock 设置无法使用: {0}",
-		"airlock.signedOut": "请使用你的 SpaceX 帐户登录以使用 Airlock。"
+		"airlock.signedOut": "请使用你的 SpaceX 帐户登录以使用 Airlock。",
+		"airlock.repo.none": "{0} 没有 Airlock 容器。请为此仓库启动 {1}，然后重新连接。",
+		"airlock.repo.noneInvalidSandboxConfig": "{0} 没有 Airlock 容器。请为此仓库启动 {1}，然后重新连接。{3} 无法提供“启动”: {2}",
+		"airlock.repo.noneStartable": "{0} 没有 Airlock 容器。请启动它，然后重新连接。",
+		"airlock.repo.unmapped": "{2} 无法确定 {0} 在容器 {1} 中的位置: 该容器未挂载此文件夹，也未设置工作文件夹。",
+		"airlock.repo.stopped": "容器 {0} 未在运行。请启动它，然后重新连接。"
 	},
 	"vs/platform/airlock/common/airlockConfig": {
 		"airlock.policy.required": "{0} 未设置。",
@@ -66,7 +71,8 @@
 		"airlock.repo.noSandboxConfig": "{0} 没有 {1}，因此 Cursor 无法启动其 Airlock 容器。",
 		"airlock.repo.starting": "正在启动 {0} 的 Airlock 容器…",
 		"airlock.repo.startFailed": "{0} 中的启动命令失败: {1}",
-		"airlock.repo.startTimeout": "{0} 中的启动命令已完成，但 {2} 秒后仍没有 {1} 的 Airlock 容器在运行。",
+		"airlock.repo.startTimeout": "{0} 中的启动命令已完成，但容器 {1} 在 {2} 秒后没在运行。",
+		"airlock.repo.noStartCommand": "{0} 的沙箱文件未指定 start_command（{1}），因此请自行启动其 Airlock 容器。",
 		"airlock.repo.settingsChanged": "Cursor 正在准备容器时，你所在组织的 Airlock 设置已更改。",
 		"airlock.engineNotFound": "{0} 不在 PATH 中。",
 		"airlock.wrapperNotExe": "开发容器无法运行 IT 的引擎包装脚本 {0}。在 Windows 上，Airlock 的引擎必须是 docker、podman 或 .exe 文件。",
@@ -84,6 +90,12 @@
 		"airlock.nameConfigInvalid": "Cursor 无法让开发容器做好打开 Airlock 的准备，因为开发容器针对该容器的设置不是 JSON 对象。请修复或删除 {0}，然后重试。",
 		"airlock.nameConfigRemoteEnvInvalid": "Cursor 无法让开发容器做好打开 Airlock 的准备，因为开发容器针对该容器的设置中的 remoteEnv 不是 JSON 对象。请修复或删除 {0}，然后重试。",
 		"airlock.settingsInvalid": "Cursor 无法将开发容器指向 Airlock 的容器引擎，因为 {0} 不是有效的 JSON。请修复它，然后重试。"
+	},
+	"vs/platform/airlock/node/airlockEngine": {
+		"airlock.engineNotFound": "{0} 不在 PATH 中。",
+		"airlock.noAnswer": "{0} 秒内没有应答",
+		"airlock.stoppedBySignal": "被 {0} 停止",
+		"airlock.exitCode": "退出代码 {0}"
 	},
 	"vs/platform/airlock/node/airlockHooks": {
 		"airlock.hook.failedToStart": "Cursor 无法运行 {1} 处的 {0} 钩子: {2}",
@@ -149,6 +161,9 @@
 	"vs/platform/extensionManagement/common/abstractExtensionManagementService": {
 		"incompatibleAPI": "无法安装“{0}”扩展。{1}"
 	},
+	"vs/platform/extensionManagement/node/extensionManagementService": {
+		"restartCode": "请在重新安装 {0} 之前重新启动 {1}。"
+	},
 	"vs/platform/extensions/common/extensionValidator": {
 		"apiProposalMismatch1": "此扩展使用的 API 提案“{0}”与当前版本的 VS Code 不兼容。",
 		"apiProposalMismatch2": "此扩展使用的 API 提案 {0} 和“{1}”与当前版本的 VS Code 不兼容。"
@@ -158,7 +173,8 @@
 	},
 	"vs/platform/externalTerminal/node/externalTerminalService": {
 		"mac.terminal.script.failed": "脚本“{0}”失败，退出代码为 {1}",
-		"linux.term.failed": "“{0}”失败，退出代码为 {1}"
+		"linux.term.failed": "“{0}”失败，退出代码为 {1}",
+		"console.title": "{0} 控制台"
 	},
 	"vs/platform/files/common/fileService": {
 		"invalidStat": "来自提供程序的文件统计信息无效"
@@ -187,7 +203,9 @@
 	"vs/platform/update/common/update.config.contribution": {
 		"silentlyApplyOnQuit": "启用自动更新检查，并在不提示的情况下自动安装更新。有可用更新时将自动应用。",
 		"releaseTrack": "配置更新的发布轨道。可以是 'prerelease'、'stable'、'dev'、'dogfood' 或 'candidate'。",
-		"releaseTrackOverride": "用于更新的内部托管发布轨道覆盖。"
+		"releaseTrackOverride": "用于更新的内部托管发布轨道覆盖。",
+		"restartWhenIdleTitle": "空闲时重新启动以更新",
+		"restartWhenIdle": "在屏幕锁定，且没有会阻止退出或造成丢失的内容时，重新启动到已下载的更新: 没有正在运行的智能体、终端、任务、测试运行、笔记本单元格或调试会话，也没有退出时会丢失的更改。"
 	},
 	"vs/platform/update/common/update": {
 		"agentsWindowSwitchToMolten.tooltip": "更新以获得更快的体验"

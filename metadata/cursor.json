@@ -1,9 +1,9 @@
 {
-	"cursorVersion": "3.29.15",
+	"cursorVersion": "3.31.15",
 	"vscodeVersion": "1.128.0",
-	"commit": "86776fcb52ca505783155631089b65d646f9b030",
-	"keyCount": 13660,
-	"messageCount": 14452,
+	"commit": "3eb8c13390837371c7c2f2013dc57fdbc802c750",
+	"keyCount": 13798,
+	"messageCount": 14600,
 	"duplicateCount": 11,
 	"duplicates": [
 		{
@@ -62,7 +62,7 @@
 			"english": "Feature flag \"{0}\" overridden to disabled"
 		}
 	],
-	"moduleCount": 1345,
+	"moduleCount": 1369,
 	"order": [
 		"vs/base/browser/ui/actionbar/actionViewItems",
 		"vs/base/browser/ui/button/button",
@@ -229,6 +229,10 @@
 		"vs/glass/browser/components/agent-panel/allowed-machines/placement-submenus.react",
 		"vs/glass/browser/components/agent-panel/allowed-machines/run-on-labels.react",
 		"vs/glass/browser/components/agent-panel/allowed-machines/use-allowed-machines.react",
+		"vs/glass/browser/components/agent-panel/apps-growth/deploy-intent-pill.react",
+		"vs/glass/browser/components/agent-panel/apps-growth/local-deploy-tray.react",
+		"vs/glass/browser/components/agent-panel/apps-growth/presend-deploy-tray.react",
+		"vs/glass/browser/components/agent-panel/apps-growth/use-local-deploy-action.react",
 		"vs/glass/browser/components/agent-panel/components/agent-prompt-input-name.react",
 		"vs/glass/browser/components/agent-panel/components/agent-prs-tray-row.react",
 		"vs/glass/browser/components/agent-panel/components/app-secrets/app-secrets-request-collapsed-pill.react",
@@ -264,6 +268,7 @@
 		"vs/glass/browser/components/agent-panel/components/queue-tray.react",
 		"vs/glass/browser/components/agent-panel/components/top-bar-right-actions.react",
 		"vs/glass/browser/components/agent-panel/components/unread-jump-pill.react",
+		"vs/glass/browser/components/agent-panel/deploy-prototype-nudge/deploy-prototype-nudge-tray.react",
 		"vs/glass/browser/components/agent-panel/subagent-tray/canonical-agent-row-presentation",
 		"vs/glass/browser/components/agent-panel/subagent-tray/subagent-tray-rows.react",
 		"vs/glass/browser/components/agent-panel/subagent-tray/subagent-tray.controller.react",
@@ -281,17 +286,26 @@
 		"vs/glass/browser/components/editor-panel/file-tab/glass-csv-table-preview.react",
 		"vs/glass/browser/components/editor-panel/file-tab/use-file-tree-row-create-actions.react",
 		"vs/glass/browser/components/editor-panel/library/library-context-menu.react",
+		"vs/glass/browser/components/editor-panel/library/library-empty-body",
 		"vs/glass/browser/components/editor-panel/library/library-rename.react",
-		"vs/glass/browser/components/editor-panel/library/library-tab-context.react",
 		"vs/glass/browser/components/editor-panel/library/library-toolbar.react",
 		"vs/glass/browser/components/editor-panel/library/library-view.react",
 		"vs/glass/browser/components/editor-panel/main-bot-tasks-tab/main-bot-tasks-tab-content.react",
+		"vs/glass/browser/components/editor-panel/pr-index-page/pr-index-row.react",
+		"vs/glass/browser/components/editor-panel/pr-index-page/pr-index-tray-chrome.react",
+		"vs/glass/browser/components/editor-panel/pr-index-page/pr-index-view.react",
+		"vs/glass/browser/components/editor-panel/pr-index-page/pr-index",
+		"vs/glass/browser/components/editor-panel/pr-index-page/use-pr-index-context-menu.react",
+		"vs/glass/browser/components/editor-panel/project-brain/project-brain-preferences.react",
+		"vs/glass/browser/components/editor-panel/project-brain/project-brain-view.react",
 		"vs/glass/browser/components/editor-panel/project-document/project-notes-filter-chips.react",
 		"vs/glass/browser/components/editor-panel/project-document/project-notes-filter-empty-state.react",
 		"vs/glass/browser/components/editor-panel/project-document/project-notes-filter-menu.react",
 		"vs/glass/browser/components/editor-panel/project-document/project-notes-find.react",
 		"vs/glass/browser/components/editor-panel/project-document/project-notes-header.react",
 		"vs/glass/browser/components/editor-panel/project-document/project-task-add-to-chat.react",
+		"vs/glass/browser/components/editor-panel/project-document/project-task-agent-stack.react",
+		"vs/glass/browser/components/editor-panel/project-document/project-task-agent-status.react",
 		"vs/glass/browser/components/editor-panel/project-document/project-task-chips.react",
 		"vs/glass/browser/components/editor-panel/project-document/project-task-context-menu.react",
 		"vs/glass/browser/components/editor-panel/project-document/project-task-filter-fields",
@@ -301,6 +315,7 @@
 		"vs/glass/browser/components/editor-panel/project-document/project-task-owners-provider.react",
 		"vs/glass/browser/components/editor-panel/project-document/project-task-owners",
 		"vs/glass/browser/components/editor-panel/project-document/project-task-pull-request-stack.react",
+		"vs/glass/browser/components/editor-panel/project-document/project-task-rename-dialog.react",
 		"vs/glass/browser/components/editor-panel/project-document/project-task-row-text",
 		"vs/glass/browser/components/editor-panel/project-document/project-task-subtasks-menu.react",
 		"vs/glass/browser/components/editor-panel/project-document/project-task-tag-chip.react",
@@ -313,40 +328,45 @@
 		"vs/glass/browser/components/editor-panel/project-item-add-to-chat.react",
 		"vs/glass/browser/components/editor-panel/project-library-tab.react",
 		"vs/glass/browser/components/editor-panel/project-notes-absent-state.react",
-		"vs/glass/browser/components/editor-panel/project-prs-page/project-pr-index-row.react",
-		"vs/glass/browser/components/editor-panel/project-prs-page/project-prs-index-view.react",
-		"vs/glass/browser/components/editor-panel/project-prs-page/project-prs-index",
-		"vs/glass/browser/components/editor-panel/project-prs-page/project-prs-tray-chrome.react",
 		"vs/glass/browser/components/editor-panel/project-tab-header.react",
-		"vs/glass/browser/components/editor-panel/project-tab-shell.react",
-		"vs/glass/browser/components/editor-panel/project-tasks-composition.react",
 		"vs/glass/browser/components/editor-panel/terminal-tab/terminal-list.react",
 		"vs/glass/browser/components/editor-panel/terminal-tab/terminal-tab-content.react",
+		"vs/glass/browser/components/ftux-wizard/ftux-wizard-connect-step.react",
 		"vs/glass/browser/components/ftux-wizard/ftux-wizard-first-action-step.react",
 		"vs/glass/browser/components/ftux-wizard/ftux-wizard-loading-step.react",
 		"vs/glass/browser/components/ftux-wizard/ftux-wizard-overlay.react",
+		"vs/glass/browser/components/ftux-wizard/ftux-wizard-plugin-card.react",
 		"vs/glass/browser/components/ftux-wizard/ftux-wizard-purpose-step.react",
+		"vs/glass/browser/components/ftux-wizard/ftux-wizard-step-footer.react",
 		"vs/glass/browser/components/ftux-wizard/ftux-wizard-welcome-step.react",
+		"vs/glass/browser/components/ftux-wizard/use-ftux-connect-step.react",
+		"vs/glass/browser/components/glass-settings/projects-credit-balance-section.react",
 		"vs/glass/browser/components/glass-sidebar/components/agent-row-appearance.react",
 		"vs/glass/browser/components/glass-sidebar/components/environment-setup-trailing-icon.react",
 		"vs/glass/browser/components/glass-sidebar/components/project-section-title-editor.react",
 		"vs/glass/browser/components/glass-sidebar/components/project-subagent-tree.react",
+		"vs/glass/browser/components/glass-sidebar/components/projects-credit-sidebar-card.react",
 		"vs/glass/browser/components/glass-sidebar/components/shared-project-trailing-icon.react",
 		"vs/glass/browser/components/glass-sidebar/components/sidebar-agent-row.react",
 		"vs/glass/browser/components/glass-sidebar/hooks/use-project-agents-section.react",
+		"vs/glass/browser/components/glass-sidebar/utils/projects-credit-card",
 		"vs/glass/browser/components/main-bot/main-bot-header-actions.react",
 		"vs/glass/browser/components/project-bot/project-appearance-panel.react",
 		"vs/glass/browser/components/project-bot/project-appearance-popover.react",
 		"vs/glass/browser/components/project-bot/project-bot-picker.react",
+		"vs/glass/browser/components/project-context/project-context-block.react",
 		"vs/glass/browser/components/quit-background-terminals-dialog.react",
 		"vs/glass/browser/components/quit-streaming-agents-dialog.react",
 		"vs/glass/browser/components/task-views/task-board.react",
 		"vs/glass/browser/components/task-views/task-status-icon-picker.react",
 		"vs/glass/browser/components/task-views/task-status-menu.react",
+		"vs/glass/browser/hooks/command-handlers/agent.react",
 		"vs/glass/browser/hooks/command-handlers/edit.react",
 		"vs/glass/browser/hooks/use-agent-followup.react",
+		"vs/glass/browser/hooks/use-connect-vercel-pill.react",
 		"vs/glass/browser/hooks/use-continue-chat-in-project.react",
 		"vs/glass/browser/hooks/use-git-action-pill.react",
+		"vs/glass/browser/hooks/use-glass-agent-creation.react",
 		"vs/glass/browser/hooks/use-goal-tray.react",
 		"vs/glass/browser/hooks/use-queued-messages.react",
 		"vs/glass/browser/hooks/use-remote-control-slash-action.react",
@@ -372,9 +392,11 @@
 		"vs/glass/browser/utils/agent-menu-controller",
 		"vs/glass/browser/utils/followup-compute-target-migration",
 		"vs/glass/browser/utils/plugin-marketplace-tray-action",
+		"vs/glass/browser/utils/project-agent-reparent",
 		"vs/glass/browser/utils/project-pr-groups",
 		"vs/glass/browser/utils/side-chat-close-confirmation",
 		"vs/glass/browser/utils/start-folder-worker-for-move",
+		"vs/glass/browser/utils/start-project-from-chat",
 		"vs/glass/browser/utils/subscriptions-copy",
 		"vs/glass/browser/utils/terminal-close-confirmation",
 		"vs/platform/accessibilitySignal/browser/accessibilitySignalService",
@@ -391,6 +413,7 @@
 		"vs/platform/airlock/common/airlockRepo",
 		"vs/platform/airlock/electron-main/airlockMainService",
 		"vs/platform/airlock/node/airlockDevContainers",
+		"vs/platform/airlock/node/airlockEngine",
 		"vs/platform/airlock/node/airlockHooks",
 		"vs/platform/airlock/node/airlockLifecycle",
 		"vs/platform/browserView/electron-sandbox/externalSchemeConfirmation",
@@ -412,6 +435,7 @@
 		"vs/platform/extensionManagement/common/extensionManagementCLI",
 		"vs/platform/extensionManagement/common/extensionNls",
 		"vs/platform/extensionManagement/common/extensionsScannerService",
+		"vs/platform/extensionManagement/common/vsixInstallPolicy",
 		"vs/platform/extensionManagement/node/extensionManagementService",
 		"vs/platform/extensionManagement/node/extensionManagementUtil",
 		"vs/platform/extensions/common/extensionValidator",
@@ -3432,7 +3456,7 @@
 			"glass.agentMetadataTooltip.clickToCopy": "Click to copy"
 		},
 		"vs/glass/browser/components/agent-metadata-tooltip/glass-agent-metadata-tooltip.react": {
-			"glass.agentMetadataTooltip.ongoingVoiceCall": "Ongoing voice call",
+			"glass.agentMetadataTooltip.ongoingVoiceCall": "Ongoing voice chat",
 			"glass.agentMetadataTooltip.manageEnvironment": "Manage Environment",
 			"glass.agentMetadataTooltip.manageEnvironmentAria": "Manage Environment"
 		},
@@ -3440,13 +3464,14 @@
 			"glass.allowedMachines.addFolder.starting": "Starting",
 			"glass.allowedMachines.addFolder.allowing": "Allowing",
 			"glass.allowedMachines.addFolderOnMachine": "Add folder on {0}",
+			"glass.allowedMachines.cloneRepoOnMachine": "Clone repository on {0}",
 			"glass.allowedMachines.rowAriaLabel": "{0}, {1}"
 		},
 		"vs/glass/browser/components/agent-panel/allowed-machines/allowed-machines-segment.react": {
-			"glass.allowedMachines.runOnMenuLabel": "Run on",
 			"glass.allowedMachines.environmentsMenu": "Environments",
-			"glass.allowedMachines.searchEnvironmentsPlaceholder": "Search environments and repos",
 			"glass.allowedMachines.machinesMenu": "Machines",
+			"glass.allowedMachines.runOnMenuLabel": "Run on",
+			"glass.allowedMachines.searchEnvironmentsPlaceholder": "Search environments and repos",
 			"glass.allowedMachines.searchPlaceholder": "Search machines and pools"
 		},
 		"vs/glass/browser/components/agent-panel/allowed-machines/placement-grants-snapshot": {
@@ -3484,6 +3509,38 @@
 		},
 		"vs/glass/browser/components/agent-panel/allowed-machines/use-allowed-machines.react": {
 			"glass.allowedMachines.updateFailed": "Could not update allowed machines. Please try again."
+		},
+		"vs/glass/browser/components/agent-panel/apps-growth/deploy-intent-pill.react": {
+			"glass.agentPanel.deployIntentTray.title": "Build Live, Shareable Apps with Cursor",
+			"glass.agentPanel.deployIntentPill.dismiss": "Dismiss",
+			"glass.agentPanel.deployIntentPill.label": "Deploy with Cursor",
+			"glass.agentPanel.deployIntentTray.body": "Ask Cursor to build an App in your prompt and it will scaffold a web app, deploy it, and return with a shareable link.",
+			"glass.agentPanel.deployIntentTray.dismiss": "Dismiss",
+			"glass.agentPanel.deployIntentTray.deploy": "Build an App"
+		},
+		"vs/glass/browser/components/agent-panel/apps-growth/local-deploy-tray.react": {
+			"glass.localDeployTray.title": "Deploy a live, shareable app",
+			"glass.localDeployTray.body": "Cursor can publish your work as a live, shareable web app. The publish workflow runs in the cloud, and we'll move this chat there with all its work.",
+			"glass.localDeployTray.dismiss": "Dismiss",
+			"glass.localDeployTray.deploying": "Deploying…",
+			"glass.localDeployTray.deploy": "Deploy the app"
+		},
+		"vs/glass/browser/components/agent-panel/apps-growth/presend-deploy-tray.react": {
+			"glass.presendDeployTray.title": "Build a Live, Shareable App",
+			"glass.presendDeployTray.body": "Cursor can build and deploy apps with a shareable link. Just be explicit that Cursor should build an App in your prompt.",
+			"glass.presendDeployTray.dismiss": "Dismiss",
+			"glass.presendDeployTray.deploy": "Build an App"
+		},
+		"vs/glass/browser/components/agent-panel/apps-growth/use-local-deploy-action.react": {
+			"glass.localDeployTray.confirmTitle": "Deploy this folder?",
+			"glass.localDeployTray.confirmDeploy": "Deploy Folder",
+			"glass.localDeployTray.draftRepoFailed": "Couldn't create a repository for this project, so it wasn't moved to the cloud.",
+			"glass.localDeployTray.uploadFailed": "Couldn't copy this project's files to the cloud, so it wasn't moved there.",
+			"glass.localDeployTray.tooLarge": "This project is too large to move to the cloud from here.",
+			"glass.localDeployTray.alreadyDeploying": "This project is already being deployed from another window.",
+			"glass.localDeployTray.nothingToDeploy": "This chat hasn't saved any app files yet. Deploy it once it has built something.",
+			"glass.localDeployTray.confirmDescription": "Everything in {0} moves to the cloud with this chat, except dependencies, build output and .env files.",
+			"glass.localDeployTray.confirmChatFolderOnly": "Only {0}"
 		},
 		"vs/glass/browser/components/agent-panel/components/agent-prompt-input-name.react": {
 			"glass.agentPanel.promptInput.ariaLabel": "Prompt",
@@ -3673,6 +3730,12 @@
 			"glass.unreadJumpPill.one": "1 New Message",
 			"glass.unreadJumpPill.many": "{0} New Messages"
 		},
+		"vs/glass/browser/components/agent-panel/deploy-prototype-nudge/deploy-prototype-nudge-tray.react": {
+			"glass.deployPrototypeNudge.title": "Deploy your work",
+			"glass.deployPrototypeNudge.body": "Cursor can turn prototypes into shareable, live web apps. Just ask Cursor to deploy the app or click Deploy App here.",
+			"glass.deployPrototypeNudge.dismiss": "Dismiss",
+			"glass.deployPrototypeNudge.deploy": "Deploy App"
+		},
 		"vs/glass/browser/components/agent-panel/subagent-tray/canonical-agent-row-presentation": {
 			"glass.project.agents.newSubagent": "New subagent"
 		},
@@ -3764,17 +3827,14 @@
 		"vs/glass/browser/components/editor-panel/library/library-context-menu.react": {
 			"glass.project.library.open": "Open"
 		},
+		"vs/glass/browser/components/editor-panel/library/library-empty-body": {
+			"glass.project.library.tabEmptyBody": "Files related to your project will appear here"
+		},
 		"vs/glass/browser/components/editor-panel/library/library-rename.react": {
 			"glass.project.library.rename": "Rename"
 		},
-		"vs/glass/browser/components/editor-panel/library/library-tab-context.react": {
-			"glass.project.library.tabEmptyBody": "Files related to your project will appear here",
-			"glass.project.library.emptyBody": "Briefs, plans, and other files your agents write will appear here"
-		},
 		"vs/glass/browser/components/editor-panel/library/library-toolbar.react": {
-			"glass.project.library.find": "Search files",
-			"glass.project.library.showAsGrid": "Show as grid",
-			"glass.project.library.showAsList": "Show as list"
+			"glass.project.library.find": "Search files"
 		},
 		"vs/glass/browser/components/editor-panel/library/library-view.react": {
 			"glass.project.library.emptyTitle": "No files yet",
@@ -3792,6 +3852,52 @@
 			"glass.mainBot.tasks.failedOne": "Couldn't load the tasks of {0}. Retrying in the background.",
 			"glass.mainBot.tasks.failedMany": "Couldn't load the tasks of {0} Projects: {1}. Retrying in the background."
 		},
+		"vs/glass/browser/components/editor-panel/pr-index-page/pr-index-row.react": {
+			"glass.project.prsTray.addPrToChat": "Add {0} to chat"
+		},
+		"vs/glass/browser/components/editor-panel/pr-index-page/pr-index-tray-chrome.react": {
+			"glass.prIndex.showMoreAria": "Show {0} more pull requests in {1}",
+			"glass.prIndex.showMore": "Show more"
+		},
+		"vs/glass/browser/components/editor-panel/pr-index-page/pr-index-view.react": {
+			"glass.prIndex.search": "Search pull requests",
+			"glass.prIndex.searchPlaceholder": "Search by title, number, branch, or thread",
+			"glass.prIndex.clearSearch": "Clear search",
+			"glass.prIndex.emptyFiltered": "No pull requests match.",
+			"glass.prIndex.emptyProject": "No pull requests in this project yet.",
+			"glass.prIndex.emptyAgent": "No pull requests by this agent yet."
+		},
+		"vs/glass/browser/components/editor-panel/pr-index-page/pr-index": {
+			"glass.prIndex.stackPosition": "{0} of {1} in stack",
+			"glass.prIndex.status.queued": "Queued",
+			"glass.prIndex.status.ready": "Ready",
+			"glass.prIndex.status.draft": "Draft",
+			"glass.prIndex.status.closed": "Closed",
+			"glass.prIndex.status.merged": "Merged",
+			"glass.prIndex.state.conflicts": "Conflicts",
+			"glass.prIndex.state.mergeConflicts": "Merge conflicts",
+			"glass.prIndex.state.checksFailing": "Checks failing",
+			"glass.prIndex.state.checksNeedAction": "Checks need action",
+			"glass.prIndex.state.changesRequested": "Changes requested",
+			"glass.prIndex.state.waitingOn": "Waiting on {0}",
+			"glass.prIndex.state.waitingOnMany": "Waiting on {0} +{1}",
+			"glass.prIndex.state.waitingOnAll": "Waiting on {0}",
+			"glass.prIndex.state.reviewRequired": "Review required",
+			"glass.prIndex.state.checksRunning": "Checks running"
+		},
+		"vs/glass/browser/components/editor-panel/pr-index-page/use-pr-index-context-menu.react": {
+			"glass.prIndex.contextMenu": "Pull request actions",
+			"glass.prIndex.copyUrl": "Copy URL"
+		},
+		"vs/glass/browser/components/editor-panel/project-brain/project-brain-preferences.react": {
+			"glass.project.brain.preferences": "Preferences"
+		},
+		"vs/glass/browser/components/editor-panel/project-brain/project-brain-view.react": {
+			"glass.project.brain.tracker": "Tracker",
+			"glass.project.brain.discussion": "Discussion Threads",
+			"glass.project.brain.localFiles": "Local Files and Paths",
+			"glass.project.brain.other": "Other"
+		},
 		"vs/glass/browser/components/editor-panel/project-document/project-notes-filter-chips.react": {
 			"glass.project.filter.operator.isAnyOf": "is any of",
 			"glass.project.filter.operator.is": "is",
@@ -3801,9 +3907,15 @@
 			"glass.project.notes.filter.add": "Add filter",
 			"glass.project.notes.filters": "Filters",
 			"glass.project.notes.filter.remove": "Remove filter",
-			"glass.project.notes.filter.clear": "Clear Filters"
+			"glass.project.notes.filter.clear": "Clear Filters",
+			"glass.project.notes.ownerScope": "Tasks shown",
+			"glass.project.notes.ownerScope.all": "All tasks",
+			"glass.project.notes.ownerScope.mine": "My tasks"
 		},
 		"vs/glass/browser/components/editor-panel/project-document/project-notes-filter-empty-state.react": {
+			"glass.project.notes.myTasks.emptyBody": "Tasks you own show up here",
+			"glass.project.notes.myTasks.showAll": "Show All Tasks",
+			"glass.project.notes.myTasks.emptyTitle": "No tasks for you",
 			"glass.project.notes.filter.emptyBody": "Try removing a filter to see more tasks",
 			"glass.project.notes.filter.emptyClear": "Clear Filters",
 			"glass.project.notes.filter.emptyTitle": "No matching tasks"
@@ -3821,11 +3933,24 @@
 		},
 		"vs/glass/browser/components/editor-panel/project-document/project-notes-header.react": {
 			"glass.project.notes.find": "Find in notes",
+			"glass.project.notes.switchToBoard": "Switch to board view",
+			"glass.project.notes.switchToList": "Switch to list view",
 			"glass.project.header.sections": "Project views"
 		},
 		"vs/glass/browser/components/editor-panel/project-document/project-task-add-to-chat.react": {
 			"glass.project.addToChat": "Add to Chat",
 			"glass.project.addTaskToChat": "Add \"{0}\" to chat"
+		},
+		"vs/glass/browser/components/editor-panel/project-document/project-task-agent-stack.react": {
+			"glass.project.task.agents": "Agents",
+			"glass.project.agentChip.loadingName": "Loading…"
+		},
+		"vs/glass/browser/components/editor-panel/project-document/project-task-agent-status.react": {
+			"glass.project.task.agentStatus.error": "Agent failed",
+			"glass.project.task.agentStatus.needsAttention": "Agent needs attention",
+			"glass.project.task.agentStatus.working": "Agent working",
+			"glass.project.task.agentStatus.idle": "No agent working",
+			"glass.project.task.agentStatus.none": "No linked agent"
 		},
 		"vs/glass/browser/components/editor-panel/project-document/project-task-chips.react": {
 			"glass.project.agentChip.loadingName": "Loading…"
@@ -3833,7 +3958,11 @@
 		"vs/glass/browser/components/editor-panel/project-document/project-task-context-menu.react": {
 			"glass.project.task.menu": "Task actions",
 			"glass.project.addToChat": "Add to Chat",
-			"glass.project.task.menu.copyLink": "Copy Link"
+			"glass.project.task.menu.rename": "Rename",
+			"glass.project.task.menu.owner": "Owner",
+			"glass.project.taskOwner.unassigned": "None",
+			"glass.project.task.menu.status": "Status",
+			"glass.project.task.menu.tags": "Tags"
 		},
 		"vs/glass/browser/components/editor-panel/project-document/project-task-filter-fields": {
 			"glass.project.filter.pr.open": "Open",
@@ -3880,9 +4009,16 @@
 			"glass.project.task.pullRequestStackStates": "{0}: {1}",
 			"glass.project.task.pullRequests": "Pull requests"
 		},
+		"vs/glass/browser/components/editor-panel/project-document/project-task-rename-dialog.react": {
+			"glass.project.task.rename.title": "Rename Task",
+			"glass.project.task.rename.input": "Task title",
+			"glass.project.task.rename.cancel": "Cancel",
+			"glass.project.task.rename.save": "Save"
+		},
 		"vs/glass/browser/components/editor-panel/project-document/project-task-row-text": {
 			"glass.project.taskProgress": "{0} of {1}",
-			"glass.project.task.pullRequestStack": "{0} PRs"
+			"glass.project.task.pullRequestStack": "{0} PRs",
+			"glass.project.task.agentStack": "{0} Agents"
 		},
 		"vs/glass/browser/components/editor-panel/project-document/project-task-subtasks-menu.react": {
 			"glass.project.task.subtasksOf": "Subtasks of \"{0}\": {1}",
@@ -3908,8 +4044,7 @@
 		"vs/glass/browser/components/editor-panel/project-document/use-project-notes-view-mode.react": {
 			"glass.project.document.view.rows": "List",
 			"glass.project.document.view.board": "Board",
-			"glass.project.document.view.context": "Library",
-			"glass.project.document.view.notes": "Notes"
+			"glass.project.document.view.brain": "Brain"
 		},
 		"vs/glass/browser/components/editor-panel/project-document/use-project-task-reveal.react": {
 			"glass.project.taskLink.missing": "{0} is no longer in the notes"
@@ -3931,45 +4066,8 @@
 			"glass.project.notes.emptyTitle": "Nothing to track yet",
 			"glass.project.notes.loading": "Loading notes"
 		},
-		"vs/glass/browser/components/editor-panel/project-prs-page/project-pr-index-row.react": {
-			"glass.project.prsTray.addPrToChat": "Add {0} to chat"
-		},
-		"vs/glass/browser/components/editor-panel/project-prs-page/project-prs-index-view.react": {
-			"glass.project.prIndex.search": "Search pull requests",
-			"glass.project.prIndex.searchPlaceholder": "Search by title, number, branch, or thread",
-			"glass.project.prIndex.emptyProject": "No pull requests in this project yet.",
-			"glass.project.prIndex.emptyFiltered": "No pull requests match."
-		},
-		"vs/glass/browser/components/editor-panel/project-prs-page/project-prs-index": {
-			"glass.project.prIndex.stackPosition": "{0} of {1} in stack",
-			"glass.project.prIndex.status.queued": "Queued",
-			"glass.project.prIndex.status.ready": "Ready",
-			"glass.project.prIndex.status.draft": "Draft",
-			"glass.project.prIndex.status.closed": "Closed",
-			"glass.project.prIndex.status.merged": "Merged",
-			"glass.project.prIndex.state.conflicts": "Conflicts",
-			"glass.project.prIndex.state.mergeConflicts": "Merge conflicts",
-			"glass.project.prIndex.state.checksFailing": "Checks failing",
-			"glass.project.prIndex.state.checksNeedAction": "Checks need action",
-			"glass.project.prIndex.state.changesRequested": "Changes requested",
-			"glass.project.prIndex.state.waitingOn": "Waiting on {0}",
-			"glass.project.prIndex.state.waitingOnMany": "Waiting on {0} +{1}",
-			"glass.project.prIndex.state.waitingOnAll": "Waiting on {0}",
-			"glass.project.prIndex.state.reviewRequired": "Review required",
-			"glass.project.prIndex.state.checksRunning": "Checks running"
-		},
-		"vs/glass/browser/components/editor-panel/project-prs-page/project-prs-tray-chrome.react": {
-			"glass.project.prIndex.showMoreAria": "Show {0} more pull requests in {1}",
-			"glass.project.prIndex.showMore": "Show more"
-		},
 		"vs/glass/browser/components/editor-panel/project-tab-header.react": {
 			"glass.project.header.fallbackName": "New Project"
-		},
-		"vs/glass/browser/components/editor-panel/project-tab-shell.react": {
-			"glass.project.library.find": "Search files"
-		},
-		"vs/glass/browser/components/editor-panel/project-tasks-composition.react": {
-			"glass.project.notes.tldrFocus": "Focus"
 		},
 		"vs/glass/browser/components/editor-panel/terminal-tab/terminal-list.react": {
 			"glass.terminal.list.done": "Done",
@@ -3989,40 +4087,73 @@
 			"glass.terminal.headerProcessFallback": "Terminal",
 			"glass.terminal.agentReadonlyBanner": "Agent is using this terminal. It's read-only."
 		},
+		"vs/glass/browser/components/ftux-wizard/ftux-wizard-connect-step.react": {
+			"glass.ftuxWizard.connect.title": "Connect your tools",
+			"glass.ftuxWizard.connect.continue": "Continue"
+		},
 		"vs/glass/browser/components/ftux-wizard/ftux-wizard-first-action-step.react": {
-			"glass.ftuxWizard.firstAction.title": "Here are a few ways to get started",
-			"glass.ftuxWizard.firstAction.skip": "Skip"
+			"glass.ftuxWizard.firstAction.title": "Here are a few ways to get started"
 		},
 		"vs/glass/browser/components/ftux-wizard/ftux-wizard-loading-step.react": {
 			"glass.ftuxWizard.loading.text": "Getting things ready"
 		},
 		"vs/glass/browser/components/ftux-wizard/ftux-wizard-overlay.react": {
+			"glass.ftuxWizard.userRule.role.named": "The user's name is {0}. Their role is {1}.",
+			"glass.ftuxWizard.userRule.role": "The user's role is {0}.",
 			"glass.ftuxWizard.purpose.userRule.purpose.coding": "They prefer coding workflows: working directly in code to create, debug, and iterate.",
 			"glass.ftuxWizard.purpose.userRule.purpose.tasks": "They prefer task workflows: researching, planning, and completing tasks across apps or the computer.",
 			"glass.ftuxWizard.purpose.userRule.full.named": "The user's name is {0}. Their role is {1}. {2}",
 			"glass.ftuxWizard.purpose.userRule.full": "The user's role is {0}. {1}",
 			"glass.ftuxWizard.ariaLabel": "First-time setup"
 		},
+		"vs/glass/browser/components/ftux-wizard/ftux-wizard-plugin-card.react": {
+			"glass.ftuxWizard.connect.signInInBrowser": "Sign in in browser",
+			"glass.ftuxWizard.connect.addPlugin": "Add {0}",
+			"glass.ftuxWizard.connect.add": "Add",
+			"glass.ftuxWizard.connect.adding": "Adding",
+			"glass.ftuxWizard.connect.connected": "Connected",
+			"glass.ftuxWizard.connect.retryPlugin": "Retry {0}",
+			"glass.ftuxWizard.connect.retry": "Retry"
+		},
 		"vs/glass/browser/components/ftux-wizard/ftux-wizard-purpose-step.react": {
+			"glass.ftuxWizard.purpose.title": "What brings you here today?",
 			"glass.ftuxWizard.purpose.option.coding": "Coding",
 			"glass.ftuxWizard.purpose.option.coding.description": "Work directly in code to create, debug, and iterate.",
 			"glass.ftuxWizard.purpose.option.tasks": "Tasks",
-			"glass.ftuxWizard.purpose.option.tasks.description": "Research, plan, and complete tasks across apps or your computer.",
-			"glass.ftuxWizard.purpose.title": "What brings you to Cursor today?"
+			"glass.ftuxWizard.purpose.option.tasks.description.short": "Research, plan, and get work done across your apps."
+		},
+		"vs/glass/browser/components/ftux-wizard/ftux-wizard-step-footer.react": {
+			"glass.ftuxWizard.firstAction.skip": "Skip"
 		},
 		"vs/glass/browser/components/ftux-wizard/ftux-wizard-welcome-step.react": {
+			"glass.ftuxWizard.welcome.focus.engineering": "Engineering",
 			"glass.ftuxWizard.welcome.role.softwareEngineer": "Software engineer",
+			"glass.ftuxWizard.welcome.focus.design": "Design",
 			"glass.ftuxWizard.welcome.role.designer": "Designer",
+			"glass.ftuxWizard.welcome.focus.product": "Product",
 			"glass.ftuxWizard.welcome.role.productManager": "Product manager",
+			"glass.ftuxWizard.welcome.focus.research": "Research",
 			"glass.ftuxWizard.welcome.role.researcher": "Researcher",
+			"glass.ftuxWizard.welcome.focus.dataScience": "Data science",
 			"glass.ftuxWizard.welcome.role.dataScientist": "Data scientist",
+			"glass.ftuxWizard.welcome.focus.schoolwork": "Schoolwork",
 			"glass.ftuxWizard.welcome.role.student": "Student",
+			"glass.ftuxWizard.welcome.focus.marketing": "Marketing",
 			"glass.ftuxWizard.welcome.role.marketer": "Marketer",
+			"glass.ftuxWizard.welcome.focus.operations": "Operations",
 			"glass.ftuxWizard.welcome.role.operations": "Operations",
+			"glass.ftuxWizard.welcome.focus.somethingElse": "Something else",
 			"glass.ftuxWizard.welcome.role.somethingElse": "Something else",
-			"glass.ftuxWizard.welcome.title.named": "Welcome to Cursor, {0}",
-			"glass.ftuxWizard.welcome.title": "Welcome to Cursor",
-			"glass.ftuxWizard.welcome.subtitle": "Tell us about your role"
+			"glass.ftuxWizard.welcome.question": "Which best describes your work?"
+		},
+		"vs/glass/browser/components/ftux-wizard/use-ftux-connect-step.react": {
+			"glass.ftuxWizard.connect.addFailed": "Couldn't add {0}.",
+			"glass.ftuxWizard.connect.connectFailed": "Couldn't connect {0}."
+		},
+		"vs/glass/browser/components/glass-settings/projects-credit-balance-section.react": {
+			"glass.settings.projectsCredit.expires": "Expires {0}",
+			"glass.settings.projectsCredit.label": "Remaining Projects Credits",
+			"glass.settings.projectsCredit.value": "{0} of {1} Remaining"
 		},
 		"vs/glass/browser/components/glass-sidebar/components/agent-row-appearance.react": {
 			"glass.projectBot.editAppearance": "Edit Appearance"
@@ -4041,6 +4172,12 @@
 			"glass.sidebar.projectAgentsTree": "Agents of {0}",
 			"glass.sidebar.closeProjectAgent": "Close"
 		},
+		"vs/glass/browser/components/glass-sidebar/components/projects-credit-sidebar-card.react": {
+			"glass.projectsCredit.dismiss": "Dismiss",
+			"glass.projectsCredit.remaining": "Remaining",
+			"glass.projectsCredit.remainingOfTotal": "{0} of {1}",
+			"glass.projectsCredit.remainingMeter": "Projects credit remaining"
+		},
 		"vs/glass/browser/components/glass-sidebar/components/shared-project-trailing-icon.react": {
 			"glass.sidebar.sharedProject": "Shared Project"
 		},
@@ -4050,6 +4187,18 @@
 		"vs/glass/browser/components/glass-sidebar/hooks/use-project-agents-section.react": {
 			"glass.sidebar.expandProject": "Expand Project",
 			"glass.sidebar.collapseProject": "Collapse Project"
+		},
+		"vs/glass/browser/components/glass-sidebar/utils/projects-credit-card": {
+			"glass.projectsCredit.balanceTitle": "Credits for Projects",
+			"glass.projectsCredit.balanceExpires": "Expires {0}",
+			"glass.projectsCredit.teamTitle": "{0} Credit for Multiplayer Projects",
+			"glass.projectsCredit.teamDescription": "Projects run many agents at once, get smarter over time, and share context and tasks with your teammates.",
+			"glass.projectsCredit.teamAmount": "You have {0} in credits to try it.",
+			"glass.projectsCredit.teamAction": "Try Multiplayer Projects",
+			"glass.projectsCredit.personalTitle": "{0} Credit for Projects",
+			"glass.projectsCredit.personalDescription": "Projects are AI teammates in Cursor that run many tasks at once and get smarter over time.",
+			"glass.projectsCredit.personalAmount": "You have {0} to get started.",
+			"glass.projectsCredit.personalAction": "Get Started"
 		},
 		"vs/glass/browser/components/main-bot/main-bot-header-actions.react": {
 			"glass.mainBot.chatActions": "Chat actions"
@@ -4093,6 +4242,17 @@
 			"glass.projectBot.colors": "Character color",
 			"glass.projectBot.colorOption": "{0} character color"
 		},
+		"vs/glass/browser/components/project-context/project-context-block.react": {
+			"glass.project.context.title": "Project context",
+			"glass.project.context.tracker": "Tracker",
+			"glass.project.context.discussion": "Discussion",
+			"glass.project.context.localFiles": "Local files",
+			"glass.project.context.other": "Other",
+			"glass.project.context.sourceCount.one": "1 source",
+			"glass.project.context.sourceCount.many": "{0} sources",
+			"glass.project.context.addTo": "Add to {0}",
+			"glass.project.context.add": "Add"
+		},
 		"vs/glass/browser/components/quit-background-terminals-dialog.react": {
 			"shutdownBackgroundTerminalCancel": "Cancel"
 		},
@@ -4111,6 +4271,9 @@
 			"glass.taskViews.changeStatus": "Change status",
 			"glass.taskViews.changeTaskStatus": "Change status of \"{0}\": {1}"
 		},
+		"vs/glass/browser/hooks/command-handlers/agent.react": {
+			"glass.buildAppFromAd.title": "Build an App"
+		},
 		"vs/glass/browser/hooks/command-handlers/edit.react": {
 			"glassOsEditUndo": "&&Undo",
 			"glassOsEditRedo": "&&Redo",
@@ -4124,11 +4287,21 @@
 			"glassQueuedMessageImagesStillConverting": "Images are still converting. Please wait and try again.",
 			"glassFollowupSubmitWithoutClearingPromptFailed": "Failed to send follow-up."
 		},
+		"vs/glass/browser/hooks/use-connect-vercel-pill.react": {
+			"glass.deployWithCursorPill.label": "Deploy with Cursor"
+		},
 		"vs/glass/browser/hooks/use-continue-chat-in-project.react": {
-			"glass.projects.continueInProject.bringingIn": "Bringing in {0}…"
+			"glass.projects.continueInProject.bringingIn": "Bringing in {0}…",
+			"glass.projects.continueInProject.startWorker.title": "Start a worker on this computer?",
+			"glass.projects.continueInProject.startWorker.description": "To continue this chat in a Project, Cursor starts a background worker on this computer for the chat's folder. The chat keeps running here, in the same folder.",
+			"glass.projects.continueInProject.startWorker.confirm": "Start Worker and Continue",
+			"glass.projects.continueInProject.startWorker.cancel": "Cancel"
 		},
 		"vs/glass/browser/hooks/use-git-action-pill.react": {
 			"glass.agentPanel.fixConflictsPill": "Fix Conflicts"
+		},
+		"vs/glass/browser/hooks/use-glass-agent-creation.react": {
+			"glass.buildAppFromAd.prompt": "Build an app that does: "
 		},
 		"vs/glass/browser/hooks/use-goal-tray.react": {
 			"glass.goalTray.pauseFailed": "Failed to pause the goal.",
@@ -4269,6 +4442,7 @@
 			"glass.agentMigrationService.failed.missingBlob": "Some of this agent's chat history is missing from this computer, so it couldn't be moved. Keep using it here, or start a new agent to continue somewhere else.",
 			"glass.agentMigrationService.failed.serverUnavailable": "Cursor's servers were temporarily unavailable ({0}). Try again in a moment.",
 			"glass.agentMigrationService.failed.requestFailed": "The request failed ({0})",
+			"glass.agentMigrationService.failed.githubAccessCheck": "Couldn't check GitHub access for this repository. Check your connection and try again.",
 			"glass.migration.midTurn.defaultTarget": "the new location",
 			"glass.migration.midTurn.title": "Move agent while it’s working?",
 			"glass.migration.midTurn.projectDescription": "Moving will stop the current turn. It will resume once moved to {0}. Queued messages move with the agent.",
@@ -4378,7 +4552,8 @@
 			"glass.statusBar.noEnvironmentDestinationsMultiRepo": "Missing workspace with all {0} repositories",
 			"glass.statusBar.noEnvironmentDestinationsNoCheckout": "Missing local copy of {0}",
 			"glass.agentMenu.noMigrationDestinationsGeneric": "No compatible environments are currently available",
-			"glass.agentMenu.noMigrationDestinations": "No destinations available"
+			"glass.agentMenu.noMigrationDestinations": "No destinations available",
+			"glass.agentMenu.addToNewProject": "New Project"
 		},
 		"vs/glass/browser/utils/followup-compute-target-migration": {
 			"glass.agentPanel.remoteControlPendingSubmitBlockedTitle": "Remote control worker not ready",
@@ -4388,11 +4563,16 @@
 			"glass.revealInMarketplace": "Reveal in Marketplace",
 			"glass.openInMarketplace": "Open in Marketplace"
 		},
+		"vs/glass/browser/utils/project-agent-reparent": {
+			"glass.projects.keptChatUntitled": "New Agent",
+			"glass.projects.localChatNotStarted": "\"{0}\" couldn't move to the Project.",
+			"glass.projects.localChatNotStartedDescription": "It stays on this computer with its side chats."
+		},
 		"vs/glass/browser/utils/project-pr-groups": {
 			"glass.project.prs.group.draft": "Draft",
 			"glass.project.prs.group.conflict": "Conflicts",
 			"glass.project.prs.group.ready": "Ready",
-			"glass.project.prs.group.ciFailing": "CI Failing",
+			"glass.project.prs.group.ciFailing": "Checks Failing",
 			"glass.project.prs.group.actionRequired": "Action Required",
 			"glass.project.prs.group.needsReview": "Waiting for Reviewers",
 			"glass.project.prs.group.merged": "Merged",
@@ -4407,6 +4587,15 @@
 		},
 		"vs/glass/browser/utils/start-folder-worker-for-move": {
 			"glass.addToProject.addingChat": "Adding chat to {0}…"
+		},
+		"vs/glass/browser/utils/start-project-from-chat": {
+			"glass.projects.someSideChatsNotMoved": "Some side chats couldn't move to the Project.",
+			"glass.projects.sideChatNotMoved": "1 side chat couldn't move to the Project.",
+			"glass.projects.sideChatsNotMoved": "{0} side chats couldn't move to the Project.",
+			"glass.projects.someSideChatKept": "1 stays with \"{0}\" on this computer.",
+			"glass.projects.someSideChatsKept": "{0} stay with \"{1}\" on this computer.",
+			"glass.projects.sideChatKept": "It stays with \"{0}\" on this computer.",
+			"glass.projects.sideChatsKept": "They stay with \"{0}\" on this computer."
 		},
 		"vs/glass/browser/utils/subscriptions-copy": {
 			"glass.agentPanel.subscriptionsPill.noun": "Listening",
@@ -4539,7 +4728,12 @@
 			"airlock.disabled": "The airlock is only available in SpaceX mode.",
 			"airlock.unconfigured": "IT hasn't set up the airlock on this computer.",
 			"airlock.invalid": "IT's airlock settings on this computer can't be used: {0}",
-			"airlock.signedOut": "Sign in with your SpaceX account to use the airlock."
+			"airlock.signedOut": "Sign in with your SpaceX account to use the airlock.",
+			"airlock.repo.none": "No Airlock container for {0} exists. Start {1} for this repo, then connect again.",
+			"airlock.repo.noneInvalidSandboxConfig": "No Airlock container for {0} exists. Start {1} for this repo, then connect again. {3} can't offer Start: {2}",
+			"airlock.repo.noneStartable": "No Airlock container for {0} exists. Start it, then connect again.",
+			"airlock.repo.unmapped": "{2} can't tell where {0} is in container {1}: the container doesn't mount this folder and sets no working folder.",
+			"airlock.repo.stopped": "Container {0} isn't running. Start it, then connect again."
 		},
 		"vs/platform/airlock/common/airlockConfig": {
 			"airlock.policy.required": "{0} isn't set.",
@@ -4561,27 +4755,25 @@
 			"airlock.containerChanged": "Your organization's policy named a different Airlock container while Cursor was getting it ready.",
 			"airlock.engineUnavailable": "{0} isn't available: {1}",
 			"airlock.repo.startThrew": "Cursor couldn't start the repo's Airlock container: {0}",
-			"airlock.repo.noSandboxConfig": "{0} has no {1}, so Cursor can't start its Airlock container.",
+			"airlock.repo.noStartCommand": "No sandbox file of {0} names a start_command ({1}), so start its Airlock container yourself.",
 			"airlock.repo.starting": "Starting the Airlock container for {0}…",
 			"airlock.repo.startFailed": "The start command in {0} failed: {1}",
-			"airlock.repo.startTimeout": "The start command in {0} finished, but no Airlock container for {1} was running {2} seconds later.",
+			"airlock.repo.startTimeout": "The start command in {0} finished, but container {1} wasn't running {2} seconds later.",
 			"airlock.repo.settingsChanged": "Your organization's Airlock settings changed while Cursor was getting the container ready.",
-			"airlock.engineNotFound": "{0} isn't on the PATH.",
 			"airlock.wrapperNotExe": "Dev Containers can't run IT's engine wrapper {0}. On Windows, the airlock's engine must be docker, podman, or an .exe.",
 			"airlock.dockerPathConflict": "Your {0} setting in {1} points Dev Containers at a different container engine than the airlock's. Remove it, then connect again.",
-			"airlock.devContainersSetup": "Cursor couldn't get Dev Containers ready to open the airlock: {0}",
-			"airlock.repo.none": "No Airlock container for {0} is running. Cursor looks for a container named {1}….",
-			"airlock.repo.noneStartable": "No Airlock container for {0} is running. Start it, then connect again.",
-			"airlock.repo.ambiguous": "More than one Airlock container matches {0}: {1}. Remove the ones you don't use, then connect again.",
-			"airlock.repo.unmapped": "Cursor can't tell where {0} is in container {1}: the container doesn't mount this folder and sets no working folder.",
-			"airlock.repo.stopped": "Container {0} isn't running. Start it, then connect again.",
-			"airlock.noAnswer": "no answer within {0} seconds",
-			"airlock.exitCode": "exit code {0}"
+			"airlock.devContainersSetup": "Cursor couldn't get Dev Containers ready to open the airlock: {0}"
 		},
 		"vs/platform/airlock/node/airlockDevContainers": {
 			"airlock.nameConfigInvalid": "Cursor can't get Dev Containers ready to open the airlock, because Dev Containers' settings for the container aren't a JSON object. Fix or delete {0}, then try again.",
 			"airlock.nameConfigRemoteEnvInvalid": "Cursor can't get Dev Containers ready to open the airlock, because remoteEnv in Dev Containers' settings for the container isn't a JSON object. Fix or delete {0}, then try again.",
 			"airlock.settingsInvalid": "Cursor can't point Dev Containers at the airlock's container engine, because {0} isn't valid JSON. Fix it, then try again."
+		},
+		"vs/platform/airlock/node/airlockEngine": {
+			"airlock.engineNotFound": "{0} isn't on the PATH.",
+			"airlock.noAnswer": "no answer within {0} seconds",
+			"airlock.stoppedBySignal": "stopped by {0}",
+			"airlock.exitCode": "exit code {0}"
 		},
 		"vs/platform/airlock/node/airlockHooks": {
 			"airlock.hook.failedToStart": "Cursor couldn't run the {0} hook at {1}: {2}",
@@ -4592,7 +4784,6 @@
 			"airlock.hook.detailTruncated": "{0} (see the log)"
 		},
 		"vs/platform/airlock/node/airlockLifecycle": {
-			"airlock.progress.restart": "Restarting container…",
 			"airlock.progress.inspect": "Looking for container {0}…",
 			"airlock.progress.waitForEngine": "Waiting for {0}…",
 			"airlock.progress.preAttach": "Preparing container…",
@@ -4610,11 +4801,7 @@
 			"airlock.engineFailed": "'{0} {1}' failed: {2}",
 			"airlock.progress.serverCheck": "Checking for the Cursor server…",
 			"airlock.serverCheckFailed": "Cursor couldn't check container {0} for its server: {1}",
-			"airlock.serverMissing": "Container {0} doesn't have the Cursor server this version of Cursor needs (commit {1}, {2}). Ask IT to stage it in ~/{3}/bin/{1}/ for the container user.",
-			"airlock.engineNotFound": "{0} isn't on the PATH.",
-			"airlock.noAnswer": "no answer within {0} seconds",
-			"airlock.stoppedBySignal": "stopped by {0}",
-			"airlock.exitCode": "exit code {0}"
+			"airlock.serverMissing": "Container {0} doesn't have the Cursor server this version of Cursor needs (commit {1}, {2}). Ask IT to stage it in ~/{3}/bin/{1}/ for the container user."
 		},
 		"vs/platform/browserView/electron-sandbox/externalSchemeConfirmation": {
 			"browserView.openExternalLinkOpen": "&&Open",
@@ -4829,18 +5016,29 @@
 			"jsonsParseReportErrors": "Failed to parse {0}: {1}.",
 			"jsonInvalidFormat": "Invalid format {0}: JSON object expected."
 		},
+		"vs/platform/extensionManagement/common/vsixInstallPolicy": {
+			"extensionsConfigurationTitle": "Extensions",
+			"extensions.blockInstallFromVsix": "When enabled, installing extensions from VSIX files is blocked. Marketplace installs are unaffected.",
+			"extensions.blockInstallFromVsix.policy": "Block installing extensions from VSIX files. Marketplace installs are unaffected.",
+			"extensions.blockInstallFromVsixExceptions": "Extension IDs (`publisher.name`) that can still be installed from VSIX files while `#extensions.blockInstallFromVsix#` is enabled.",
+			"extensions.blockInstallFromVsixExceptions.policy": "Extension IDs (publisher.name), as a JSON array, that can still be installed from VSIX files while BlockExtensionInstallFromVsix is enabled.",
+			"installFromVsixBlocked": "Installing extensions out of the allowed marketplace is blocked for this team"
+		},
 		"vs/platform/extensionManagement/node/extensionManagementService": {
-			"incompatible": "Unable to install extension '{0}' as it is not compatible with VS Code '{1}'.",
-			"notAllowed": "This extension cannot be installed because {0}",
-			"invalidManifest": "Cannot install '{0}' extension because of manifest mismatch with Marketplace",
+			"dependenciesMismatch": "Cannot install '{0}' extension because its dependencies or extension pack in the Marketplace differ from those in its package",
 			"signature verification not executed": "Signature verification was not executed.",
 			"package not signed": "Extension is not signed.",
 			"signature verification failed": "Signature verification failed with '{0}' error.",
+			"incompatible": "Unable to install extension '{0}' as it is not compatible with VS Code '{1}'.",
+			"notAllowed": "This extension cannot be installed because {0}",
+			"invalidManifest": "Cannot install '{0}' extension because of manifest mismatch with Marketplace",
 			"errorDeleting": "Unable to delete the existing folder '{0}' while installing the extension '{1}'. Please delete the folder manually and try again",
+			"extractedManifestMismatch": "Cannot install '{0}' because the extracted package is '{1}@{2}'.",
 			"cannot read": "Cannot read the extension from {0}",
-			"restartCode": "Please restart VS Code before reinstalling {0}."
+			"restartCode": "Please restart {1} before reinstalling {0}."
 		},
 		"vs/platform/extensionManagement/node/extensionManagementUtil": {
+			"duplicateEntry": "VSIX invalid: it contains more than one entry for '{0}'.",
 			"invalidManifest": "VSIX invalid: package.json is not a JSON file."
 		},
 		"vs/platform/extensions/common/extensionValidator": {
@@ -4869,7 +5067,7 @@
 			"extensionMonitor": "Extension Monitor"
 		},
 		"vs/platform/externalTerminal/node/externalTerminalService": {
-			"console.title": "VS Code Console",
+			"console.title": "{0} Console",
 			"mac.terminal.script.failed": "Script '{0}' failed with exit code {1}",
 			"mac.terminal.type.not.supported": "'{0}' not supported",
 			"press.any.key": "Press any key to continue...",
@@ -5569,11 +5767,14 @@
 			"deprecated": "This setting is deprecated, please use '{0}' instead.",
 			"enableWindowsBackgroundUpdatesTitle": "Enable Background Updates on Windows",
 			"enableWindowsBackgroundUpdates": "Enable to download and install new VS Code versions in the background on Windows.",
+			"restartWhenIdleTitle": "Restart to Update When Idle",
+			"restartWhenIdle": "Restart into a downloaded update while the screen is locked and nothing would stop a quit or be lost: no running agents, terminals, tasks, test runs, notebook cells or debug sessions, and no changes a quit would lose.",
 			"releaseTrack": "Configure the release track for updates. Can be 'prerelease', 'stable', 'dev', 'dogfood', or 'candidate'.",
 			"releaseTrackOverride": "Internal managed release track override for updates."
 		},
 		"vs/platform/update/common/update": {
-			"agentsWindowSwitchToMolten.tooltip": "Update to a faster experience"
+			"agentsWindowSwitchToMolten.tooltip": "Update to a faster experience",
+			"restartToUpdate.tooltip": "Restart to update"
 		},
 		"vs/platform/update/common/updateActionTitles": {
 			"checkForUpdates": "Check for Updates...",
@@ -7949,10 +8150,10 @@
 			"airlock.devContainersMissing": "Cursor opens the airlock with the Dev Containers extension, which isn't installed or is turned off.",
 			"airlock.repo.untrusted": "Trust this folder before Cursor runs its Airlock start command.",
 			"airlock.repo.startingTitle": "Starting the Airlock container",
-			"airlock.repo.started": "Airlock container {0} is running.",
+			"airlock.repo.started": "Airlock container {0} is running",
 			"airlock.connectAction": "Connect to Airlock",
 			"airlock.repo.openFolder": "Open a repo's folder on this computer, then connect to its Airlock.",
-			"airlock.connecting": "Connecting to the airlock",
+			"airlock.connecting": "Connecting to the Airlock",
 			"airlock.openLog": "Open Log",
 			"airlock.reloadWindow": "Reload Window"
 		},
@@ -8004,6 +8205,7 @@
 			"cursor.openOrFocusEditorWindow": "Open or Focus IDE",
 			"cursor.openGlassAndSwitchModelSlug": "Open Glass and Switch Model",
 			"cursor.openGlassAndChangeToMultitask": "Open Glass and Change to Multitask",
+			"cursor.openGlassAndCreateProject": "Open Agents Window and Create Project",
 			"cursor.openGlassAndStartCloudAgent": "Open Agents Window and Start Cloud Agent"
 		},
 		"vs/workbench/contrib/authentication/browser/actions/manageAccountPreferencesForExtensionAction": {
@@ -8619,14 +8821,15 @@
 			"cloudUnsupportedAttachmentRejected": "This file can't be attached to a cloud agent."
 		},
 		"vs/workbench/contrib/composer/browser/promptInputTrays/PromptInputAnchoredTrayHovercard.react": {
-			"composer.anchoredTray.previewAriaLabel": "Preview of {0}"
+			"composer.anchoredTray.previewAriaLabel": "Preview of {0}",
+			"composer.anchoredTray.infoAriaLabel": "About {0}"
 		},
 		"vs/workbench/contrib/composer/browser/realtimeVoice/realtimeVoiceTranscriptEditor": {
-			"composer.realtimeVoice.transcriptEditor": "Voice call"
+			"composer.realtimeVoice.transcriptEditor": "Voice chat"
 		},
 		"vs/workbench/contrib/composer/browser/realtimeVoice/voiceCallTranscriptLabel": {
-			"glass.realtimeVoice.callTabLabelUnknown": "Voice call",
-			"glass.realtimeVoice.callTabLabel": "Voice call · {0}"
+			"glass.realtimeVoice.callTabLabelUnknown": "Voice chat",
+			"glass.realtimeVoice.callTabLabel": "Voice chat · {0}"
 		},
 		"vs/workbench/contrib/composer/browser/sendFeedbackAction": {
 			"cursor.localMode.sendFeedback": "Send Feedback"
@@ -9890,17 +10093,18 @@
 			"workbench.extensions.action.manageTrustedPublishers": "Manage Trusted Extension Publishers"
 		},
 		"vs/workbench/contrib/extensions/browser/extensionsActions": {
+			"dependency verification failed": "Cannot install '{0}' extension because {1} cannot verify the signature of '{2}', which it requires",
+			"install anyway dependency": "Install Anyway (Don't Verify '{0}')",
+			"not signed": "'{0}' is an extension from an unknown source. Are you sure you want to install?",
+			"verification failed": "Cannot install '{0}' extension because {1} cannot verify the extension signature",
+			"install anyway": "Install Anyway",
+			"install donot verify": "Install Anyway (Don't Verify Signature)",
 			"VS Code for Web": "{0} for the Web",
 			"cannot be installed": "The '{0}' extension is not available in {1}. Click 'More Information' to learn more.",
 			"more information": "&&More Information",
 			"close": "Close",
 			"install prerelease": "Install Pre-Release",
 			"cancel": "Cancel",
-			"not signed": "'{0}' is an extension from an unknown source. Are you sure you want to install?",
-			"install anyway": "Install Anyway",
-			"verification failed": "Cannot install '{0}' extension because {1} cannot verify the extension signature",
-			"learn more": "Learn More",
-			"install donot verify": "Install Anyway (Don't Verify Signature)",
 			"update operation": "Error while updating '{0}' extension.",
 			"install operation": "Error while installing '{0}' extension.",
 			"check logs linked": "Please check the {0} for more details.",
@@ -9913,7 +10117,7 @@
 			"deprecated message": "This extension is deprecated as it is no longer being maintained.",
 			"deprecated with alternate extension message": "This extension is deprecated. Use the {0} extension instead.",
 			"Show alternate extension": "&&Open {0}",
-			"deprecated with alternate settings message": "This extension is deprecated as this functionality is now built-in to VS Code.",
+			"deprecated with alternate settings message": "This extension is deprecated as this functionality is now built-in to {0}.",
 			"configure in settings": "&&Configure Settings",
 			"install confirmation": "Are you sure you want to install '{0}'?",
 			"installExtensionStart": "Installing extension {0} started. An editor is now open with more details on this extension",
@@ -9986,10 +10190,11 @@
 			"not signed tooltip": "This extension is not signed by the Extension Marketplace.",
 			"deprecated with alternate extension tooltip": "This extension is deprecated. Use the {0} extension instead.",
 			"settings": "settings",
-			"deprecated with alternate settings tooltip": "This extension is deprecated as this functionality is now built-in to VS Code. Configure these {0} to use this functionality.",
+			"deprecated with alternate settings tooltip": "This extension is deprecated as this functionality is now built-in to {1}. Configure these {0} to use this functionality.",
 			"deprecated tooltip": "This extension is deprecated as it is no longer being maintained.",
 			"auto update message": "Please [review the extension]({0}) and update it manually.",
 			"incompatible platform": "The '{0}' extension is not available in {1} for {2}.",
+			"learn more": "Learn More",
 			"not web tooltip": "The '{0}' extension is not available in {1}.",
 			"learn why": "Learn Why",
 			"disabled - not allowed": "This extension is disabled because {0}",
@@ -12676,6 +12881,7 @@
 			"connectionLost": "Connection Lost",
 			"reconnectionRunning": "Disconnected. Attempting to reconnect...",
 			"reconnectionGaveUp": "Unable to reconnect to the remote workspace.",
+			"reloadWindow": "Reload Window",
 			"remote.help": "Help and feedback"
 		},
 		"vs/workbench/contrib/remote/browser/remoteConnectionHealth": {
@@ -13750,7 +13956,7 @@
 			"TaskService.taskToTerminate": "Select a task to terminate",
 			"TaskService.noTaskRunning": "No task is currently running",
 			"TaskService.terminateAllRunningTasks": "All Running Tasks",
-			"TerminateAction.noProcess": "The launched process doesn't exist anymore. If the task spawned background tasks exiting VS Code might result in orphaned processes.",
+			"TerminateAction.noProcess": "The launched process doesn't exist anymore. If the task spawned background tasks exiting {0} might result in orphaned processes.",
 			"TerminateAction.failed": "Failed to terminate running task",
 			"TaskService.taskToRestart": "Select the task to restart",
 			"TaskService.noTaskToRestart": "No task to restart",
@@ -14116,7 +14322,7 @@
 		"vs/workbench/contrib/tasks/electron-sandbox/taskService": {
 			"TaskSystem.runningTask": "There is a task running. Do you want to terminate it?",
 			"TaskSystem.terminateTask": "&&Terminate Task",
-			"TaskSystem.noProcess": "The launched task doesn't exist anymore. If the task spawned background processes exiting VS Code might result in orphaned processes. To avoid this start the last background process with a wait flag.",
+			"TaskSystem.noProcess": "The launched task doesn't exist anymore. If the task spawned background processes exiting {0} might result in orphaned processes. To avoid this start the last background process with a wait flag.",
 			"TaskSystem.exitAnyways": "&&Exit Anyways"
 		},
 		"vs/workbench/contrib/telemetry/browser/telemetry.contribution": {
@@ -14333,7 +14539,7 @@
 		},
 		"vs/workbench/contrib/terminal/browser/terminalView": {
 			"terminal.useMonospace": "Use 'monospace'",
-			"terminal.monospaceOnly": "The terminal only supports monospace fonts. Be sure to restart VS Code if this is a newly installed font.",
+			"terminal.monospaceOnly": "The terminal only supports monospace fonts. Be sure to restart {0} if this is a newly installed font.",
 			"terminals": "Open Terminals.",
 			"terminalConnectingLabel": "Starting...",
 			"terminal.externalAgentActions": "Terminal contribution actions"
@@ -15545,7 +15751,7 @@
 			"updating": "Updating {0}...",
 			"update service": "Update Service",
 			"noUpdatesAvailable": "There are currently no updates available.",
-			"thereIsUpdateAvailable": "There is an available update.",
+			"versionIsAvailable": "Version {0} is available.",
 			"download update": "Download Update",
 			"later": "Later",
 			"releaseNotes": "Release Notes",
@@ -16195,6 +16401,7 @@
 			"password": "Password",
 			"proxyDetail": "The proxy {0} requires a username and password.",
 			"rememberCredentials": "Remember my credentials",
+			"switchingTeams": "Switching teams...",
 			"shutdownChatStreamingCancel": "Cancel",
 			"shutdownBackgroundTerminalCancel": "Cancel",
 			"shutdownErrorDetail": "Error: {0}",
@@ -16521,7 +16728,9 @@
 			"cursor.airlock.hookTimeoutSeconds": "How long, in seconds, Cursor lets each airlock hook script run, and waits for the container to start, before it gives up (set via device management).",
 			"cursorManagedDeploymentConfigurationTitle": "Managed Deployment",
 			"cursor.deployment.backendUrl": "Cursor Orbit only: https origin of the API of the deployment Cursor Orbit connects to (set via device management). Required.",
-			"cursor.deployment.websiteUrl": "Cursor Orbit only: https origin of that deployment's website, where users sign in (set via device management). Required."
+			"cursor.deployment.websiteUrl": "Cursor Orbit only: https origin of that deployment's website, where users sign in (set via device management). Required.",
+			"cursorOrbitAirlockConfigurationTitle": "Orbit Airlock",
+			"cursor.airlock.required": "Cursor Orbit only: whether local agents run only in the Airlock (set via device management). When unset or false, local agents run on this computer and in the remote workspaces AgentRemoteWorkspaceAuthorities allows. A window reads it when it opens, so reload after a change."
 		},
 		"vs/workbench/services/customize/browser/projectPrimitiveCreation": {
 			"newCommandName": "Enter Command Name",
@@ -16992,6 +17201,7 @@
 			"join.extensionDevelopment": "Terminating extension debug session"
 		},
 		"vs/workbench/services/extensions/electron-sandbox/nativeExtensionService": {
+			"anysphereExtensionBlocked": "{0} didn't load {1} because its files don't match {0}'s signature. Reinstall it from the Extensions view.",
 			"extensionSignatureVerification.blocked": "The following extension(s) were blocked due to signature verification: {0}. Please reinstall them from a trusted source.",
 			"extensionSignatureVerification.hashMismatch": "extension files have been modified",
 			"extensionSignatureVerification.hashError": "failed to verify extension integrity",
@@ -17617,7 +17827,7 @@
 			"cannotRenameDefaultProfile": "Cannot rename the default profile",
 			"cannotDeleteDefaultProfile": "Cannot delete the default profile",
 			"switch profile": "Switching to a profile",
-			"reload message": "Switching a profile requires reloading VS Code.",
+			"reload message": "Switching a profile requires reloading {0}.",
 			"reload button": "&&Reload"
 		},
 		"vs/workbench/services/userDataProfile/common/userDataProfile": {

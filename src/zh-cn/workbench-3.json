@@ -6,12 +6,13 @@
 	},
 	"vs/workbench/contrib/tasks/browser/abstractTaskService": {
 		"TaskSystem.activeSame.noBackground": "任务“{0}”已处于活动状态。",
-		"restartTask": "重启任务"
+		"restartTask": "重启任务",
+		"TerminateAction.noProcess": "启动的进程不再存在。如果任务生成的后台任务退出 {0}，则可能会导致出现孤立的进程。"
 	},
 	"vs/workbench/contrib/tasks/electron-sandbox/taskService": {
 		"TaskSystem.runningTask": "存在运行中的任务。要终止它吗?",
 		"TaskSystem.terminateTask": "终止任务(&&T)",
-		"TaskSystem.noProcess": "启动的任务不再存在。如果任务已生成出后台进程，则退出 VS Code 可能会导致出现孤立的进程。若要避免此情况，请使用等待标记启动最后一个后台进程。",
+		"TaskSystem.noProcess": "启动的任务不再存在。如果任务已生成出后台进程，则退出 {0} 可能会导致出现孤立的进程。若要避免此情况，请使用等待标记启动最后一个后台进程。",
 		"TaskSystem.exitAnyways": "仍要退出(&&E)"
 	},
 	"vs/workbench/contrib/terminal/browser/airlockHostTerminals": {
@@ -32,7 +33,8 @@
 		"shellIntegration": "Shell 集成"
 	},
 	"vs/workbench/contrib/terminal/browser/terminalView": {
-		"terminal.externalAgentActions": "终端贡献操作"
+		"terminal.externalAgentActions": "终端贡献操作",
+		"terminal.monospaceOnly": "终端仅支持等宽字体。如果这是新安装的字体，请确保重新启动 {0}。"
 	},
 	"vs/workbench/contrib/terminal/browser/xterm/decorationAddon": {
 		"terminal.addToCurrentChat": "添加到当前聊天"
@@ -162,7 +164,6 @@
 		"updateDidNotInstall": "{0} 未能完成版本 {1} 的更新安装。",
 		"update service disabled": "由于你正在以管理员身份运行 {0} 的用户范围安装，更新已禁用。",
 		"update service": "更新服务",
-		"thereIsUpdateAvailable": "有可用的更新。",
 		"download update": "下载更新",
 		"later": "稍后",
 		"packageUpdateAvailable": "可通过 {2} 获取较新的 {0} 包({1})。"
@@ -398,6 +399,7 @@
 		"zoomOut": "缩小",
 		"zoomIn": "放大",
 		"status.windowZoom": "窗口缩放",
-		"zoomNumber": "缩放级别: {0} ({1}%)"
+		"zoomNumber": "缩放级别: {0} ({1}%)",
+		"switchingTeams": "正在切换团队..."
 	}
 }

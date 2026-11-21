@@ -281,7 +281,7 @@
 		"airlock.devContainersMissing": "Cursor 通过开发容器扩展打开 Airlock，但该扩展未安装或已关闭。",
 		"airlock.repo.untrusted": "在 Cursor 运行 Airlock 启动命令之前，请先信任此文件夹。",
 		"airlock.repo.startingTitle": "正在启动 Airlock 容器",
-		"airlock.repo.started": "Airlock 容器 {0} 正在运行。",
+		"airlock.repo.started": "Airlock 容器 {0} 正在运行",
 		"airlock.connectAction": "连接到 Airlock",
 		"airlock.repo.openFolder": "请在此计算机上打开存储库文件夹，然后连接到其 Airlock。",
 		"airlock.connecting": "正在连接到 Airlock",

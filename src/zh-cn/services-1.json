@@ -142,6 +142,9 @@
 		"window.systemColorTheme.dark": "使用深色本机小组件颜色。",
 		"window.systemColorTheme": "设置本机 UI 元素（例如本机对话框、菜单和标题栏）的颜色模式。即使操作系统配置为浅色模式，也可以为窗口选择深色系统颜色主题。还可以配置为根据 {0} 设置自动调整。\n\n注意: 启用 {1} 时将忽略此设置。"
 	},
+	"vs/workbench/services/userDataProfile/browser/userDataProfileManagement": {
+		"reload message": "切换配置文件需要重新加载 {0}。"
+	},
 	"vs/workbench/services/userDataProfile/browser/extensionsResource": {
 		"skipped profile extensions": "无法安装导入的配置文件中的部分扩展: {0}",
 		"invalid profile extensions content": "导入的配置文件中的扩展数据不是有效的 JSON。",

@@ -46,6 +46,8 @@
 		"cursor.allowedLoginDomains": "以逗号分隔的电子邮件域列表（例如 example.com），其帐户可在此设备上登录（通过设备管理设置）。仅精确匹配域；不会隐式包含子域。",
 		"cursor.deploymentId": "通过设备管理 (MDM) 设置为某个部署 ID 时，Cursor 仅连接到该部署，且无法切换到其他部署。此版本不支持的 ID 会阻止登录。0 或未设置即为默认服务。",
 		"cursorAirlockConfigurationTitle": "SpaceX Airlock",
+		"cursorOrbitAirlockConfigurationTitle": "Orbit Airlock",
+		"cursor.airlock.required": "仅限 Cursor Orbit: 本地智能体是否只在 Airlock 中运行（通过设备管理设置）。未设置或为 false 时，本地智能体在此计算机上运行，并在 AgentRemoteWorkspaceAuthorities 允许的远程工作区中运行。窗口打开时会读取此设置，因此更改后请重新加载。",
 		"cursor.airlock.containerName": "SpaceX 模式开启时 Cursor 准备并打开的本地 Docker 或 Podman 容器的名称（通过设备管理设置）。Airlock 所必需。",
 		"cursor.airlock.defaultWorkspace": "Cursor 所打开的 Airlock 容器内文件夹的绝对路径（通过设备管理设置）。Airlock 所必需。",
 		"cursor.airlock.containerUser": "Cursor 在 Airlock 容器内运行时使用的用户（通过设备管理设置）。为空时，Cursor 使用容器的默认用户。",

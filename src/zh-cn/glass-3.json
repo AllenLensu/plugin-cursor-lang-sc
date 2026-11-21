@@ -1,0 +1,186 @@
+{
+	"vs/glass/browser/components/agent-panel/apps-growth/deploy-intent-pill.react": {
+		"glass.agentPanel.deployIntentTray.title": "用 Cursor 构建可分享的在线应用",
+		"glass.agentPanel.deployIntentPill.dismiss": "关闭",
+		"glass.agentPanel.deployIntentPill.label": "使用 Cursor 部署",
+		"glass.agentPanel.deployIntentTray.body": "在提示中让 Cursor 构建一个应用，它会搭建 Web 应用、完成部署，并返回一个可分享的链接。",
+		"glass.agentPanel.deployIntentTray.dismiss": "关闭",
+		"glass.agentPanel.deployIntentTray.deploy": "构建应用"
+	},
+	"vs/glass/browser/components/agent-panel/apps-growth/local-deploy-tray.react": {
+		"glass.localDeployTray.title": "部署一个可分享的在线应用",
+		"glass.localDeployTray.body": "Cursor 可以把你的成果发布为可分享的在线 Web 应用。发布流程在云端运行，这个聊天会连同全部成果一起移到那里。",
+		"glass.localDeployTray.dismiss": "关闭",
+		"glass.localDeployTray.deploying": "正在部署…",
+		"glass.localDeployTray.deploy": "部署应用"
+	},
+	"vs/glass/browser/components/agent-panel/apps-growth/presend-deploy-tray.react": {
+		"glass.presendDeployTray.title": "构建可分享的在线应用",
+		"glass.presendDeployTray.body": "Cursor 可以构建并部署带有分享链接的应用。只需在提示中明确要求 Cursor 构建一个应用。",
+		"glass.presendDeployTray.dismiss": "关闭",
+		"glass.presendDeployTray.deploy": "构建应用"
+	},
+	"vs/glass/browser/components/agent-panel/apps-growth/use-local-deploy-action.react": {
+		"glass.localDeployTray.confirmTitle": "是否部署此文件夹?",
+		"glass.localDeployTray.confirmDeploy": "部署文件夹",
+		"glass.localDeployTray.draftRepoFailed": "无法为此项目创建存储库，因此没有移到云端。",
+		"glass.localDeployTray.uploadFailed": "无法将此项目的文件复制到云端，因此没有移到那里。",
+		"glass.localDeployTray.tooLarge": "此项目太大，无法从这里移到云端。",
+		"glass.localDeployTray.alreadyDeploying": "另一个窗口正在部署此项目。",
+		"glass.localDeployTray.nothingToDeploy": "此聊天还没有保存任何应用文件。等它构建出内容后再部署。",
+		"glass.localDeployTray.confirmDescription": "{0} 中的所有内容都会随此聊天移到云端，依赖项、构建产物和 .env 文件除外。",
+		"glass.localDeployTray.confirmChatFolderOnly": "仅 {0}"
+	},
+	"vs/glass/browser/components/agent-panel/deploy-prototype-nudge/deploy-prototype-nudge-tray.react": {
+		"glass.deployPrototypeNudge.title": "部署你的成果",
+		"glass.deployPrototypeNudge.body": "Cursor 可以把原型变成可分享的在线 Web 应用。让 Cursor 部署应用，或在此处单击“部署应用”。",
+		"glass.deployPrototypeNudge.dismiss": "关闭",
+		"glass.deployPrototypeNudge.deploy": "部署应用"
+	},
+	"vs/glass/browser/components/editor-panel/library/library-empty-body": {
+		"glass.project.library.tabEmptyBody": "与你的项目相关的文件将显示在此处"
+	},
+	"vs/glass/browser/components/editor-panel/pr-index-page/use-pr-index-context-menu.react": {
+		"glass.prIndex.contextMenu": "拉取请求操作",
+		"glass.prIndex.copyUrl": "复制 URL"
+	},
+	"vs/glass/browser/components/editor-panel/project-brain/project-brain-view.react": {
+		"glass.project.brain.tracker": "跟踪",
+		"glass.project.brain.discussion": "讨论串",
+		"glass.project.brain.localFiles": "本地文件和路径"
+	},
+	"vs/glass/browser/components/editor-panel/project-document/project-notes-filter-chips.react": {
+		"glass.project.notes.ownerScope": "显示的任务",
+		"glass.project.notes.ownerScope.all": "全部任务",
+		"glass.project.notes.ownerScope.mine": "我的任务"
+	},
+	"vs/glass/browser/components/editor-panel/project-document/project-notes-filter-empty-state.react": {
+		"glass.project.notes.myTasks.emptyBody": "你负责的任务会显示在此处",
+		"glass.project.notes.myTasks.showAll": "显示全部任务",
+		"glass.project.notes.myTasks.emptyTitle": "没有分配给你的任务"
+	},
+	"vs/glass/browser/components/editor-panel/project-document/project-notes-header.react": {
+		"glass.project.notes.switchToBoard": "切换到看板视图",
+		"glass.project.notes.switchToList": "切换到列表视图"
+	},
+	"vs/glass/browser/components/editor-panel/project-document/use-project-notes-view-mode.react": {
+		"glass.project.document.view.brain": "大脑"
+	},
+	"vs/glass/browser/components/ftux-wizard/ftux-wizard-connect-step.react": {
+		"glass.ftuxWizard.connect.title": "连接你的工具"
+	},
+	"vs/glass/browser/components/ftux-wizard/ftux-wizard-overlay.react": {
+		"glass.ftuxWizard.userRule.role.named": "用户的姓名是 {0}。其角色是 {1}。",
+		"glass.ftuxWizard.userRule.role": "用户的角色是 {0}。"
+	},
+	"vs/glass/browser/components/ftux-wizard/ftux-wizard-plugin-card.react": {
+		"glass.ftuxWizard.connect.signInInBrowser": "在浏览器中登录",
+		"glass.ftuxWizard.connect.addPlugin": "添加 {0}",
+		"glass.ftuxWizard.connect.add": "添加",
+		"glass.ftuxWizard.connect.adding": "正在添加",
+		"glass.ftuxWizard.connect.connected": "已连接",
+		"glass.ftuxWizard.connect.retryPlugin": "重试 {0}"
+	},
+	"vs/glass/browser/components/ftux-wizard/ftux-wizard-purpose-step.react": {
+		"glass.ftuxWizard.purpose.option.tasks.description.short": "在你的各个应用中研究、规划并完成工作。"
+	},
+	"vs/glass/browser/components/ftux-wizard/ftux-wizard-welcome-step.react": {
+		"glass.ftuxWizard.welcome.focus.engineering": "工程",
+		"glass.ftuxWizard.welcome.focus.design": "设计",
+		"glass.ftuxWizard.welcome.focus.product": "产品",
+		"glass.ftuxWizard.welcome.focus.research": "研究",
+		"glass.ftuxWizard.welcome.focus.dataScience": "数据科学",
+		"glass.ftuxWizard.welcome.focus.schoolwork": "学业",
+		"glass.ftuxWizard.welcome.focus.marketing": "营销",
+		"glass.ftuxWizard.welcome.focus.operations": "运营",
+		"glass.ftuxWizard.welcome.focus.somethingElse": "其他",
+		"glass.ftuxWizard.welcome.question": "哪一项最符合你的工作?"
+	},
+	"vs/glass/browser/components/ftux-wizard/use-ftux-connect-step.react": {
+		"glass.ftuxWizard.connect.addFailed": "无法添加 {0}。",
+		"glass.ftuxWizard.connect.connectFailed": "无法连接 {0}。"
+	},
+	"vs/glass/browser/components/glass-settings/projects-credit-balance-section.react": {
+		"glass.settings.projectsCredit.expires": "{0} 到期",
+		"glass.settings.projectsCredit.label": "剩余项目额度",
+		"glass.settings.projectsCredit.value": "剩余 {0}/{1}"
+	},
+	"vs/glass/browser/components/glass-sidebar/components/projects-credit-sidebar-card.react": {
+		"glass.projectsCredit.dismiss": "关闭",
+		"glass.projectsCredit.remaining": "剩余",
+		"glass.projectsCredit.remainingMeter": "剩余项目额度"
+	},
+	"vs/glass/browser/components/glass-sidebar/utils/projects-credit-card": {
+		"glass.projectsCredit.balanceTitle": "项目额度",
+		"glass.projectsCredit.balanceExpires": "{0} 到期",
+		"glass.projectsCredit.teamTitle": "{0} 多人项目额度",
+		"glass.projectsCredit.teamDescription": "项目会同时运行多个智能体，会越用越聪明，并与队友共享上下文和任务。",
+		"glass.projectsCredit.teamAmount": "你有 {0} 额度可以试用。",
+		"glass.projectsCredit.teamAction": "试用多人项目",
+		"glass.projectsCredit.personalTitle": "{0} 项目额度",
+		"glass.projectsCredit.personalDescription": "项目是 Cursor 里的智能体队友，可以同时处理多项任务，并且会越用越聪明。",
+		"glass.projectsCredit.personalAmount": "你有 {0} 可以开始使用。"
+	},
+	"vs/glass/browser/components/project-context/project-context-block.react": {
+		"glass.project.context.title": "项目上下文",
+		"glass.project.context.tracker": "跟踪",
+		"glass.project.context.discussion": "讨论",
+		"glass.project.context.localFiles": "本地文件",
+		"glass.project.context.sourceCount.one": "1 个来源",
+		"glass.project.context.sourceCount.many": "{0} 个来源",
+		"glass.project.context.addTo": "添加到 {0}",
+		"glass.project.context.add": "添加"
+	},
+	"vs/glass/browser/hooks/use-connect-vercel-pill.react": {
+		"glass.deployWithCursorPill.label": "使用 Cursor 部署"
+	},
+	"vs/glass/browser/hooks/use-continue-chat-in-project.react": {
+		"glass.projects.continueInProject.startWorker.title": "是否在此计算机上启动工作节点?",
+		"glass.projects.continueInProject.startWorker.description": "要在项目中继续此聊天，Cursor 会在此计算机上为该聊天的文件夹启动一个后台工作节点。聊天会继续在这里、同一个文件夹中运行。",
+		"glass.projects.continueInProject.startWorker.confirm": "启动工作节点并继续"
+	},
+	"vs/glass/browser/services/glass-agent-migration-service": {
+		"glass.agentMigrationService.failed.githubAccessCheck": "无法检查此存储库的 GitHub 访问权限。请检查连接并重试。"
+	},
+	"vs/glass/browser/utils/agent-menu-controller": {
+		"glass.agentMenu.addToNewProject": "新建项目"
+	},
+	"vs/glass/browser/utils/project-agent-reparent": {
+		"glass.projects.keptChatUntitled": "新建智能体",
+		"glass.projects.localChatNotStarted": "“{0}”无法移入该项目。",
+		"glass.projects.localChatNotStartedDescription": "它会连同侧边聊天一起留在此计算机上。"
+	},
+	"vs/glass/browser/utils/start-project-from-chat": {
+		"glass.projects.someSideChatKept": "有 1 个留在此计算机上，仍属于“{0}”。",
+		"glass.projects.someSideChatsKept": "有 {0} 个留在此计算机上，仍属于“{1}”。",
+		"glass.projects.sideChatKept": "它留在此计算机上，仍属于“{0}”。",
+		"glass.projects.sideChatsKept": "它们留在此计算机上，仍属于“{0}”。"
+	},
+	"vs/platform/extensionManagement/common/vsixInstallPolicy": {
+		"extensions.blockInstallFromVsix": "启用后，将阻止从 VSIX 文件安装扩展。从扩展市场安装不受影响。",
+		"extensions.blockInstallFromVsix.policy": "阻止从 VSIX 文件安装扩展。从扩展市场安装不受影响。",
+		"extensions.blockInstallFromVsixExceptions": "在启用 `#extensions.blockInstallFromVsix#` 时，仍可从 VSIX 文件安装的扩展 ID (`publisher.name`)。",
+		"extensions.blockInstallFromVsixExceptions.policy": "在启用 BlockExtensionInstallFromVsix 时，仍可从 VSIX 文件安装的扩展 ID (publisher.name)，以 JSON 数组表示。",
+		"installFromVsixBlocked": "此团队已阻止安装允许的扩展市场之外的扩展"
+	},
+	"vs/platform/extensionManagement/node/extensionManagementService": {
+		"dependenciesMismatch": "无法安装“{0}”扩展，因为其依赖项或扩展包在扩展市场中与包内的不一致",
+		"extractedManifestMismatch": "无法安装“{0}”，因为解压后的包是“{1}@{2}”。"
+	},
+	"vs/platform/extensionManagement/node/extensionManagementUtil": {
+		"duplicateEntry": "VSIX 无效: 它包含多个“{0}”条目。"
+	},
+	"vs/platform/update/common/update": {
+		"restartToUpdate.tooltip": "重启以更新"
+	},
+	"vs/workbench/contrib/extensions/browser/extensionsActions": {
+		"dependency verification failed": "无法安装“{0}”扩展，因为 {1} 无法验证它所需的“{2}”的签名",
+		"install anyway dependency": "仍然安装(不验证“{0}”)"
+	},
+	"vs/workbench/contrib/update/browser/update": {
+		"versionIsAvailable": "版本 {0} 可用。"
+	},
+	"vs/workbench/services/extensions/electron-sandbox/nativeExtensionService": {
+		"anysphereExtensionBlocked": "{0} 未加载 {1}，因为其文件与 {0} 的签名不匹配。请从扩展视图重新安装。"
+	}
+}

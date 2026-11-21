@@ -17,14 +17,8 @@
 		"glassFileTreeCreateFileInFolderLabel": "在 {0} 中新建文件",
 		"glassFileTreeCreateFolderInFolderLabel": "在 {0} 中新建文件夹"
 	},
-	"vs/glass/browser/components/editor-panel/library/library-tab-context.react": {
-		"glass.project.library.tabEmptyBody": "与你的项目相关的文件将显示在此处",
-		"glass.project.library.emptyBody": "你的智能体编写的简报、计划和其他文件将显示在此处"
-	},
 	"vs/glass/browser/components/editor-panel/library/library-toolbar.react": {
-		"glass.project.library.find": "搜索文件",
-		"glass.project.library.showAsGrid": "显示为网格",
-		"glass.project.library.showAsList": "显示为列表"
+		"glass.project.library.find": "搜索文件"
 	},
 	"vs/glass/browser/components/editor-panel/library/library-view.react": {
 		"glass.project.library.emptyTitle": "还没有文件",
@@ -71,12 +65,31 @@
 		"glass.project.addToChat": "添加到聊天",
 		"glass.project.addTaskToChat": "将“{0}”添加到聊天"
 	},
+	"vs/glass/browser/components/editor-panel/project-document/project-task-agent-stack.react": {
+		"glass.project.task.agents": "智能体",
+		"glass.project.agentChip.loadingName": "正在加载…"
+	},
+	"vs/glass/browser/components/editor-panel/project-document/project-task-agent-status.react": {
+		"glass.project.task.agentStatus.error": "智能体失败",
+		"glass.project.task.agentStatus.needsAttention": "智能体需要关注",
+		"glass.project.task.agentStatus.working": "智能体正在工作",
+		"glass.project.task.agentStatus.idle": "没有智能体在工作",
+		"glass.project.task.agentStatus.none": "没有关联的智能体"
+	},
 	"vs/glass/browser/components/editor-panel/project-document/project-task-chips.react": {
 		"glass.project.agentChip.loadingName": "正在加载…"
 	},
 	"vs/glass/browser/components/editor-panel/project-document/project-task-context-menu.react": {
 		"glass.project.task.menu": "任务操作",
-		"glass.project.addToChat": "添加到聊天"
+		"glass.project.addToChat": "添加到聊天",
+		"glass.project.task.menu.owner": "负责人",
+		"glass.project.taskOwner.unassigned": "无",
+		"glass.project.task.menu.status": "状态",
+		"glass.project.task.menu.tags": "标签"
+	},
+	"vs/glass/browser/components/editor-panel/project-document/project-task-rename-dialog.react": {
+		"glass.project.task.rename.title": "重命名任务",
+		"glass.project.task.rename.input": "任务标题"
 	},
 	"vs/glass/browser/components/editor-panel/project-document/project-task-filter-fields": {
 		"glass.project.filter.pr.draft": "草稿",
@@ -115,7 +128,8 @@
 		"glass.project.task.pullRequests": "拉取请求"
 	},
 	"vs/glass/browser/components/editor-panel/project-document/project-task-row-text": {
-		"glass.project.task.pullRequestStack": "{0} 个拉取请求"
+		"glass.project.task.pullRequestStack": "{0} 个拉取请求",
+		"glass.project.task.agentStack": "{0} 个智能体"
 	},
 	"vs/glass/browser/components/editor-panel/project-document/project-task-subtasks-menu.react": {
 		"glass.project.task.subtasksOf": "“{0}”的子任务: {1}",
@@ -137,9 +151,7 @@
 		"glass.project.trackedTasks.unavailable": "无法加载此项目的任务。正在后台重试。"
 	},
 	"vs/glass/browser/components/editor-panel/project-document/use-project-notes-view-mode.react": {
-		"glass.project.document.view.board": "看板",
-		"glass.project.document.view.context": "资料库",
-		"glass.project.document.view.notes": "笔记"
+		"glass.project.document.view.board": "看板"
 	},
 	"vs/glass/browser/components/editor-panel/project-document/use-project-task-reveal.react": {
 		"glass.project.taskLink.missing": "{0} 已不在笔记中"
@@ -160,44 +172,40 @@
 		"glass.project.notes.emptyTitle": "还没有可跟踪的内容",
 		"glass.project.notes.loading": "正在加载笔记"
 	},
-	"vs/glass/browser/components/editor-panel/project-prs-page/project-pr-index-row.react": {
+	"vs/glass/browser/components/editor-panel/pr-index-page/pr-index-row.react": {
 		"glass.project.prsTray.addPrToChat": "将 {0} 添加到聊天"
 	},
-	"vs/glass/browser/components/editor-panel/project-prs-page/project-prs-index-view.react": {
-		"glass.project.prIndex.search": "搜索拉取请求",
-		"glass.project.prIndex.searchPlaceholder": "按标题、编号、分支或讨论搜索",
-		"glass.project.prIndex.emptyProject": "此项目中还没有拉取请求。",
-		"glass.project.prIndex.emptyFiltered": "没有匹配的拉取请求。"
+	"vs/glass/browser/components/editor-panel/pr-index-page/pr-index-tray-chrome.react": {
+		"glass.prIndex.showMoreAria": "再显示 {0} 个拉取请求（在 {1} 中）",
+		"glass.prIndex.showMore": "显示更多"
 	},
-	"vs/glass/browser/components/editor-panel/project-prs-page/project-prs-index": {
-		"glass.project.prIndex.stackPosition": "堆叠中第 {0} 个，共 {1} 个",
-		"glass.project.prIndex.status.ready": "就绪",
-		"glass.project.prIndex.status.draft": "草稿",
-		"glass.project.prIndex.status.closed": "已关闭",
-		"glass.project.prIndex.status.merged": "已合并",
-		"glass.project.prIndex.state.conflicts": "冲突",
-		"glass.project.prIndex.state.mergeConflicts": "合并冲突",
-		"glass.project.prIndex.state.checksFailing": "检查未通过",
-		"glass.project.prIndex.state.checksNeedAction": "检查需要处理",
-		"glass.project.prIndex.state.changesRequested": "请求更改",
-		"glass.project.prIndex.state.waitingOn": "正在等待 {0}",
-		"glass.project.prIndex.state.waitingOnMany": "正在等待 {0} +{1}",
-		"glass.project.prIndex.state.waitingOnAll": "正在等待 {0}",
-		"glass.project.prIndex.state.reviewRequired": "需要审查",
-		"glass.project.prIndex.state.checksRunning": "正在运行检查"
+	"vs/glass/browser/components/editor-panel/pr-index-page/pr-index-view.react": {
+		"glass.prIndex.search": "搜索拉取请求",
+		"glass.prIndex.searchPlaceholder": "按标题、编号、分支或讨论搜索",
+		"glass.prIndex.clearSearch": "清除搜索",
+		"glass.prIndex.emptyFiltered": "没有匹配的拉取请求。",
+		"glass.prIndex.emptyProject": "此项目中还没有拉取请求。",
+		"glass.prIndex.emptyAgent": "此智能体还没有拉取请求。"
 	},
-	"vs/glass/browser/components/editor-panel/project-prs-page/project-prs-tray-chrome.react": {
-		"glass.project.prIndex.showMoreAria": "再显示 {0} 个拉取请求（在 {1} 中）",
-		"glass.project.prIndex.showMore": "显示更多"
+	"vs/glass/browser/components/editor-panel/pr-index-page/pr-index": {
+		"glass.prIndex.stackPosition": "堆叠中第 {0} 个，共 {1} 个",
+		"glass.prIndex.status.ready": "就绪",
+		"glass.prIndex.status.draft": "草稿",
+		"glass.prIndex.status.closed": "已关闭",
+		"glass.prIndex.status.merged": "已合并",
+		"glass.prIndex.state.conflicts": "冲突",
+		"glass.prIndex.state.mergeConflicts": "合并冲突",
+		"glass.prIndex.state.checksFailing": "检查未通过",
+		"glass.prIndex.state.checksNeedAction": "检查需要处理",
+		"glass.prIndex.state.changesRequested": "请求更改",
+		"glass.prIndex.state.waitingOn": "正在等待 {0}",
+		"glass.prIndex.state.waitingOnMany": "正在等待 {0} +{1}",
+		"glass.prIndex.state.waitingOnAll": "正在等待 {0}",
+		"glass.prIndex.state.reviewRequired": "需要审查",
+		"glass.prIndex.state.checksRunning": "正在运行检查"
 	},
 	"vs/glass/browser/components/editor-panel/project-tab-header.react": {
 		"glass.project.header.fallbackName": "新建项目"
-	},
-	"vs/glass/browser/components/editor-panel/project-tab-shell.react": {
-		"glass.project.library.find": "搜索文件"
-	},
-	"vs/glass/browser/components/editor-panel/project-tasks-composition.react": {
-		"glass.project.notes.tldrFocus": "重点"
 	},
 	"vs/glass/browser/components/editor-panel/terminal-tab/terminal-list.react": {
 		"glass.terminal.list.done": "完成",
@@ -227,8 +235,7 @@
 	"vs/glass/browser/components/ftux-wizard/ftux-wizard-purpose-step.react": {
 		"glass.ftuxWizard.purpose.option.coding": "编程",
 		"glass.ftuxWizard.purpose.option.coding.description": "直接在代码中创建、调试和迭代。",
-		"glass.ftuxWizard.purpose.option.tasks.description": "在各个应用或你的计算机上研究、规划并完成任务。",
-		"glass.ftuxWizard.purpose.title": "你今天来 Cursor 是为了什么?"
+		"glass.ftuxWizard.purpose.title": "今天想来点Code吗？"
 	},
 	"vs/glass/browser/components/ftux-wizard/ftux-wizard-welcome-step.react": {
 		"glass.ftuxWizard.welcome.role.softwareEngineer": "软件工程师",
@@ -239,10 +246,7 @@
 		"glass.ftuxWizard.welcome.role.student": "学生",
 		"glass.ftuxWizard.welcome.role.marketer": "营销人员",
 		"glass.ftuxWizard.welcome.role.operations": "运营",
-		"glass.ftuxWizard.welcome.role.somethingElse": "其他",
-		"glass.ftuxWizard.welcome.title.named": "欢迎使用 Cursor，{0}",
-		"glass.ftuxWizard.welcome.title": "欢迎使用 Cursor",
-		"glass.ftuxWizard.welcome.subtitle": "介绍一下你的角色"
+		"glass.ftuxWizard.welcome.role.somethingElse": "其他"
 	},
 	"vs/glass/browser/components/glass-sidebar/components/agent-row-appearance.react": {
 		"glass.projectBot.editAppearance": "编辑外观"
@@ -324,8 +328,14 @@
 		"glass.taskViews.changeStatus": "更改状态",
 		"glass.taskViews.changeTaskStatus": "更改“{0}”的状态: {1}"
 	},
+	"vs/glass/browser/hooks/command-handlers/agent.react": {
+		"glass.buildAppFromAd.title": "构建应用"
+	},
 	"vs/glass/browser/hooks/command-handlers/edit.react": {
 		"glassOsEditSelectAll": "全选(&&A)"
+	},
+	"vs/glass/browser/hooks/use-glass-agent-creation.react": {
+		"glass.buildAppFromAd.prompt": "构建一个应用，它要做的是: "
 	},
 	"vs/glass/browser/hooks/use-agent-followup.react": {
 		"glass.goalTray.editFailed": "更新目标失败。",
@@ -340,5 +350,16 @@
 	},
 	"vs/glass/browser/hooks/use-goal-tray.react": {
 		"glass.goalTray.pauseFailed": "暂停目标失败。"
+	},
+	"vs/glass/browser/utils/start-project-from-chat": {
+		"glass.projects.someSideChatsNotMoved": "有些侧边聊天无法移入该项目。",
+		"glass.projects.sideChatNotMoved": "有 1 个侧边聊天无法移入该项目。",
+		"glass.projects.sideChatsNotMoved": "有 {0} 个侧边聊天无法移入该项目。"
+	},
+	"vs/glass/browser/components/agent-panel/allowed-machines/add-folder-row.react": {
+		"glass.allowedMachines.cloneRepoOnMachine": "在 {0} 上克隆存储库"
+	},
+	"vs/workbench/contrib/appLayout/electron-sandbox/glassModeActions": {
+		"cursor.openGlassAndCreateProject": "打开智能体窗口并创建项目"
 	}
 }
