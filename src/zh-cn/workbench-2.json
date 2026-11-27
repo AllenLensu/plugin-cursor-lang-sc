@@ -130,15 +130,15 @@
 		"msg.ran": "已运行 `{0}` "
 	},
 	"vs/workbench/contrib/mdceditor/browser/mdceditor.contribution": {
-		"newCursorRule": "新建 Cursor 规则",
+		"newCursorRule": "新建 {0} 规则",
 		"newCommandName": "输入命令名",
 		"commandNamePlaceholder": "例如 my-custom-command",
 		"commandNamePrompt": "请输入新命令的名称",
 		"emptyCommandName": "命令名不能为空",
 		"invalidCommandName": "命令名只能包含小写字母、数字和连字符",
 		"commandExists": "已存在同名命令",
-		"newProjectCursorCommand": "新建项目 Cursor 命令",
-		"newUserCursorCommand": "新建用户 Cursor 命令"
+		"newProjectCursorCommand": "新建项目 {0} 命令",
+		"newUserCursorCommand": "新建用户 {0} 命令"
 	},
 	"vs/workbench/contrib/memoryMonitor/electron-sandbox/memoryMonitor.contribution": {
 		"developer.captureAndUploadRendererHeapSnapshot.label": "捕获并上传渲染器堆快照"
@@ -155,7 +155,7 @@
 		"workbench.notebook.developer.addCellOverlays": "切换笔记本单元格覆盖层"
 	},
 	"vs/workbench/contrib/onboarding/electron-sandbox/onboarding.contribution": {
-		"onboarding.importFromVSCodeToast.message": "将你的 VS Code 配置带到 Cursor。导入设置和扩展，即可顺利开始。",
+		"onboarding.importFromVSCodeToast.message": "将你的 VS Code 配置带到 {0}。导入设置和扩展，即可顺利开始。",
 		"onboarding.importFromVSCodeToast.import": "导入"
 	},
 	"vs/workbench/contrib/outline/browser/outline.view.contribution": {
@@ -227,14 +227,14 @@
 	},
 	"vs/workbench/contrib/remote/electron-sandbox/remote.cursor.contribution": {
 		"wslMntWorkspaceWarning.message": "不建议打开 /mnt 下的 WSL 工作区",
-		"wslMntWorkspaceWarning.detail": "你打开的文件夹会解析为“{0}”，这是挂载的 Windows 文件系统。它可能比 Linux 文件系统慢很多，部分功能也可能无法正常工作。\n\n为获得最佳效果，请把项目移到 WSL 主目录（例如 ~/projects），或直接在 Cursor 中打开 Windows 目录。",
+		"wslMntWorkspaceWarning.detail": "你打开的文件夹会解析为“{0}”，这是挂载的 Windows 文件系统。它可能比 Linux 文件系统慢很多，部分功能也可能无法正常工作。\n\n为获得最佳效果，请把项目移到 WSL 主目录（例如 ~/projects），或直接在 {1} 中打开 Windows 目录。",
 		"wslMntWorkspaceWarning.checkbox": "不再显示此警告",
 		"windowsWslPathWarning.message": "不建议在没有 WSL 扩展的情况下打开 WSL 文件夹",
 		"windowsWslPathWarning.detail": "你打开的文件夹（“{0}”）位于适用于 Linux 的 Windows 子系统的文件系统中。直接从 Windows 打开 WSL 文件夹可能会慢很多，部分功能也可能无法正常工作。\n\n为获得最佳效果，请安装 WSL 扩展，并用它打开 WSL 文件夹。这样可以完整访问 Linux 文件系统，性能也更好。",
 		"windowsWslPathWarning.checkbox": "不再显示此警告",
 		"windowsWslPathWarning.install": "安装 WSL 扩展(&&I)",
 		"windowsWslPathWarning.extensionInstalled.message": "不建议在不使用 WSL 扩展的情况下打开 WSL 文件夹",
-		"windowsWslPathWarning.extensionInstalled.detail": "你打开的文件夹（“{0}”）位于适用于 Linux 的 Windows 子系统的文件系统中。直接从 Windows 打开 WSL 文件夹可能会慢很多，部分功能也可能无法正常工作。\n\n你已安装 WSL 扩展。为获得最佳效果，请使用命令“WSL: Connect to WSL”，或在 WSL 终端中用“cursor .”从 WSL 内打开此文件夹。"
+		"windowsWslPathWarning.extensionInstalled.detail": "你打开的文件夹（“{0}”）位于适用于 Linux 的 Windows 子系统的文件系统中。直接从 Windows 打开 WSL 文件夹可能会慢很多，部分功能也可能无法正常工作。\n\n你已安装 WSL 扩展。为获得最佳效果，请使用命令“WSL: Connect to WSL”，或在 WSL 终端中用“{1} .”从 WSL 内打开此文件夹。"
 	},
 	"vs/workbench/contrib/remoteTunnel/electron-sandbox/remoteTunnel.contribution": {
 		"remoteTunnel.actions.turnOn": "打开远程隧道访问...",
@@ -301,7 +301,7 @@
 	},
 	"vs/workbench/contrib/scm/browser/scmHistoryViewPane": {
 		"historyItemChangesEditorTitle": "所有更改（{0} ↔ {1}）",
-		"openInCursorBlame": "在 Cursor Blame 中打开",
+		"openInCursorBlame": "在 {0} Blame 中打开",
 		"emailLinkTitle": "电子邮件",
 		"fileChanged": "已更改 {0} 个文件",
 		"filesChanged": "已更改 {0} 个文件",
@@ -361,7 +361,7 @@
 		"filterSortOrder.default": "历史记录项会按所用筛选值的相关性排序。相关性更高的项排在前面。",
 		"filterSortOrder.recency": "历史记录项按最近打开的时间排序。最近打开的项排在前面。",
 		"filterSortOrder": "控制在快速打开中筛选时编辑器历史记录的排序。",
-		"search.quickOpen.useVscodeSearch": "启用后，使用默认的 VS Code 快速打开搜索算法，不用 Cursor 修改过的版本。",
+		"search.quickOpen.useVscodeSearch": "启用后，使用默认的 VS Code 快速打开搜索算法，不用 {0} 修改过的版本。",
 		"search.followSymlinks": "控制搜索时是否跟踪符号链接。",
 		"search.smartCase": "如果模式全部为小写，则不区分大小写地搜索；否则区分大小写搜索。",
 		"search.globalFindClipboard": "控制搜索视图是否在 macOS 上读取或修改共享的查找剪贴板。",

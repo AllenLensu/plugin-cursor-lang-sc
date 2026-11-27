@@ -210,7 +210,7 @@
 		"restartExtensionHost.reason": "正在打开多根工作区"
 	},
 	"vs/workbench/services/worktree/browser/worktree.contribution": {
-		"runCursorWorktreeCleanupDev": "运行 Cursor 工作树清理（开发）",
+		"runCursorWorktreeCleanupDev": "运行 {0} 工作树清理（开发）",
 		"runCursorWorktreeCleanupDev.leaseBusy": "已跳过工作树清理: 另一个窗口已持有清理租约。",
 		"runCursorWorktreeCleanupDev.done": "工作树清理已完成（开发）。已移除 {0} 个工作树，释放 {1} 字节。详情请查看日志。"
 	}

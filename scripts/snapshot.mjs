@@ -18,8 +18,13 @@ const metadata = {
 };
 
 const dest = path.join(root, "upstream", "zh-cn");
-fs.rmSync(dest, { recursive: true, force: true });
-fs.cpSync(path.join(paths.officialPack, "translations"), dest, { recursive: true });
+const officialTranslations = path.join(paths.officialPack, "translations");
+if (fs.existsSync(officialTranslations)) {
+  fs.rmSync(dest, { recursive: true, force: true });
+  fs.cpSync(officialTranslations, dest, { recursive: true });
+} else {
+  console.log(`official pack not found, keeping existing upstream (${paths.officialPack})`);
+}
 
 writeJson(path.join(root, "metadata", "cursor.json"), metadata);
 

@@ -1,22 +1,22 @@
 {
 	"vs/glass/browser/components/agent-panel/apps-growth/deploy-intent-pill.react": {
-		"glass.agentPanel.deployIntentTray.title": "用 Cursor 构建可分享的在线应用",
+		"glass.agentPanel.deployIntentTray.title": "用 {0} 构建可分享的在线应用",
 		"glass.agentPanel.deployIntentPill.dismiss": "关闭",
-		"glass.agentPanel.deployIntentPill.label": "使用 Cursor 部署",
-		"glass.agentPanel.deployIntentTray.body": "在提示中让 Cursor 构建一个应用，它会搭建 Web 应用、完成部署，并返回一个可分享的链接。",
+		"glass.agentPanel.deployIntentPill.label": "使用 {0} 部署",
+		"glass.agentPanel.deployIntentTray.body": "在提示中让 {0} 构建一个应用，它会搭建 Web 应用、完成部署，并返回一个可分享的链接。",
 		"glass.agentPanel.deployIntentTray.dismiss": "关闭",
 		"glass.agentPanel.deployIntentTray.deploy": "构建应用"
 	},
 	"vs/glass/browser/components/agent-panel/apps-growth/local-deploy-tray.react": {
 		"glass.localDeployTray.title": "部署一个可分享的在线应用",
-		"glass.localDeployTray.body": "Cursor 可以把你的成果发布为可分享的在线 Web 应用。发布流程在云端运行，这个聊天会连同全部成果一起移到那里。",
+		"glass.localDeployTray.body": "{0} 可以把你的成果发布为可分享的在线 Web 应用。发布流程在云端运行，这个聊天会连同全部成果一起移到那里。",
 		"glass.localDeployTray.dismiss": "关闭",
 		"glass.localDeployTray.deploying": "正在部署…",
 		"glass.localDeployTray.deploy": "部署应用"
 	},
 	"vs/glass/browser/components/agent-panel/apps-growth/presend-deploy-tray.react": {
 		"glass.presendDeployTray.title": "构建可分享的在线应用",
-		"glass.presendDeployTray.body": "Cursor 可以构建并部署带有分享链接的应用。只需在提示中明确要求 Cursor 构建一个应用。",
+		"glass.presendDeployTray.body": "{0} 可以构建并部署带有分享链接的应用。只需在提示中明确要求 {0} 构建一个应用。",
 		"glass.presendDeployTray.dismiss": "关闭",
 		"glass.presendDeployTray.deploy": "构建应用"
 	},
@@ -33,7 +33,7 @@
 	},
 	"vs/glass/browser/components/agent-panel/deploy-prototype-nudge/deploy-prototype-nudge-tray.react": {
 		"glass.deployPrototypeNudge.title": "部署你的成果",
-		"glass.deployPrototypeNudge.body": "Cursor 可以把原型变成可分享的在线 Web 应用。让 Cursor 部署应用，或在此处单击“部署应用”。",
+		"glass.deployPrototypeNudge.body": "{0} 可以把原型变成可分享的在线 Web 应用。让 {0} 部署应用，或在此处单击“部署应用”。",
 		"glass.deployPrototypeNudge.dismiss": "关闭",
 		"glass.deployPrototypeNudge.deploy": "部署应用"
 	},
@@ -68,10 +68,6 @@
 	},
 	"vs/glass/browser/components/ftux-wizard/ftux-wizard-connect-step.react": {
 		"glass.ftuxWizard.connect.title": "连接你的工具"
-	},
-	"vs/glass/browser/components/ftux-wizard/ftux-wizard-overlay.react": {
-		"glass.ftuxWizard.userRule.role.named": "用户的姓名是 {0}。其角色是 {1}。",
-		"glass.ftuxWizard.userRule.role": "用户的角色是 {0}。"
 	},
 	"vs/glass/browser/components/ftux-wizard/ftux-wizard-plugin-card.react": {
 		"glass.ftuxWizard.connect.signInInBrowser": "在浏览器中登录",
@@ -118,7 +114,7 @@
 		"glass.projectsCredit.teamAmount": "你有 {0} 额度可以试用。",
 		"glass.projectsCredit.teamAction": "试用多人项目",
 		"glass.projectsCredit.personalTitle": "{0} 项目额度",
-		"glass.projectsCredit.personalDescription": "项目是 Cursor 里的智能体队友，可以同时处理多项任务，并且会越用越聪明。",
+		"glass.projectsCredit.personalDescription": "项目是 {0} 里的智能体队友，可以同时处理多项任务，并且会越用越聪明。",
 		"glass.projectsCredit.personalAmount": "你有 {0} 可以开始使用。"
 	},
 	"vs/glass/browser/components/project-context/project-context-block.react": {
@@ -132,11 +128,11 @@
 		"glass.project.context.add": "添加"
 	},
 	"vs/glass/browser/hooks/use-connect-vercel-pill.react": {
-		"glass.deployWithCursorPill.label": "使用 Cursor 部署"
+		"glass.deployWithCursorPill.label": "使用 {0} 部署"
 	},
 	"vs/glass/browser/hooks/use-continue-chat-in-project.react": {
 		"glass.projects.continueInProject.startWorker.title": "是否在此计算机上启动工作节点?",
-		"glass.projects.continueInProject.startWorker.description": "要在项目中继续此聊天，Cursor 会在此计算机上为该聊天的文件夹启动一个后台工作节点。聊天会继续在这里、同一个文件夹中运行。",
+		"glass.projects.continueInProject.startWorker.description": "要在项目中继续此聊天，{0} 会在此计算机上为该聊天的文件夹启动一个后台工作节点。聊天会继续在这里、同一个文件夹中运行。",
 		"glass.projects.continueInProject.startWorker.confirm": "启动工作节点并继续"
 	},
 	"vs/glass/browser/services/glass-agent-migration-service": {
@@ -182,5 +178,9 @@
 	},
 	"vs/workbench/services/extensions/electron-sandbox/nativeExtensionService": {
 		"anysphereExtensionBlocked": "{0} 未加载 {1}，因为其文件与 {0} 的签名不匹配。请从扩展视图重新安装。"
+	},
+	"vs/glass/browser/contributions/glassRemoteControlStartBlockContribution": {
+		"glass.remoteControl.startBlock.cliTooOld": "远程控制无法在这台计算机上启动。它的 Cursor Agent CLI 太旧，无法保证密钥私密，而且目前还没有更新的版本。一旦有更新的版本，远程控制就会启动。",
+		"glass.remoteControl.startBlock.cliOverrideTooOld": "远程控制无法在这台计算机上启动。环境变量 CURSOR_AGENT_WORKER_CLI_PATH 所指定的 Cursor Agent CLI 太旧，无法保证密钥私密。请改为指向更新的版本，或取消该设置。"
 	}
 }

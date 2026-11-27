@@ -1,6 +1,6 @@
 {
 	"vs/code/electron-main/main": {
-		"localModeDataImportError": "Cursor 数据导入失败",
+		"localModeDataImportError": "{0} 数据导入失败",
 		"orbitDeploymentInvalid": "{0} 无法启动",
 		"orbitDeploymentUnsetDetail": "{0} 需要托管部署，但此设备上没有。请联系你的 IT 管理员。",
 		"orbitDeploymentInvalidSettingDetail": "此设备的托管部署设置无效。请联系你的 IT 管理员。"
@@ -26,15 +26,12 @@
 		"editorHasPromptBar": "编辑器是否有活动的提示栏",
 		"editorPromptBarFocused": "编辑器提示栏输入是否具有焦点"
 	},
-	"vs/platform/action/common/actionCommonCategories": {
-		"cursor": "Cursor"
-	},
 	"vs/platform/agentHarness/common/agentHostUpdate.config.contribution": {
 		"agentHostConfigurationTitle": "智能体宿主",
-		"agentHostUpdateMode": "控制负责运行本地智能体轮次的智能体能否在 Cursor 版本之间更新。更新从 Cursor 服务下载，并在下一次智能体轮次时应用。",
-		"agentHostUpdateMode.default": "遵循 'update.mode': 除非关闭了 Cursor 更新，否则会更新。",
-		"agentHostUpdateMode.on": "即使关闭了 Cursor 更新，也会更新。",
-		"agentHostUpdateMode.none": "永不更新；保留随此 Cursor 版本打包的智能体。"
+		"agentHostUpdateMode": "控制负责运行本地智能体轮次的智能体能否在 Grok Build 版本之间更新。更新从 Cursor 服务下载，并在下一次智能体轮次时应用。",
+		"agentHostUpdateMode.default": "遵循 'update.mode': 除非关闭了 Grok Build 更新，否则会更新。",
+		"agentHostUpdateMode.on": "即使关闭了 Grok Build 更新，也会更新。",
+		"agentHostUpdateMode.none": "永不更新；保留随此 Grok Build 版本打包的智能体。"
 	},
 	"vs/platform/airlock/common/airlock": {
 		"airlock.disabled.orbit": "你所在组织的策略未设置 Airlock 容器。",
@@ -64,32 +61,23 @@
 		"airlock.sandboxConfig.startCommand": "{0} 中的 start_command 必须是一条命令，并以字符串书写。"
 	},
 	"vs/platform/airlock/electron-main/airlockMainService": {
-		"airlock.prepareThrew": "Cursor 无法准备好 Airlock: {0}",
-		"airlock.containerChanged": "Cursor 正在准备 Airlock 时，你所在组织的策略指定了另一个 Airlock 容器。",
+		"airlock.prepareThrew": "{1} 无法准备好 Airlock: {0}",
+		"airlock.containerChanged": "{0} 正在准备 Airlock 时，你所在组织的策略指定了另一个 Airlock 容器。",
 		"airlock.engineUnavailable": "{0} 不可用: {1}",
-		"airlock.repo.startThrew": "Cursor 无法启动该仓库的 Airlock 容器: {0}",
-		"airlock.repo.noSandboxConfig": "{0} 没有 {1}，因此 Cursor 无法启动其 Airlock 容器。",
+		"airlock.repo.startThrew": "{1} 无法启动该仓库的 Airlock 容器: {0}",
 		"airlock.repo.starting": "正在启动 {0} 的 Airlock 容器…",
 		"airlock.repo.startFailed": "{0} 中的启动命令失败: {1}",
 		"airlock.repo.startTimeout": "{0} 中的启动命令已完成，但容器 {1} 在 {2} 秒后没在运行。",
 		"airlock.repo.noStartCommand": "{0} 的沙箱文件未指定 start_command（{1}），因此请自行启动其 Airlock 容器。",
-		"airlock.repo.settingsChanged": "Cursor 正在准备容器时，你所在组织的 Airlock 设置已更改。",
-		"airlock.engineNotFound": "{0} 不在 PATH 中。",
+		"airlock.repo.settingsChanged": "{0} 正在准备容器时，你所在组织的 Airlock 设置已更改。",
 		"airlock.wrapperNotExe": "开发容器无法运行 IT 的引擎包装脚本 {0}。在 Windows 上，Airlock 的引擎必须是 docker、podman 或 .exe 文件。",
 		"airlock.dockerPathConflict": "你在 {1} 中的 {0} 设置将开发容器指向了与 Airlock 不同的容器引擎。请移除该设置，然后重新连接。",
-		"airlock.devContainersSetup": "Cursor 无法让开发容器做好打开 Airlock 的准备: {0}",
-		"airlock.repo.none": "{0} 没有正在运行的 Airlock 容器。Cursor 会查找名为 {1}… 的容器。",
-		"airlock.repo.noneStartable": "{0} 没有正在运行的 Airlock 容器。请启动它，然后重新连接。",
-		"airlock.repo.ambiguous": "有多个 Airlock 容器与 {0} 匹配: {1}。请移除你不使用的容器，然后重新连接。",
-		"airlock.repo.unmapped": "Cursor 无法确定 {0} 在容器 {1} 中的位置: 该容器未挂载此文件夹，也未设置工作文件夹。",
-		"airlock.repo.stopped": "容器 {0} 未在运行。请启动它，然后重新连接。",
-		"airlock.noAnswer": "{0} 秒内没有应答",
-		"airlock.exitCode": "退出代码 {0}"
+		"airlock.devContainersSetup": "{1} 无法让开发容器做好打开 Airlock 的准备: {0}"
 	},
 	"vs/platform/airlock/node/airlockDevContainers": {
-		"airlock.nameConfigInvalid": "Cursor 无法让开发容器做好打开 Airlock 的准备，因为开发容器针对该容器的设置不是 JSON 对象。请修复或删除 {0}，然后重试。",
-		"airlock.nameConfigRemoteEnvInvalid": "Cursor 无法让开发容器做好打开 Airlock 的准备，因为开发容器针对该容器的设置中的 remoteEnv 不是 JSON 对象。请修复或删除 {0}，然后重试。",
-		"airlock.settingsInvalid": "Cursor 无法将开发容器指向 Airlock 的容器引擎，因为 {0} 不是有效的 JSON。请修复它，然后重试。"
+		"airlock.nameConfigInvalid": "{1} 无法让开发容器做好打开 Airlock 的准备，因为开发容器针对该容器的设置不是 JSON 对象。请修复或删除 {0}，然后重试。",
+		"airlock.nameConfigRemoteEnvInvalid": "{1} 无法让开发容器做好打开 Airlock 的准备，因为开发容器针对该容器的设置中的 remoteEnv 不是 JSON 对象。请修复或删除 {0}，然后重试。",
+		"airlock.settingsInvalid": "{1} 无法将开发容器指向 Airlock 的容器引擎，因为 {0} 不是有效的 JSON。请修复它，然后重试。"
 	},
 	"vs/platform/airlock/node/airlockEngine": {
 		"airlock.engineNotFound": "{0} 不在 PATH 中。",
@@ -98,7 +86,7 @@
 		"airlock.exitCode": "退出代码 {0}"
 	},
 	"vs/platform/airlock/node/airlockHooks": {
-		"airlock.hook.failedToStart": "Cursor 无法运行 {1} 处的 {0} 钩子: {2}",
+		"airlock.hook.failedToStart": "{3} 无法运行 {1} 处的 {0} 钩子: {2}",
 		"airlock.hook.timedOut": "{0} 钩子未在 {1} 秒内完成。",
 		"airlock.hook.failed": "{0} 钩子失败: {1}",
 		"airlock.hook.signal": "{0} 钩子已被 {1} 停止。",
@@ -106,7 +94,6 @@
 		"airlock.hook.detailTruncated": "{0}（请参阅日志）"
 	},
 	"vs/platform/airlock/node/airlockLifecycle": {
-		"airlock.progress.restart": "正在重启容器…",
 		"airlock.progress.inspect": "正在查找容器 {0}…",
 		"airlock.progress.waitForEngine": "正在等待 {0}…",
 		"airlock.progress.preAttach": "正在准备容器…",
@@ -123,12 +110,8 @@
 		"airlock.engineUnavailable": "{0} 不可用: {1}",
 		"airlock.engineFailed": "“{0} {1}”失败: {2}",
 		"airlock.progress.serverCheck": "正在检查 Cursor 服务器…",
-		"airlock.serverCheckFailed": "Cursor 无法检查容器 {0} 中的服务器: {1}",
-		"airlock.serverMissing": "容器 {0} 没有此版本 Cursor 所需的 Cursor 服务器（提交 {1}，{2}）。请让 IT 为容器用户将其放置到 ~/{3}/bin/{1}/ 中。",
-		"airlock.engineNotFound": "{0} 不在 PATH 中。",
-		"airlock.noAnswer": "{0} 秒内没有应答",
-		"airlock.stoppedBySignal": "被 {0} 停止",
-		"airlock.exitCode": "退出代码 {0}"
+		"airlock.serverCheckFailed": "{2} 无法检查容器 {0} 中的服务器: {1}",
+		"airlock.serverMissing": "容器 {0} 没有此版本 {4} 所需的 Cursor 服务器（提交 {1}，{2}）。请让 IT 为容器用户将其放置到 ~/{3}/bin/{1}/ 中。"
 	},
 	"vs/platform/browserView/electron-sandbox/externalSchemeConfirmation": {
 		"browserView.openExternalLinkTitle": "打开外部链接",
@@ -159,7 +142,8 @@
 		"stdinUnix": "要从 stdin 读取，请追加 '-'（例如 'ps aux | grep code | {0} -'）"
 	},
 	"vs/platform/extensionManagement/common/abstractExtensionManagementService": {
-		"incompatibleAPI": "无法安装“{0}”扩展。{1}"
+		"incompatibleAPI": "无法安装“{0}”扩展。{1}",
+		"blocked extension version": "无法安装“{0}@{1}”扩展: {2}"
 	},
 	"vs/platform/extensionManagement/node/extensionManagementService": {
 		"restartCode": "请在重新安装 {0} 之前重新启动 {1}。"
@@ -183,7 +167,7 @@
 		"mcpProcessLog": "MCP 进程"
 	},
 	"vs/platform/native/electron-main/nativeHostMainService": {
-		"cantRemoveVSCodeFromPath": "无法在路径上将 `code` 替换为 `Cursor`。"
+		"cantRemoveVSCodeFromPath": "无法在路径上将 `code` 替换为 `{0}`。"
 	},
 	"vs/platform/process/electron-main/processMainService": {
 		"workspaceProcessExplorer": "工作区进程资源管理器",
@@ -196,8 +180,8 @@
 	},
 	"vs/platform/storage/electron-main/storageMainService": {
 		"storageError.title": "存储错误",
-		"storageError.message": "Cursor 无法打开本地存储。请重新加载或联系支持人员。",
-		"storageError.detail": "Cursor 可能仍在关闭。请稍候，然后重新启动。\n\n如果存储文件已损坏、被移动或存在权限问题，也可能发生这种情况。\n\n存储路径: {0}",
+		"storageError.message": "{0} 无法打开本地存储。请重新加载或联系支持人员。",
+		"storageError.detail": "{1} 可能仍在关闭。请稍候，然后重新启动。\n\n如果存储文件已损坏、被移动或存在权限问题，也可能发生这种情况。\n\n存储路径: {0}",
 		"storageError.quit": "退出"
 	},
 	"vs/platform/update/common/update.config.contribution": {
@@ -208,7 +192,9 @@
 		"restartWhenIdle": "在屏幕锁定，且没有会阻止退出或造成丢失的内容时，重新启动到已下载的更新: 没有正在运行的智能体、终端、任务、测试运行、笔记本单元格或调试会话，也没有退出时会丢失的更改。"
 	},
 	"vs/platform/update/common/update": {
-		"agentsWindowSwitchToMolten.tooltip": "更新以获得更快的体验"
+		"agentsWindowSwitchToMolten.tooltip": "更新以获得更快的体验",
+		"agentsWindowSwitchToMolten.restartLabel": "重启 {0} 以切换到测试版智能体窗口",
+		"agentsWindowSwitchToBuiltIn.restartLabel": "重启 {0} 以切换到内置智能体窗口"
 	},
 	"vs/platform/update/common/updateActionTitles": {
 		"checkForUpdates": "检查更新...",
@@ -253,5 +239,28 @@
 		"utilityHost.cpuProfile.invalid": "{0} CPU 分析器返回了无效的配置文件: {1}",
 		"utilityHost.cpuProfile.saved": "已将 {0} CPU 配置文件保存到 {1}",
 		"utilityHost.cpuProfile.saveFailed": "保存 {0} CPU 配置文件失败: {1}"
+	},
+	"vs/platform/agentHarness/common/instantGrep.config.contribution": {
+		"cursorGeneralConfigurationTitle": "常规",
+		"instantGrep.indexRepositories.title": "为即时 Grep 索引存储库",
+		"instantGrep.indexRepositories.policyDescription": "控制 Grok Build 是否在本地为即时 Grep 索引存储库。禁用此策略可防止在受管理设备上索引存储库。"
+	},
+	"vs/platform/environment/node/argvHelper": {
+		"unhonoredBackendOverride": "已忽略“--{0}”: 它仅在开发版本中有效。"
+	},
+	"vs/platform/files/node/diskFileSystemProvider": {
+		"renameInUseError": "无法将“{0}”重命名为“{1}”。它可能正被另一个应用程序使用，或者你没有权限({2})。",
+		"moveInUseError": "无法将“{0}”移动到“{1}”。它可能正被另一个应用程序使用，或者你没有权限({2})。"
+	},
+	"vs/platform/update/electron-main/darwinLegacyBundleCheck": {
+		"darwinLegacyBundle.message": "还安装了旧版 {0}",
+		"darwinLegacyBundle.detail": "位于“{0}”的副本与此副本使用相同的设置和数据。是否将它移到废纸篓? 之后可以从废纸篓中还原。",
+		"darwinLegacyBundle.shellCommand": "Shell 命令“{0}”将改为打开此副本。",
+		"darwinLegacyBundle.moveToTrash": "移动到废纸篓(&&M)",
+		"darwinLegacyBundle.keepBoth": "全部保留(&&K)",
+		"darwinLegacyBundle.running": "请先退出旧版 {0}",
+		"darwinLegacyBundle.runningDetail": "“{0}”正在运行。{1} 下次启动时会再次提议将它移到废纸篓。",
+		"darwinLegacyBundle.trashFailed": "无法将旧副本移到废纸篓",
+		"darwinLegacyBundle.trashFailedDetail": "你可以在 Finder 中把“{0}”拖到废纸篓。"
 	}
 }

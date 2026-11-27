@@ -6,7 +6,7 @@
 	},
 	"vs/workbench/api/browser/mainThreadCursor": {
 		"extensionHostTimeoutTitle": "工作区已断开连接",
-		"extensionHostTimeoutDetail": "Cursor 在开始执行工具时与工作区失去了连接。请重新加载窗口并重试。",
+		"extensionHostTimeoutDetail": "{0} 在开始执行工具时与工作区失去了连接。请重新加载窗口并重试。",
 		"sessionInitFailedTitle": "智能体会话初始化失败",
 		"sessionInitFailedDetail": "无法初始化智能体执行会话。请重新加载窗口以继续。",
 		"sessionNotFoundTitle": "找不到智能体会话",
@@ -15,7 +15,7 @@
 		"streamStartFailedDetail": "无法启动智能体执行流。请重新加载窗口以继续。"
 	},
 	"vs/workbench/api/browser/viewsExtensionPoint": {
-		"views.container.secondarySidebar.unsupported": "在 Cursor 中，不能将视图容器贡献到辅助侧边栏。该区域保留给 Cursor 的智能体界面。请改为贡献到 'activitybar' 或 'panel'。"
+		"views.container.secondarySidebar.unsupported": "在 {0} 中，不能将视图容器贡献到辅助侧边栏。该区域保留给 {0} 的智能体界面。请改为贡献到 'activitybar' 或 'panel'。"
 	},
 	"vs/workbench/api/test/browser/mainThreadTreeViews.test": {
 		"test": "测试",
@@ -75,7 +75,7 @@
 		"openLayoutSettingsMenu": "打开布局设置菜单",
 		"maximizeChatSize": "最大化聊天大小",
 		"toggleInlineDiffs": "切换内联差异",
-		"openAgentLayoutQuickMenu": "打开 Cursor 设置",
+		"openAgentLayoutQuickMenu": "打开 {0}",
 		"openLayoutSwitcher": "切换布局",
 		"toggleZenMode": "切换禅模式"
 	},
@@ -112,7 +112,7 @@
 		"aboutLocalMode": "本地模式: 已启用"
 	},
 	"vs/workbench/browser/parts/editor/cloneRepoFromEmptyScreen": {
-		"emptyScreen.cloneRepo.gitUnavailable": "克隆存储库需要 Git。请安装 Git，或启用内置 Git 扩展，然后重启 Cursor。",
+		"emptyScreen.cloneRepo.gitUnavailable": "克隆存储库需要 Git。请安装 Git，或启用内置 Git 扩展，然后重启 {0}。",
 		"emptyScreen.cloneRepo.downloadGit": "下载 Git"
 	},
 	"vs/workbench/browser/parts/editor/editor.contribution": {
@@ -162,16 +162,16 @@
 		"openAgentsWindowTitlebar": "打开智能体窗口",
 		"moreActionsTitlebarMaximized": "更多操作",
 		"toggleAgents": "切换智能体",
-		"titlebarOpenCursorSettings": "打开 Cursor 设置",
-		"cursorSettings": "Cursor 设置"
+		"titlebarOpenCursorSettings": "打开 {0}",
+		"cursorSettings": "{0}"
 	},
 	"vs/workbench/browser/windowQuitConfirmation": {
 		"shutdownChatStreamingTitle": "智能体仍在工作",
 		"shutdownChatStreamingDetail": "现在停止会取消当前任务。",
 		"shutdownChatStreamingTitlePlural": "{0} 个智能体仍在工作",
 		"shutdownChatStreamingDetailPlural": "现在停止会取消它们当前的任务。",
-		"shutdownChatStreamingAutoContinueDetail": "你重新打开时，Cursor 会恢复此智能体。",
-		"shutdownChatStreamingAutoContinueDetailPlural": "你重新打开时，Cursor 会恢复这些智能体。",
+		"shutdownChatStreamingAutoContinueDetail": "你重新打开时，{0} 会恢复此智能体。",
+		"shutdownChatStreamingAutoContinueDetailPlural": "你重新打开时，{0} 会恢复这些智能体。",
 		"shutdownChatStreamingAutoContinueToggle": "自动恢复智能体",
 		"shutdownChatStreamingAutoContinueTogglePlural": "自动恢复这些智能体",
 		"shutdownQuit": "退出",
@@ -199,7 +199,8 @@
 		"zenMode.hideActivityBar": "控制打开禅模式时是否同时隐藏工作台左侧或右侧的活动栏。",
 		"zenMode.hideLineNumbers": "控制打开禅模式时是否同时隐藏编辑器行号。",
 		"zenMode.restore": "控制窗口若是在禅模式下退出的，是否应恢复到禅模式。",
-		"zenMode.silentNotifications": "控制处于禅模式时是否应启用通知勿扰模式。如果为 true，则只会弹出错误通知。"
+		"zenMode.silentNotifications": "控制处于禅模式时是否应启用通知勿扰模式。如果为 true，则只会弹出错误通知。",
+		"appName": "\"${appName}\": 例如 {0}。"
 	},
 	"vs/workbench/common/contextkeys": {
 		"isGlass": "工作台是否处于 Glass 模式",
@@ -246,9 +247,14 @@
 		"agentSidebarUpdateButton.restartOnlyTooltip": "更新已就绪 — 单击以重启",
 		"agentSidebarUpdateButton.restartOnlyTooltipWithVersion": "更新到 {0} 已就绪 — 单击以重启",
 		"agentSidebarUpdateButton.tooltipWithVersion": "更新到 {0} 将在退出时应用 — 单击以立即重启",
-		"agentSidebarUpdateButton.installingTooltip": "正在安装更新 — Cursor 将自动关闭并重新打开。",
-		"agentSidebarUpdateButton.label": "更新: 重启 Cursor 以安装",
-		"agentSidebarUpdateButton.installingLabel": "正在安装更新"
+		"agentSidebarUpdateButton.installingTooltip": "正在安装更新 — {0} 将自动关闭并重新打开。",
+		"agentSidebarUpdateButton.label": "更新: 重启 {0} 以安装",
+		"agentSidebarUpdateButton.installingLabel": "正在安装更新",
+		"agentSidebarUpdateButton.restartPillText": "重启",
+		"agentSidebarUpdateButton.restartingPillText": "正在重启",
+		"agentSidebarUpdateButton.restartingLabel": "正在重启 {0}",
+		"agentSidebarUpdateButton.restartingToMoltenTooltip": "正在重启 {0} 以切换到测试版智能体窗口",
+		"agentSidebarUpdateButton.restartingToBuiltInTooltip": "正在重启 {0} 以切换到内置智能体窗口"
 	},
 	"vs/workbench/contrib/agents/common/agentsContextKeys": {
 		"agentsPaneFocused": "智能体侧边栏当前是否具有键盘焦点。",
@@ -262,8 +268,6 @@
 		"http2.disable.title": "禁用 HTTP/2.0",
 		"http2.disable.description": "对所有请求禁用 HTTP/2，改用 HTTP/1.1。这会增加资源占用和延迟，但在阻止 HTTP/2 的企业代理后面很有用。",
 		"debug.timeoutPrevention.title": "防止调试超时",
-		"instantGrep.indexRepositories.title": "为即时 Grep 索引存储库",
-		"instantGrep.indexRepositories.policyDescription": "控制 Cursor 是否在本地为即时 Grep 索引存储库。禁用此策略可防止在受管理设备上索引存储库。",
 		"cursor.composer.planTextSizeScale.matchAgentChat": "匹配智能体聊天",
 		"cursor.composer.planTextSizeScale.small": "小",
 		"cursor.composer.planTextSizeScale.large": "大",
@@ -278,8 +282,8 @@
 	"vs/workbench/contrib/airlock/electron-sandbox/airlockAttach": {
 		"airlockCanStartRepo": "此窗口是否可以启动其存储库的 Airlock 容器",
 		"airlockCanConnect": "此窗口是否可以打开 Airlock",
-		"airlock.devContainersMissing": "Cursor 通过开发容器扩展打开 Airlock，但该扩展未安装或已关闭。",
-		"airlock.repo.untrusted": "在 Cursor 运行 Airlock 启动命令之前，请先信任此文件夹。",
+		"airlock.devContainersMissing": "{0} 通过开发容器扩展打开 Airlock，但该扩展未安装或已关闭。",
+		"airlock.repo.untrusted": "在 {1} 于该处运行 Airlock 启动命令之前，请先信任 {0}。打开该文件夹并信任它，或在“管理工作区信任”中添加它。",
 		"airlock.repo.startingTitle": "正在启动 Airlock 容器",
 		"airlock.repo.started": "Airlock 容器 {0} 正在运行",
 		"airlock.connectAction": "连接到 Airlock",
@@ -386,7 +390,7 @@
 		"chimes.unsafePath.unc": "出于安全原因，自定义提示音路径不能是网络 (UNC) 路径。请使用本地文件路径。",
 		"chimes.unsafePath.url": "自定义提示音路径不能是 URL。请使用本地文件路径。",
 		"chimes.untrustedWorkspace": "已在工作区设置中配置自定义提示音，但工作区不受信任。将忽略自定义声音。",
-		"chimes.source": "Cursor Chimes"
+		"chimes.source": "{0} Chimes"
 	},
 	"vs/workbench/contrib/composer/browser/cmdKRedirectToChatAction": {
 		"cmdKRedirectToChat.toast": "{0}+K 现在会将所选内容添加到智能体，与 {0}+L 相同。内联编辑和终端中的 {0}+K 已停用。",
@@ -399,8 +403,8 @@
 		"composer.promptEditInput.ariaLabel": "编辑消息"
 	},
 	"vs/workbench/contrib/composer/browser/composer.contribution": {
-		"cursor ai": "Cursor AI",
-		"composerEditor": "Cursor AI"
+		"cursor ai": "{0} AI",
+		"composerEditor": "{0} AI"
 	},
 	"vs/workbench/contrib/composer/browser/composerAccessibilityAnnouncer.contribution": {
 		"composerAccessibility.error": "智能体错误: {0}",

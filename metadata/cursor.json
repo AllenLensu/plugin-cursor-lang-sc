@@ -1,9 +1,9 @@
 {
-	"cursorVersion": "3.31.15",
-	"vscodeVersion": "1.128.0",
-	"commit": "3eb8c13390837371c7c2f2013dc57fdbc802c750",
-	"keyCount": 13798,
-	"messageCount": 14600,
+	"cursorVersion": "3.32.10",
+	"vscodeVersion": "1.147.0",
+	"commit": "0d3b96e46ce65af82ed74bc6f14883b33e1a0590",
+	"keyCount": 13810,
+	"messageCount": 14611,
 	"duplicateCount": 11,
 	"duplicates": [
 		{
@@ -29,12 +29,12 @@
 		{
 			"module": "vs/workbench/electron-sandbox/actions/installActions",
 			"key": "successIn",
-			"english": "Successfully installed Cursor in the 'code' command."
+			"english": "Successfully installed {0} in the 'code' command."
 		},
 		{
 			"module": "vs/workbench/electron-sandbox/actions/installActions",
 			"key": "successIn",
-			"english": "Successfully unlinked Cursor from the 'code' command."
+			"english": "Successfully unlinked {0} from the 'code' command."
 		},
 		{
 			"module": "vs/workbench/electron-sandbox/actions/installActions",
@@ -62,7 +62,7 @@
 			"english": "Feature flag \"{0}\" overridden to disabled"
 		}
 	],
-	"moduleCount": 1369,
+	"moduleCount": 1370,
 	"order": [
 		"vs/base/browser/ui/actionbar/actionViewItems",
 		"vs/base/browser/ui/button/button",
@@ -290,7 +290,6 @@
 		"vs/glass/browser/components/editor-panel/library/library-rename.react",
 		"vs/glass/browser/components/editor-panel/library/library-toolbar.react",
 		"vs/glass/browser/components/editor-panel/library/library-view.react",
-		"vs/glass/browser/components/editor-panel/main-bot-tasks-tab/main-bot-tasks-tab-content.react",
 		"vs/glass/browser/components/editor-panel/pr-index-page/pr-index-row.react",
 		"vs/glass/browser/components/editor-panel/pr-index-page/pr-index-tray-chrome.react",
 		"vs/glass/browser/components/editor-panel/pr-index-page/pr-index-view.react",
@@ -309,10 +308,8 @@
 		"vs/glass/browser/components/editor-panel/project-document/project-task-chips.react",
 		"vs/glass/browser/components/editor-panel/project-document/project-task-context-menu.react",
 		"vs/glass/browser/components/editor-panel/project-document/project-task-filter-fields",
-		"vs/glass/browser/components/editor-panel/project-document/project-task-media.react",
 		"vs/glass/browser/components/editor-panel/project-document/project-task-owner-avatar.react",
 		"vs/glass/browser/components/editor-panel/project-document/project-task-owner-menu.react",
-		"vs/glass/browser/components/editor-panel/project-document/project-task-owners-provider.react",
 		"vs/glass/browser/components/editor-panel/project-document/project-task-owners",
 		"vs/glass/browser/components/editor-panel/project-document/project-task-pull-request-stack.react",
 		"vs/glass/browser/components/editor-panel/project-document/project-task-rename-dialog.react",
@@ -350,7 +347,6 @@
 		"vs/glass/browser/components/glass-sidebar/components/sidebar-agent-row.react",
 		"vs/glass/browser/components/glass-sidebar/hooks/use-project-agents-section.react",
 		"vs/glass/browser/components/glass-sidebar/utils/projects-credit-card",
-		"vs/glass/browser/components/main-bot/main-bot-header-actions.react",
 		"vs/glass/browser/components/project-bot/project-appearance-panel.react",
 		"vs/glass/browser/components/project-bot/project-appearance-popover.react",
 		"vs/glass/browser/components/project-bot/project-bot-picker.react",
@@ -360,6 +356,7 @@
 		"vs/glass/browser/components/task-views/task-board.react",
 		"vs/glass/browser/components/task-views/task-status-icon-picker.react",
 		"vs/glass/browser/components/task-views/task-status-menu.react",
+		"vs/glass/browser/contributions/glassRemoteControlStartBlockContribution",
 		"vs/glass/browser/hooks/command-handlers/agent.react",
 		"vs/glass/browser/hooks/command-handlers/edit.react",
 		"vs/glass/browser/hooks/use-agent-followup.react",
@@ -408,6 +405,7 @@
 		"vs/platform/actionWidget/browser/actionList",
 		"vs/platform/actionWidget/browser/actionWidget",
 		"vs/platform/agentHarness/common/agentHostUpdate.config.contribution",
+		"vs/platform/agentHarness/common/instantGrep.config.contribution",
 		"vs/platform/airlock/common/airlock",
 		"vs/platform/airlock/common/airlockConfig",
 		"vs/platform/airlock/common/airlockRepo",
@@ -501,6 +499,7 @@
 		"vs/platform/update/common/update",
 		"vs/platform/update/common/updateActionTitles",
 		"vs/platform/update/common/updateClientOrOpenUrl",
+		"vs/platform/update/electron-main/darwinLegacyBundleCheck",
 		"vs/platform/update/electron-main/updateService.darwin",
 		"vs/platform/update/electron-main/updateService.linux",
 		"vs/platform/userDataProfile/common/userDataProfile",
@@ -538,6 +537,7 @@
 		"vs/workbench/api/common/extHostExtensionService",
 		"vs/workbench/api/common/extHostLanguageFeatures",
 		"vs/workbench/api/common/extHostLogService",
+		"vs/workbench/api/common/extHostMcp",
 		"vs/workbench/api/common/extHostNotebook",
 		"vs/workbench/api/common/extHostStatusBar",
 		"vs/workbench/api/common/extHostTelemetry",
@@ -1308,6 +1308,7 @@
 		"vs/workbench/electron-sandbox/desktop.main",
 		"vs/workbench/electron-sandbox/glass.main",
 		"vs/workbench/electron-sandbox/parts/dialogs/dialogHandler",
+		"vs/workbench/electron-sandbox/shellCommandMigration",
 		"vs/workbench/electron-sandbox/window",
 		"vs/workbench/services/actions/common/menusExtensionPoint",
 		"vs/workbench/services/agent/browser/agentExecProviderService",
@@ -1628,7 +1629,7 @@
 			"doNotAskAgainRemote": "Allow opening remote paths without asking"
 		},
 		"vs/code/electron-main/main": {
-			"localModeDataImportError": "Cursor Data Import Failed",
+			"localModeDataImportError": "{0} Data Import Failed",
 			"mainLog": "Main",
 			"orbitDeploymentInvalid": "{0} can't start",
 			"orbitDeploymentUnsetDetail": "{0} needs a managed deployment, and this device has none. Contact your IT administrator.",
@@ -3440,6 +3441,7 @@
 			"glass.agentMetadataTooltip.protocolWsl": "WSL",
 			"glass.agentMetadataTooltip.protocolDevContainer": "Dev Container",
 			"glass.agentMetadataTooltip.protocolContainer": "Container",
+			"glass.agentMetadataTooltip.moreFolders": "+{0} more",
 			"glass.agentMetadataTooltip.remote": "Remote",
 			"glass.agentMetadataTooltip.draft": "Draft",
 			"glass.agentMetadataTooltip.cloud": "Cloud"
@@ -3468,9 +3470,9 @@
 			"glass.allowedMachines.rowAriaLabel": "{0}, {1}"
 		},
 		"vs/glass/browser/components/agent-panel/allowed-machines/allowed-machines-segment.react": {
+			"glass.allowedMachines.runOnMenuLabel": "Run on",
 			"glass.allowedMachines.environmentsMenu": "Environments",
 			"glass.allowedMachines.machinesMenu": "Machines",
-			"glass.allowedMachines.runOnMenuLabel": "Run on",
 			"glass.allowedMachines.searchEnvironmentsPlaceholder": "Search environments and repos",
 			"glass.allowedMachines.searchPlaceholder": "Search machines and pools"
 		},
@@ -3511,23 +3513,23 @@
 			"glass.allowedMachines.updateFailed": "Could not update allowed machines. Please try again."
 		},
 		"vs/glass/browser/components/agent-panel/apps-growth/deploy-intent-pill.react": {
-			"glass.agentPanel.deployIntentTray.title": "Build Live, Shareable Apps with Cursor",
+			"glass.agentPanel.deployIntentTray.title": "Build Live, Shareable Apps with {0}",
 			"glass.agentPanel.deployIntentPill.dismiss": "Dismiss",
-			"glass.agentPanel.deployIntentPill.label": "Deploy with Cursor",
-			"glass.agentPanel.deployIntentTray.body": "Ask Cursor to build an App in your prompt and it will scaffold a web app, deploy it, and return with a shareable link.",
+			"glass.agentPanel.deployIntentPill.label": "Deploy with {0}",
+			"glass.agentPanel.deployIntentTray.body": "Ask {0} to build an App in your prompt and it will scaffold a web app, deploy it, and return with a shareable link.",
 			"glass.agentPanel.deployIntentTray.dismiss": "Dismiss",
 			"glass.agentPanel.deployIntentTray.deploy": "Build an App"
 		},
 		"vs/glass/browser/components/agent-panel/apps-growth/local-deploy-tray.react": {
 			"glass.localDeployTray.title": "Deploy a live, shareable app",
-			"glass.localDeployTray.body": "Cursor can publish your work as a live, shareable web app. The publish workflow runs in the cloud, and we'll move this chat there with all its work.",
+			"glass.localDeployTray.body": "{0} can publish your work as a live, shareable web app. The publish workflow runs in the cloud, and we'll move this chat there with all its work.",
 			"glass.localDeployTray.dismiss": "Dismiss",
 			"glass.localDeployTray.deploying": "Deploying…",
 			"glass.localDeployTray.deploy": "Deploy the app"
 		},
 		"vs/glass/browser/components/agent-panel/apps-growth/presend-deploy-tray.react": {
 			"glass.presendDeployTray.title": "Build a Live, Shareable App",
-			"glass.presendDeployTray.body": "Cursor can build and deploy apps with a shareable link. Just be explicit that Cursor should build an App in your prompt.",
+			"glass.presendDeployTray.body": "{0} can build and deploy apps with a shareable link. Just be explicit that {0} should build an App in your prompt.",
 			"glass.presendDeployTray.dismiss": "Dismiss",
 			"glass.presendDeployTray.deploy": "Build an App"
 		},
@@ -3732,7 +3734,7 @@
 		},
 		"vs/glass/browser/components/agent-panel/deploy-prototype-nudge/deploy-prototype-nudge-tray.react": {
 			"glass.deployPrototypeNudge.title": "Deploy your work",
-			"glass.deployPrototypeNudge.body": "Cursor can turn prototypes into shareable, live web apps. Just ask Cursor to deploy the app or click Deploy App here.",
+			"glass.deployPrototypeNudge.body": "{0} can turn prototypes into shareable, live web apps. Just ask {0} to deploy the app or click Deploy App here.",
 			"glass.deployPrototypeNudge.dismiss": "Dismiss",
 			"glass.deployPrototypeNudge.deploy": "Deploy App"
 		},
@@ -3839,18 +3841,6 @@
 		"vs/glass/browser/components/editor-panel/library/library-view.react": {
 			"glass.project.library.emptyTitle": "No files yet",
 			"glass.project.library.searching": "Searching files"
-		},
-		"vs/glass/browser/components/editor-panel/main-bot-tasks-tab/main-bot-tasks-tab-content.react": {
-			"glass.mainBot.tasks.find": "Find tasks",
-			"glass.mainBot.tasks.views": "Task views",
-			"glass.mainBot.tasks.title": "Tasks",
-			"glass.mainBot.tasks.noProjectsBody": "Start a Project and the tasks it tracks show up here",
-			"glass.mainBot.tasks.noProjectsTitle": "No Projects yet",
-			"glass.mainBot.tasks.loading": "Loading tasks",
-			"glass.mainBot.tasks.emptyBody": "Tasks your Projects track show up here",
-			"glass.mainBot.tasks.emptyTitle": "Nothing to track yet",
-			"glass.mainBot.tasks.failedOne": "Couldn't load the tasks of {0}. Retrying in the background.",
-			"glass.mainBot.tasks.failedMany": "Couldn't load the tasks of {0} Projects: {1}. Retrying in the background."
 		},
 		"vs/glass/browser/components/editor-panel/pr-index-page/pr-index-row.react": {
 			"glass.project.prsTray.addPrToChat": "Add {0} to chat"
@@ -3978,15 +3968,6 @@
 			"glass.project.filter.tags": "Tags",
 			"glass.project.filter.tag.none": "None"
 		},
-		"vs/glass/browser/components/editor-panel/project-document/project-task-media.react": {
-			"glass.project.taskMedia.previous": "Previous",
-			"glass.project.taskMedia.next": "Next",
-			"glass.project.taskMedia.count": "{0} of {1}",
-			"glass.project.taskMedia.unavailable": "Can't load this file here",
-			"glass.project.taskMedia.missing": "Moved or deleted: {0}",
-			"glass.project.taskMedia.open": "Open {0}",
-			"glass.project.taskMedia.more": "+{0}"
-		},
 		"vs/glass/browser/components/editor-panel/project-document/project-task-owner-avatar.react": {
 			"glass.project.taskOwner.none": "No owner yet",
 			"glass.project.taskOwner.label": "Owner: {0}"
@@ -3995,9 +3976,6 @@
 			"glass.project.taskOwner.change": "Change owner",
 			"glass.project.taskOwner.unassigned": "None",
 			"glass.project.taskOwner.none": "No owner yet"
-		},
-		"vs/glass/browser/components/editor-panel/project-document/project-task-owners-provider.react": {
-			"glass.project.taskOwner.unnamed": "Teammate"
 		},
 		"vs/glass/browser/components/editor-panel/project-document/project-task-owners": {
 			"glass.project.taskOwner.absentName": "{0} (not in this Project)",
@@ -4098,12 +4076,6 @@
 			"glass.ftuxWizard.loading.text": "Getting things ready"
 		},
 		"vs/glass/browser/components/ftux-wizard/ftux-wizard-overlay.react": {
-			"glass.ftuxWizard.userRule.role.named": "The user's name is {0}. Their role is {1}.",
-			"glass.ftuxWizard.userRule.role": "The user's role is {0}.",
-			"glass.ftuxWizard.purpose.userRule.purpose.coding": "They prefer coding workflows: working directly in code to create, debug, and iterate.",
-			"glass.ftuxWizard.purpose.userRule.purpose.tasks": "They prefer task workflows: researching, planning, and completing tasks across apps or the computer.",
-			"glass.ftuxWizard.purpose.userRule.full.named": "The user's name is {0}. Their role is {1}. {2}",
-			"glass.ftuxWizard.purpose.userRule.full": "The user's role is {0}. {1}",
 			"glass.ftuxWizard.ariaLabel": "First-time setup"
 		},
 		"vs/glass/browser/components/ftux-wizard/ftux-wizard-plugin-card.react": {
@@ -4127,23 +4099,14 @@
 		},
 		"vs/glass/browser/components/ftux-wizard/ftux-wizard-welcome-step.react": {
 			"glass.ftuxWizard.welcome.focus.engineering": "Engineering",
-			"glass.ftuxWizard.welcome.role.softwareEngineer": "Software engineer",
 			"glass.ftuxWizard.welcome.focus.design": "Design",
-			"glass.ftuxWizard.welcome.role.designer": "Designer",
 			"glass.ftuxWizard.welcome.focus.product": "Product",
-			"glass.ftuxWizard.welcome.role.productManager": "Product manager",
 			"glass.ftuxWizard.welcome.focus.research": "Research",
-			"glass.ftuxWizard.welcome.role.researcher": "Researcher",
 			"glass.ftuxWizard.welcome.focus.dataScience": "Data science",
-			"glass.ftuxWizard.welcome.role.dataScientist": "Data scientist",
 			"glass.ftuxWizard.welcome.focus.schoolwork": "Schoolwork",
-			"glass.ftuxWizard.welcome.role.student": "Student",
 			"glass.ftuxWizard.welcome.focus.marketing": "Marketing",
-			"glass.ftuxWizard.welcome.role.marketer": "Marketer",
 			"glass.ftuxWizard.welcome.focus.operations": "Operations",
-			"glass.ftuxWizard.welcome.role.operations": "Operations",
 			"glass.ftuxWizard.welcome.focus.somethingElse": "Something else",
-			"glass.ftuxWizard.welcome.role.somethingElse": "Something else",
 			"glass.ftuxWizard.welcome.question": "Which best describes your work?"
 		},
 		"vs/glass/browser/components/ftux-wizard/use-ftux-connect-step.react": {
@@ -4196,12 +4159,9 @@
 			"glass.projectsCredit.teamAmount": "You have {0} in credits to try it.",
 			"glass.projectsCredit.teamAction": "Try Multiplayer Projects",
 			"glass.projectsCredit.personalTitle": "{0} Credit for Projects",
-			"glass.projectsCredit.personalDescription": "Projects are AI teammates in Cursor that run many tasks at once and get smarter over time.",
+			"glass.projectsCredit.personalDescription": "Projects are AI teammates in {0} that run many tasks at once and get smarter over time.",
 			"glass.projectsCredit.personalAmount": "You have {0} to get started.",
 			"glass.projectsCredit.personalAction": "Get Started"
-		},
-		"vs/glass/browser/components/main-bot/main-bot-header-actions.react": {
-			"glass.mainBot.chatActions": "Chat actions"
 		},
 		"vs/glass/browser/components/project-bot/project-appearance-panel.react": {
 			"glass.projectBot.editAppearance": "Edit Appearance",
@@ -4231,6 +4191,7 @@
 			"glass.projectBot.color.red": "Red",
 			"glass.projectBot.color.orange": "Orange",
 			"glass.projectBot.color.yellow": "Yellow",
+			"glass.projectBot.color.lemon": "Lemon",
 			"glass.projectBot.color.green": "Green",
 			"glass.projectBot.color.cyan": "Cyan",
 			"glass.projectBot.color.blue": "Blue",
@@ -4271,6 +4232,10 @@
 			"glass.taskViews.changeStatus": "Change status",
 			"glass.taskViews.changeTaskStatus": "Change status of \"{0}\": {1}"
 		},
+		"vs/glass/browser/contributions/glassRemoteControlStartBlockContribution": {
+			"glass.remoteControl.startBlock.cliTooOld": "Remote Control can't start on this computer. Its Cursor Agent CLI is too old to keep its key private, and no newer build is available yet. Remote Control will start once one is.",
+			"glass.remoteControl.startBlock.cliOverrideTooOld": "Remote Control can't start on this computer. The Cursor Agent CLI set in CURSOR_AGENT_WORKER_CLI_PATH is too old to keep its key private. Point it at a newer build or unset it."
+		},
 		"vs/glass/browser/hooks/command-handlers/agent.react": {
 			"glass.buildAppFromAd.title": "Build an App"
 		},
@@ -4288,12 +4253,12 @@
 			"glassFollowupSubmitWithoutClearingPromptFailed": "Failed to send follow-up."
 		},
 		"vs/glass/browser/hooks/use-connect-vercel-pill.react": {
-			"glass.deployWithCursorPill.label": "Deploy with Cursor"
+			"glass.deployWithCursorPill.label": "Deploy with {0}"
 		},
 		"vs/glass/browser/hooks/use-continue-chat-in-project.react": {
 			"glass.projects.continueInProject.bringingIn": "Bringing in {0}…",
 			"glass.projects.continueInProject.startWorker.title": "Start a worker on this computer?",
-			"glass.projects.continueInProject.startWorker.description": "To continue this chat in a Project, Cursor starts a background worker on this computer for the chat's folder. The chat keeps running here, in the same folder.",
+			"glass.projects.continueInProject.startWorker.description": "To continue this chat in a Project, {0} starts a background worker on this computer for the chat's folder. The chat keeps running here, in the same folder.",
 			"glass.projects.continueInProject.startWorker.confirm": "Start Worker and Continue",
 			"glass.projects.continueInProject.startWorker.cancel": "Cancel"
 		},
@@ -4423,7 +4388,7 @@
 		},
 		"vs/glass/browser/services/file-tree/glass-reveal-file-in-os": {
 			"glass.binaryFileNotSupported": "Binary file is not supported",
-			"glass.pdfTooLargeToPreview": "PDF is too large to preview in Cursor (25 MB limit)",
+			"glass.pdfTooLargeToPreview": "PDF is too large to preview in {0} (25 MB limit)",
 			"glassRevealInWindows": "Reveal in File Explorer",
 			"glassRevealInMac": "Reveal in Finder",
 			"glassOpenContainer": "Open Containing Folder"
@@ -4440,7 +4405,7 @@
 		"vs/glass/browser/services/glass-agent-migration-service": {
 			"glass.agentMigrationService.failed.cloudDataUnavailable": "This agent couldn't be moved because some cloud agent data was unavailable. Reload the window and try again.",
 			"glass.agentMigrationService.failed.missingBlob": "Some of this agent's chat history is missing from this computer, so it couldn't be moved. Keep using it here, or start a new agent to continue somewhere else.",
-			"glass.agentMigrationService.failed.serverUnavailable": "Cursor's servers were temporarily unavailable ({0}). Try again in a moment.",
+			"glass.agentMigrationService.failed.serverUnavailable": "{0}'s servers were temporarily unavailable ({1}). Try again in a moment.",
 			"glass.agentMigrationService.failed.requestFailed": "The request failed ({0})",
 			"glass.agentMigrationService.failed.githubAccessCheck": "Couldn't check GitHub access for this repository. Check your connection and try again.",
 			"glass.migration.midTurn.defaultTarget": "the new location",
@@ -4461,7 +4426,7 @@
 			"glass.migration.uncommitted.exclude": "Exclude Changes",
 			"glass.migration.uncommitted.cancel": "Cancel",
 			"glass.migration.gitTransferFailure.title": "Move Conversation Without Local Git State?",
-			"glass.migration.gitTransferFailure.description": "Cursor couldn’t transfer local Git state{0}.\n\n{1}\n\nLocal branches, commits, and uncommitted changes will remain on this machine and may not be available to the cloud agent.",
+			"glass.migration.gitTransferFailure.description": "{0} couldn’t transfer local Git state{1}.\n\n{2}\n\nLocal branches, commits, and uncommitted changes will remain on this machine and may not be available to the cloud agent.",
 			"glass.migration.gitTransferFailure.continue": "Continue anyway",
 			"glass.migration.gitTransferFailure.cancel": "Cancel",
 			"glass.migration.worktreeToLocal.uncommitted.title": "Local changes detected",
@@ -4476,6 +4441,7 @@
 			"glass.allowedMachines.addFolder.startError": "Couldn't start a worker for {0}",
 			"glass.allowedMachines.addFolder.folderMissing": "Couldn't find that folder. Choose another one.",
 			"glass.allowedMachines.addFolder.folderNotLocal": "Choose a folder on this computer.",
+			"glass.allowedMachines.addFolder.cliTooOld": "Couldn't start a worker for {0}. Its Cursor Agent CLI is too old to keep its key private.",
 			"glass.allowedMachines.addFolder.unsupportedFolderPath": "Workers can't use this folder yet: its full path has characters the worker can't send. Choose a folder whose path uses only English letters and Western European accented letters, such as é or ü.",
 			"glass.allowedMachines.addFolder.notConnected": "{0} couldn't connect. Check your network and try again.",
 			"glass.allowedMachines.addFolder.limitReached": "Your account has reached its worker limit. Remove a worker and try again.",
@@ -4545,6 +4511,8 @@
 			"glassCopyRemoteFileLink": "Copy Remote URL"
 		},
 		"vs/glass/browser/utils/agent-chat-actions": {
+			"glass.agentPanel.copyMessagesProgress": "Copying transcript…",
+			"glass.agentPanel.copyMessagesFailed": "Failed to copy transcript: {0}",
 			"glass.agentPanel.copyMessagesEmpty": "No messages to copy",
 			"glass.agentPanel.copyMessagesCopied": "Copied messages to clipboard"
 		},
@@ -4680,8 +4648,7 @@
 			"test": "Test",
 			"file": "File",
 			"preferences": "Preferences",
-			"developer": "Developer",
-			"cursor": "Cursor"
+			"developer": "Developer"
 		},
 		"vs/platform/actions/browser/menuEntryActionViewItem": {
 			"titleAndKb": "{0} ({1})",
@@ -4718,10 +4685,15 @@
 		},
 		"vs/platform/agentHarness/common/agentHostUpdate.config.contribution": {
 			"agentHostConfigurationTitle": "Agent Host",
-			"agentHostUpdateMode": "Controls whether the agent that runs local agent turns can be updated between Cursor releases. Updates are downloaded from a Cursor service and applied at the next agent turn.",
-			"agentHostUpdateMode.default": "Follow 'update.mode': updated unless Cursor updates are turned off.",
-			"agentHostUpdateMode.on": "Update even when Cursor updates are turned off.",
-			"agentHostUpdateMode.none": "Never update; keep the agent packed into this Cursor release."
+			"agentHostUpdateMode": "Controls whether the agent that runs local agent turns can be updated between Grok Build releases. Updates are downloaded from a Cursor service and applied at the next agent turn.",
+			"agentHostUpdateMode.default": "Follow 'update.mode': updated unless Grok Build updates are turned off.",
+			"agentHostUpdateMode.on": "Update even when Grok Build updates are turned off.",
+			"agentHostUpdateMode.none": "Never update; keep the agent packed into this Grok Build release."
+		},
+		"vs/platform/agentHarness/common/instantGrep.config.contribution": {
+			"cursorGeneralConfigurationTitle": "General",
+			"instantGrep.indexRepositories.title": "Index Repositories for Instant Grep",
+			"instantGrep.indexRepositories.policyDescription": "Controls whether Grok Build indexes repositories locally for Instant Grep. Disable this policy to prevent repository indexing on managed devices."
 		},
 		"vs/platform/airlock/common/airlock": {
 			"airlock.disabled.orbit": "Your organization's policy doesn't set an Airlock container.",
@@ -4751,23 +4723,23 @@
 			"airlock.sandboxConfig.startCommand": "start_command in {0} must be one command, written as a string."
 		},
 		"vs/platform/airlock/electron-main/airlockMainService": {
-			"airlock.prepareThrew": "Cursor couldn't get the airlock ready: {0}",
-			"airlock.containerChanged": "Your organization's policy named a different Airlock container while Cursor was getting it ready.",
+			"airlock.prepareThrew": "{1} couldn't get the airlock ready: {0}",
+			"airlock.containerChanged": "Your organization's policy named a different Airlock container while {0} was getting it ready.",
 			"airlock.engineUnavailable": "{0} isn't available: {1}",
-			"airlock.repo.startThrew": "Cursor couldn't start the repo's Airlock container: {0}",
+			"airlock.repo.startThrew": "{1} couldn't start the repo's Airlock container: {0}",
 			"airlock.repo.noStartCommand": "No sandbox file of {0} names a start_command ({1}), so start its Airlock container yourself.",
 			"airlock.repo.starting": "Starting the Airlock container for {0}…",
 			"airlock.repo.startFailed": "The start command in {0} failed: {1}",
 			"airlock.repo.startTimeout": "The start command in {0} finished, but container {1} wasn't running {2} seconds later.",
-			"airlock.repo.settingsChanged": "Your organization's Airlock settings changed while Cursor was getting the container ready.",
+			"airlock.repo.settingsChanged": "Your organization's Airlock settings changed while {0} was getting the container ready.",
 			"airlock.wrapperNotExe": "Dev Containers can't run IT's engine wrapper {0}. On Windows, the airlock's engine must be docker, podman, or an .exe.",
 			"airlock.dockerPathConflict": "Your {0} setting in {1} points Dev Containers at a different container engine than the airlock's. Remove it, then connect again.",
-			"airlock.devContainersSetup": "Cursor couldn't get Dev Containers ready to open the airlock: {0}"
+			"airlock.devContainersSetup": "{1} couldn't get Dev Containers ready to open the airlock: {0}"
 		},
 		"vs/platform/airlock/node/airlockDevContainers": {
-			"airlock.nameConfigInvalid": "Cursor can't get Dev Containers ready to open the airlock, because Dev Containers' settings for the container aren't a JSON object. Fix or delete {0}, then try again.",
-			"airlock.nameConfigRemoteEnvInvalid": "Cursor can't get Dev Containers ready to open the airlock, because remoteEnv in Dev Containers' settings for the container isn't a JSON object. Fix or delete {0}, then try again.",
-			"airlock.settingsInvalid": "Cursor can't point Dev Containers at the airlock's container engine, because {0} isn't valid JSON. Fix it, then try again."
+			"airlock.nameConfigInvalid": "{1} can't get Dev Containers ready to open the airlock, because Dev Containers' settings for the container aren't a JSON object. Fix or delete {0}, then try again.",
+			"airlock.nameConfigRemoteEnvInvalid": "{1} can't get Dev Containers ready to open the airlock, because remoteEnv in Dev Containers' settings for the container isn't a JSON object. Fix or delete {0}, then try again.",
+			"airlock.settingsInvalid": "{1} can't point Dev Containers at the airlock's container engine, because {0} isn't valid JSON. Fix it, then try again."
 		},
 		"vs/platform/airlock/node/airlockEngine": {
 			"airlock.engineNotFound": "{0} isn't on the PATH.",
@@ -4776,7 +4748,7 @@
 			"airlock.exitCode": "exit code {0}"
 		},
 		"vs/platform/airlock/node/airlockHooks": {
-			"airlock.hook.failedToStart": "Cursor couldn't run the {0} hook at {1}: {2}",
+			"airlock.hook.failedToStart": "{3} couldn't run the {0} hook at {1}: {2}",
 			"airlock.hook.timedOut": "The {0} hook didn't finish within {1} seconds.",
 			"airlock.hook.failed": "The {0} hook failed: {1}",
 			"airlock.hook.signal": "The {0} hook was stopped by {1}.",
@@ -4800,8 +4772,8 @@
 			"airlock.engineUnavailable": "{0} isn't available: {1}",
 			"airlock.engineFailed": "'{0} {1}' failed: {2}",
 			"airlock.progress.serverCheck": "Checking for the Cursor server…",
-			"airlock.serverCheckFailed": "Cursor couldn't check container {0} for its server: {1}",
-			"airlock.serverMissing": "Container {0} doesn't have the Cursor server this version of Cursor needs (commit {1}, {2}). Ask IT to stage it in ~/{3}/bin/{1}/ for the container user."
+			"airlock.serverCheckFailed": "{2} couldn't check container {0} for its server: {1}",
+			"airlock.serverMissing": "Container {0} doesn't have the Cursor server this version of {4} needs (commit {1}, {2}). Ask IT to stage it in ~/{3}/bin/{1}/ for the container user."
 		},
 		"vs/platform/browserView/electron-sandbox/externalSchemeConfirmation": {
 			"browserView.openExternalLinkOpen": "&&Open",
@@ -4943,9 +4915,11 @@
 			"deprecatedArgument": "Option '{0}' is deprecated: {1}",
 			"unknownSubCommandOption": "Warning: '{0}' is not in the list of known options for subcommand '{1}'",
 			"unknownOption": "Warning: '{0}' is not in the list of known options, but still passed to Electron/Chromium.",
-			"gotoValidation": "Arguments in `--goto` mode should be in the format of `FILE(:LINE(:CHARACTER))`."
+			"gotoValidation": "Arguments in `--goto` mode should be in the format of `FILE(:LINE(:CHARACTER))`.",
+			"unhonoredBackendOverride": "Ignoring '--{0}': it works only in development builds."
 		},
 		"vs/platform/extensionManagement/common/abstractExtensionManagementService": {
+			"blocked extension version": "Can't install '{0}@{1}' extension: {2}",
 			"not allowed to install": "This extension cannot be installed because {0}",
 			"incompatible platform": "The '{0}' extension is not available in {1} for the {2}.",
 			"learn why": "Learn Why",
@@ -5121,10 +5095,12 @@
 		"vs/platform/files/node/diskFileSystemProvider": {
 			"fileExists": "File already exists",
 			"fileNotExists": "File does not exist",
+			"renameInUseError": "Unable to rename '{0}' to '{1}'. It may be in use by another application, or you may not have permission ({2}).",
+			"moveInUseError": "Unable to move '{0}' into '{1}'. It may be in use by another application, or you may not have permission ({2}).",
 			"moveError": "Unable to move '{0}' into '{1}' ({2}).",
 			"copyError": "Unable to copy '{0}' into '{1}' ({2}).",
-			"fileCopyErrorPathCase": "File cannot be copied to same path with different path case",
 			"fileMoveCopyErrorNotFound": "File to move/copy does not exist",
+			"fileCopyErrorPathCase": "File cannot be copied to same path with different path case",
 			"fileMoveCopyErrorExists": "File at target already exists and thus will not be moved/copied to unless overwrite is specified"
 		},
 		"vs/platform/history/browser/contextScopedHistoryWidget": {
@@ -5238,7 +5214,7 @@
 			"miRestartToUpdate": "Restart to &&Update"
 		},
 		"vs/platform/native/electron-main/nativeHostMainService": {
-			"cantRemoveVSCodeFromPath": "Unable to replace `code` with `Cursor` on the path.",
+			"cantRemoveVSCodeFromPath": "Unable to replace `code` with `{0}` on the path.",
 			"sourceMissing": "Unable to find shell script in '{0}'",
 			"warnEscalation": "{0} will now prompt with 'osascript' for Administrator privileges to install the shell command.",
 			"ok": "&&OK",
@@ -5344,8 +5320,8 @@
 		},
 		"vs/platform/storage/electron-main/storageMainService": {
 			"storageError.title": "Storage Error",
-			"storageError.message": "Cursor was unable to open local storage. Please reload or contact support.",
-			"storageError.detail": "Cursor may still be closing. Wait a moment, then restart.\n\nThis can also happen if the storage file is corrupted, moved, or there are permission issues.\n\nStorage path: {0}",
+			"storageError.message": "{0} was unable to open local storage. Please reload or contact support.",
+			"storageError.detail": "{1} may still be closing. Wait a moment, then restart.\n\nThis can also happen if the storage file is corrupted, moved, or there are permission issues.\n\nStorage path: {0}",
 			"storageError.restart": "Restart",
 			"storageError.quit": "Quit"
 		},
@@ -5774,6 +5750,8 @@
 		},
 		"vs/platform/update/common/update": {
 			"agentsWindowSwitchToMolten.tooltip": "Update to a faster experience",
+			"agentsWindowSwitchToMolten.restartLabel": "Restart {0} to switch to the beta Agents Window",
+			"agentsWindowSwitchToBuiltIn.restartLabel": "Restart {0} to switch to the built-in Agents Window",
 			"restartToUpdate.tooltip": "Restart to update"
 		},
 		"vs/platform/update/common/updateActionTitles": {
@@ -5790,6 +5768,17 @@
 			"updateClient.checking": "Checking for updates…",
 			"updateClient.downloading": "Downloading…",
 			"updateClient.installing": "Installing…"
+		},
+		"vs/platform/update/electron-main/darwinLegacyBundleCheck": {
+			"darwinLegacyBundle.message": "An older copy of {0} is also installed",
+			"darwinLegacyBundle.detail": "The copy at \"{0}\" uses the same settings and data as this one. Move it to the Trash? You can restore it from the Trash later.",
+			"darwinLegacyBundle.shellCommand": "The '{0}' shell command will open this copy instead.",
+			"darwinLegacyBundle.moveToTrash": "&&Move to Trash",
+			"darwinLegacyBundle.keepBoth": "&&Keep Both",
+			"darwinLegacyBundle.running": "Quit the older copy of {0} first",
+			"darwinLegacyBundle.runningDetail": "\"{0}\" is running. {1} will offer to move it to the Trash again the next time it starts.",
+			"darwinLegacyBundle.trashFailed": "The older copy could not be moved to the Trash",
+			"darwinLegacyBundle.trashFailedDetail": "You can drag \"{0}\" to the Trash in Finder."
 		},
 		"vs/platform/update/electron-main/updateService.darwin": {
 			"openLoginItemsSettings": "&&Open System Settings",
@@ -5926,7 +5915,7 @@
 		},
 		"vs/workbench/api/browser/mainThreadCursor": {
 			"extensionHostTimeoutTitle": "Workspace Disconnected",
-			"extensionHostTimeoutDetail": "Cursor lost connection to the workspace while starting tool execution. Reload the window and try again.",
+			"extensionHostTimeoutDetail": "{0} lost connection to the workspace while starting tool execution. Reload the window and try again.",
 			"sessionInitFailedTitle": "Agent Session Initialization Failed",
 			"sessionInitFailedDetail": "Failed to initialize the agent execution session. Please reload the window to continue.",
 			"sessionNotFoundTitle": "Agent Session Not Found",
@@ -6057,7 +6046,7 @@
 			"views.test": "Contributes views to Test container in the Activity bar",
 			"views.remote": "Contributes views to Remote container in the Activity bar. To contribute to this container, enableProposedApi needs to be turned on",
 			"views.contributed": "Contributes views to contributed views container",
-			"views.container.secondarySidebar.unsupported": "View containers cannot be contributed to the Secondary Side Bar in Cursor. It is reserved for Cursor's agent UI. Contribute to 'activitybar' or 'panel' instead.",
+			"views.container.secondarySidebar.unsupported": "View containers cannot be contributed to the Secondary Side Bar in {0}. It is reserved for {0}'s agent UI. Contribute to 'activitybar' or 'panel' instead.",
 			"viewcontainer requirearray": "views containers must be an array",
 			"requireidstring": "property `{0}` is mandatory and must be of type `string` with non-empty value. Only alphanumeric characters, '_', and '-' are allowed.",
 			"requirestring": "property `{0}` is mandatory and must be of type `string`",
@@ -6143,6 +6132,9 @@
 			"remote": "Extension Host (Remote)",
 			"worker": "Extension Host (Worker)",
 			"local": "Extension Host"
+		},
+		"vs/workbench/api/common/extHostMcp": {
+			"mcpUnsupportedDestination": "MCP server selected a non-http(s) destination ({0}), which is not allowed"
 		},
 		"vs/workbench/api/common/extHostNotebook": {
 			"err.readonly": "Unable to modify read-only file '{0}'",
@@ -6351,7 +6343,7 @@
 			"toggleCenteredLayout": "Toggle Centered Layout",
 			"maximizeChatSize": "Maximize Chat Size",
 			"toggleInlineDiffs": "Toggle Inline Diffs",
-			"openAgentLayoutQuickMenu": "Open Cursor Settings",
+			"openAgentLayoutQuickMenu": "Open {0}",
 			"openLayoutSwitcher": "Switch Layout",
 			"toggleSidebar": "Toggle Primary Side Bar Visibility",
 			"toggleStatusbar": "Toggle Status Bar Visibility",
@@ -6631,7 +6623,7 @@
 			"breadcrumbs": "Breadcrumbs"
 		},
 		"vs/workbench/browser/parts/editor/cloneRepoFromEmptyScreen": {
-			"emptyScreen.cloneRepo.gitUnavailable": "Clone repo needs Git. Install Git, or enable the built-in Git extension, then restart Cursor.",
+			"emptyScreen.cloneRepo.gitUnavailable": "Clone repo needs Git. Install Git, or enable the built-in Git extension, then restart {0}.",
 			"emptyScreen.cloneRepo.downloadGit": "Download Git"
 		},
 		"vs/workbench/browser/parts/editor/diffEditorCommands": {
@@ -7019,12 +7011,12 @@
 			"spacesAndTabsSize": "Spaces: {0} (Tab Size: {1})",
 			"tabSize": "Tab Size: {0}",
 			"currentProblem": "Current Problem",
-			"showLanguageExtensions": "Search Marketplace Extensions for '{0}'...",
 			"changeLanguageMode.description": "Change the language mode of the active text editor.",
 			"changeLanguageMode.arg.name": "The name of the language mode to change to.",
 			"languageDescription": "({0}) - Configured Language",
 			"languageDescriptionConfigured": "({0})",
 			"languagesPicks": "languages (identifier)",
+			"showLanguageExtensions": "Search Marketplace Extensions for '{0}'...",
 			"configureModeSettings": "Configure '{0}' language based settings...",
 			"configureAssociationsExt": "Configure File Association for '{0}'...",
 			"autoDetect": "Auto Detect",
@@ -7038,6 +7030,9 @@
 			"guessedEncoding": "Guessed from content",
 			"pickEncodingForReopen": "Select File Encoding to Reopen File",
 			"pickEncodingForSave": "Select File Encoding to Save with",
+			"reopenWithEncodingWarning": "Do you want to revert the active text editor and reopen with a different encoding?",
+			"reopenWithEncodingDetail": "This will discard any unsaved changes.",
+			"reopen": "Discard Changes and Reopen",
 			"changeMode": "Change Language Mode",
 			"changeEndOfLine": "Change End of Line Sequence",
 			"changeEncoding": "Change File Encoding"
@@ -7295,8 +7290,8 @@
 			"moreActionsTitlebarMaximized": "More Actions",
 			"togglePrimarySidebar": "Toggle Primary Side Bar",
 			"toggleAgents": "Toggle Agents",
-			"titlebarOpenCursorSettings": "Open Cursor Settings",
-			"cursorSettings": "Cursor Settings",
+			"titlebarOpenCursorSettings": "Open {0}",
+			"cursorSettings": "{0}",
 			"goBack": "Go Back",
 			"goForward": "Go Forward",
 			"focusTitleBar": "Focus Title Bar"
@@ -7353,8 +7348,8 @@
 			"shutdownChatStreamingDetail": "Stopping now will cancel the current task.",
 			"shutdownChatStreamingTitlePlural": "{0} agents are still working",
 			"shutdownChatStreamingDetailPlural": "Stopping now will cancel their current tasks.",
-			"shutdownChatStreamingAutoContinueDetail": "Cursor will pick this agent back up when you reopen.",
-			"shutdownChatStreamingAutoContinueDetailPlural": "Cursor will pick these agents back up when you reopen.",
+			"shutdownChatStreamingAutoContinueDetail": "{0} will pick this agent back up when you reopen.",
+			"shutdownChatStreamingAutoContinueDetailPlural": "{0} will pick these agents back up when you reopen.",
 			"shutdownChatStreamingAutoContinueToggle": "Resume agent automatically",
 			"shutdownChatStreamingAutoContinueTogglePlural": "Resume agents automatically",
 			"shutdownClose": "Close",
@@ -7544,7 +7539,7 @@
 			"rootNameShort": "`${rootNameShort}`: shortened name of the workspace without suffixes (e.g. myFolder, myRemoteFolder or myWorkspace).",
 			"rootPath": "`${rootPath}`: file path of the opened workspace or folder (e.g. /Users/Development/myWorkspace).",
 			"profileName": "`${profileName}`: name of the profile in which the workspace is opened (e.g. Data Science (Profile)). Ignored if default profile is used.",
-			"appName": "`${appName}`: e.g. VS Code.",
+			"appName": "`${appName}`: e.g. {0}.",
 			"remoteName": "`${remoteName}`: e.g. SSH",
 			"dirty": "`${dirty}`: an indicator for when the active editor has unsaved changes.",
 			"focusedView": "`${focusedView}`: the name of the view that is currently focused.",
@@ -8112,11 +8107,16 @@
 			"agentSidebarUpdateButton.restartOnlyTooltip": "Update is ready — click to restart",
 			"agentSidebarUpdateButton.restartOnlyTooltipWithVersion": "Update to {0} is ready — click to restart",
 			"agentSidebarUpdateButton.tooltipWithVersion": "Update to {0} will apply on quit — click to restart now",
-			"agentSidebarUpdateButton.installingTooltip": "Installing update — Cursor will close and reopen automatically.",
-			"agentSidebarUpdateButton.label": "Update: restart Cursor to install",
 			"agentSidebarUpdateButton.installingLabel": "Installing update",
 			"agentSidebarUpdateButton.installingPillText": "Installing",
-			"agentSidebarUpdateButton.pillText": "Update"
+			"agentSidebarUpdateButton.pillText": "Update",
+			"agentSidebarUpdateButton.restartPillText": "Restart",
+			"agentSidebarUpdateButton.restartingPillText": "Restarting",
+			"agentSidebarUpdateButton.label": "Update: restart {0} to install",
+			"agentSidebarUpdateButton.installingTooltip": "Installing update — {0} will close and reopen automatically.",
+			"agentSidebarUpdateButton.restartingLabel": "Restarting {0}",
+			"agentSidebarUpdateButton.restartingToMoltenTooltip": "Restarting {0} to switch to the beta Agents Window",
+			"agentSidebarUpdateButton.restartingToBuiltInTooltip": "Restarting {0} to switch to the built-in Agents Window"
 		},
 		"vs/workbench/contrib/agents/common/agentsContextKeys": {
 			"agentsPaneFocused": "Whether the Agents sidebar currently contains keyboard focus.",
@@ -8130,8 +8130,6 @@
 			"http2.disable.title": "Disable HTTP/2.0",
 			"http2.disable.description": "Disable HTTP/2 for all requests, and use HTTP/1.1 instead. This increases resource utilization and latency, but is useful behind a corporate proxy that blocks HTTP/2.",
 			"debug.timeoutPrevention.title": "Debug Timeout Prevention",
-			"instantGrep.indexRepositories.title": "Index Repositories for Instant Grep",
-			"instantGrep.indexRepositories.policyDescription": "Controls whether Cursor indexes repositories locally for Instant Grep. Disable this policy to prevent repository indexing on managed devices.",
 			"cursor.composer.planTextSizeScale.matchAgentChat": "Match Agent chat",
 			"cursor.composer.planTextSizeScale.small": "Small",
 			"cursor.composer.planTextSizeScale.defaultSize": "Default",
@@ -8147,8 +8145,8 @@
 		"vs/workbench/contrib/airlock/electron-sandbox/airlockAttach": {
 			"airlockCanStartRepo": "Whether this window can start its repo's Airlock container",
 			"airlockCanConnect": "Whether this window can open the airlock",
-			"airlock.devContainersMissing": "Cursor opens the airlock with the Dev Containers extension, which isn't installed or is turned off.",
-			"airlock.repo.untrusted": "Trust this folder before Cursor runs its Airlock start command.",
+			"airlock.devContainersMissing": "{0} opens the airlock with the Dev Containers extension, which isn't installed or is turned off.",
+			"airlock.repo.untrusted": "Trust {0} before {1} runs the Airlock start command there. Open the folder and trust it, or add it under Manage Workspace Trust.",
 			"airlock.repo.startingTitle": "Starting the Airlock container",
 			"airlock.repo.started": "Airlock container {0} is running",
 			"airlock.connectAction": "Connect to Airlock",
@@ -8760,7 +8758,7 @@
 			"chimes.unsafePath.unc": "Custom chime sound path cannot be a network (UNC) path for security reasons. Please use a local file path.",
 			"chimes.unsafePath.url": "Custom chime sound path cannot be a URL. Please use a local file path.",
 			"chimes.untrustedWorkspace": "Custom chime sound is configured in workspace settings but the workspace is not trusted. The custom sound will be ignored.",
-			"chimes.source": "Cursor Chimes"
+			"chimes.source": "{0} Chimes"
 		},
 		"vs/workbench/contrib/composer/browser/cmdKRedirectToChatAction": {
 			"cmdKRedirectToChat.toast": "{0}+K now adds the selection to Agent, the same as {0}+L. Inline edit and terminal {0}+K are retired.",
@@ -8773,8 +8771,8 @@
 			"composer.promptEditInput.ariaLabel": "Edit message"
 		},
 		"vs/workbench/contrib/composer/browser/composer.contribution": {
-			"cursor ai": "Cursor AI",
-			"composerEditor": "Cursor AI"
+			"cursor ai": "{0} AI",
+			"composerEditor": "{0} AI"
 		},
 		"vs/workbench/contrib/composer/browser/composerAccessibilityAnnouncer.contribution": {
 			"composerAccessibility.error": "Agent error: {0}",
@@ -8847,7 +8845,7 @@
 			"composerTranscript.openFileFailed": "Unable to open {0}"
 		},
 		"vs/workbench/contrib/composer/browser/transcript/transcriptLinkAddToChat": {
-			"glass.addToChat.ignoredFile": "Cursor ignores {0}, so it cannot be added to chat."
+			"glass.addToChat.ignoredFile": "{0} ignores {1}, so it cannot be added to chat."
 		},
 		"vs/workbench/contrib/composer/browser/utils/agentTurnOutcome": {
 			"agentTurnOutcome.unknownError": "The agent ran into an error."
@@ -8869,7 +8867,7 @@
 		},
 		"vs/workbench/contrib/composer/electron-sandbox/webviewBrowserManager": {
 			"passkeyRequestStalled": "This page is waiting for a passkey or security key. If using a hardware security key, insert and tap it to continue.",
-			"passkeyHybridUnsupported": "This sign-in needs a passkey from your phone or tablet via QR code, which the Cursor browser can't display. Open this page in your regular browser to continue.",
+			"passkeyHybridUnsupported": "This sign-in needs a passkey from your phone or tablet via QR code, which the {0} browser can't display. Open this page in your regular browser to continue.",
 			"browserContextMenu.openLinkExternalBrowser": "Open Link in Browser",
 			"browserContextMenu.openLinkNewTab": "Open Link in New Tab",
 			"browserContextMenu.openLinkBackgroundTab": "Open Link in Background Tab",
@@ -8903,21 +8901,21 @@
 			"showProfilingStatus": "Show Performance Profiling Status"
 		},
 		"vs/workbench/contrib/cpuMonitor/electron-sandbox/cpuMonitor.contribution": {
-			"cpuMonitorEnabled": "Controls whether Cursor monitors for sustained high CPU usage and offers to capture a diagnostic process snapshot. Only active for Anysphere-internal users.",
+			"cpuMonitorEnabled": "Controls whether {0} monitors for sustained high CPU usage and offers to capture a diagnostic process snapshot. Only active for Anysphere-internal users.",
 			"developer.captureAndUploadProcessSnapshot.label": "Capture and Upload Process Snapshot"
 		},
 		"vs/workbench/contrib/cursorAiCpp/electron-sandbox/cppAccessibility": {
 			"cursorTab.line": "line {0}",
 			"cursorTab.lines": "lines {0} to {1}",
-			"cursorTab.announceInsertion": "Cursor Tab: {0}",
-			"cursorTab.announceEdit": "Cursor Tab suggestion for {0}",
-			"cursorTab.viewIntro": "Cursor Tab suggestion for {0}.",
+			"cursorTab.announceInsertion": "{0}: {1}",
+			"cursorTab.announceEdit": "{0} suggestion for {1}",
+			"cursorTab.viewIntro": "{0} suggestion for {1}.",
 			"cursorTab.viewCurrent": "Current:",
 			"cursorTab.viewSuggested": "Suggested:",
 			"cursorTab.viewAccept": "Accept it ({0}), or press Escape to return to the editor, where Tab accepts and Escape dismisses it.",
 			"cursorTab.viewAcceptNoKeybinding": "Press Escape to return to the editor, where Tab accepts and Escape dismisses it.",
 			"cursorTab.announceWithHint": "{0}, inspect this in the accessible view ({1})",
-			"cursorTab.acceptFromAccessibleView": "Accept Cursor Tab Suggestion"
+			"cursorTab.acceptFromAccessibleView": "Accept {0} Suggestion"
 		},
 		"vs/workbench/contrib/cursorAiFeedback/browser/aiFeedbackActions": {
 			"miReportIssue": "Report &&Issue",
@@ -8932,17 +8930,17 @@
 		},
 		"vs/workbench/contrib/cursorBlame/browser/cursorBlame.contribution": {
 			"cursorBlame.openFileBlameTitle": "Open File Blame",
-			"cursorBlame.category": "Cursor Blame",
+			"cursorBlame.category": "{0} Blame",
 			"cursorBlame.openCommitTitle": "View Commit",
 			"cursorBlame.pasteCommitHash": "Paste commit hash",
 			"cursorBlame.viewCommitTitle": "View commit",
 			"cursorBlame.noGit": "No git repository found",
 			"cursorBlame.uncommittedLine": "This line has not been committed yet",
-			"cursorBlame.explorerContextMenu": "Cursor Blame",
-			"cursorBlameSubmenu": "Cursor Blame",
+			"cursorBlame.explorerContextMenu": "{0} Blame",
+			"cursorBlameSubmenu": "{0} Blame",
 			"toggleFileBlame": "Toggle file blame",
-			"cursorBlameConfigurationTitle": "Cursor Blame",
-			"cursor.blame.hoverDelay": "Controls the delay in milliseconds before hovers in the Cursor Blame panes appear. If not set, uses `#editor.hover.delay#` with a minimum of 500ms."
+			"cursorBlameConfigurationTitle": "{0} Blame",
+			"cursor.blame.hoverDelay": "Controls the delay in milliseconds before hovers in the {0} Blame panes appear. If not set, uses `#editor.hover.delay#` with a minimum of 500ms."
 		},
 		"vs/workbench/contrib/cursorExampleUtilityHost/electron-sandbox/exampleUtilityHostCommands": {
 			"exampleUtilityHost.echo": "Example Utility Host Echo",
@@ -11266,6 +11264,7 @@
 			"renameLocalHistoryEntryTitle": "Rename Local History Entry",
 			"renameLocalHistoryPlaceholder": "Enter the new name of the local history entry",
 			"confirmDeleteMessage": "Do you want to delete the local history entry of '{0}' from {1}?",
+			"confirmDeleteMultipleMessage": "Do you want to delete {0} local history entries?",
 			"confirmDeleteDetail": "This action is irreversible!",
 			"deleteButtonLabel": "&&Delete",
 			"confirmDeleteAllMessage": "Do you want to delete all entries of all files in local history?",
@@ -11481,8 +11480,8 @@
 		"vs/workbench/contrib/mcp/common/mcpConfiguration": {
 			"mcp.discovery.source.claude-desktop": "Claude Desktop",
 			"mcp.discovery.source.windsurf": "Windsurf",
-			"mcp.discovery.source.cursor-global": "Cursor (Global)",
-			"mcp.discovery.source.cursor-workspace": "Cursor (Workspace)"
+			"mcp.discovery.source.cursor-global": "{0} (Global)",
+			"mcp.discovery.source.cursor-workspace": "{0} (Workspace)"
 		},
 		"vs/workbench/contrib/mcp/common/mcpRegistry": {
 			"trustTitleWithOrigin": "Trust MCP servers from {0}?",
@@ -11517,15 +11516,15 @@
 			"mcpstate.error": "Error {0}"
 		},
 		"vs/workbench/contrib/mdceditor/browser/mdceditor.contribution": {
-			"newCursorRule": "New Cursor Rule",
+			"newCursorRule": "New {0} Rule",
 			"newCommandName": "Enter Command Name",
 			"commandNamePlaceholder": "e.g., my-custom-command",
 			"commandNamePrompt": "Please enter a name for the new command",
 			"emptyCommandName": "Command name cannot be empty",
 			"invalidCommandName": "Command name can only contain lowercase letters, numbers, and hyphens",
 			"commandExists": "A command with this name already exists",
-			"newProjectCursorCommand": "New Project Cursor Command",
-			"newUserCursorCommand": "New User Cursor Command"
+			"newProjectCursorCommand": "New Project {0} Command",
+			"newUserCursorCommand": "New User {0} Command"
 		},
 		"vs/workbench/contrib/memoryMonitor/electron-sandbox/memoryMonitor.contribution": {
 			"developer.captureAndUploadRendererHeapSnapshot.label": "Capture and Upload Renderer Heap Snapshot"
@@ -12355,7 +12354,7 @@
 			"vetoExtHostRestart": "An extension provided notebook for '{0}' could not be saved."
 		},
 		"vs/workbench/contrib/onboarding/electron-sandbox/onboarding.contribution": {
-			"onboarding.importFromVSCodeToast.message": "Bring your VS Code setup to Cursor. Import your settings and extensions for a seamless start.",
+			"onboarding.importFromVSCodeToast.message": "Bring your VS Code setup to {0}. Import your settings and extensions for a seamless start.",
 			"onboarding.importFromVSCodeToast.import": "Import"
 		},
 		"vs/workbench/contrib/outline/browser/outline.contribution": {
@@ -13068,7 +13067,7 @@
 		},
 		"vs/workbench/contrib/remote/electron-sandbox/remote.cursor.contribution": {
 			"wslMntWorkspaceWarning.message": "Opening a WSL workspace under /mnt is not recommended",
-			"wslMntWorkspaceWarning.detail": "The folder you opened resolves to '{0}', which is a mounted Windows filesystem. This can be significantly slower than the Linux filesystem and some features may not work correctly.\n\nFor best results, either move your project into your WSL home directory (for example: ~/projects), or open the Windows directory directly in Cursor.",
+			"wslMntWorkspaceWarning.detail": "The folder you opened resolves to '{0}', which is a mounted Windows filesystem. This can be significantly slower than the Linux filesystem and some features may not work correctly.\n\nFor best results, either move your project into your WSL home directory (for example: ~/projects), or open the Windows directory directly in {1}.",
 			"wslMntWorkspaceWarning.checkbox": "Don't show this warning again",
 			"wslMntWorkspaceWarning.ok": "&&OK",
 			"windowsWslPathWarning.message": "Opening a WSL folder without the WSL extension is not recommended",
@@ -13077,7 +13076,7 @@
 			"windowsWslPathWarning.install": "&&Install WSL Extension",
 			"windowsWslPathWarning.ok": "&&OK",
 			"windowsWslPathWarning.extensionInstalled.message": "Opening a WSL folder without using the WSL extension is not recommended",
-			"windowsWslPathWarning.extensionInstalled.detail": "The folder you opened ('{0}') is located in the Windows Subsystem for Linux filesystem. Opening WSL folders directly from Windows can be significantly slower and some features may not work correctly.\n\nYou have the WSL extension installed. For best results, use the command 'WSL: Connect to WSL' or open this folder from within WSL using 'cursor .' in the WSL terminal."
+			"windowsWslPathWarning.extensionInstalled.detail": "The folder you opened ('{0}') is located in the Windows Subsystem for Linux filesystem. Opening WSL folders directly from Windows can be significantly slower and some features may not work correctly.\n\nYou have the WSL extension installed. For best results, use the command 'WSL: Connect to WSL' or open this folder from within WSL using '{1} .' in the WSL terminal."
 		},
 		"vs/workbench/contrib/remoteTunnel/electron-sandbox/remoteTunnel.contribution": {
 			"remoteTunnel.actions.turnOn": "Turn on Remote Tunnel Access...",
@@ -13333,7 +13332,7 @@
 			"refreshGraph": "Refresh",
 			"openChanges": "Open Changes",
 			"historyItemChangesEditorTitle": "All Changes ({0} ↔ {1})",
-			"openInCursorBlame": "Open in Cursor Blame",
+			"openInCursorBlame": "Open in {0} Blame",
 			"emailLinkTitle": "Email",
 			"fileChanged": "{0} file changed",
 			"filesChanged": "{0} files changed",
@@ -13656,7 +13655,7 @@
 			"filterSortOrder.default": "History entries are sorted by relevance based on the filter value used. More relevant entries appear first.",
 			"filterSortOrder.recency": "History entries are sorted by recency. More recently opened entries appear first.",
 			"filterSortOrder": "Controls sorting order of editor history in quick open when filtering.",
-			"search.quickOpen.useVscodeSearch": "When enabled, use the default VSCode quick open search algorithm instead of Cursor's modified version.",
+			"search.quickOpen.useVscodeSearch": "When enabled, use the default VSCode quick open search algorithm instead of {0}'s modified version.",
 			"search.followSymlinks": "Controls whether to follow symlinks while searching.",
 			"search.smartCase": "Search case-insensitively if the pattern is all lowercase, otherwise, search case-sensitively.",
 			"search.globalFindClipboard": "Controls whether the search view should read or modify the shared find clipboard on macOS.",
@@ -15616,6 +15615,8 @@
 		"vs/workbench/contrib/timeline/browser/timelinePane": {
 			"timeline.loadingMore": "Loading...",
 			"timeline.loadMore": "Load more",
+			"timelineForWorkspace": "Whether the Timeline view shows the workspace timeline instead of the timeline of a file or folder.",
+			"timeline.workspace": "Workspace",
 			"timeline.editorCannotProvideTimeline": "The active editor cannot provide timeline information.",
 			"timeline.noTimelineSourcesEnabled": "All timeline sources have been filtered out.",
 			"timeline.noLocalHistoryYet": "Local History will track recent changes as you save them unless the file has been excluded or is too large.",
@@ -15624,20 +15625,25 @@
 			"timeline.noSCM": "Source Control has not been configured.",
 			"timeline.aria.item": "{0}: {1}",
 			"timeline": "Timeline",
+			"timeline.loadingWorkspace": "Loading workspace timeline...",
 			"timeline.loading": "Loading timeline for {0}...",
+			"timeline.compareSelectedLabel": "{0} ({1}) ↔ {2} ({3})",
+			"timelineInputAriaLabel": "Type timeline item name. Press Enter to confirm or Escape to cancel.",
 			"timelineRefresh": "Icon for the refresh timeline action.",
 			"timelinePin": "Icon for the pin timeline action.",
 			"timelineUnpin": "Icon for the unpin timeline action.",
 			"refresh": "Refresh",
-			"timeline.toggleFollowActiveEditorCommand.follow": "Pin the Current Timeline",
-			"timeline.toggleFollowActiveEditorCommand.unfollow": "Unpin the Current Timeline"
+			"timeline.showWorkspaceTimeline": "Pin Workspace Timeline",
+			"timeline.compareSelected": "Compare Selected",
+			"timeline.toggleFollowActiveEditorCommand.follow": "Pin Current Timeline",
+			"timeline.toggleFollowActiveEditorCommand.unfollow": "Unpin Current Timeline"
 		},
 		"vs/workbench/contrib/tracing/browser/internalBugReportAction": {
 			"sessionRecording.flagAndAddContext": "Report Bug"
 		},
 		"vs/workbench/contrib/tracing/browser/internalBugReportService": {
 			"internalBugReportFailed": "Could not submit the bug report. Try again.",
-			"internalBugReportSubmitted": "Bug report submitted. Thanks for helping us improve Cursor!"
+			"internalBugReportSubmitted": "Bug report submitted. Thanks for helping us improve {0}!"
 		},
 		"vs/workbench/contrib/tracing/browser/internalReportLagAction": {
 			"sessionRecording.reportLag.thanks": "Lag reported — thanks!",
@@ -15665,13 +15671,13 @@
 			"captureDebuggingDataUserDirectory": "User database",
 			"captureDebuggingDataUserDirectoryDetail": "Includes the User data directory if it is under 2 GB. If checked, chat and prompt data (which may include attached code snippets) will be uploaded, even in privacy mode.",
 			"captureDebuggingDataLogs": "Logs",
-			"captureDebuggingDataLogsDetail": "Includes recent Cursor log sessions.",
+			"captureDebuggingDataLogsDetail": "Includes recent {0} log sessions.",
 			"captureDebuggingDataFeatureFlagsAndExtensions": "Feature flags and extension summary",
 			"captureDebuggingDataFeatureFlagsAndExtensionsDetail": "Includes feature gates, experiments, dynamic configs, and installed extensions.",
 			"captureDebuggingDataProcessDiagnostics": "Process diagnostics",
 			"captureDebuggingDataProcessDiagnosticsDetail": "Includes recent process memory and CPU history.",
 			"captureDebuggingDataAgentTranscripts": "Agent transcripts (last 7 days)",
-			"captureDebuggingDataAgentTranscriptsDetail": "Includes recent Cursor agent transcripts for this workspace. If checked, chat and prompt data (which may include attached code snippets) will be uploaded, even in privacy mode.",
+			"captureDebuggingDataAgentTranscriptsDetail": "Includes recent {0} agent transcripts for this workspace. If checked, chat and prompt data (which may include attached code snippets) will be uploaded, even in privacy mode.",
 			"captureDebuggingDataPickerTitle": "Capture and Send Debugging Data",
 			"captureDebuggingDataPickerPlaceholder": "Select debugging data to collect. Press Enter to continue.",
 			"captureDebuggingDataNotePlaceholder": "What went wrong? (optional)",
@@ -15723,7 +15729,7 @@
 			"mentionChip.removeMention": "Remove mention"
 		},
 		"vs/workbench/contrib/ui/browser/buttons/AgentsWindowButton": {
-			"agentsWindow.hoverGraphicTitle": "Meet the new Cursor",
+			"agentsWindow.hoverGraphicTitle": "Meet the new {0}",
 			"agentsWindow.hoverSectionParallelTitle": "Run Many Agents in Parallel",
 			"agentsWindow.hoverSectionParallelBody": "All your agents across repos—locally, on remote SSH, and in the cloud",
 			"agentsWindow.hoverSectionDeeperTitle": "Dig Deeper Anytime",
@@ -15739,13 +15745,18 @@
 			"applyUpdate": "Apply Update..."
 		},
 		"vs/workbench/contrib/update/browser/update": {
+			"restartToSwitchToBetaAgentsWindow": "Restart to Switch to Beta Agents Window (1)",
+			"restartToSwitchToBuiltInAgentsWindow": "Restart to Switch to Built-in Agents Window (1)",
+			"restartToUpdate": "Restart to Update (1)",
 			"update.noReleaseNotesOnline": "This version of {0} does not have release notes online",
+			"agentsWindowSwitchToMoltenReady": "Restart {0} to switch to the beta Agents Window.",
+			"agentsWindowSwitchToBuiltInReady": "Restart {0} to switch to the built-in Agents Window.",
+			"updateIsReady": "New {0} update available.",
 			"updateDidNotInstallRetrying": "{0} couldn't finish updating to version {1}. Downloading the update again.",
 			"updateDidNotInstall": "{0} couldn't finish installing the update to version {1}.",
 			"tryAgain": "Try Again",
 			"update service disabled": "Updates are disabled because you are running the user-scope installation of {0} as Administrator.",
 			"learn more": "Learn More",
-			"updateIsReady": "New {0} update available.",
 			"checkingForUpdates": "Checking for {0} updates...",
 			"downloading": "Downloading {0} update...",
 			"updating": "Updating {0}...",
@@ -15759,8 +15770,7 @@
 			"update": "Update",
 			"download update_1": "Download Update (1)",
 			"installUpdate...": "Install Update... (1)",
-			"showUpdateReleaseNotes": "Show Update Release Notes",
-			"restartToUpdate": "Restart to Update (1)"
+			"showUpdateReleaseNotes": "Show Update Release Notes"
 		},
 		"vs/workbench/contrib/update/browser/updateClientOrOpenUrl": {
 			"updateClientFailed": "Couldn't update {0} automatically.",
@@ -16282,13 +16292,15 @@
 		},
 		"vs/workbench/electron-sandbox/actions/installActions": {
 			"successIn": "Shell command '{0}' successfully installed.",
+			"successInBoth": "Shell commands '{0}' and '{1}' successfully installed.",
 			"install": "Install 'code' command",
 			"successFrom": "Shell command '{0}' successfully uninstalled from PATH.",
+			"successFromBoth": "Shell commands '{0}' and '{1}' successfully uninstalled from PATH.",
 			"shellCommand": "Shell Command",
 			"uninstall": "Uninstall '{0}' command from PATH"
 		},
 		"vs/workbench/electron-sandbox/actions/windowActions": {
-			"quitConfirmationTitle": "Quit Cursor?",
+			"quitConfirmationTitle": "Quit {0}?",
 			"closeWindowConfirmationTitle": "Close this window?",
 			"quitConfirmationMessage": "Are you sure you want to quit?",
 			"closeWindowConfirmationMessage": "Are you sure you want to close this window?",
@@ -16384,6 +16396,10 @@
 			"okButton": "OK",
 			"aboutCopyright": "Copyright © 2026 Anysphere. All rights reserved."
 		},
+		"vs/workbench/electron-sandbox/shellCommandMigration": {
+			"shellCommandMigration.prompt": "The '{0}' shell command now has a new name: '{1}'. Install it? '{0}' keeps working.",
+			"shellCommandMigration.install": "Install '{0}'"
+		},
 		"vs/workbench/electron-sandbox/window": {
 			"sharedProcessCrash": "A shared background process terminated unexpectedly. Please restart the application to recover.",
 			"restart": "Restart",
@@ -16416,7 +16432,6 @@
 			"shutdownTitleLoad": "Changing the workspace is taking a bit longer...",
 			"runningAsRoot": "It is not recommended to run {0} as root user.",
 			"appRootWarning.banner": "Files you store within the installation folder ('{0}') may be OVERWRITTEN or DELETED IRREVERSIBLY without warning at update time.",
-			"macoseolmessage": "{0} on {1} will soon stop receiving updates. Consider upgrading your macOS version.",
 			"resolveShellEnvironment": "Resolving shell environment...",
 			"zoomOut": "Zoom Out",
 			"zoomIn": "Zoom In",
@@ -16571,7 +16586,7 @@
 			"teammateProjectWorker.refused": "Only the teammate who started this agent can open it."
 		},
 		"vs/workbench/services/ai/browser/urlOpenToastService": {
-			"urlOpenToast.message": "Opening {0} in Cursor Browser",
+			"urlOpenToast.message": "Opening {0} in {1} Browser",
 			"urlOpenToast.dontOpen": "Don't Open"
 		},
 		"vs/workbench/services/ai/common/backendUrl": {
@@ -16708,24 +16723,24 @@
 		},
 		"vs/workbench/services/cursorAuth/browser/authenticationService.contribution": {
 			"cursorAuthConfigurationTitle": "Cursor Auth",
-			"cursor.allowedTeamId": "Specify the required team id that a user must belong to in order to use Cursor. If set and the signed-in user is not part of the team, Cursor will automatically sign the user out.",
+			"cursor.allowedTeamId": "Specify the required team id that a user must belong to in order to use Grok Build. If set and the signed-in user is not part of the team, Grok Build will automatically sign the user out.",
 			"cursor.signInEnforcement": "When enabled via device management (MDM), Cursor's backend refuses to issue or refresh sign-in sessions for accounts that match none of the configured allowed organizations, teams, emails, or email domains.",
 			"cursor.allowedOrganizationIds": "Comma-separated list of Cursor organization ids whose members are allowed to sign in on this device (set via device management).",
 			"cursor.allowedTeamIds": "Comma-separated list of Cursor team ids whose members are allowed to sign in on this device (set via device management). Supersedes the singular AllowedTeamId policy; both are honored.",
 			"cursor.allowedLoginEmails": "Comma-separated list of exact account emails allowed to sign in on this device (set via device management). Compared case-insensitively.",
 			"cursor.allowedLoginDomains": "Comma-separated list of email domains (e.g. example.com) whose accounts are allowed to sign in on this device (set via device management). Exact domain match only; subdomains are not implicitly included.",
-			"cursor.deploymentId": "When set via device management (MDM) to a deployment id, Cursor connects only to that deployment and cannot be switched away from it. An id this version does not support blocks sign-in. 0 or unset is the default service.",
+			"cursor.deploymentId": "When set via device management (MDM) to a deployment id, Grok Build connects only to that deployment and cannot be switched away from it. An id this version does not support blocks sign-in. 0 or unset is the default service.",
 			"cursorAirlockConfigurationTitle": "SpaceX Airlock",
-			"cursor.airlock.containerName": "Name of the local Docker or Podman container that Cursor prepares and opens while SpaceX mode is on (set via device management). Required for the airlock.",
-			"cursor.airlock.defaultWorkspace": "Absolute path of the folder inside the airlock container that Cursor opens (set via device management). Required for the airlock.",
-			"cursor.airlock.containerUser": "User that Cursor runs as inside the airlock container (set via device management). When empty, Cursor uses the container's default user.",
-			"cursor.airlock.engine": "Container engine command for the airlock (set via device management): docker, podman, the absolute path of either, or the absolute path of a wrapper script that runs every engine command. When empty, Cursor uses docker.",
+			"cursor.airlock.containerName": "Name of the local Docker or Podman container that Grok Build prepares and opens while SpaceX mode is on (set via device management). Required for the airlock.",
+			"cursor.airlock.defaultWorkspace": "Absolute path of the folder inside the airlock container that Grok Build opens (set via device management). Required for the airlock.",
+			"cursor.airlock.containerUser": "User that Grok Build runs as inside the airlock container (set via device management). When empty, Grok Build uses the container's default user.",
+			"cursor.airlock.engine": "Container engine command for the airlock (set via device management): docker, podman, the absolute path of either, or the absolute path of a wrapper script that runs every engine command. When empty, Grok Build uses docker.",
 			"cursor.airlock.createContainerHook": "Absolute path of the script that creates the airlock container when it doesn't exist (set via device management).",
-			"cursor.airlock.startContainerHook": "Absolute path of the script that starts the airlock container when it isn't running (set via device management). When empty, Cursor runs the engine's own start command.",
-			"cursor.airlock.preAttachContainerHook": "Absolute path of the script that Cursor runs each time, just before it opens the airlock container (set via device management).",
-			"cursor.airlock.restartContainerHook": "Absolute path of the script that restarts the airlock container (set via device management). When empty, Cursor runs the engine's own restart command.",
+			"cursor.airlock.startContainerHook": "Absolute path of the script that starts the airlock container when it isn't running (set via device management). When empty, Grok Build runs the engine's own start command.",
+			"cursor.airlock.preAttachContainerHook": "Absolute path of the script that Grok Build runs each time, just before it opens the airlock container (set via device management).",
+			"cursor.airlock.restartContainerHook": "Absolute path of the script that restarts the airlock container (set via device management). When empty, Grok Build runs the engine's own restart command.",
 			"cursor.airlock.containerStatusHook": "Absolute path of the script that reports the airlock container's status as JSON (set via device management).",
-			"cursor.airlock.hookTimeoutSeconds": "How long, in seconds, Cursor lets each airlock hook script run, and waits for the container to start, before it gives up (set via device management).",
+			"cursor.airlock.hookTimeoutSeconds": "How long, in seconds, Grok Build lets each airlock hook script run, and waits for the container to start, before it gives up (set via device management).",
 			"cursorManagedDeploymentConfigurationTitle": "Managed Deployment",
 			"cursor.deployment.backendUrl": "Cursor Orbit only: https origin of the API of the deployment Cursor Orbit connects to (set via device management). Required.",
 			"cursor.deployment.websiteUrl": "Cursor Orbit only: https origin of that deployment's website, where users sign in (set via device management). Required.",
@@ -17967,7 +17982,7 @@
 			"restartExtensionHost.reason": "Opening a multi-root workspace"
 		},
 		"vs/workbench/services/worktree/browser/worktree.contribution": {
-			"runCursorWorktreeCleanupDev": "Run Cursor Worktree Cleanup (Dev)",
+			"runCursorWorktreeCleanupDev": "Run {0} Worktree Cleanup (Dev)",
 			"runCursorWorktreeCleanupDev.leaseBusy": "Worktree cleanup skipped: another window already holds the cleanup lease.",
 			"runCursorWorktreeCleanupDev.done": "Worktree cleanup finished (dev). Removed {0} worktree(s), freed {1} byte(s). See logs for details."
 		}

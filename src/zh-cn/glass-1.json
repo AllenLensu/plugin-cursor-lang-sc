@@ -24,17 +24,6 @@
 		"glass.project.library.emptyTitle": "还没有文件",
 		"glass.project.library.searching": "正在搜索文件"
 	},
-	"vs/glass/browser/components/editor-panel/main-bot-tasks-tab/main-bot-tasks-tab-content.react": {
-		"glass.mainBot.tasks.find": "查找任务",
-		"glass.mainBot.tasks.views": "任务视图",
-		"glass.mainBot.tasks.noProjectsBody": "创建一个项目后，它所跟踪的任务将显示在此处",
-		"glass.mainBot.tasks.noProjectsTitle": "还没有项目",
-		"glass.mainBot.tasks.loading": "正在加载任务",
-		"glass.mainBot.tasks.emptyBody": "你的项目所跟踪的任务将显示在此处",
-		"glass.mainBot.tasks.emptyTitle": "还没有可跟踪的内容",
-		"glass.mainBot.tasks.failedOne": "无法加载 {0} 的任务。正在后台重试。",
-		"glass.mainBot.tasks.failedMany": "无法加载 {0} 个项目的任务: {1}。正在后台重试。"
-	},
 	"vs/glass/browser/components/editor-panel/project-document/project-notes-filter-chips.react": {
 		"glass.project.filter.operator.isAnyOf": "是其中任一",
 		"glass.project.filter.operator.is": "是",
@@ -101,12 +90,6 @@
 		"glass.project.filter.pr": "拉取请求",
 		"glass.project.filter.tags": "标签"
 	},
-	"vs/glass/browser/components/editor-panel/project-document/project-task-media.react": {
-		"glass.project.taskMedia.unavailable": "无法在此处加载此文件",
-		"glass.project.taskMedia.missing": "已移动或删除: {0}",
-		"glass.project.taskMedia.open": "打开 {0}",
-		"glass.project.taskMedia.more": "+{0}"
-	},
 	"vs/glass/browser/components/editor-panel/project-document/project-task-owner-avatar.react": {
 		"glass.project.taskOwner.none": "还没有负责人",
 		"glass.project.taskOwner.label": "负责人: {0}"
@@ -114,9 +97,6 @@
 	"vs/glass/browser/components/editor-panel/project-document/project-task-owner-menu.react": {
 		"glass.project.taskOwner.change": "更改负责人",
 		"glass.project.taskOwner.none": "还没有负责人"
-	},
-	"vs/glass/browser/components/editor-panel/project-document/project-task-owners-provider.react": {
-		"glass.project.taskOwner.unnamed": "队友"
 	},
 	"vs/glass/browser/components/editor-panel/project-document/project-task-owners": {
 		"glass.project.taskOwner.absentName": "{0}（不在此项目中）",
@@ -226,27 +206,12 @@
 		"glass.ftuxWizard.loading.text": "正在准备"
 	},
 	"vs/glass/browser/components/ftux-wizard/ftux-wizard-overlay.react": {
-		"glass.ftuxWizard.purpose.userRule.purpose.coding": "他们更喜欢编程工作流: 直接在代码中创建、调试和迭代。",
-		"glass.ftuxWizard.purpose.userRule.purpose.tasks": "他们更喜欢任务工作流: 在各个应用或计算机上研究、规划并完成任务。",
-		"glass.ftuxWizard.purpose.userRule.full.named": "用户的姓名是 {0}。其角色是 {1}。{2}",
-		"glass.ftuxWizard.purpose.userRule.full": "用户的角色是 {0}。{1}",
 		"glass.ftuxWizard.ariaLabel": "首次设置"
 	},
 	"vs/glass/browser/components/ftux-wizard/ftux-wizard-purpose-step.react": {
 		"glass.ftuxWizard.purpose.option.coding": "编程",
 		"glass.ftuxWizard.purpose.option.coding.description": "直接在代码中创建、调试和迭代。",
 		"glass.ftuxWizard.purpose.title": "今天想来点Code吗？"
-	},
-	"vs/glass/browser/components/ftux-wizard/ftux-wizard-welcome-step.react": {
-		"glass.ftuxWizard.welcome.role.softwareEngineer": "软件工程师",
-		"glass.ftuxWizard.welcome.role.designer": "设计师",
-		"glass.ftuxWizard.welcome.role.productManager": "产品经理",
-		"glass.ftuxWizard.welcome.role.researcher": "研究员",
-		"glass.ftuxWizard.welcome.role.dataScientist": "数据科学家",
-		"glass.ftuxWizard.welcome.role.student": "学生",
-		"glass.ftuxWizard.welcome.role.marketer": "营销人员",
-		"glass.ftuxWizard.welcome.role.operations": "运营",
-		"glass.ftuxWizard.welcome.role.somethingElse": "其他"
 	},
 	"vs/glass/browser/components/glass-sidebar/components/agent-row-appearance.react": {
 		"glass.projectBot.editAppearance": "编辑外观"
@@ -273,9 +238,6 @@
 	"vs/glass/browser/components/glass-sidebar/hooks/use-project-agents-section.react": {
 		"glass.sidebar.expandProject": "展开项目",
 		"glass.sidebar.collapseProject": "折叠项目"
-	},
-	"vs/glass/browser/components/main-bot/main-bot-header-actions.react": {
-		"glass.mainBot.chatActions": "聊天操作"
 	},
 	"vs/glass/browser/components/project-bot/project-appearance-panel.react": {
 		"glass.projectBot.editAppearance": "编辑外观",
@@ -314,7 +276,8 @@
 		"glass.projectBot.shapes": "角色形状",
 		"glass.projectBot.shapeOption": "{0} 角色形状",
 		"glass.projectBot.colors": "角色颜色",
-		"glass.projectBot.colorOption": "{0} 角色颜色"
+		"glass.projectBot.colorOption": "{0} 角色颜色",
+		"glass.projectBot.color.lemon": "柠檬"
 	},
 	"vs/glass/browser/components/task-views/task-board.react": {
 		"glass.taskViews.board.goToParent": "转到“{0}”",

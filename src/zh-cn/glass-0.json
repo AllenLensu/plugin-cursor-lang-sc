@@ -9,7 +9,8 @@
 		"glass.agentMetadataTooltip.protocolDevContainer": "开发容器",
 		"glass.agentMetadataTooltip.protocolContainer": "容器",
 		"glass.agentMetadataTooltip.draft": "草稿",
-		"glass.agentMetadataTooltip.cloud": "云端"
+		"glass.agentMetadataTooltip.cloud": "云端",
+		"glass.agentMetadataTooltip.moreFolders": "另外 {0} 个"
 	},
 	"vs/glass/browser/components/agent-metadata-tooltip/agent-metadata-tooltip-model": {
 		"glass.agentMetadataTooltip.claudeCodeTranscript": "对话记录",

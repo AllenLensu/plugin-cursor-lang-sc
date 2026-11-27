@@ -1,6 +1,6 @@
 # Cursor 简体中文语言包
 
-扩展 id：`allen.cursor-lang-zh-hans`。对应 Cursor 3.31.15（VS Code 1.128.0）。包里没有运行时代码，也不改 Cursor 的安装目录。
+扩展 id：`allen.cursor-lang-zh-hans`。对应 Cursor 3.32.10（VS Code 1.147.0）。包里没有运行时代码，也不改 Cursor 的安装目录。
 
 译文分三层：
 
@@ -19,10 +19,10 @@
 在 `dist` 目录执行：
 
 ```
-npx --yes @vscode/vsce package --no-dependencies --allow-missing-repository -o ../allen.cursor-lang-zh-hans-3.31.15.vsix
+npx --yes @vscode/vsce package --no-dependencies --allow-missing-repository -o ../allen.cursor-lang-zh-hans-3.32.10.vsix
 ```
 
-VSIX 在仓库根目录：`allen.cursor-lang-zh-hans-3.31.15.vsix`。
+VSIX 在仓库根目录：`allen.cursor-lang-zh-hans-3.32.10.vsix`。
 
 ## 安装
 
@@ -30,10 +30,10 @@ VSIX 在仓库根目录：`allen.cursor-lang-zh-hans-3.31.15.vsix`。
 2. 安装 VSIX。Windows 上命令是 `cursor.cmd`：
 
 ```
-cursor --install-extension allen.cursor-lang-zh-hans-3.31.15.vsix
+cursor --install-extension allen.cursor-lang-zh-hans-3.32.10.vsix
 ```
 
-装好后扩展是 `allen.cursor-lang-zh-hans`，版本 `3.31.15`。
+装好后扩展是 `allen.cursor-lang-zh-hans`，版本 `3.32.10`。
 
 3. 完全退出 Cursor，再重新打开。只重载窗口不会换语言。
 

@@ -94,7 +94,7 @@
 	},
 	"vs/glass/browser/services/file-tree/glass-reveal-file-in-os": {
 		"glass.binaryFileNotSupported": "不支持二进制文件",
-		"glass.pdfTooLargeToPreview": "PDF 过大，无法在 Cursor 中预览（上限 25 MB）",
+		"glass.pdfTooLargeToPreview": "PDF 过大，无法在 {0} 中预览（上限 25 MB）",
 		"glassRevealInWindows": "在文件资源管理器中显示",
 		"glassRevealInMac": "在 Finder 中显示",
 		"glassOpenContainer": "打开所在文件夹"
@@ -102,7 +102,7 @@
 	"vs/glass/browser/services/glass-agent-migration-service": {
 		"glass.agentMigrationService.failed.cloudDataUnavailable": "无法移动此智能体，因为部分云端智能体数据不可用。请重新加载窗口并重试。",
 		"glass.agentMigrationService.failed.missingBlob": "此计算机上缺少该智能体的部分聊天历史记录，因此无法移动。请继续在此处使用，或新建智能体以在其他地方继续。",
-		"glass.agentMigrationService.failed.serverUnavailable": "Cursor 的服务器暂时不可用 ({0})。请稍后再试。",
+		"glass.agentMigrationService.failed.serverUnavailable": "{0} 的服务器暂时不可用 ({1})。请稍后再试。",
 		"glass.agentMigrationService.failed.requestFailed": "请求失败 ({0})",
 		"glass.migration.midTurn.defaultTarget": "新位置",
 		"glass.migration.midTurn.title": "是否在智能体仍在工作时移动它?",
@@ -118,7 +118,7 @@
 		"glass.migration.uncommitted.include": "包含更改",
 		"glass.migration.uncommitted.exclude": "排除更改",
 		"glass.migration.gitTransferFailure.title": "是否在没有本地 Git 状态的情况下移动对话?",
-		"glass.migration.gitTransferFailure.description": "Cursor 无法传输本地 Git 状态{0}。\n\n{1}\n\n本地分支、提交和未提交的更改将保留在此计算机上，云端智能体可能无法使用。",
+		"glass.migration.gitTransferFailure.description": "{0} 无法传输本地 Git 状态{1}。\n\n{2}\n\n本地分支、提交和未提交的更改将保留在此计算机上，云端智能体可能无法使用。",
 		"glass.migration.gitTransferFailure.continue": "仍然继续",
 		"glass.migration.worktreeToLocal.uncommitted.title": "检测到本地更改",
 		"glass.migration.worktreeToLocal.uncommitted.description": "本地工作区有未提交的更改。切换分支之前要如何处理?",
@@ -136,7 +136,8 @@
 		"glass.allowedMachines.addFolder.limitReached": "你的帐户已达到工作节点上限。请移除一个工作节点后再试。",
 		"glass.allowedMachines.addFolder.rateLimited": "此工作节点重新连接过于频繁。请一分钟后再试。",
 		"glass.allowedMachines.addFolder.authInvalid": "请重新登录以添加文件夹",
-		"glass.allowedMachines.addFolder.allowFailed": "无法允许 {0}。请检查后再试。"
+		"glass.allowedMachines.addFolder.allowFailed": "无法允许 {0}。请检查后再试。",
+		"glass.allowedMachines.addFolder.cliTooOld": "无法为 {0} 启动工作节点。它的 Cursor Agent CLI 太旧，无法保证密钥私密。"
 	},
 	"vs/glass/browser/services/glass-placement-grants-service": {
 		"glass.allowedMachines.addFolder.dialogTitle": "为此项目选择文件夹"
@@ -199,7 +200,9 @@
 	},
 	"vs/glass/browser/utils/agent-chat-actions": {
 		"glass.agentPanel.copyMessagesEmpty": "没有可复制的消息",
-		"glass.agentPanel.copyMessagesCopied": "已将消息复制到剪贴板"
+		"glass.agentPanel.copyMessagesCopied": "已将消息复制到剪贴板",
+		"glass.agentPanel.copyMessagesProgress": "正在复制对话记录…",
+		"glass.agentPanel.copyMessagesFailed": "复制对话记录失败: {0}"
 	},
 	"vs/glass/browser/utils/agent-menu-controller": {
 		"glass.statusBar.noEnvironmentDestinationsMultiRepo": "缺少包含全部 {0} 个存储库的工作区",

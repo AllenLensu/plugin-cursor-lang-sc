@@ -74,7 +74,7 @@ const manifest = {
   version: snapshot.cursorVersion,
   publisher: "allen",
   license: "MIT",
-  engines: { vscode: "^1.128.0" },
+  engines: { vscode: "^1.147.0" },
   categories: ["Language Packs"],
   keywords: ["中文(简体)", "Cursor"],
   contributes: {

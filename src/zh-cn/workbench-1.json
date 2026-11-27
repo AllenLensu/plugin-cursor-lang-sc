@@ -25,7 +25,7 @@
 		"composerTranscript.openFileFailed": "无法打开 {0}"
 	},
 	"vs/workbench/contrib/composer/browser/transcript/transcriptLinkAddToChat": {
-		"glass.addToChat.ignoredFile": "Cursor 会忽略 {0}，因此无法将其添加到聊天。"
+		"glass.addToChat.ignoredFile": "{0} 会忽略 {1}，因此无法将其添加到聊天。"
 	},
 	"vs/workbench/contrib/composer/browser/utils/agentTurnOutcome": {
 		"agentTurnOutcome.unknownError": "智能体遇到了错误。"
@@ -46,7 +46,7 @@
 	},
 	"vs/workbench/contrib/composer/electron-sandbox/webviewBrowserManager": {
 		"passkeyRequestStalled": "此页面正在等待通行密钥或安全密钥。如果使用硬件安全密钥，请插入并轻触它以继续。",
-		"passkeyHybridUnsupported": "此登录需要通过二维码使用你的手机或平板电脑上的通行密钥，而 Cursor 浏览器无法显示该二维码。请在普通浏览器中打开此页面以继续。",
+		"passkeyHybridUnsupported": "此登录需要通过二维码使用你的手机或平板电脑上的通行密钥，而 {0} 浏览器无法显示该二维码。请在普通浏览器中打开此页面以继续。",
 		"browserContextMenu.openLinkExternalBrowser": "在浏览器中打开链接",
 		"browserContextMenu.openLinkNewTab": "在新标签页中打开链接",
 		"browserContextMenu.openLinkBackgroundTab": "在后台标签页中打开链接",
@@ -70,21 +70,21 @@
 		"showProfilingStatus": "显示性能分析状态"
 	},
 	"vs/workbench/contrib/cpuMonitor/electron-sandbox/cpuMonitor.contribution": {
-		"cpuMonitorEnabled": "控制 Cursor 是否监视持续的高 CPU 使用率，并提议捕获诊断进程快照。仅对 Anysphere 内部用户生效。",
+		"cpuMonitorEnabled": "控制 {0} 是否监视持续的高 CPU 使用率，并提议捕获诊断进程快照。仅对 Anysphere 内部用户生效。",
 		"developer.captureAndUploadProcessSnapshot.label": "捕获并上传进程快照"
 	},
 	"vs/workbench/contrib/cursorAiCpp/electron-sandbox/cppAccessibility": {
 		"cursorTab.line": "第 {0} 行",
 		"cursorTab.lines": "第 {0} 行到第 {1} 行",
-		"cursorTab.announceInsertion": "Cursor Tab: {0}",
-		"cursorTab.announceEdit": "{0} 的 Cursor Tab 建议",
-		"cursorTab.viewIntro": "{0} 的 Cursor Tab 建议。",
+		"cursorTab.announceInsertion": "{0}: {1}",
+		"cursorTab.announceEdit": "{1} 的 {0} 建议",
+		"cursorTab.viewIntro": "{1} 的 {0} 建议。",
 		"cursorTab.viewCurrent": "当前:",
 		"cursorTab.viewSuggested": "建议:",
 		"cursorTab.viewAccept": "接受它 ({0})，或按 Escape 返回编辑器。在编辑器中，Tab 接受此建议，Escape 关闭此建议。",
 		"cursorTab.viewAcceptNoKeybinding": "按 Escape 返回编辑器。在编辑器中，Tab 接受此建议，Escape 关闭此建议。",
 		"cursorTab.announceWithHint": "{0}，在辅助视图中检查此项 ({1})",
-		"cursorTab.acceptFromAccessibleView": "接受 Cursor Tab 建议"
+		"cursorTab.acceptFromAccessibleView": "接受 {0} 建议"
 	},
 	"vs/workbench/contrib/cursorAiFeedback/browser/aiFeedbackActions": {
 		"miReportIssue": "报告问题(&&I)",
@@ -98,17 +98,17 @@
 	},
 	"vs/workbench/contrib/cursorBlame/browser/cursorBlame.contribution": {
 		"cursorBlame.openFileBlameTitle": "打开文件 Blame",
-		"cursorBlame.category": "Cursor Blame",
+		"cursorBlame.category": "{0} Blame",
 		"cursorBlame.openCommitTitle": "查看提交",
 		"cursorBlame.pasteCommitHash": "粘贴提交哈希",
 		"cursorBlame.viewCommitTitle": "查看提交",
 		"cursorBlame.noGit": "找不到 Git 存储库",
 		"cursorBlame.uncommittedLine": "此行尚未提交",
-		"cursorBlame.explorerContextMenu": "Cursor Blame",
-		"cursorBlameSubmenu": "Cursor Blame",
+		"cursorBlame.explorerContextMenu": "{0} Blame",
+		"cursorBlameSubmenu": "{0} Blame",
 		"toggleFileBlame": "切换文件 Blame",
-		"cursorBlameConfigurationTitle": "Cursor Blame",
-		"cursor.blame.hoverDelay": "控制 Cursor Blame 窗格中悬停出现前的延迟(毫秒)。如果未设置，则使用 `#editor.hover.delay#`，最小值为 500 毫秒。"
+		"cursorBlameConfigurationTitle": "{0} Blame",
+		"cursor.blame.hoverDelay": "控制 {0} Blame 窗格中悬停出现前的延迟(毫秒)。如果未设置，则使用 `#editor.hover.delay#`，最小值为 500 毫秒。"
 	},
 	"vs/workbench/contrib/cursorExampleUtilityHost/electron-sandbox/exampleUtilityHostCommands": {
 		"exampleUtilityHost.echo": "示例实用工具宿主回显",

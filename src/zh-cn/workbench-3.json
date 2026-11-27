@@ -94,7 +94,7 @@
 	},
 	"vs/workbench/contrib/tracing/browser/internalBugReportService": {
 		"internalBugReportFailed": "无法提交错误报告。请重试。",
-		"internalBugReportSubmitted": "错误报告已提交。感谢你帮助我们改进 Cursor!"
+		"internalBugReportSubmitted": "错误报告已提交。感谢你帮助我们改进 {0}!"
 	},
 	"vs/workbench/contrib/tracing/browser/internalReportLagAction": {
 		"sessionRecording.reportLag.thanks": "已报告卡顿 — 谢谢!",
@@ -121,13 +121,13 @@
 		"captureDebuggingDataHeapSnapshotDetail": "捕获堆转储。这可能会使编辑器冻结，并且在内存已经很高时可能失败。还会附加最近一天内保存的扩展宿主堆快照。",
 		"captureDebuggingDataUserDirectory": "用户数据库",
 		"captureDebuggingDataUserDirectoryDetail": "如果用户数据目录小于 2 GB，则将其包含在内。若勾选，即使在隐私模式下也会上传聊天和提示数据(其中可能包含附加的代码片段)。",
-		"captureDebuggingDataLogsDetail": "包含最近的 Cursor 日志会话。",
+		"captureDebuggingDataLogsDetail": "包含最近的 {0} 日志会话。",
 		"captureDebuggingDataFeatureFlagsAndExtensions": "功能标志和扩展摘要",
 		"captureDebuggingDataFeatureFlagsAndExtensionsDetail": "包含功能门控、实验、动态配置和已安装的扩展。",
 		"captureDebuggingDataProcessDiagnostics": "进程诊断",
 		"captureDebuggingDataProcessDiagnosticsDetail": "包含最近的进程内存和 CPU 历史记录。",
 		"captureDebuggingDataAgentTranscripts": "智能体会话记录(最近 7 天)",
-		"captureDebuggingDataAgentTranscriptsDetail": "包含此工作区最近的 Cursor 智能体会话记录。若勾选，即使在隐私模式下也会上传聊天和提示数据(其中可能包含附加的代码片段)。",
+		"captureDebuggingDataAgentTranscriptsDetail": "包含此工作区最近的 {0} 智能体会话记录。若勾选，即使在隐私模式下也会上传聊天和提示数据(其中可能包含附加的代码片段)。",
 		"captureDebuggingDataPickerTitle": "捕获并发送调试数据",
 		"captureDebuggingDataPickerPlaceholder": "选择要收集的调试数据。按 Enter 继续。",
 		"captureDebuggingDataNotePlaceholder": "出了什么问题?(可选)",
@@ -152,7 +152,7 @@
 		"mentionChip.removeMention": "移除提及"
 	},
 	"vs/workbench/contrib/ui/browser/buttons/AgentsWindowButton": {
-		"agentsWindow.hoverGraphicTitle": "认识新的 Cursor",
+		"agentsWindow.hoverGraphicTitle": "认识新的 {0}",
 		"agentsWindow.hoverSectionParallelTitle": "并行运行多个智能体",
 		"agentsWindow.hoverSectionParallelBody": "跨仓库的全部智能体——本地、远程 SSH 和云端",
 		"agentsWindow.hoverSectionDeeperTitle": "随时深入查看",
@@ -166,7 +166,11 @@
 		"update service": "更新服务",
 		"download update": "下载更新",
 		"later": "稍后",
-		"packageUpdateAvailable": "可通过 {2} 获取较新的 {0} 包({1})。"
+		"packageUpdateAvailable": "可通过 {2} 获取较新的 {0} 包({1})。",
+		"restartToSwitchToBetaAgentsWindow": "重启以切换到测试版智能体窗口 (1)",
+		"restartToSwitchToBuiltInAgentsWindow": "重启以切换到内置智能体窗口 (1)",
+		"agentsWindowSwitchToMoltenReady": "重启 {0} 以切换到测试版智能体窗口。",
+		"agentsWindowSwitchToBuiltInReady": "重启 {0} 以切换到内置智能体窗口。"
 	},
 	"vs/workbench/contrib/update/browser/updateClientOrOpenUrl": {
 		"updateClientFailed": "无法自动更新 {0}。"
@@ -284,10 +288,12 @@
 	"vs/workbench/electron-sandbox/actions/installActions": {
 		"successFrom": "已成功从 PATH 卸载 Shell 命令“{0}”。",
 		"shellCommand": "Shell 命令",
-		"uninstall": "从 PATH 中卸载“{0}”命令"
+		"uninstall": "从 PATH 中卸载“{0}”命令",
+		"successInBoth": "已成功安装 Shell 命令“{0}”和“{1}”。",
+		"successFromBoth": "已成功从 PATH 卸载 Shell 命令“{0}”和“{1}”。"
 	},
 	"vs/workbench/electron-sandbox/actions/windowActions": {
-		"quitConfirmationTitle": "退出 Cursor?",
+		"quitConfirmationTitle": "退出 {0}?",
 		"closeWindowConfirmationTitle": "关闭此窗口?",
 		"closeWindowConfirmationMessage": "确定要关闭此窗口吗?",
 		"quitButtonLabel": "退出",
@@ -394,12 +400,35 @@
 		"shutdownTitleLoad": "更改工作区需要的时间较长...",
 		"runningAsRoot": "不建议以 root 用户身份运行 {0}。",
 		"appRootWarning.banner": "在更新时，存储在安装文件夹(“{0}”)中的文件可能会被覆盖或删除(不可撤销)，而不会发出警告。",
-		"macoseolmessage": "{1} 上的 {0} 将很快停止接收更新。请考虑升级 macOS 版本。",
 		"resolveShellEnvironment": "正在解析 shell 环境...",
 		"zoomOut": "缩小",
 		"zoomIn": "放大",
 		"status.windowZoom": "窗口缩放",
 		"zoomNumber": "缩放级别: {0} ({1}%)",
 		"switchingTeams": "正在切换团队..."
+	},
+	"vs/workbench/api/common/extHostMcp": {
+		"mcpUnsupportedDestination": "MCP 服务器选择了非 http(s) 目标({0})，这是不允许的"
+	},
+	"vs/workbench/browser/parts/editor/editorStatus": {
+		"reopenWithEncodingWarning": "是否还原活动文本编辑器，并用其他编码重新打开?",
+		"reopenWithEncodingDetail": "这将丢弃所有未保存的更改。",
+		"reopen": "丢弃更改并重新打开"
+	},
+	"vs/workbench/contrib/localHistory/browser/localHistoryCommands": {
+		"confirmDeleteMultipleMessage": "是否要删除 {0} 条本地历史记录?"
+	},
+	"vs/workbench/contrib/timeline/browser/timelinePane": {
+		"timelineForWorkspace": "时间线视图是否显示工作区时间线，而不是文件或文件夹的时间线。",
+		"timeline.workspace": "工作区",
+		"timeline.loadingWorkspace": "正在加载工作区时间线...",
+		"timeline.compareSelectedLabel": "{0} ({1}) ↔ {2} ({3})",
+		"timelineInputAriaLabel": "输入时间线项名称。按 Enter 确认，或按 Escape 取消。",
+		"timeline.showWorkspaceTimeline": "固定工作区时间线",
+		"timeline.compareSelected": "比较所选内容"
+	},
+	"vs/workbench/electron-sandbox/shellCommandMigration": {
+		"shellCommandMigration.prompt": "Shell 命令“{0}”已改名为“{1}”。是否安装? “{0}”仍可继续使用。",
+		"shellCommandMigration.install": "安装“{0}”"
 	}
 }

@@ -1,7 +1,7 @@
 {
 	"vs/workbench/contrib/mcp/common/mcpConfiguration": {
-		"mcp.discovery.source.cursor-global": "Cursor（全局）",
-		"mcp.discovery.source.cursor-workspace": "Cursor（工作区）"
+		"mcp.discovery.source.cursor-global": "{0}（全局）",
+		"mcp.discovery.source.cursor-workspace": "{0}（工作区）"
 	},
 	"vs/workbench/contrib/preferences/browser/settingsLayout": {
 		"cursor": "Cursor"

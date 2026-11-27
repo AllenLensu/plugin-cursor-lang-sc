@@ -3,10 +3,10 @@
 自动复用已经做完。下面这些我没有编中文。同一组如果能用一条规则说完，直接给规则就行。
 
 已放进语言包的：
-- 官方同模块同键：10936
+- 官方同模块同键：10935
 - 同键且英文相同：84
-- 英文完全一致且官方只有一条中文：242
-- 手写覆盖：2526
+- 英文完全一致且官方只有一条中文：238
+- 手写覆盖：2543
 - 仍无译文：0 个核心键，另加 4 条内置扩展显示名
 
 词表（只用于自动复用，没有拿来猜缺口）：Agent / Agents → 智能体，Chat → 聊天。Cursor、MCP、Claude、Codex、Copilot、Composer，以及字面 Glass，保持英文。编辑器光标的「Cursor」我没有改成英文，仍用官方的「光标」，见后面那一问。
@@ -43,8 +43,8 @@
   现用官方译文：（没有官方译文）
 - `vs/workbench/electron-sandbox/actions/installActions :: successIn`
   英文 1：Shell command '{0}' successfully installed.
-  英文 2：Successfully installed Cursor in the 'code' command.
-  英文 3：Successfully unlinked Cursor from the 'code' command.
+  英文 2：Successfully installed {0} in the 'code' command.
+  英文 3：Successfully unlinked {0} from the 'code' command.
   现用官方译文：（没有官方译文）
 - `vs/workbench/electron-sandbox/actions/installActions :: install`
   英文 1：Install 'code' command
@@ -74,6 +74,15 @@
 - `vs/workbench/browser/parts/editor/editorGroupWatermark :: watermark.openChat`（英文里的 Agent 没有落到「智能体」）
   英文：New Agent
   现用：打开聊天
+- `vs/glass/browser/services/glass-placement-grants-add-folder :: glass.allowedMachines.addFolder.cliTooOld`（英文里的 Agent 没有落到「智能体」）
+  英文：Couldn't start a worker for {0}. Its Cursor Agent CLI is too old to keep its key private.
+  现用：无法为 {0} 启动工作节点。它的 Cursor Agent CLI 太旧，无法保证密钥私密。
+- `vs/glass/browser/contributions/glassRemoteControlStartBlockContribution :: glass.remoteControl.startBlock.cliTooOld`（英文里的 Agent 没有落到「智能体」）
+  英文：Remote Control can't start on this computer. Its Cursor Agent CLI is too old to keep its key private, and no newer build is available yet. Remote Control will start once one is.
+  现用：远程控制无法在这台计算机上启动。它的 Cursor Agent CLI 太旧，无法保证密钥私密，而且目前还没有更新的版本。一旦有更新的版本，远程控制就会启动。
+- `vs/glass/browser/contributions/glassRemoteControlStartBlockContribution :: glass.remoteControl.startBlock.cliOverrideTooOld`（英文里的 Agent 没有落到「智能体」）
+  英文：Remote Control can't start on this computer. The Cursor Agent CLI set in CURSOR_AGENT_WORKER_CLI_PATH is too old to keep its key private. Point it at a newer build or unset it.
+  现用：远程控制无法在这台计算机上启动。环境变量 CURSOR_AGENT_WORKER_CLI_PATH 所指定的 Cursor Agent CLI 太旧，无法保证密钥私密。请改为指向更新的版本，或取消该设置。
 
 ## 大写 Cursor：光标，还是产品名
 
@@ -166,23 +175,22 @@
 这些不是缺口。VS Code 的中文包也没把它们译成汉字，所以我照原样收了。数字是有多少个键用了同一对英/中。要改再说。
 
 - 17 键：{0} ({1})
-- 8 键：{0}: {1}
+- 9 键：{0}: {1}
 - 8 键：ID
+- 6 键：{0}
 - 6 键：{0}, {1} → {0}，{1}
-- 5 键：{0}
 - 4 键：({0})
 - 4 键：{0} {1}
+- 4 键：{0} Blame
 - 4 键：{0}, {1}
-- 4 键：Cursor Blame
 - 4 键：None
 - 3 键：({0}) {1}
 - 3 键：Add Markdown → Markdown
 - 2 键：{0} - {1}
 - 2 键：{0} ↔ {1}
+- 2 键：{0} AI
 - 2 键：Alt
 - 2 键：CRLF
-- 2 键：Cursor
-- 2 键：Cursor AI
 - 2 键：HTTP
 - 2 键：LF
 - 2 键：Shift
@@ -198,12 +206,14 @@
 - 1 键：{0} ({1} • {2})
 - 1 键：{0} ({1} • {2}) ↔ {3}
 - 1 键：{0} ({1} • {2}) ↔ {3} ({4} • {5})
+- 1 键：{0} ({1}) ↔ {2} ({3})
 - 1 键：{0} (+{1})
 - 1 键：{0} {1}, {2} → {0} {1}，{2}
 - 1 键：{0} {1}, {2}, {3} → {0} {1}，{2}，{3}
 - 1 键：{0} → {1}
 - 1 键：{0} ↔ {1} (Replace Preview)
 - 1 键：{0} + {1}
+- 1 键：{0} Chimes
 - 1 键：{0}, {1} {2} → {0}，{1} {2}
 - 1 键：{0}, {1}, {2} → {0}，{1}，{2}
 - 1 键：{0}: {1}⏎{2}⏎{3}⏎{4} → {0}: {1}⏎{2}⏎{3}⏎{4}
@@ -216,17 +226,15 @@
 - 1 键：{0}MB → {0} MB
 - 1 键：{0}TB → {0} TB
 - 1 键：&&ToggleSource
-- 1 键：+{0}
 - 1 键：CLI
 - 1 键：Command
 - 1 键：Control
 - 1 键：CPU (%)
 - 1 键：Ctrl
+- 1 键：Cursor
 - 1 键：Cursor Auth
-- 1 键：Cursor Chimes
 - 1 键：Cursor Composer
 - 1 键：Cursor Origin
-- 1 键：Cursor Tab: {0}
 - 1 键：HTTPS
 - 1 键：Id: {0} → ID: {0}
 - 1 键：Mimetypes
